@@ -1,0 +1,1 @@
+![Send sequence diagram](https://raw.githubusercontent.com/clemahieu/mu_coin/master/coin_action_diagram.png?token=272911__eyJzY29wZSI6IlJhd0Jsb2I6Y2xlbWFoaWV1L211X2NvaW4vbWFzdGVyL2NvaW5fYWN0aW9uX2RpYWdyYW0ucG5nIiwiZXhwaXJlcyI6MTQwODE0MTE0M30%3D--e8c1a2c2b15b85188c048fc392a51f9863a6cbec)
