@@ -5,5 +5,5 @@ Distribution: Enthusiasts with specialized hardware
 
 ## Premining  
 Cost: Legacy currency  
-Beneficiaries: Community reinvestment
+Beneficiaries: Community reinvestment  
 Distribution: Purchasers from distribution website  
