@@ -7,10 +7,19 @@
 * Right click "mingw32-gcc-g++ bin" -> Mark For Installation
 * Right click "msys-base bin" -> Mark For Installation
 * Installation -> Apply All Changes
+* Add to system environment variables "c:\MinGW\bin"
 
 ## Other Install
 * CMake 3.0.1
+* Oracle Berkeley DB 6.1.19 in <berkeleydb> (Oracle login required because they're annoying idiots)
 * mu_coin source in <mu_coin_source>
+
+## Run MSYS shell
+* Run "c:/MinGW/msys/1.0/msys.bat"
+* Run "export PATH=$PATH:/c/MinGW/bin/" inside MSYS shell to add compiler tools to path
+
+## Build BerkeleyDB
+* Inside MSYS shell inside directory <berkeleydb>/build_unix run "../dist/configure --enable-mingw --enable-cxx"
 
 ## Set up CMake
 * Run cmake-gui
