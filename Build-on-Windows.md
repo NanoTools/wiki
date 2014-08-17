@@ -3,11 +3,13 @@
 ## MinGW
 * Download MinGW
 * Inside MinGW Installation Manager install -> Basic Setup
-* Right click "mingw32-base bin" -> Mark For Installation
-* Right click "mingw32-gcc-g++ bin" -> Mark For Installation
-* Right click "msys-base bin" -> Mark For Installation
+* "mingw-developer-toolkit" -> Mark For Installation
+* "mingw32-base bin" -> Mark For Installation
+* "mingw32-gcc-g++ bin" -> Mark For Installation
+* "msys-base bin" -> Mark For Installation
 * Installation -> Apply All Changes
-* Add to system environment variables "c:\MinGW\bin"
+* Add to system environment variables "c:\MinGW\bin" "c:\MinGW\msys\1.0\bin"
+* Create "c:\MinGW\msys\1.0\etc\fstab" and add the line "C:\MinGW /mingw"
 
 ## Other Install
 * CMake 3.0.1 installed
@@ -22,7 +24,7 @@
 
 ## Build BerkeleyDB
 * Open Visual Studio solution <berkeleydb>/build_windows/Berkeley_DB_vs2010 and it should automatically upgrade to Visual Studio 2013
-* 
+* Build the project db
 
 ## Build Boost
 * Inside directory <boost> run "bootstrap.bat mingw"
