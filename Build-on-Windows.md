@@ -23,15 +23,15 @@
 * Run "export PATH=$PATH:/c/MinGW/bin/" inside MSYS shell to add compiler tools to path
 
 ## Build BerkeleyDB
-* Open Visual Studio solution <berkeleydb>/build_windows/Berkeley_DB_vs2010 and it should automatically upgrade to Visual Studio 2013
-* Build the project db
+* Inside directory <berkeleydb>/build_unix run "sh ../dist/configure --enable-mingw --enable-cxx"
+* Run "make"
 
 ## Build Boost
 * Inside directory <boost> run "bootstrap.bat mingw"
 * Run "b2"
 
 ## Build Googletest
-* Inside directory <gtest> run "sh configure"
+* Inside directory <gtest> run 'cmake -G "MSYS Makefiles"'
 * Run "make"
 
 ## Set up CMake
