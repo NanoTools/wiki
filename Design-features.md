@@ -8,7 +8,7 @@ Compared to existing cryptocurrencies, the hash algorithm chosen is much less im
 Existing cryptocurrency systems are largely known for their proof of work schemes which are used to come to a fair distributed agreement about ledger changes.  Our system was designed to eliminate the need for distributed agreements in almost all circumstances.  Each account maintains its own block chain which is replicated to all peers in the network.  Only the account owner is able to sign transactions to modify their own chain and as such, no agreements are necessary.
 
 # Permanent storage minimization
-A lot of work was put in to minimizing the long-term storage footprint of maintaining the ledger.
+A lot of work was put in to eliminating redundant data in the block chain in order to minimizing the long-term storage footprint of the ledger.
 * Blocks in the ledger store balance values rather than balance deltas which allows much more aggressive pruning in lite clients.
 * Balances are only stored when necessary e.g. send blocks and inferred when possible e.g. receive blocks.
 * Blocks are fixed size to minimize framing overhead and storing counts.
