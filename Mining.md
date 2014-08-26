@@ -3,7 +3,7 @@ Cost: Electricity, hardware
 Beneficiaries: Power company, hardware manufacturers  
 Distribution: Enthusiasts with specialized hardware  
 
-## Premining  
+## Distributed  
 Cost: Legacy currency  
 Beneficiaries: Community reinvestment  
 Distribution: Purchasers from distribution website  
