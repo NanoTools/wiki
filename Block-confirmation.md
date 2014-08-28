@@ -2,7 +2,7 @@
 In the typical case of a block created by a well behaved client, blocks are received, checked for validity, and republished if they haven't been seen before.
 
 # Simple fork resolution
-Forks are easier to resolve the more time there there is from the first observed branch.  If one branch of a fork is published, every peer in the network receives a copy, and then a second branch of a fork is published, resolution of the fork is trivial because all peers will reject the second branch and in the first confirmation round the vote for the first branch will be 100%.  Simple fork resolution is entered after 1 network propagation period which in practice is probably less than a couple seconds.
+Forks are easier to resolve the more time there there is from the first observed branch.  If one branch of a fork is published, every peer in the network receives a copy, and then a second branch of the fork is published, resolution of the fork is trivial because all peers will reject the second branch and in the first confirmation round the vote for the first branch will be 100%.  Simple fork resolution is entered after 1 network propagation period which in practice is probably less than a couple seconds.
 
 # Complex fork resolution
 In the worst case if multiple branches of a fork are published simultaneously, votes for each branch could be near equal in which case multiple resolution rounds could be needed to choose the winning branch.  The time window of opportunity for propagating multiple forks is very small, less than 1 network propagation period.  Someone crafting a fork would also have to simultaneously distribute different fork branches to different representatives who control the largest portion of vote control within this very limited period of time.
