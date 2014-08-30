@@ -24,4 +24,5 @@ There are three important aspects of divisibility of the coin supply.
 * The supply needs to be able to be divided up amongst a large number of users with users possibly wanting several accounts.
 * Each account needs to be able to represent an adequate dynamic range of value
 * The supply should be able to deal with deflation over time as accounts are abandoned
+
 The supply starts with 2^256 coins which satisfies the three supply requirements.
