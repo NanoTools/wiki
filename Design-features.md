@@ -30,5 +30,5 @@ The supply starts with 2^256 coins which satisfies the three supply requirements
 # Lite peers and pruning
 Since each account operates on its own block chain, lite peers are able to do much more selective and aggressive pruning of the block chains.  Only bootstrap or peers interested in doing full ledger validation actually need to store the full ledger history.
 * For each account only the frontier block needs to be kept in order to validate a subsequent block via hash chaining.
-* Since send block contain an account's balance, in order to calculate the balance from the block chain, only blocks up to the last send need to be kept.
+* Since send blocks contain an account's balance, in order to calculate the balance from the block chain, only blocks up to the last send need to be kept.
 * Chains for inactive or small balance accounts can be dropped and left for full-validating peers to track.
