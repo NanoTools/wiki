@@ -18,3 +18,10 @@ It's possible for the network to see a block chain fork in the case of someone c
 
 # Proof of stake representatives
 Many peers will not want to stay connected to the network in order to participate in proof of stake agreements if the need arises.  We also don't want to require a signature and network message from every account for every conflict.  Each account is able to select another account as its representative which is able to vote with the balance owned by the account and change the representative when desired.  In this way many small accounts can be consolidated to a single large proof of stake vote by a peer that is willing to stay well connected to the network.
+
+# Divisibility
+There are three important aspects of divisibility of the coin supply.
+* The supply needs to be able to be divided up amongst a large number of users with users possibly wanting several accounts.
+* Each account needs to be able to represent an adequate dynamic range of value
+* The supply should be able to deal with deflation over time as accounts are abandoned
+The supply starts with 2^256 coins which satisfies the three supply requirements.
