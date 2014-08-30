@@ -26,3 +26,9 @@ There are three important aspects of divisibility of the coin supply.
 * The supply should be able to deal with deflation over time as accounts are abandoned
 
 The supply starts with 2^256 coins which satisfies the three supply requirements.
+
+# Lite peers and pruning
+Since each account operates on its own block chain, lite peers are able to do much more selective and aggressive pruning of the block chain.  Only bootstrap or peers interested in doing full ledger validation actually need to store the full ledger history.  Lite peers can perform depth-pruning where they only maintain each block chain to a certain depth, or they can do account pruning where infrequently changed or small balance accounts are dropped.
+* For each account only the frontier block needs to be kept in order to validate a subsequent block via hash chaining.
+* Since send block contain an account's balance, in order to calculate the balance from the block chain, only blocks up to the last send need to be kept.
+* Chains for inactive or small balance accounts can be dropped and left for full-validating peers to track.
