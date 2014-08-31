@@ -4,6 +4,9 @@ ED25519 is an elliptic curve algorithm developed in an academic setting with a f
 # Hashing algorithm - SHA3
 Compared to existing cryptocurrencies, the hash algorithm chosen is much less important since it's not being used in a proof of work context.  In our implementation hashing is used purely as a digest algorithm against block contents.
 
+# UDP message protocol
+Our system is designed to operate indefinitely using the minimum amount of computing resources as possible.  All messages in the system were designed to be stateless and fit within a single UDP packet.  This also makes it easier for lite peers with intermittent connectivity to participate in the network without reestablishing short-term TCP connections.  TCP is used only for new peers when they want to bootstrap the block chains in a bulk fashion.
+
 # Distributed agreement minimization
 Existing cryptocurrency systems are largely known for their proof of work schemes which are used to come to a fair distributed agreement about ledger changes.  Our system was designed to eliminate the need for distributed agreements in almost all circumstances.  Each account maintains its own block chain which is replicated to all peers in the network.  Only the account owner is able to sign transactions to modify their own chain and as such, no agreements are necessary.
 
