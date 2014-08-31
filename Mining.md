@@ -5,11 +5,9 @@ Mining is also used as a reward mechanism for maintaining integrity of proof of 
 We plan to distribute coins through a fixed distribution schedule coin faucet.  Coin price through the distribution period will be adjusted in order to follow the fixed distribution rate schedule.  If coins are being distributed too quickly the price will rise and if they're being distributed too slowly, the price will fall until they become free of charge.  Once the distribution period has ended the maximum supply forever will have been reached and the supply will never again increase.
 
 # Mining  
-Cost: Electricity -> USD, hardware -> USD
-Beneficiaries: Power company, hardware manufacturers  
+Cost: Electricity -> USD, hardware -> USD  
 Distribution: Enthusiasts with specialized hardware  
 
 # Distributed  
-Cost: USD
-Beneficiaries: Community reinvestment  
-Distribution: Purchasers from distribution website  
+Cost: USD  
+Distribution: Open market 
