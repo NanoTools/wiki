@@ -32,7 +32,8 @@
 ## Build Boost
 * Inside directory <boost.src> run "bootstrap.bat --with-toolset=mingw --prefix=<boost>"
 * Edit the file project-config.jam and replace 'mingw' by 'gcc
-* Run "b2"
+* Run "./b2"
+* Run "./b2 install"
 
 ## Build Googletest
 * Inside directory <gtest> run 'cmake -G "MSYS Makefiles"'
