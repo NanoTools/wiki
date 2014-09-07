@@ -31,6 +31,7 @@
 
 ## Build Boost
 * Inside directory <boost.src> run "bootstrap.bat --with-toolset=mingw --prefix=<boost>"
+* Edit the file project-config.jam and replace 'mingw' by 'gcc
 * Run "b2"
 
 ## Build Googletest
