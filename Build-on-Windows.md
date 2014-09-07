@@ -12,8 +12,8 @@
 * Create "c:\MinGW\msys\1.0\etc\fstab" and add the line "C:\MinGW /mingw"
 
 ## Other Install
-* CMake 3.0.1 installed
-* Boost 1.55 extracted to <boost>
+* CMake 3.0.1 extracted to <cmake.src>
+* Boost 1.55 extracted to <boost.src>
 * Googletest 1.7 extracted to <gtest>
 * LevelDB extracted to <leveldb>
 * mu_coin source in <mu_coin_source>
@@ -22,10 +22,15 @@
 * Run "c:/MinGW/msys/1.0/msys.bat"
 * Run "export PATH=$PATH:/c/MinGW/bin/" inside MSYS shell to add compiler tools to path
 
+## Build cmake
+* Inside directory <cmake.build> run "<cmake.src>/configure --prefix=<cmake>"
+* Run "make"
+* Run "make install"
+
 ## Build LevelDB
 
 ## Build Boost
-* Inside directory <boost> run "bootstrap.bat mingw"
+* Inside directory <boost.src> run "bootstrap.bat --with-toolset=mingw --prefix=<boost>"
 * Run "b2"
 
 ## Build Googletest
