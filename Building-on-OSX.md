@@ -18,7 +18,7 @@
 ## Build Boost
 * Inside [boost.src]
 * Run "./bootstrap.sh --prefix=[boost]
-* Run "./b2"
+* Run "./b2 link=static"
 * Run "./b2 install"
 
 ## Build leveldb
