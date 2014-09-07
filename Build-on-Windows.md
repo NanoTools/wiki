@@ -1,4 +1,5 @@
 # Building on Windows
+* Install QT5
 
 ## MinGW
 * Download MinGW
