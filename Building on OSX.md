@@ -1,5 +1,4 @@
 # Building on OSX
-* Install XCode from the AppStore.  XCode command line tools only is insufficient
 * Install QT5
 
 ## Required source
@@ -37,4 +36,4 @@ Build cryptopp
 
 Build mu_coin
 * Inside directory [mu_coin.build]
-* Run "[cmake]/bin/cmake -G "Unix Makefiles" -D GTEST_INCLUDE_DIR:PATH=[gtest.src]/include -D GTEST_LIBRARY:FILEPATH=[gtest.src]/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=../gtest-1.7.0.src/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final.src -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp562.src -D CRYPTOPP_INCLUDE_DIR=../cryptopp562.src -D LevelDB_LIBRARY:FILEPATH=../leveldb-1.15.0.src/libleveldb.a -D LevelDB_INCLUDE_PATH:PATH=../leveldb-1.15.0.src/include -D BOOST_ROOT:PATH=../boost_1_56 ../mu_coin
+* Run "../cmake-3.0.1/bin/cmake -G "Unix Makefiles" -D GTEST_INCLUDE_DIR:PATH=../gtest-1.7.0.src/include -D GTEST_LIBRARY:FILEPATH=../gtest-1.7.0.src/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=../gtest-1.7.0.src/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final.src -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp562.src -D CRYPTOPP_INCLUDE_DIR=../cryptopp562.src -D LevelDB_LIBRARY:FILEPATH=../leveldb-1.15.0.src/libleveldb.a -D LevelDB_INCLUDE_PATH:PATH=../leveldb-1.15.0.src/include -D BOOST_ROOT:PATH=../boost_1_56 -D Qt5_DIR=../../Qt/5.3/clang_64/lib/cmake/Qt5 ../mu_coin"
