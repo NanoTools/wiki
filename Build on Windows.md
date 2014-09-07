@@ -14,9 +14,10 @@
 ## Other Install
 * CMake 3.0.1 extracted to <cmake.src>
 * Boost 1.55 extracted to <boost.src>
-* Googletest 1.7 extracted to <gtest>
-* LevelDB extracted to <leveldb>
-* mu_coin source in <mu_coin_source>
+* Googletest 1.7 extracted to <gtest.src>
+* LevelDB extracted to <leveldb.src>
+* Cryptopp extracted to <cryptopp.src>
+* mu_coin source in <mu_coin.src>
 
 ## Run MSYS shell
 * Run "c:/MinGW/msys/1.0/msys.bat"
@@ -27,27 +28,33 @@
 * Run "make"
 * Run "make install"
 
-## Build LevelDB
-
 ## Build Boost
-* Inside directory <boost.src> run "bootstrap.bat --with-toolset=mingw --prefix=<boost>"
+* Inside directory <boost.src>
+* Run "bootstrap.bat --with-toolset=mingw --prefix=<boost>"
 * Edit the file project-config.jam and replace 'mingw' by 'gcc
 * Run "./b2"
-* Run "./b2 install"
 
-## Build Googletest
-* Inside directory <gtest> run 'cmake -G "MSYS Makefiles"'
+## Build LevelDB
+* Inside directory <leveldb.src>
 * Run "make"
 
-## Set up CMake
-* Run cmake-gui
-* Set "Where is the Source Code" to <mu_coin_source>
-* Set "Where to build the binaries" to <mu_coin_build> which should not be inside <mu_coin_source>
-* Push "Configure"
-* When asked "Build directory does not exist, should I create it" push "Yes"
-* Under "Specify the generator for this project, select "MinGW Makefiles"
-* Select "Use default native compilers"
-* Push "Finish"
-* Add Entry Name "CMAKE_MODULE_PATH" Type "PATH" Value <mu_coin_source>
-* Push "Generate"
-* Modify entry "BerkeleyDB_INCLUDE_DIR"
+## Build Googletest
+* Inside directory <gtest.build>
+* Run "<gtest.src>/configure"
+* Run "make"
+
+Build cryptopp
+* Inside directory <cryptopp.src>
+* Run "make"
+
+Build qt
+
+it is some bug in MinGW, when one of -ansi, -std=c++11, -std=c++03 and -std=c++98 are used. in file {MinGW dir}/include/io.h replace
+
+__CRT_INLINE off64_t lseek64 (int, off64_t, int);
+__CRT_INLINE off64_t lseek64 (int fd, off64_t offset, int whence) {
+with
+
+__CRT_INLINE _off64_t lseek64 (int, _off64_t, int);
+__CRT_INLINE _off64_t lseek64 (int fd, _off64_t offset, int whence) {
+
