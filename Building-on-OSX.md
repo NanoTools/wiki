@@ -32,6 +32,12 @@ Build cryptopp
 * Inside directory [cryptopp.src]
 * Run "make"
 
+Build qt
+* Inside directory [qt.build]
+* Run "[qt.src]/configure --prefix=[qt]"
+* Run "make"
+* Run "make install"
+
 Build mu_coin
 * Inside directory [mu_coin.build]
 * Run "[cmake]/bin/cmake -G "Unix Makefiles" -D GTEST_INCLUDE_DIR:PATH=[gtest.src]/include -D GTEST_LIBRARY:FILEPATH=[gtest.src]/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=../gtest-1.7.0.src/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final.src -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp562.src -D CRYPTOPP_INCLUDE_DIR=../cryptopp562.src -D LevelDB_LIBRARY:FILEPATH=../leveldb-1.15.0.src/libleveldb.a -D LevelDB_INCLUDE_PATH:PATH=../leveldb-1.15.0.src/include -D BOOST_ROOT:PATH=../boost_1_56 ../mu_coin
