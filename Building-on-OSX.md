@@ -1,5 +1,6 @@
 # Building on OSX
 * Install XCode from the AppStore.  XCode command line tools only is insufficient
+* Install QT5
 
 ## Required source
 * Boost 1.55 extracted to [boost.src]
@@ -7,7 +8,6 @@
 * LevelDB extracted to [leveldb.src]
 * cryptopp extracted to [cryptopp.src]
 * cpp-netlib extracted to [cppnetlib.src]
-* qt5 extracted to [qt.src]
 * mu_coin source in [mu_coin_source]
 
 ## Build cmake
@@ -34,12 +34,6 @@
 Build cryptopp
 * Inside directory [cryptopp.src]
 * Run "make"
-
-Build qt
-* Inside directory [qt.build]
-* Run "[qt.src]/configure --prefix=[qt]"
-* Run "make"
-* Run "make install"
 
 Build mu_coin
 * Inside directory [mu_coin.build]
