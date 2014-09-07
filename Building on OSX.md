@@ -5,6 +5,9 @@
 * Boost 1.55 extracted to [boost.src]
 * Googletest 1.7 extracted to [gtest.src]
 * LevelDB extracted to [leveldb.src]
+* cryptopp extracted to [cryptopp.src]
+* cpp-netlib extracted to [cppnetlib.src]
+* qt5 extracted to [qt.src]
 * mu_coin source in [mu_coin_source]
 
 ## Build cmake
