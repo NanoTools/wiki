@@ -1,5 +1,5 @@
 # Building on OSX
-* Open a terminal and run g++ --version to verify or start the g++ installer
+* Install XCode from the AppStore.  XCode command line tools only is insufficient
 
 ## Required source
 * Boost 1.55 extracted to <boost.src>
