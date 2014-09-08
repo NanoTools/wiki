@@ -32,9 +32,10 @@
 
 ## Build Boost
 * Inside directory [boost.src]
-* Run "bootstrap.bat --with-toolset=mingw --prefix=[boost]"
+* Run ./bootstrap --with-toolset=mingw
 * Edit the file project-config.jam and replace 'mingw' by 'gcc
-* Run "./b2"
+* Run "./b2 --prefix=[boost] link=static"
+* Run "./b2 install"
 
 ## Build LevelDB
 * Inside directory [leveldb.src]
