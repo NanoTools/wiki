@@ -16,7 +16,7 @@
 * CMake 3.0.1 extracted to <cmake.src>
 * Boost 1.55 extracted to <boost.src>
 * Googletest 1.7 extracted to <gtest.src>
-* LevelDB extracted to <leveldb.src>
+* LevelDB (zalanyib/leveldb-mingw) extracted to <leveldb.src>
 * Cryptopp extracted to <cryptopp.src>
 * mu_coin source in <mu_coin.src>
 
