@@ -48,14 +48,4 @@ Build cryptopp
 * Inside directory <cryptopp.src>
 * Run "make"
 
-Build qt
-
-it is some bug in MinGW, when one of -ansi, -std=c++11, -std=c++03 and -std=c++98 are used. in file {MinGW dir}/include/io.h replace
-
-__CRT_INLINE off64_t lseek64 (int, off64_t, int);
-__CRT_INLINE off64_t lseek64 (int fd, off64_t offset, int whence) {
-with
-
-__CRT_INLINE _off64_t lseek64 (int, _off64_t, int);
-__CRT_INLINE _off64_t lseek64 (int fd, _off64_t offset, int whence) {
 
