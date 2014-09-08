@@ -13,39 +13,40 @@
 * Create "c:\MinGW\msys\1.0\etc\fstab" and add the line "C:\MinGW /mingw"
 
 ## Other Install
-* CMake 3.0.1 extracted to <cmake.src>
-* Boost 1.55 extracted to <boost.src>
-* Googletest 1.7 extracted to <gtest.src>
-* LevelDB (zalanyib/leveldb-mingw) extracted to <leveldb.src>
-* Cryptopp extracted to <cryptopp.src>
-* mu_coin source in <mu_coin.src>
+* CMake 3.0.1 extracted to [cmake.src]
+* Boost 1.55 extracted to [boost.src]
+* Googletest 1.7 extracted to [gtest.src]
+* LevelDB (zalanyib/leveldb-mingw) extracted to [leveldb.src]
+* Cryptopp extracted to [cryptopp.src]
+* mu_coin source in [mu_coin.src]
 
 ## Run MSYS shell
 * Run "c:/MinGW/msys/1.0/msys.bat"
 * Run "export PATH=$PATH:/c/MinGW/bin/" inside MSYS shell to add compiler tools to path
 
 ## Build cmake
-* Inside directory <cmake.build> run "<cmake.src>/configure --prefix=<cmake>"
+* Inside directory [cmake.build]
+* Run "[cmake.src]/configure --prefix=[cmake]"
 * Run "make"
 * Run "make install"
 
 ## Build Boost
-* Inside directory <boost.src>
-* Run "bootstrap.bat --with-toolset=mingw --prefix=<boost>"
+* Inside directory [boost.src]
+* Run "bootstrap.bat --with-toolset=mingw --prefix=[boost]"
 * Edit the file project-config.jam and replace 'mingw' by 'gcc
 * Run "./b2"
 
 ## Build LevelDB
-* Inside directory <leveldb.src>
+* Inside directory [leveldb.src]
 * Run "make"
 
 ## Build Googletest
-* Inside directory <gtest.build>
-* Run "<gtest.src>/configure"
+* Inside directory [gtest.build]
+* Run "[gtest.src]/configure"
 * Run "make"
 
 Build cryptopp
-* Inside directory <cryptopp.src>
+* Inside directory [cryptopp.src]
 * Run "make"
 
 
