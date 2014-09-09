@@ -46,8 +46,8 @@
 * Run "make"
 
 ## Build cryptopp
-* Inside directory [cryptopp.src]
-* Run "make"
+* Inside directory [cryptopp.build]
+* Run "cmake -G "Unix Makefiles" [cryptopp.build] -DBOOST_ROOT=[boost]"
 
 ## Build mu_coin
 * Inside directory [mu_coin.build]
