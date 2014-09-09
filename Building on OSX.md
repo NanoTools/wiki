@@ -17,9 +17,8 @@
 
 ## Build Boost
 * Inside [boost.src]
-* Run "./bootstrap.sh --prefix=[boost]
-* Run "./b2 link=static"
-* Run "./b2 install"
+* Run "./bootstrap.sh
+* Run "./b2 --prefix=[boost] link=static install"
 
 ## Build leveldb
 * Inside [leveldb.src]
