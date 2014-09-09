@@ -34,7 +34,7 @@
 * Inside directory [boost.src]
 * Run ./bootstrap --with-toolset=mingw
 * Edit the file project-config.jam and replace 'mingw' by 'gcc
-* Run "./b2 --prefix=[boost] link=static install"
+* Run "./b2 --without-context --without-coroutine --build-dir=../boost_1_56_0.build --prefix=/home/colin/boost_1_56_0 link=static"
 
 ## Build LevelDB
 * Inside directory [leveldb.src]
