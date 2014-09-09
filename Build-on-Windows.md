@@ -53,6 +53,7 @@
 ## Build Googletest
 * Inside directory [gtest.build]
 * Run "[gtest.src]/configure"
+* Fix linebreaks in Program Files directory path
 * Run "make"
 
 ## Build cryptopp
