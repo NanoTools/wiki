@@ -38,6 +38,16 @@
 
 ## Build LevelDB
 * Inside directory [leveldb.src]
+* Edit build_detect_platform add
+    MINGW32_NT-6.2)
+        PLATFORM=OS_MINGW
+        COMMON_FLAGS="$MEMCMP_FLAG -pthread -DOS_MINGW"
+        PLATFORM_LDFLAGS="-pthread"
+        PORT_FILE=port/port_posix.cc
+        ;;
+* Edit port/port_posix.h add 
+#elif defined(OS_MINGW)
+  #define PLATFORM_IS_LITTLE_ENDIAN true
 * Run "make"
 
 ## Build Googletest
