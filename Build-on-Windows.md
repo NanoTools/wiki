@@ -34,7 +34,7 @@
 * Inside directory [boost.src]
 * Run ./bootstrap --with-toolset=mingw
 * Edit the file project-config.jam and replace 'mingw' by 'gcc
-* Run "./b2 --without-context --without-coroutine --build-dir=../boost_1_56_0.build --prefix=/home/colin/boost_1_56_0 link=static install"
+* Run "./b2 --without-context --without-coroutine --build-dir=[boost.build] --prefix=[boost] link=static install"
 
 ## Build LevelDB
 * Inside directory [leveldb.src]
@@ -56,9 +56,15 @@
 * Run "make"
 
 ## Build cryptopp
-* Inside directory [cryptopp.build]
-* Run "cmake -G "Unix Makefiles" [cryptopp.build] -DBOOST_ROOT=[boost]"
+* Inside directory [cryptopp.src]
+* Run "make"
 * Run "make install PREFIX=[cryptopp]"
+
+## Build cpp-netlib
+* Inside directory [cpp-netlib.build]
+* Run "cmake -G "Unix Makefiles" -DBOOST_ROOT=[boost] -DCMAKE_INSTALL_PREFIX=[cpp-netlib] [cpp-netlib.src]"
+* Run "make"
+* Run "make install"
 
 ## Build mu_coin
 * Inside directory [mu_coin.build]
