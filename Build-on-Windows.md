@@ -12,6 +12,10 @@
 * Add to system environment variables "c:\MinGW\bin" "c:\MinGW\msys\1.0\bin"
 * Create "c:\MinGW\msys\1.0\etc\fstab" and add the line "C:\MinGW /mingw"
 
+-D_WIN32_WINNT=0x0501
+-DWINVER=0x0501
+-g
+
 ## Other Install
 * CMake 3.0.1 extracted to [cmake.src]
 * Boost 1.55 extracted to [boost.src]
@@ -62,4 +66,4 @@
 
 ## Build mu_coin
 * Inside directory [mu_coin.build]
-* Run "../cmake-3.0.1/bin/cmake -G "Unix Makefiles" -D GTEST_INCLUDE_DIR:PATH=../gtest-1.7.0.src/include -D GTEST_LIBRARY:FILEPATH=/Users/colin/gtest-1.7.0.build/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=/Users/colin/gtest-1.7.0.build/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final.src -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp562 -D LevelDB_LIBRARY:FILEPATH=/Users/colin/Desktop/leveldb.src/libleveldb.a -D LevelDB_INCLUDE_PATH:PATH=../leveldb.src/include -D BOOST_ROOT:PATH=../boost_1_56_0 -D Qt5_DIR=/c/Qt/5.3/mingw482_32/lib/cmake/Qt5 ../mu_coin.src"
+* Run "../cmake-3.0.1/bin/cmake -G "Unix Makefiles" -DCMAKE_EXE_LINKER_FLAGS="-lmswsock -lws2_32" -D GTEST_INCLUDE_DIR:PATH=../gtest-1.7.0.src/include -D GTEST_LIBRARY:FILEPATH=/c/Users/colin/gtest-1.7.0.build/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=/c/Users/colin/gtest-1.7.0.build/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin.src -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final.src -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp562 -D LevelDB_LIBRARY:FILEPATH=/c/Users/colin/leveldb.src/libleveldb.a -D LevelDB_INCLUDE_PATH:PATH=../leveldb.src/include -D BOOST_ROOT:PATH=../boost_1_56_0 -D Qt5_DIR=/c/Qt/5.3/mingw482_32/lib/cmake/Qt5 ../mu_coin.src"
