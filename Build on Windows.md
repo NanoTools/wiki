@@ -57,7 +57,7 @@
 
 ## Build cryptopp
 * Inside directory [cryptopp.src]
-* Run "make"
+* Run "make CRYPTOPP_BOOL_AESNI_INTRINSICS_AVAILABLE=0"
 * Run "make install PREFIX=[cryptopp]"
 
 ## Build mu_coin
