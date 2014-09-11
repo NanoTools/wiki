@@ -12,10 +12,6 @@
 * Add to system environment variables "c:\MinGW\bin" "c:\MinGW\msys\1.0\bin"
 * Create "c:\MinGW\msys\1.0\etc\fstab" and add the line "C:\MinGW /mingw"
 
--D_WIN32_WINNT=0x0501
--DWINVER=0x0501
--g
-
 ## Other Install
 * CMake 3.0.1 extracted to [cmake.src]
 * Boost 1.55 extracted to [boost.src]
