@@ -18,7 +18,7 @@
 * Run "pkg install xorg"
 * Run "pkg install xfce"
 
-## Add startup services to /etc/rc.d  
+## Add startup services to /etc/rc.conf  
 hald_enable="YES"  
 dbus_enable="YES"  
 
