@@ -23,4 +23,4 @@
 
 ## Build mu_coin
 * Run "mkdir mu_coin_build"
-* Inside mu_coin_build run "cmake -G "Unix Makefiles" -D GTEST_LIBRARY:FILEPATH=/home/colin/Desktop/gtest-build/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=/home/colin/Desktop/gtest-build/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp -D CRYPTOPP_INCLUDE_DIR:PATH=.. -DLevelDB_LIBRARY:FILEPATH=../leveldb-1.15.0/libleveldb.a -DLevelDB_INCLUDE_PATH:PATH=../leveldb-1.15.0/include ../mu_coin"
+* Inside mu_coin_build run "cmake -G "Unix Makefiles" -D GTEST_LIBRARY:FILEPATH=/home/colin/Desktop/gtest-build/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=/home/colin/Desktop/gtest-build/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp -D CRYPTOPP_INCLUDE_DIR:PATH=.. -DLevelDB_LIBRARY:FILEPATH=/home/colin/Desktop/leveldb-1.15.0/libleveldb.a -DLevelDB_INCLUDE_PATH:PATH=../leveldb-1.15.0/include ../mu_coin"
