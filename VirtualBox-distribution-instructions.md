@@ -22,5 +22,8 @@
 hald_enable="YES"  
 dbus_enable="YES"  
 
+## Allow kernel shared memory in /etc/sysctl.conf
+* kern.ipc.shm_allow_removed=1
+
 reboot
 startxfce4
