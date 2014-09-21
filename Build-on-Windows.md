@@ -5,6 +5,7 @@
 * Download MSYS/MinGW installer
 * Inside MinGW Installation Manager install -> Basic Setup
 * "msys-base bin" -> Mark For Installation
+* "msys-wget bin" -> Mark For Installation
 * Install to [msys]
 * Installation -> Apply Changes -> Apply
 * Exit installer
