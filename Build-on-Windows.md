@@ -40,16 +40,6 @@
 
 ## Build LevelDB
 * Inside directory [leveldb.src]
-* Edit build_detect_platform add
-    MINGW32_NT-6.2)
-        PLATFORM=OS_MINGW
-        COMMON_FLAGS="$MEMCMP_FLAG -pthread -DOS_MINGW"
-        PLATFORM_LDFLAGS="-pthread"
-        PORT_FILE=port/port_posix.cc
-        ;;
-* Edit port/port_posix.h add 
-#elif defined(OS_MINGW)
-  #define PLATFORM_IS_LITTLE_ENDIAN true
 * Run "make"
 
 ## Build Googletest
@@ -64,4 +54,4 @@
 
 ## Build mu_coin
 * Inside directory [mu_coin.build]
-* Run "../cmake-3.0.1/bin/cmake -G "Unix Makefiles" -D GTEST_INCLUDE_DIR:PATH=../gtest-1.7.0.src/include -D GTEST_LIBRARY:FILEPATH=/c/Users/colin/gtest-1.7.0.build/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=/c/Users/colin/gtest-1.7.0.build/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin.src -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final.src -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp562 -D LevelDB_LIBRARY:FILEPATH=/c/Users/colin/leveldb.src/libleveldb.a -D LevelDB_INCLUDE_PATH:PATH=../leveldb.src/include -D BOOST_ROOT:PATH=../boost_1_56_0 -D Qt5_DIR=/c/Qt/5.3/mingw482_32/lib/cmake/Qt5 ../mu_coin.src"
+* Run "../cmake-3.0.2/bin/cmake -G "Unix Makefiles" -D GTEST_INCLUDE_DIR:PATH=../gtest-1.7.0.src/include -D GTEST_LIBRARY:FILEPATH=/c/Users/colin/gtest-1.7.0.build/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=/c/Users/colin/gtest-1.7.0.build/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin.src -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final.src -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp562 -D LevelDB_LIBRARY:FILEPATH=/c/Users/colin/leveldb.src/libleveldb.a -D LevelDB_INCLUDE_PATH:PATH=../leveldb.src/include -D BOOST_ROOT:PATH=../boost_1_56_0 -D Qt5_DIR=/c/Qt/5.3/mingw482_32/lib/cmake/Qt5 ../mu_coin.src"
