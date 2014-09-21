@@ -1,28 +1,29 @@
 # Building on Windows
 * Install QT5
 
-## MinGW
-* Download MinGW
+## MSYS
+* Download MSYS/MinGW installer
 * Inside MinGW Installation Manager install -> Basic Setup
-* "mingw-developer-toolkit" -> Mark For Installation
-* "mingw32-base bin" -> Mark For Installation
-* "mingw32-gcc-g++ bin" -> Mark For Installation
 * "msys-base bin" -> Mark For Installation
-* Installation -> Apply All Changes
-* Add to system environment variables "c:\MinGW\bin" "c:\MinGW\msys\1.0\bin"
-* Create "c:\MinGW\msys\1.0\etc\fstab" and add the line "C:\MinGW /mingw"
+* Install to [msys]
+* Installation -> Apply Changes -> Apply
+* Exit installer
+
+## MinGW-w64
+* Download MinGW-w64 installer
+* Change install folder to [msys]
+* Finish installer
 
 ## Other Install
-* CMake 3.0.1 extracted to [cmake.src]
-* Boost 1.55 extracted to [boost.src]
-* Googletest 1.7 extracted to [gtest.src]
-* LevelDB (zalanyib/leveldb-mingw) extracted to [leveldb.src]
-* Cryptopp extracted to [cryptopp.src]
-* mu_coin source in [mu_coin.src]
+* CMake 3.0.1 source extracted to [cmake.src]
+* Boost 1.55 source extracted to [boost.src]
+* Googletest 1.7 source extracted to [gtest.src]
+* LevelDB (zalanyib/leveldb-mingw) source extracted to [leveldb.src]
+* Cryptopp source extracted to [cryptopp.src]
+* mu_coin source source in [mu_coin.src]
 
 ## Run MSYS shell
 * Run "c:/MinGW/msys/1.0/msys.bat"
-* Run "export PATH=$PATH:/c/MinGW/bin/" inside MSYS shell to add compiler tools to path
 
 ## Build cmake
 * Inside directory [cmake.build]
