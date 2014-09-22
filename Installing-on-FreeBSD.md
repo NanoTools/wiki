@@ -6,8 +6,13 @@
 * Googletest 1.7 source extracted to [gtest.src]
 * LevelDB (zalanyib/leveldb-mingw) source extracted to [leveldb.src]
 * Cryptopp source extracted to [cryptopp.src]
+* Cppnetlib source extracted to [cppnetlib.src]
 * mu_coin source source in [mu_coin.src]
+
+# Packages
 * Run "pkg install Qt5"
+* Run "pkg install gmake"
+* Run "pkg install swt"
 
 ## Build cmake
 * Inside directory [cmake.build]
@@ -22,16 +27,16 @@
 
 ## Build Googletest
 * Run "mkdir gtest-build"
-* Inside gtest-build run "cmake -G "Unix Makefiles" /usr/src/gtest
-* Then run "make"
-
-## Build cppnetlib
-* In the cppnetlib directory run 'cmake -G "Unix Makefiles"'
+* Inside gtest-build run "../cmake-3.0.2/bin/cmake -G "Unix Makefiles" [cmake.src]
 * Then run "make"
 
 ## Build Cryptopp
-* In the cryptopp directory run "make"
+* In the cryptopp directory run "CC=clang CXX=clang++ gmake"
+
+## Build leveldb
+* Inside [leveldb.src]
+* Run "CC=clang CXX=clang++ gmake"
 
 ## Build mu_coin
 * Run "mkdir mu_coin_build"
-* Inside mu_coin_build run "cmake -G "Unix Makefiles" -D GTEST_LIBRARY:FILEPATH=/home/colin/Desktop/gtest-build/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=/home/colin/Desktop/gtest-build/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp -D CRYPTOPP_INCLUDE_DIR:PATH=.. -DLevelDB_LIBRARY:FILEPATH=/home/colin/Desktop/leveldb-1.15.0/libleveldb.a -DLevelDB_INCLUDE_PATH:PATH=../leveldb-1.15.0/include ../mu_coin"
+* Inside mu_coin_build run "cmake -G"Unix Makefiles" -DGTEST_LIBRARY=/home/colin/gtest-build/libgtest.a -D GTEST_MAIN_LIBRARY=/home/colin/gtest-build/libgtest_main.a -DCMAKE_MODULE_PATH:PATH=../mu_coin.src -Dcppnetlib_DIR=../cpp-netlib-0.11.0-final -DCRYPTOPP_ROOT_DIR=../cryptopp -DCRYPTOPP_INCLUDE_DIR:PATH=.. -DLevelDB_LIBRARY=/home/colin/Desktop/leveldb.src/libleveldb.a -DLevelDB_INCLUDE_PATH=/home/colin/leveldb/include ../mu_coin.src"
