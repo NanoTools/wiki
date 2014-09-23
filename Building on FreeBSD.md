@@ -1,5 +1,3 @@
-# Building on FreeBSD
-
 ## Other Install
 * CMake 3.0.1 source extracted to [cmake.src]
 * Boost 1.55 source extracted to [boost.src]
@@ -31,7 +29,7 @@
 * Then run "make"
 
 ## Build Cryptopp
-* In the cryptopp directory run "CC=clang CXX=clang++ gmake"
+* In the cryptopp directory run "CC=clang CXX=clang++ PREFIX=[cryptopp] gmake install"
 
 ## Build leveldb
 * Inside [leveldb.src]
@@ -39,4 +37,4 @@
 
 ## Build mu_coin
 * Run "mkdir mu_coin_build"
-* Inside mu_coin_build run "cmake -G"Unix Makefiles" -DGTEST_LIBRARY=/home/colin/gtest-build/libgtest.a -D GTEST_MAIN_LIBRARY=/home/colin/gtest-build/libgtest_main.a -DCMAKE_MODULE_PATH:PATH=../mu_coin.src -Dcppnetlib_DIR=../cpp-netlib-0.11.0-final -DCRYPTOPP_ROOT_DIR=../cryptopp -DCRYPTOPP_INCLUDE_DIR:PATH=.. -DLevelDB_LIBRARY=/home/colin/Desktop/leveldb.src/libleveldb.a -DLevelDB_INCLUDE_PATH=/home/colin/leveldb/include ../mu_coin.src"
+* Inside mu_coin_build run "cmake -G"Unix Makefiles" -DBOOST_ROOT=/home/colin/boost_1_56_0 -DGTEST_INCLUDE_DIR=/home/colin/gtest-1.7.0.src/include -DGTEST_LIBRARY=/home/colin/gtest-build/libgtest.a -D GTEST_MAIN_LIBRARY=/home/colin/gtest-build/libgtest_main.a -DCMAKE_MODULE_PATH:PATH=../mu_coin.src -Dcppnetlib_DIR=../cpp-netlib-0.11.0-final -DCRYPTOPP_ROOT_DIR=../cryptopp562 -DLevelDB_LIBRARY=/home/colin/Desktop/leveldb.src/libleveldb.a -DLevelDB_INCLUDE_PATH=/home/colin/leveldb/include ../mu_coin.src"
