@@ -8,14 +8,24 @@
 * cryptopp in [cryptopp.src]
 * leveldb in [leveldb.src]
 
+## Build cmake
+* Inside [cmake.build] run "[cmake.src]/configure --prefix=[cmake]"
+* Run "make"
+* Run "make install"
+
+## Build boost
+* Inside [boost.src]
+* Run "./bootstrap.sh
+* Run "./b2 --prefix=[boost] link=static install"
+
 ## Build Googletest
 * Inside [gtest.build] run 'cmake -G "Unix Makefiles" [gtest.src]'
 * Run "make"
 
 ## Build cppnetlib
-* In [cppnetlib.build] run 'cmake -G "Unix Makefiles" [cppnetlib.src]'
+* In [cppnetlib.build] run 'cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=[cppnetlib] [cppnetlib.src]'
 * Run "make"
-* Run "PREFIX=[cppnetlib] make install"
+* Run "make install"
 
 ## Build Cryptopp
 * In [cryptopp.src] run "make"
