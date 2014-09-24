@@ -1,16 +1,13 @@
 ## Downloads
-* VirtualBox
-* FreeBSD 10.0
+* SuseStudio
 
 ## VM configurations
-* Type: FreeBSD 64bit
+* Type: ArchLinux 64bit
 * Memory 512mb
 * HDD 32GB dynamic VMDK
 
 ## Installation
-* Ports Tree
-* Entire disk
-* No startup services
+
 
 ## Setup
 * Run "pkg install virtualbox-ose-kmod"
