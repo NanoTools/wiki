@@ -37,4 +37,4 @@
 
 ## Build mu_coin
 * Run "mkdir mu_coin_build"
-* Inside mu_coin_build run "cmake -G "Unix Makefiles" -DBOOST_ROOT=[boost] -DGTEST_LIBRARY=[gtest.build]/libgtest.a -DGTEST_MAIN_LIBRARY=[gtest.build]/libgtest_main.a -DGTEST_INCLUDE_DIR=[gtest.src] -DCMAKE_MODULE_PATH=[mu_coin.src] -Dcppnetlib_DIR=[cppnetlib] -DCRYPTOPP_ROOT_DIR=[cppnetlib] -DLevelDB_LIBRARY=[leveldb.src]/libleveldb.a -DLevelDB_INCLUDE_PATH=[leveldb.src]/include [mu_coin.src]"
+* Inside mu_coin_build run "cmake -G "Unix Makefiles" -DBOOST_ROOT=[boost] -DGTEST_LIBRARY=[gtest.build]/libgtest.a -DGTEST_MAIN_LIBRARY=[gtest.build]/libgtest_main.a -DGTEST_INCLUDE_DIR=[gtest.src]/include -DCMAKE_MODULE_PATH=[mu_coin.src] -Dcppnetlib_DIR=[cppnetlib] -DCRYPTOPP_ROOT_DIR=[cppnetlib] -DLevelDB_LIBRARY=[leveldb.src]/libleveldb.a -DLevelDB_INCLUDE_PATH=[leveldb.src]/include [mu_coin.src]"
