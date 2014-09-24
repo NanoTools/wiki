@@ -1,25 +1,25 @@
 # Building on Linux
 
-## Packages
-* cmake
-* libboost1.55-all-dev
-* libgtest-dev
-* libdb6.0++-dev
-* qt5-default
-* cppnetlib
-* Cryptopp 5.6.2
+## Source code
+* Cmake in [cmake.src]
+* Boost in [boost.src]
+* Google test in [gtest.src]
+* cppnetlib in [cppnetlib.src]
+* cryptopp in [cryptopp.src]
+* leveldb in [leveldb.src]
 
 ## Build Googletest
-* Run "mkdir gtest-build"
-* Inside gtest-build run "cmake -G "Unix Makefiles" /usr/src/gtest
-* Then run "make"
+* Inside [gtest.build] run 'cmake -G "Unix Makefiles" [gtest.src]'
+* Run "make"
 
 ## Build cppnetlib
-* In the cppnetlib directory run 'cmake -G "Unix Makefiles"'
-* Then run "make"
+* In [cppnetlib.build] run 'cmake -G "Unix Makefiles" [cppnetlib.src]'
+* Run "make"
+* Run "PREFIX=[cppnetlib] make install"
 
 ## Build Cryptopp
-* In the cryptopp directory run "make"
+* In [cryptopp.src] run "make"
+* Run "PREFIX=[cryptopp] make install"
 
 ## Build mu_coin
 * Run "mkdir mu_coin_build"
