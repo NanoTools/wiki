@@ -23,7 +23,7 @@
 * Run "make"
 
 ## Build cppnetlib
-* In [cppnetlib.build] run 'cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=[cppnetlib] [cppnetlib.src]'
+* In [cppnetlib.build] run 'cmake -G "Unix Makefiles" -DBOOST_ROOT=[boost] -DCMAKE_INSTALL_PREFIX=[cppnetlib] [cppnetlib.src]'
 * Run "make"
 * Run "make install"
 
@@ -31,6 +31,10 @@
 * In [cryptopp.src] run "make"
 * Run "PREFIX=[cryptopp] make install"
 
+## Build leveldb
+* Inside [leveldb.src]
+* Run "make"
+
 ## Build mu_coin
 * Run "mkdir mu_coin_build"
-* Inside mu_coin_build run "cmake -G "Unix Makefiles" -D GTEST_LIBRARY:FILEPATH=/home/colin/Desktop/gtest-build/libgtest.a -D GTEST_MAIN_LIBRARY:FILEPATH=/home/colin/Desktop/gtest-build/libgtest_main.a -D CMAKE_MODULE_PATH:PATH=../mu_coin -D cppnetlib_DIR:PATH=../cpp-netlib-0.11.0-final -D CRYPTOPP_ROOT_DIR:PATH=../cryptopp -D CRYPTOPP_INCLUDE_DIR:PATH=.. -DLevelDB_LIBRARY:FILEPATH=/home/colin/Desktop/leveldb-1.15.0/libleveldb.a -DLevelDB_INCLUDE_PATH:PATH=../leveldb-1.15.0/include ../mu_coin"
+* Inside mu_coin_build run "cmake -G "Unix Makefiles" -DGTEST_LIBRARY=[gtest.build]/libgtest.a -DGTEST_MAIN_LIBRARY=[gtest.build]/libgtest_main.a -DCMAKE_MODULE_PATH=[mu_coin.src] -Dcppnetlib_DIR=[cppnetlib] -DCRYPTOPP_ROOT_DIR=[cppnetlib] -DLevelDB_LIBRARY=[leveldb.src]/libleveldb.a -DLevelDB_INCLUDE_PATH=[leveldb.src]/include [mu_coin.src]"
