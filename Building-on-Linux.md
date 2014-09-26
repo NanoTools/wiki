@@ -29,7 +29,7 @@
 
 ## Build Cryptopp
 * In [cryptopp.src] run "make"
-* Run "PREFIX=[cryptopp] make install"
+* Run "make PREFIX=[cryptopp] install"
 
 ## Build leveldb
 * Inside [leveldb.src]
