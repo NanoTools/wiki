@@ -1,3 +1,3 @@
-We are a practical cryptocurrency engineered from the ground up focusing on a user friendly and sustainable system.
+Raiblocks is a practical cryptocurrency engineered from the ground up focusing scalability and efficiency.
 
-We've addressed longstanding issues with other systems and as such we've greatly improved transaction speed and reduced operating cost.
+If you're looking for technical details please see our [[Design features]] section.
