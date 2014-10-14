@@ -1,1 +1,0 @@
-![Blockchain diagram](https://raw.githubusercontent.com/clemahieu/mu_coin/master/coin_chain_diagram.png?token=272911__eyJzY29wZSI6IlJhd0Jsb2I6Y2xlbWFoaWV1L211X2NvaW4vbWFzdGVyL2NvaW5fY2hhaW5fZGlhZ3JhbS5wbmciLCJleHBpcmVzIjoxNDA4MTQxMDY2fQ%3D%3D--43fb26e9aca6b57b8027c7614fccaee9d2ea6934)
