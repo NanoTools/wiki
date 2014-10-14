@@ -5,7 +5,7 @@ ED25519 is an elliptic curve algorithm developed in an academic setting with a f
 Compared to existing cryptocurrencies, the hash algorithm chosen is much less important since it's not being used in a proof of work context.  In our implementation hashing is used purely as a digest algorithm against block contents.
 
 # Block interval - Instant
-With raiblocks, each account has its own block chain and can update this chain independent of anyone else in the network.  This metric is mostly non-applicable however we include it since it's a standard metric for other cryptocurrencies.
+With raiblocks, each account has its own block chain and can update this chain independent of anyone else in the network.  This metric is actually non-applicable however we include it since it's a standard metric for other cryptocurrencies.
 
 # UDP message protocol
 Our system is designed to operate indefinitely using the minimum amount of computing resources as possible.  All messages in the system were designed to be stateless and fit within a single UDP packet.  This also makes it easier for lite peers with intermittent connectivity to participate in the network without reestablishing short-term TCP connections.  TCP is used only for new peers when they want to bootstrap the block chains in a bulk fashion.
