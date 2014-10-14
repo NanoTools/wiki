@@ -1,12 +1,12 @@
 The RPC protocol accepts JSON http requests.  The following are RPC commands along with the responses that are expected.
 
-### Account balance request:
+## Account balance request:
 `{
   "action": "account_balance",
   "account": "42F1B65476C8AFB1FA3CD145EB0772077A454562B318FD64ED81C435303A2E76"
 }`
 
-### Account balance response:
+### Response:
 `{
   "balance": "0"
 }`
@@ -17,18 +17,18 @@ The RPC protocol accepts JSON http requests.  The following are RPC commands alo
   "action": "wallet_create",
 }`
 
-### Account create response:
+## Response:
 `{
   "account" : "42F1B65476C8AFB1FA3CD145EB0772077A454562B318FD64ED81C435303A2E76"
 }`
 
-### Wallet contains request:
+## Wallet contains request:
 `{
   "action": "wallet_contains",
   "account": "42F1B65476C8AFB1FA3CD145EB0772077A454562B318FD64ED81C435303A2E76"
 }`
 
-### Wallet contains response:
+### Response:
 `{
   "exists" : "1"
 }`
