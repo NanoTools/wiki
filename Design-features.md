@@ -38,3 +38,6 @@ Since each account operates on its own block chain, lite peers are able to do mu
 * For each account only the frontier block needs to be kept in order to validate a subsequent block via hash chaining.
 * Since send blocks contain an account's balance, in order to calculate the balance from the block chain, only blocks up to the last send need to be kept.
 * Chains for inactive or small balance accounts can be dropped and left for full-validating peers to track.
+
+# Naming
+RaiBlocks is pronounced like "ray blocks" and is named after [Rai Stones](https://en.wikipedia.org/wiki/Rai_stones) from Yap.  I always was facinated by the use of Rai Stones as currency and appreciate the irony of naming a practical cryptocurrency after a wildly impractical currency.
