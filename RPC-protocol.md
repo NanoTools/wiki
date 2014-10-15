@@ -31,3 +31,14 @@ Response:
 `{  
   "exists" : "1"
 }`
+
+## Validate account number  
+Request:  
+`{  
+  "action": "validate_account",  
+  "account": "U63Kt2zHcikQvirWSSNKZHbfVZsPY68A65zyD1NtQoE5HsWZTf"  
+}`  
+Response:  
+`{  
+  "valid" : "1"
+}`
