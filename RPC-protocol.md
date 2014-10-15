@@ -32,7 +32,7 @@ Response:
   "exists" : "1"
 }`
 
-## Validate account number  
+## Validate account number checksum  
 Request:  
 `{  
   "action": "validate_account",  
