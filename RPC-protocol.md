@@ -12,7 +12,7 @@ Response:
 }`
 
 ## Account create  
-Request:
+Request:  
 `{
   "action": "wallet_create",
 }`  
@@ -22,7 +22,7 @@ Response:
 }`
 
 ## Wallet contains  
-Request:
+Request:  
 `{
   "action": "wallet_contains",
   "account": "U63Kt2zHcikQvirWSSNKZHbfVZsPY68A65zyD1NtQoE5HsWZTf"
