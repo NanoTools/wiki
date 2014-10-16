@@ -56,6 +56,17 @@ Response:
   ]
 }`
 
+## Wallet add  
+Request:  
+`{  
+  "action": "wallet_add",  
+  "key": "E49C03BB7404C10B388AE56322217306B57F3DCBB3A5F060A2F420AD7AA3F034"  
+}`  
+Response:  
+`{  
+  "account" : "U63Kt2zHcikQvirWSSNKZHbfVZsPY68A65zyD1NtQoE5HsWZTf"
+}`
+
 ## Validate account number checksum  
 Request:  
 `{  
