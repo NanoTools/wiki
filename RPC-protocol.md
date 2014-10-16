@@ -44,6 +44,18 @@ Response:
   "exists" : "1"
 }`
 
+## Wallet list  
+Request:  
+`{  
+  "action": "wallet_list"  
+}`  
+Response:  
+`{  
+  "accounts" : [
+  "U63Kt2zHcikQvirWSSNKZHbfVZsPY68A65zyD1NtQoE5HsWZTf"  
+  ]
+}`
+
 ## Validate account number checksum  
 Request:  
 `{  
