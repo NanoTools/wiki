@@ -5,8 +5,10 @@ The wallet is a LevelDB database of 256bit key -> 256bit value pairs.
 1 -> encrypt_aes_ctr (wallet_key, 0, salt)  
 2 -> salt  
   
+## Wallet accounts  
 pub(i) -> encrypt_aes_ctr (wallet_key, prv(i), salt)
   
+## Details:  
 Wallet Key: A 256 random number that's to encrypt all key entries in the database.  
 Salt: A random 256 bit value used generate uniqueness in wallets with identical passwords  
 Encrypt_AES_CTR: A function using the AES encryption algorithm in CTR mode  
