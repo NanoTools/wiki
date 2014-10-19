@@ -4,6 +4,7 @@ The wallet is a LevelDB database of 256bit key -> 256bit value pairs.
 0 -> encrypt_aes_ctr (key_derivation_function (hash (password), salt), wallet_key)  
 1 -> encrypt_aes_ctr (wallet_key, 0)  
 2 -> salt  
+  
 pub(i) -> encrypt_aes_ctr (wallet_key, prv(i))
   
 Wallet Key: A 256 random number that's to encrypt all key entries in the database.  
