@@ -12,3 +12,6 @@ We decided against using FIPS and NIST elliptic curves for a number of reasons. 
 
 # Interoperability
 Some cryptocurrencies try to provide interoperability to other systems or to a physical asset in the hope of providing a secure trading mechanism.  The correctness and security of these schemes can range from difficult to implement requiring changes to all involved system, to single-directional, to completely broken.  We felt a better and more reliable way to trade between systems is via a trusted escrow service rather than attempting to build it in to the security layer.  Ultimately when RaiBlocks are exchanged for a physical asset there will need to be dispute resolution system that's better provided by an entity with legal recourse.
+
+# Anonymity
+Like most other cryptocurrencies, RaiBlocks is pseudonymous via account numbers.  There is research being done in to true anonymity but we haven't yet found a design that's correct and practical.
