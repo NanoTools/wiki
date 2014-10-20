@@ -2,12 +2,4 @@ Coin mining is a natural extension of proof of work cryptocurrencies in order to
 
 Mining is also used as a reward mechanism for maintaining integrity of proof of work algorithms.  There are many aspects to maintaining a full cryptocurrency including processing transactions, bandwidth for distributing messages and sending the ledger to new peers, storage space for historical ledgers, and building software people need for accessing and using the system.  Unfortunately mining as a reward mechanism only rewards one aspect of keeping a cryptocurrency healthy, transaction processing. The beneficiaries of mining unfortunately also tend to be skewed toward enthusiasts or those with capital investment in mining hardware.  The reward value for mining is not fixed with its cost, in the long term the value generated from mining might not be enough to cover the expense of using a proof of work scheme.
 
-We plan to distribute coins through a fixed distribution schedule coin faucet.  Coin price through the distribution period will be adjusted in order to follow the fixed distribution rate schedule.  If coins are being distributed too quickly the price will rise and if they're being distributed too slowly, the price will fall until they become free of charge.  Once the distribution period has ended the maximum supply forever will have been reached and the supply will never again increase.
-
-# Mining  
-Cost: Electricity -> USD, hardware -> USD  
-Distribution: Enthusiasts with specialized hardware  
-
-# Distributed  
-Cost: USD  
-Distribution: Open market 
+We plan to distribute coins through a fixed distribution schedule coin faucet.  Coin price through the distribution period will be adjusted in order to follow the fixed distribution rate schedule.  If coins are being distributed too quickly the price will rise and if they're being distributed too slowly, the price will fall until they become free of charge.  Once the distribution period has ended the maximum supply will have been reached and the supply will never again increase.
