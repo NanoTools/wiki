@@ -31,7 +31,7 @@ There are three important aspects of divisibility of the coin supply.
 * Each account needs to be able to represent an adequate dynamic range of value
 * The supply should be able to deal with deflation over time as accounts are abandoned
 
-The supply starts with 2^256 coins which satisfies the three supply requirements.
+The supply starts with 2^128 coins which satisfies the three supply requirements.
 
 # Lite peers and pruning
 Since each account operates on its own block chain, lite peers are able to do much more selective and aggressive pruning of the block chains.  Only bootstrap or peers interested in doing full ledger validation actually need to store the full ledger history.
