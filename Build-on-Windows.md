@@ -61,7 +61,7 @@ platforms/qwindows.dll
 icudt52.dll  
 icuin52.dll  
 icuuc52.dll  
-libgcc_s_dw2-1.dll 
+libgcc_s_dw2-1.dll  
 libstdc++-6.dll  
 libwinpthread-1.dll  
 qt_client  
