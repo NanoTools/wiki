@@ -50,8 +50,9 @@ install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtTest.framework/
 install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/QtWidgets @executable_path/../Frameworks/QtWidgets.framework/Versions/5/QtWidgets raiblocks.app/Contents/MacOS/qt_client  
   
 install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore raiblocks.app/Contents/Frameworks/QtGui.framework/Versions/5/QtGui  
-install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore raiblocks.app/Contents/Frameworks/QtGui.framework/Versions/5/QtGui  
-install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/QtGui @executable_path/../Frameworks/QtGui.framework/Versions/5/QtGui raiblocks.app/Contents/Frameworks/QtGui.framework/Versions/5/QtGui  
+install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore raiblocks.app/Contents/Frameworks/QtGui.framework/Versions/5/QtGui    
+install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore raiblocks.app/Contents/Frameworks/QtWidgets.framework/Versions/5/QtWidgets  
+install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/QtGui @executable_path/../Frameworks/QtGui.framework/Versions/5/QtGui raiblocks.app/Contents/Frameworks/QtWidgets.framework/Versions/5/QtWidgets  
   
 Contents/Info.plist
 <?xml version="1.0" encoding="UTF-8"?>
