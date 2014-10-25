@@ -54,6 +54,10 @@ install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtCore.framework/
 install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore raiblocks.app/Contents/Frameworks/QtWidgets.framework/Versions/5/QtWidgets  
 install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/QtGui @executable_path/../Frameworks/QtGui.framework/Versions/5/QtGui raiblocks.app/Contents/Frameworks/QtWidgets.framework/Versions/5/QtWidgets  
   
+install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/QtGui @executable_path/../Frameworks/QtGui.framework/Versions/5/QtGui raiblocks.app/Contents/plugins/platforms/libqcocoa.dylib
+install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore  raiblocks.app/Contents/plugins/platforms/libqcocoa.dylib  
+install_name_tool -change /Users/clemahieu/Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/QtWidgets @executable_path/../Frameworks/QtWidgets.framework/Versions/5/QtWidgets  raiblocks.app/Contents/plugins/platforms/libqcocoa.dylib
+  
 Contents/Info.plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
