@@ -67,6 +67,16 @@ Response:
   "account" : "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"
 }`
 
+## Wallet key valid  
+Request:  
+`{  
+  "action": "wallet_key_valid"  
+}`  
+Response:  
+`{  
+  "valid" : "1"
+}`
+
 ## Validate account number checksum  
 Request:  
 `{  
