@@ -1,4 +1,6 @@
-Raiblocks is a practical cryptocurrency engineered from the ground up focusing scalability and efficiency.
+RaiBlocks primary goal: to be a secure, lightning fast, and incredibly efficient cryptocurrency.
+
+RaiBlocks has been engineered from the ground up with fast transactions in mind as well as minimizing computing resources for participating.
 
 If you're looking for technical details please see our [[Design features]] section.
 
