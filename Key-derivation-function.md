@@ -2,7 +2,7 @@ The goal of the key derivation function is to ensure work has been applied to a 
 
 The function builds an array of 'n' 64bit numbers and uses an extremely fast pseudo random number generator seeded with a hash of the password and salt as a data source for fill numbers.  We iteratively assign array elements according to the formula:  
   
-`  from (i = 0 to n)
+`  from (i = 0 to n)  
   data [rand (i - 1) mod n] = rand (i)`
   
 Using this algorithm we fill entries in the array in a random walk determined by the seeded random number generator.  The final step is to take a SHA3 hash of the entire array contents and use the output as the derived key.
