@@ -1,23 +1,23 @@
 The RPC protocol accepts JSON http requests.  The following are RPC commands along with the responses that are expected.
 
-## Send exact  
-Request:  
-`{  
-  "action": "send",  
-  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
-  "amount": "100000000000000000000000000"  
-}`  
-Response:  
-`{  
-  "sent": "1"  
-}`
-
 ## Send  
 Request:  
 `{  
   "action": "send",  
   "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
   "amount": "1000000"  
+}`  
+Response:  
+`{  
+  "sent": "1"  
+}`
+
+## Send exact  
+Request:  
+`{  
+  "action": "send",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
+  "amount": "100000000000000000000000000"  
 }`  
 Response:  
 `{  
