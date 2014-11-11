@@ -1,5 +1,17 @@
 The RPC protocol accepts JSON http requests.  The following are RPC commands along with the responses that are expected.
 
+## Send exact  
+Request:  
+`{  
+  "action": "send",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
+  "amount": "100000000000000000000000000"  
+}`  
+Response:  
+`{  
+  "sent": "1"  
+}`
+
 ## Send  
 Request:  
 `{  
@@ -20,7 +32,18 @@ Request:
 }`  
 Response:  
 `{  
-  "balance": "0"  
+  "balance": "10000"  
+}`
+
+## Account balance exact  
+Request:  
+`{  
+  "action": "account_balance",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
+}`  
+Response:  
+`{  
+  "balance": "1000000000000000000000000"  
 }`
 
 ## Account create  
