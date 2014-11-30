@@ -18,7 +18,7 @@ Existing cryptocurrency systems are largely known for their proof of work scheme
 
 # Permanent storage minimization
 A lot of work was put in to eliminating redundant data in the block chain in order to minimizing the long-term storage footprint of the ledger.
-* Blocks in the ledger store balance values rather than balance deltas which allows much more aggressive pruning in lite clients.
+* Blocks in the ledger track balance values rather than balance deltas which allows much more aggressive pruning in lite clients.
 * Balances are only stored when necessary e.g. send blocks and inferred when possible e.g. receive blocks.
 * Blocks are fixed size to minimize framing overhead and storing counts.
 
