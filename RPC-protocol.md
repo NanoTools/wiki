@@ -38,12 +38,34 @@ Response:
 ## Account balance exact  
 Request:  
 `{  
-  "action": "account_balance",  
+  "action": "account_balance_exact",  
   "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
 }`  
 Response:  
 `{  
   "balance": "1000000000000000000000000"  
+}`
+
+## Account weight  
+Request:  
+`{  
+  "action": "account_weight",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
+}`  
+Response:  
+`{  
+  "weight": "10000"  
+}`
+
+## Account weight exact  
+Request:  
+`{  
+  "action": "account_weight_exact",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
+}`  
+Response:  
+`{  
+  "weight": "1000000000000000000000000"  
 }`
 
 ## Account create  
