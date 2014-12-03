@@ -15,7 +15,7 @@ Response:
 ## Send exact  
 Request:  
 `{  
-  "action": "send",  
+  "action": "send_exact",  
   "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
   "amount": "100000000000000000000000000"  
 }`  
