@@ -78,6 +78,38 @@ Response:
   "account" : "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
 }`
 
+## Wallet valid password 
+Request:  
+`{  
+  "action": "password_valid"
+}`  
+Response:  
+`{  
+  "valid" : "1"
+}`
+
+## Wallet change password  
+Request:  
+`{  
+  "action": "password_change",  
+  "password": "test"  
+}`  
+Response:  
+`{  
+  "changed" : "1"
+}`
+
+## Wallet password enter  
+Request:  
+`{  
+  "action": "password_enter",  
+  "password": "test"  
+}`  
+Response:  
+`{  
+  "valid" : "1"
+}`
+
 ## Wallet contains  
 Request:  
 `{  
