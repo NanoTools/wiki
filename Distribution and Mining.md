@@ -12,6 +12,6 @@ Coins will be put in to the faucet on 1 minute intervals in equal proportions.
 
 # Mining
 
-Coin mining is a natural extension of proof of work cryptocurrencies in order to disseminate coins in a distributed fashion.  Unfortunately the high cost of mining in terms of hardware and energy lowers the value of the currency which is a concern to majority, non-mining users.  Mining requires a distributed agreement process and as such, is more difficult to implement in a system that focuses on eliminating distributed agreements.
+Coin mining is a natural extension of proof of work cryptocurrencies in order to disseminate coins in a distributed fashion.  Unfortunately the high cost of mining in terms of hardware and energy lowers the value of the currency which is a concern to majority, non-mining users.
 
 Mining is also used as a reward mechanism for maintaining integrity of proof of work algorithms.  There are many aspects to maintaining a full cryptocurrency including processing transactions, bandwidth, storage space, and building end user software.  Unfortunately mining as a reward mechanism only rewards one aspect of keeping a cryptocurrency healthy, transaction processing. The beneficiaries of mining unfortunately also tend to be skewed toward enthusiasts or those with capital investment in mining hardware.  The reward value for mining is not fixed with its cost, in the long term the value generated from mining might not be enough to cover the expense of using a proof of work scheme.  
