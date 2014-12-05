@@ -1,5 +1,5 @@
 # Distribution
-We plan to distribute coins through a fixed distribution schedule coin faucet.  Coin price through the distribution period will be adjusted in order to follow the fixed distribution rate schedule.  If coins are being distributed too quickly the price will rise and if they're being distributed too slowly, the price will fall, possibly becoming free of charge.  Once the distribution period has ended the maximum supply will have been reached and the supply will never again increase.  
+We plan to distribute coins through a fixed distribution schedule coin faucet.  Coins from the faucet are made available at a fixed rate and the price is determined by an algorithm.  If coins are being distributed too quickly the price will rise and if they're being distributed too slowly, the price will fall becoming free of charge if 2 days worth of coins accumulate in the faucet.  Once the distribution period has ended the maximum supply will have been reached and the faucet will shut off.  
 
 Distribution schedule:  
 Year 1: 2^127  
