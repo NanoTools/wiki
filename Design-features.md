@@ -11,7 +11,7 @@ With raiblocks, each account has its own block chain and can update this chain i
 Our system is designed to operate indefinitely using the minimum amount of computing resources as possible.  All messages in the system were designed to be stateless and fit within a single UDP packet.  This also makes it easier for lite peers with intermittent connectivity to participate in the network without reestablishing short-term TCP connections.  TCP is used only for new peers when they want to bootstrap the block chains in a bulk fashion.
 
 # IPV6 addressing
-The system is build completely support both IPV4 and IPV6.
+The system is built to completely support both IPV4 and IPV6.
 
 # Distributed agreement minimization
 Existing cryptocurrency systems are largely known for their proof of work schemes which are used to come to a fair distributed agreement about ledger changes.  Our system was designed to eliminate the need for distributed agreements in almost all circumstances.  Each account maintains its own block chain which is replicated to all peers in the network.  Only the account owner is able to sign transactions to modify their own chain and as such, no agreements are necessary.
