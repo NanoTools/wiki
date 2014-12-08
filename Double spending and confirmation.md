@@ -1,5 +1,5 @@
 # Usual confirmation
-In the typical case of a block created by a well behaved client, the block is received by all peers in the network, checked for validity, and republished if they haven't been seen before.
+In the typical case of a block created by a well behaved client, the block is received by all peers in the network, checked for validity, and republished if it hasn't been seen before.
 
 # What are forks
 A fork is when a misbehaved client creates two or more specifically crafted blocks which breaks the one-follows-another pattern of a block chain.  Ledgers can only have one block following another so peers need to figure out which block to agree on.  Forks can never happen accidentally so we don't give a preference as to which block survives, any extra forks are forgotten and anything that derives from them is rolled back.  
