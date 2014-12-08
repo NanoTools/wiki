@@ -4,4 +4,4 @@ Balances are transferred through send and receive blocks.  Send blocks reduce th
 
 Distributed agreements like proof of work or proof of stake are unnecessary since the account owner has authoritative control over the contents and order of the block chain for their account.
 
-See also [[Block confirmation]] for handling of misbehaved clients.
+See also [[Double spending and confirmation]] for handling of misbehaved clients.
