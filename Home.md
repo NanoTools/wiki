@@ -1,6 +1,6 @@
 RaiBlocks primary goal: to be a secure, fast, and efficient cryptocurrency.
 
-RaiBlocks has been engineered from the ground up with fast transactions in mind as well as minimizing computing resources for participating.
+RaiBlocks has been engineered from the ground up for fast decentralized transactions and minimal resource usage.
 
 If you're looking for technical details please see our [[Design features]] section.
 
