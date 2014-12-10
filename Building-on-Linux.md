@@ -35,9 +35,9 @@
 * Inside [leveldb.src]
 * Run "make"
 
-## Build mu_coin
-* Run "mkdir mu_coin_build"
-* Inside mu_coin_build run "cmake -G "Unix Makefiles" -DBOOST_ROOT=[boost] -DGTEST_LIBRARY=[gtest.build]/libgtest.a -DGTEST_MAIN_LIBRARY=[gtest.build]/libgtest_main.a -DGTEST_INCLUDE_DIR=[gtest.src]/include -DCMAKE_MODULE_PATH=[mu_coin.src] -Dcppnetlib_DIR=[cppnetlib] -DCRYPTOPP_ROOT_DIR=[cryptopp] -DLevelDB_LIBRARY=[leveldb.src]/libleveldb.a -DLevelDB_INCLUDE_PATH=[leveldb.src]/include [mu_coin.src]"
+## Build RaiBlocks
+* Run "mkdir rai.build"
+* Inside rai.build run "cmake -G "Unix Makefiles" -DBOOST_ROOT=[boost] -DGTEST_LIBRARY=[gtest.build]/libgtest.a -DGTEST_MAIN_LIBRARY=[gtest.build]/libgtest_main.a -DGTEST_INCLUDE_DIR=[gtest.src]/include -DCMAKE_MODULE_PATH=[rai.src] -Dcppnetlib_DIR=[cppnetlib] -DCRYPTOPP_ROOT_DIR=[cryptopp] -DLevelDB_LIBRARY=[leveldb.src]/libleveldb.a -DLevelDB_INCLUDE_PATH=[leveldb.src]/include [rai.src]"
 
 ## Building a package
 * cpack -G "TBZ2"
