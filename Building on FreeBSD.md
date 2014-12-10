@@ -7,7 +7,7 @@
 * LevelDB (zalanyib/leveldb-mingw) source extracted to [leveldb.src]
 * Cryptopp source extracted to [cryptopp.src]
 * Cppnetlib source extracted to [cppnetlib.src]
-* mu_coin source source in [mu_coin.src]
+* RaiBlocks source source in [rai.src]
 
 # Packages
 * Run "pkg install Qt5"
@@ -37,6 +37,6 @@
 * Inside [leveldb.src]
 * Run "CC=clang CXX=clang++ gmake"
 
-## Build mu_coin
-* Run "mkdir mu_coin_build"
-* Inside mu_coin_build run "cmake -G"Unix Makefiles" -DBOOST_ROOT=/home/colin/boost_1_56_0 -DGTEST_INCLUDE_DIR=/home/colin/gtest-1.7.0.src/include -DGTEST_LIBRARY=/home/colin/gtest-build/libgtest.a -D GTEST_MAIN_LIBRARY=/home/colin/gtest-build/libgtest_main.a -DCMAKE_MODULE_PATH:PATH=../mu_coin.src -Dcppnetlib_DIR=../cpp-netlib-0.11.0-final -DCRYPTOPP_ROOT_DIR=../cryptopp562 -DLevelDB_LIBRARY=/home/colin/Desktop/leveldb.src/libleveldb.a -DLevelDB_INCLUDE_PATH=/home/colin/leveldb/include ../mu_coin.src"
+## Build RaiBlocks
+* Run "mkdir rai.build"
+* Inside rai.build run "cmake -G"Unix Makefiles" -DBOOST_ROOT=/home/colin/boost_1_56_0 -DGTEST_INCLUDE_DIR=/home/colin/gtest-1.7.0.src/include -DGTEST_LIBRARY=/home/colin/gtest-build/libgtest.a -D GTEST_MAIN_LIBRARY=/home/colin/gtest-build/libgtest_main.a -DCMAKE_MODULE_PATH:PATH=../rai.src -Dcppnetlib_DIR=../cpp-netlib-0.11.0-final -DCRYPTOPP_ROOT_DIR=../cryptopp562 -DLevelDB_LIBRARY=/home/colin/Desktop/leveldb.src/libleveldb.a -DLevelDB_INCLUDE_PATH=/home/colin/leveldb/include ../rai.src"
