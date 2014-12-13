@@ -22,10 +22,8 @@
 * Inside [gtest.build] run 'cmake -G "Unix Makefiles" [gtest.src]'
 * Run "make"
 
-## Build cppnetlib
-* In [cppnetlib.build] run 'cmake -G "Unix Makefiles" -DBOOST_ROOT=[boost] -DCMAKE_INSTALL_PREFIX=[cppnetlib] [cppnetlib.src]'
-* Run "make"
-* Run "make install"
+## Cppnetlib Source Only
+* Set CPPNETLIB_INCLUDE_DIRS=[cppnetlib.src]
 
 ## Build Cryptopp
 * In [cryptopp.src] run "make"
