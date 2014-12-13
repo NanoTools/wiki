@@ -1,5 +1,7 @@
 # Building on Linux
 
+Install Qt5
+
 ## Source code
 * Cmake in [cmake.src]
 * Boost in [boost.src]
