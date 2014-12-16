@@ -3,6 +3,7 @@ Immediate (Days):
 * Digitally sign executables OSX/Windows
 * Mechanism to extract wallet private keys for transfer.
 * Multithreaded correctness for transactions
+* Refine block path selection for more efficient bootstrapping
 
 Near-term (Weeks):
 * Activate live network and begin distribution
