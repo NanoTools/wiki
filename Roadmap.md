@@ -2,6 +2,7 @@ Immediate (Days):
 * Get merchant API implementation running
 * Digitally sign executables OSX/Windows
 * Mechanism to extract wallet private keys for transfer.
+* Multithreaded correctness for transactions
 
 Near-term (Weeks):
 * Activate live network and begin distribution
