@@ -10,3 +10,4 @@ Long-term:
 * Checksum calculating for efficient reconnection and bootstrapping
 * Block pruning for lite clients
 * Wallet GUI improvements
+* Language bindings
