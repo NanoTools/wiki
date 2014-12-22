@@ -4,6 +4,7 @@ The RPC protocol accepts JSON http requests.  The following are RPC commands alo
 Request:  
 `{  
   "action": "send",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
   "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
   "amount": "1000000"  
 }`  
@@ -16,6 +17,7 @@ Response:
 Request:  
 `{  
   "action": "send_exact",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
   "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
   "amount": "100000000000000000000000000"  
 }`  
@@ -71,7 +73,8 @@ Response:
 ## Account create  
 Request:  
 `{  
-  "action": "wallet_create",  
+  "action": "account_create",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
 }`  
 Response:  
 `{  
@@ -81,7 +84,8 @@ Response:
 ## Wallet valid password 
 Request:  
 `{  
-  "action": "password_valid"
+  "action": "password_valid"  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
 }`  
 Response:  
 `{  
@@ -92,6 +96,7 @@ Response:
 Request:  
 `{  
   "action": "password_change",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
   "password": "test"  
 }`  
 Response:  
@@ -103,6 +108,7 @@ Response:
 Request:  
 `{  
   "action": "password_enter",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
   "password": "test"  
 }`  
 Response:  
@@ -114,6 +120,7 @@ Response:
 Request:  
 `{  
   "action": "wallet_contains",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
   "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
 }`  
 Response:  
@@ -125,6 +132,7 @@ Response:
 Request:  
 `{  
   "action": "wallet_list"  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
 }`  
 Response:  
 `{  
@@ -137,6 +145,7 @@ Response:
 Request:  
 `{  
   "action": "wallet_add",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
   "key": "34F0A37AAD20F4A260F0A5B3CB3D7FB50673212263E58A380BC10474BB039CE4"  
 }`  
 Response:  
@@ -148,6 +157,7 @@ Response:
 Request:  
 `{  
   "action": "wallet_key_valid"  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
 }`  
 Response:  
 `{  
@@ -157,7 +167,7 @@ Response:
 ## Validate account number checksum  
 Request:  
 `{  
-  "action": "validate_account",  
+  "action": "validate_account_number",  
   "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
 }`  
 Response:  
