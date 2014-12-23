@@ -12,6 +12,7 @@ Long-term (Months):
 * Block pruning for lite clients
 * Wallet GUI improvements
 * Language bindings
+* Precalculate block work so next block can be sent using cached value.
 
 Completed:
 * Get merchant API implementation running
