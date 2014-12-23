@@ -1,5 +1,4 @@
 Immediate (Days):
-* Get merchant API implementation running
 * Digitally sign executables OSX/Windows
 * Mechanism to extract wallet private keys for transfer.
 * Multithreaded correctness for transactions
@@ -13,3 +12,6 @@ Long-term (Months):
 * Block pruning for lite clients
 * Wallet GUI improvements
 * Language bindings
+
+Completed:
+* Get merchant API implementation running
