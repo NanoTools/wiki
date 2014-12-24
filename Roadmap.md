@@ -1,4 +1,5 @@
 Immediate (Days):
+* Block gap negotiation  
 * Digitally sign executables OSX/Windows
 * Mechanism to extract wallet private keys for transfer.
 * Multithreaded correctness for transactions
@@ -7,6 +8,7 @@ Immediate (Days):
 
 Near-term (Weeks):
 * Activate live network and begin distribution
+* Fixed-rate keepalive  
 
 Long-term (Months):
 * Checksum calculating for efficient reconnection and bootstrapping
