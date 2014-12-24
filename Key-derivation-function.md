@@ -11,4 +11,4 @@ We write random values to random places in the memory buffer to break the n = f(
 ## Phase 3)  
 We hash the memory buffer in a random order to prevent an attacker from incrementally computing the result.  An attacker could dedicate a 1/N subset of the memory buffer and only store portions of phase 1 and 2 that fall in to this subset.  An attacker could then trade off memory by recomputing phase 1 and 2 N times to save memory.  Randomly hashing the memory buffer prevents this attack.
 
-The wallet kdf is tuned to use a 256mb derivation table and the block work function is tuned to use a 64k derivation table.
+The wallet kdf is tuned to use a 64mb derivation table and the block work function is tuned to use a 64k derivation table.
