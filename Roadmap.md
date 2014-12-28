@@ -1,5 +1,4 @@
 Immediate (Days):
-* Block gap negotiation  
 * Digitally sign executables OSX/Windows
 * Mechanism to extract wallet private keys for transfer.
 * Multithreaded correctness for transactions
@@ -18,4 +17,5 @@ Long-term (Months):
 * Precalculate block work so next block can be sent using cached value.
 
 Completed:
+* Block gap negotiation  
 * Get merchant API implementation running
