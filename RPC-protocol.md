@@ -81,6 +81,19 @@ Response:
   "account" : "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
 }`
 
+## Account list  
+Request:  
+`{  
+  "action": "account_list"  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+}`  
+Response:  
+`{  
+  "accounts" : [
+  "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
+  ]
+}`
+
 ## Wallet valid password 
 Request:  
 `{  
@@ -126,19 +139,6 @@ Request:
 Response:  
 `{  
   "exists" : "1"
-}`
-
-## Wallet list  
-Request:  
-`{  
-  "action": "wallet_list"  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-}`  
-Response:  
-`{  
-  "accounts" : [
-  "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
-  ]
 }`
 
 ## Wallet add  
