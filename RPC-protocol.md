@@ -106,7 +106,7 @@ Request:
 }`  
 Response:  
 `{  
-  "moved" : "true"
+  "moved" : "1"
 }`
 
 ## Wallet valid password 
