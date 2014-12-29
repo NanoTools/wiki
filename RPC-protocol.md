@@ -74,7 +74,7 @@ Response:
 Request:  
 `{  
   "action": "account_create",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
 }`  
 Response:  
 `{  
@@ -84,8 +84,25 @@ Response:
 ## Account list  
 Request:  
 `{  
-  "action": "account_list"  
+  "action": "account_list",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}`  
+Response:  
+`{  
+  "accounts" : [
+  "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
+  ]
+}`
+
+## Account move  
+Request:  
+`{  
+  "action": "account_move",  
   "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "source": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "accounts" : [  
+  "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
+  ]  
 }`  
 Response:  
 `{  
