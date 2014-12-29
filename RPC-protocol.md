@@ -106,9 +106,7 @@ Request:
 }`  
 Response:  
 `{  
-  "accounts" : [
-  "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
-  ]
+  "moved" : "true"
 }`
 
 ## Wallet valid password 
