@@ -1,4 +1,4 @@
-The end goal we hope is that all Raiblocks code is free from encumbrance to use in any other software public or private.  Raiblocks has an optional GUI components that dynamically links against the QT library participating in their LGPL library license.  This component is not required for the Raiblocks core.  
+The end goal we hope is that all Raiblocks code is free from encumbrance to use in any software public or private.  Raiblocks has an optional GUI components that dynamically links against the QT library participating in their LGPL library license.  This component is not required for the Raiblocks core.  
   
 # Raiblocks code  
 Raiblocks is released under a 2-clause BSD license.  
