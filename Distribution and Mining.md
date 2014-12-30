@@ -5,8 +5,8 @@ Distribution schedule:
 Year 1: 2^127 50%  
 Year 2: 2^126 25%  
 Year 3: 2^125 13%  
-Year 4: 2^124 7%  
-Year 5: 2^124 7%  
+Year 4: 2^124 6%  
+Year 5: 2^124 6%  
 
 Coins will be put in to the faucet on 1 minute intervals in equal proportions.
 
