@@ -1,6 +1,6 @@
 RaiBlocks primary goal: to be a secure, fast, and efficient cryptocurrency micropayment platform.
 
-RaiBlocks has been engineered from the ground up for fast decentralized transactions and since micropayments is our focus, minimal resource usage is an absolute necessity.
+From the ground up we've engineered a fast, decentralized transaction system focusing heavily on minimizing resource usage in order to eliminate transaction fees.
 
 RaiBlocks features instant transaction confirmation and has an incredibly low energy footprint.  If you're looking for technical details please see our [[Design features]] section.
 
