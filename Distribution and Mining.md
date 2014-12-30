@@ -2,11 +2,11 @@
 The initial distribution of coins is performed through a coin faucet with a fixed distribution schedule.  Coins from the faucet are made available at a fixed rate and the price is determined by an algorithm to control the distribution.  If coins are being distributed too quickly the price will rise and if they're being distributed too slowly, the price will fall becoming free of charge if 2 days worth of coins accumulate in the faucet.  Once the distribution period has ended the maximum supply will have been reached and the faucet will shut off.  
 
 Distribution schedule:  
-Year 1: 2^127  
-Year 2: 2^126  
-Year 3: 2^125  
-Year 4: 2^124  
-Year 5: 2^124  
+Year 1: 2^127 50%  
+Year 2: 2^126 25%  
+Year 3: 2^125 13%  
+Year 4: 2^124 7%  
+Year 5: 2^124 7%  
 
 Coins will be put in to the faucet on 1 minute intervals in equal proportions.
 
