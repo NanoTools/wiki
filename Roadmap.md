@@ -1,9 +1,7 @@
 Immediate (Days):
 * Digitally sign executables OSX/Windows
-* Mechanism to extract wallet private keys for transfer.
 * Multithreaded correctness for transactions
 * Refine block path selection for more efficient bootstrapping
-* Select live-network port
 
 Near-term (Weeks):
 * Activate live network and begin distribution
@@ -19,3 +17,5 @@ Long-term (Months):
 Completed:
 * Block gap negotiation  
 * Get merchant API implementation running
+* Mechanism to extract wallet private keys for transfer.
+* Select live-network port
