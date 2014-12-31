@@ -5,7 +5,8 @@ Immediate (Days):
 
 Near-term (Weeks):
 * Activate live network and begin distribution
-* Fixed-rate keepalive  
+* Fixed-rate keepalive
+* Accept and update work on a block if someone does more work on it    
 
 Long-term (Months):
 * Checksum calculating for efficient reconnection and bootstrapping
