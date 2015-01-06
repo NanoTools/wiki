@@ -5,12 +5,12 @@ Immediate (Days):
 Near-term (Weeks):
 * Activate live network and begin distribution
 * Fixed-rate keepalive
-* Accept and update work on a block if someone does more work on it    
+* Accept and update work on a block if someone does more work on it  
+* Wallet GUI improvements    
 
 Long-term (Months):
 * Checksum calculating for efficient reconnection and bootstrapping
 * Block pruning for lite clients
-* Wallet GUI improvements
 * Language bindings
 * Precalculate block work so next block can be sent using cached value.
 
