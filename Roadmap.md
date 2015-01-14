@@ -6,7 +6,6 @@ Near-term (Weeks):
 * Activate live network and begin distribution
 * Fixed-rate keepalive
 * Accept and update work on a block if someone does more work on it  
-* Wallet GUI improvements    
 
 Long-term (Months):
 * Checksum calculating for efficient reconnection and bootstrapping
@@ -16,7 +15,8 @@ Long-term (Months):
 
 Completed:
 * Block gap negotiation  
-* Get merchant API implementation running
-* Mechanism to extract wallet private keys for transfer.
-* Select live-network port
-* Refine block path selection for more efficient bootstrapping
+* Get merchant API implementation running  
+* Mechanism to extract wallet private keys for transfer.  
+* Select live-network port  
+* Refine block path selection for more efficient bootstrapping  
+* Wallet GUI improvements  
