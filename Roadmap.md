@@ -11,7 +11,6 @@ Long-term (Months):
 * Checksum calculating for efficient reconnection and bootstrapping
 * Block pruning for lite clients
 * Language bindings
-* Precalculate block work so next block can be sent using cached value.
 
 Completed:
 * Block gap negotiation  
@@ -20,3 +19,4 @@ Completed:
 * Select live-network port  
 * Refine block path selection for more efficient bootstrapping  
 * Wallet GUI improvements  
+* Precalculate block work so next block can be sent using cached value.  
