@@ -4,4 +4,6 @@ Balances are transferred between block chains through send and receive blocks.  
 
 Distributed agreements like proof of work or proof of stake are unnecessary since the account owner has authoritative control over transactions.
 
+![Transaction animation](https://github.com/clemahieu/raiblocks/blob/master/images/transaction.gif)
+
 See also [[Double spending and confirmation]] for handling of misbehaved clients.
