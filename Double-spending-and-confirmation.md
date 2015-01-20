@@ -16,3 +16,5 @@ Recipients can avoid issues by having a client designed to wait at least a full 
 
 # Fork creation
 It's important to point out that unlike existing cryptosystems where forks can be created by mining and transaction race conditions, in our system forks cannot be created by network delays, race conditions, message duplication, or by any other accidental means.  Forks can only be created by clients that been crafted to digitally sign blocks in an incorrect way so any observed fork should be treated with extreme skepticism.
+
+![Fork animation](https://raw.githubusercontent.com/clemahieu/raiblocks/master/images/fork.gif)
