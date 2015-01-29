@@ -1,8 +1,8 @@
 # Signing algorithm - ED25519
-ED25519 is an elliptic curve algorithm developed in an academic setting with a focus on security from side channel attack, performance, and fixing a lot of the little annoyances in most elliptic curve systems.  The main site is here http://ed25519.cr.yp.to/
+ED25519 is an elliptic curve algorithm developed in an academic setting with a focus on security from side channel attack, performance, and fixing a lot of the little annoyances in most elliptic curve systems.  More information can be found here http://ed25519.cr.yp.to/
 
-# Hashing algorithm - SHA3
-Compared to existing cryptocurrencies, the hash algorithm chosen is much less important since it's not being used in a proof of work context.  In our implementation hashing is used purely as a digest algorithm against block contents.
+# Hashing algorithm - Blake2
+Compared to existing cryptocurrencies, the hash algorithm chosen is much less important since it's not being used in a proof of work context.  In our implementation hashing is used purely as a digest algorithm against block contents.  Blake2 is a highly optimized cryptographic hash function who's predecessor was a SHA3 finalist.  More information can be found here https://blake2.net/
 
 # Block interval - Instant
 With raiblocks, each account has its own block chain and can update this chain independent of anyone else in the network.  This metric is actually non-applicable however we include it since it's a standard metric for other cryptocurrencies.
