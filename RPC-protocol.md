@@ -164,7 +164,6 @@ Request:
 }`  
 Response:  
 `{  
-  "representative" : "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"
 }`
 
 ## Wallet contains  
