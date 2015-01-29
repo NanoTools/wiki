@@ -144,6 +144,29 @@ Response:
   "valid" : "1"
 }`
 
+## Wallet representative  
+Request:  
+`{  
+  "action": "representative",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"
+}`  
+Response:  
+`{  
+  "representative" : "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"
+}`
+
+## Wallet representative set  
+Request:  
+`{  
+  "action": "representative_set",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",
+  "representative": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"
+}`  
+Response:  
+`{  
+  "representative" : "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"
+}`
+
 ## Wallet contains  
 Request:  
 `{  
