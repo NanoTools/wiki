@@ -32,7 +32,7 @@ The most sophisticated version of a >50% attack is detailed in the diagram below
 If an attacker is able to cause Stake > Active by a combination of these circumstances, they would be able to successfully flip votes on the ledger at the expense of their stake.  We can estimate how much this type of attack could cost by examining the market cap of other systems.  If we estimate 33% of representatives are offline or attacked via denial of service, an attacker would need to purchase 33% of the market cap in order to attack the system via voting.
 
 Voting attack cost:
-Euro - M1 in 2014 ~6 trillion, attack amount 2 trillion
-USD - M0 in 2014 ~4 trillion, attack amount 1.2 trillion
-UK pound sterling - M0 in 2007 ~1.5 trillion, attack amount 500 billion
-BitCoin - Market cap 2014 ~3 billion, attack amount 1 billion
+* Euro - M1 in 2014 ~6 trillion, attack amount 2 trillion
+* USD - M0 in 2014 ~4 trillion, attack amount 1.2 trillion
+* UK pound sterling - M0 in 2007 ~1.5 trillion, attack amount 500 billion
+* BitCoin - Market cap 2014 ~3 billion, attack amount 1 billion
