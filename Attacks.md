@@ -27,4 +27,6 @@ Defense:
 
 The most sophisticated version of a >50% attack is detailed in the diagram below.  "Offline" is the percentage of representatives who have been name but are not online to vote.  "Stake" is the amount of investment the attacker is voting with and will be lost if they successfully attack the system.  "Active" are representatives that are online and voting according to the protocol.  An attacker can offset the amount of stake they must forfeit by knocking other voters offline via a network denial of service attack.  If this attack can be sustained, the representatives being attacked will become unsynchronized and this is demonstrated by "Unsynced".  Finally, an attacker can gain a short burst in relative voting strength by switching their denial of service attack to a new set of representatives while the old set is resynchronizing their ledger, this is demonstrated by "Attacked".
 
+![Voting attack](https://raw.githubusercontent.com/clemahieu/raiblocks/master/images/attack.png)
+
 If an attacker is able to cause Stake > Active by a combination of these circumstances, they would be able to successfully flip votes on the ledger at the expense of their stake.
