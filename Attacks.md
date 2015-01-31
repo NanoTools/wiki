@@ -4,7 +4,7 @@ RaiBlocks has a number of mechanisms built in to protect from a range of possibl
 Description: Each block has a link to its previous block.  If a new block arrives where we can't find the previous block, this leaves the node deciding whether it's out of sync or if someone is sending junk data.  If a node is out of sync, synchronizing involves a TCP connection to a node that offers bootstrapping which is much more traffic than sending a single UDP packet containing a block.  
 Defense: For blocks with no previous link, nodes will wait until a certain threshold of votes have been observed before initiating a connection to a bootstrap node to synchronize.  If a block doesn't receive enough votes it can be assumed to be junk data.  
 
-### Transaction flooding - Moderate risk, high io
+### Transaction flooding - Moderate risk, high I/O
 Description: Transaction flooding is simply sending as many valid transactions as possible in order to saturate the network.  Usually transactions will be sent to other accounts the attacker owns so it can be continued indefinitely.  
 Defense: Each block has a small amount of work associated with it, around 5 seconds to generate and 1 microsecond to validate.  This work difference causes an attacker to dedicate a large amount of resources to wastes a small amount of resources by everyone else.  Nodes that are not full historical nodes are able to prune old transactions from their chain, this clamps the storage usage from this type of attack for almost all users.  
 
