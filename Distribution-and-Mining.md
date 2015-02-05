@@ -11,7 +11,7 @@ Year 6: 2^123 1.6%
 Year 7: 2^122 0.8%  
 Year 8: 2^122 0.8%  
 
-Coins will be put in to the faucet on 64 second intervals in equal proportions. 1 distribution year is an exponent of 2, in seconds, closest to a year which is 2^25 seconds = 33554432 ~ 31536000.
+Coins will be put in to the faucet on 64 second intervals in equal proportions. 1 distribution year is an exponent of 2, in seconds, closest to a year which is 2^25 seconds = 33554432 ~ 31536000.  This will make sure distribution doesn't favor an specific region or time zone.
 
 # Mining
 
