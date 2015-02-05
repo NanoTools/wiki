@@ -11,7 +11,7 @@ Year 6: 2^123 1.6%
 Year 7: 2^122 0.8%  
 Year 8: 2^122 0.8%  
 
-Coins will be put in to the faucet on 1 minute intervals in equal proportions.
+Coins will be put in to the faucet on 64 second intervals in equal proportions.
 
 # Mining
 
