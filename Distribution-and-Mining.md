@@ -7,9 +7,9 @@ Year 2: 2^126 25%
 Year 3: 2^125 13%  
 Year 4: 2^124 6.3%  
 Year 5: 2^124 3.1%  
-Year 6: 2^123 1.6%
-Year 7: 2^122 0.8%
-Year 8: 2^122 0.8%
+Year 6: 2^123 1.6%  
+Year 7: 2^122 0.8%  
+Year 8: 2^122 0.8%  
 
 Coins will be put in to the faucet on 1 minute intervals in equal proportions.
 
