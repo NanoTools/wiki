@@ -1,6 +1,7 @@
 Immediate (Days):
 * Digitally sign executables OSX/Windows
 * Disconnection indicator in wallet
+* Configurable logging
 
 Near-term (Weeks):
 * Multithreaded correctness for transactions
