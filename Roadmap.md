@@ -1,18 +1,20 @@
 Immediate (Days):
 * Digitally sign executables OSX/Windows
-* Multithreaded correctness for transactions
+* Disconnection indicator in wallet
 
 Near-term (Weeks):
+* Multithreaded correctness for transactions
 * Activate live network and begin distribution
-* Fixed-rate keepalive
 * Accept and update work on a block if someone does more work on it  
 
 Long-term (Months):
+* Fixed-rate keepalive
 * Checksum calculating for efficient reconnection and bootstrapping
 * Block pruning for lite clients
 * Language bindings
 
 Completed:
+* Calculating successor an efficient way
 * Block gap negotiation  
 * Get merchant API implementation running  
 * Mechanism to extract wallet private keys for transfer.  
