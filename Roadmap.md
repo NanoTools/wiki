@@ -15,6 +15,8 @@ Long-term (Months):
 * Language bindings
 
 Completed:
+* Configurable logging
+* Wallet disconnection indicator
 * Calculating successor an efficient way
 * Block gap negotiation  
 * Get merchant API implementation running  
