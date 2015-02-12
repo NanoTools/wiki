@@ -1,5 +1,6 @@
 Immediate (Days):
 * Better error handling for database calls
+* Wallet block viewer
 
 Near-term (Weeks):
 * Digitally sign executables OSX/Windows
