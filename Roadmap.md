@@ -1,6 +1,5 @@
 Immediate (Days):
 * Better error handling for database calls
-* Wallet block viewer
 
 Near-term (Weeks):
 * Digitally sign executables OSX/Windows
@@ -15,6 +14,7 @@ Long-term (Months):
 * Language bindings
 
 Completed:
+* Wallet block viewer
 * Print block RPC
 * Configurable logging
 * Wallet disconnection indicator
