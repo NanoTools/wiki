@@ -1,6 +1,5 @@
 Immediate (Days):
 * Better error handling for database calls
-* Print block RPC
 
 Near-term (Weeks):
 * Digitally sign executables OSX/Windows
@@ -15,6 +14,7 @@ Long-term (Months):
 * Language bindings
 
 Completed:
+* Print block RPC
 * Configurable logging
 * Wallet disconnection indicator
 * Calculating successor an efficient way
