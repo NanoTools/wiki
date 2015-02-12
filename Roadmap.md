@@ -1,9 +1,9 @@
 Immediate (Days):
-* Digitally sign executables OSX/Windows
-* Disconnection indicator in wallet
-* Configurable logging
+* Better error handling for database calls
+* Print block RPC
 
 Near-term (Weeks):
+* Digitally sign executables OSX/Windows
 * Multithreaded correctness for transactions
 * Activate live network and begin distribution
 * Accept and update work on a block if someone does more work on it  
