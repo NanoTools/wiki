@@ -14,7 +14,7 @@ Defense: The RaiBlocks voting system is weighted based on account balance.  Addi
 
 ### Penny-spend attack - Moderate risk, large ledger
 Description: A penny-spend attack is where an attacker spends infinitesimal quantities to a large number of accounts.  
-Defense: Blocks publishing is rate-limited by work so this limits accounts to a certain extent.  
+Defense: Blocks publishing is rate-limited by work so this limits accounts to a certain extent.  Nodes that are not full historical nodes can prune accounts below a statistical metric where the account is probably not a valid account.  
 
 ### >50% attack - Low risk, completely destructive
 Description: The metric of consensus for RaiBlocks is a balance weighted voting system.  If an attacker is able to gain over 50% of the voting strength, they can cause the network to flip their decision making.  An attacker must have at least some value tied up in the network as a balance which they're willing to forfeit as an expense to performing this type of attack since this attack ruins the integrity of the system.  An attacker is able to lower the amount of balance they must forfeit by preventing good nodes from voting through a network DDOS.  
