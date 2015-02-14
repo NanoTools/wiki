@@ -18,6 +18,6 @@ Like most other cryptocurrencies, RaiBlocks is pseudonymous via account numbers.
 
 # Block message
 Many other cryptocurrency protocols include some ability to include sideband data with transactions.  The idea is for applications to use this information in some way.  The two main reasons why we chose to not include a block message are:  
-1) People tend to not understand what guarantees come with the message.  Some applications built on top of using these messages are poorly implemented and don't give assurances users think they do.
+1) People tend to not understand what guarantees come with the message.  Some applications built on top of using these messages are poorly implemented and don't give assurances users think they do.  
 2) Going with the theme of minimizing data footprint we felt putting messages in blocks when people might infrequently use them would bloat the size of the ledger to little benefit.  
 Though someone could use steganography to put a message in to the balances being transferred, we encourage people to put sideband data in a sideband channel rather while allowing the RaiBlocks layer to be devoted to managing ledger transfers.
