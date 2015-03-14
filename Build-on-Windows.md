@@ -19,7 +19,6 @@
 * CMake 3.0.1 source extracted to [cmake.src]
 * Boost 1.55 source extracted to [boost.src]
 * Googletest 1.7 source extracted to [gtest.src]
-* LevelDB (zalanyib/leveldb-mingw) source extracted to [leveldb.src]
 * Cryptopp source extracted to [cryptopp.src]
 * RaiBlocks source source in [rai.src]
 
