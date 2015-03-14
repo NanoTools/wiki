@@ -8,7 +8,6 @@ Install Qt5
 * Google test in [gtest.src]
 * cppnetlib in [cppnetlib.src]
 * cryptopp in [cryptopp.src]
-* leveldb in [leveldb.src]
 
 ## Build cmake
 * Inside [cmake.build] run "[cmake.src]/configure --prefix=[cmake]"
