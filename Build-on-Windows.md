@@ -1,5 +1,7 @@
 # Building on Windows
-* Install QT5
+
+## TDM-GCC
+* Install TDM-GCC 64 bit version
 
 ## MSYS
 * Download MSYS/MinGW installer
@@ -10,10 +12,10 @@
 * Installation -> Apply Changes -> Apply
 * Exit installer
 
-## MinGW-w64
-* Download MinGW-w64 installer
-* Change install folder to [msys]
-* Finish installer
+## Build QT5
+* Ensure python and perl are in PATH
+* In a cmd.exe window execute configure -opensource -nomake examples -nomake tests -confirm-license -opengl desktop
+* mingw32-make
 
 ## Other Install
 * CMake 3.0.1 source extracted to [cmake.src]
