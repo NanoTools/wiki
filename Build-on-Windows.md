@@ -14,7 +14,7 @@
 
 ## Build QT5
 * Ensure python and perl are in PATH
-* In a cmd.exe window execute configure -opensource -nomake examples -nomake tests -confirm-license -opengl desktop -prefix c:/qtbin
+* In a cmd.exe window execute configure -opensource -nomake examples -nomake tests -confirm-license -opengl desktop -prefix c:/qtbin -shared
 * mingw32-make
 
 ## Other Install
