@@ -29,6 +29,7 @@
 * Ensure python and perl are in PATH
 * In a cmd.exe window in [qt.build] execute [qt.src]/configure -shared -opensource -nomake examples -nomake tests -confirm-license -opengl desktop -prefix [qt]
 * mingw32-make
+* mingw32-make install
 
 ## Build Boost
 * Inside directory [boost.src]
