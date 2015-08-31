@@ -13,7 +13,7 @@ Description: A Sybil attack is a person creating a lot of nodes on the network, 
 Defense: The RaiBlocks voting system is weighted based on account balance.  Adding extra nodes in to the network will not gain an attacker extra votes.  
 
 ### Penny-spend attack - Moderate risk, large ledger
-Description: A penny-spend attack is where an attacker spends infinitesimal quantities to a large number of accounts.  
+Description: A penny-spend attack is where an attacker spends infinitesimal quantities to a large number of accounts in order to waste the storage resources of nodes.    
 Defense: Blocks publishing is rate-limited by work so this limits accounts to a certain extent.  Nodes that are not full historical nodes can prune accounts below a statistical metric where the account is probably not a valid account.  
 
 ### >50% attack - Low risk, completely destructive
