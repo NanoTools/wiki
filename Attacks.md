@@ -6,7 +6,7 @@ Defense: For blocks with no previous link, nodes will wait until a certain thres
 
 ### Transaction flooding - Moderate risk, high I/O
 Description: Transaction flooding is simply sending as many valid transactions as possible in order to saturate the network.  Usually an attacker will send transactions to other accounts they control so it can be continued indefinitely.  
-Defense: Each block has a small amount of work associated with it, around 5 seconds to generate and 1 microsecond to validate.  This work difference causes an attacker to dedicate a large amount of resources to wastes a small amount of resources by everyone else.  Nodes that are not full historical nodes are able to prune old transactions from their chain, this clamps the storage usage from this type of attack for almost all users.  
+Defense: Each block has a small amount of work associated with it, around 5 seconds to generate and 1 microsecond to validate.  This work difference causes an attacker to dedicate a large amount to sustain an attack while wasting a small amount of resources by everyone else.  Nodes that are not full historical nodes are able to prune old transactions from their chain, this clamps the storage usage from this type of attack for almost all users.  
 
 ### Sybil attack to change ledger entries - No risk, completely destructive
 Description: A Sybil attack is a person creating a lot of nodes on the network, possibly thousands on a single machine, in order to get a disproportionate vote on networks where each node gets an equal vote.  
