@@ -1,7 +1,7 @@
 RaiBlocks has a number of mechanisms built in to protect from a range of possible attacks on the system.  Here we go over all attacks there could be on the system and what safeguards are in place.  
 
 ### Block gap synchronization - Low risk, network amplify, denial of service
-Description: Each block has a link to its previous block.  If a new block arrives where we can't find the previous block, this leaves the node deciding whether it's out of sync or if someone is sending junk data.  If a node is out of sync, synchronizing involves a TCP connection to a node that offers bootstrapping which is much more traffic than sending a single UDP packet containing a block.  
+Description: Each block has a link to its previous block.  If a new block arrives where we can't find the previous block, this leaves the node deciding whether it's out of sync or if someone is sending junk data.  If a node is out of sync, synchronizing involves a TCP connection to a node that offers bootstrapping which is much more traffic than sending a single UDP packet containing a block; this is a network amplification attack.  
 Defense: For blocks with no previous link, nodes will wait until a certain threshold of votes have been observed before initiating a connection to a bootstrap node to synchronize.  If a block doesn't receive enough votes it can be assumed to be junk data.  
 
 ### Transaction flooding - Moderate risk, high I/O
