@@ -2,10 +2,10 @@ Immediate (Days):
 * Move daemon in to gui wallet program and give command line switches for options
 * Fix wallet account history
 * Activate live network and begin distribution
+* Accept and update work on a block if someone does more work on it  
 
 Near-term (Weeks):
 * Digitally sign executables OSX/Windows
-* Accept and update work on a block if someone does more work on it  
 
 Long-term (Months):
 * Fixed-rate keepalive
