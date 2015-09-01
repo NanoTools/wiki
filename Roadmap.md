@@ -1,9 +1,9 @@
 Immediate (Days):
-* Better error handling for database calls
+* Move daemon in to gui wallet program and give command line switches for options
+* Activate live network and begin distribution
 
 Near-term (Weeks):
 * Digitally sign executables OSX/Windows
-* Activate live network and begin distribution
 * Accept and update work on a block if someone does more work on it  
 
 Long-term (Months):
@@ -25,4 +25,5 @@ Completed:
 * Select live-network port  
 * Refine block path selection for more efficient bootstrapping  
 * Wallet GUI improvements  
-* Precalculate block work so next block can be sent using cached value.  
+* Precalculate block work so next block can be sent using cached value.
+* Multithreaded work  
