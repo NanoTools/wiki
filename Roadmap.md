@@ -1,5 +1,6 @@
 Immediate (Days):
 * Move daemon in to gui wallet program and give command line switches for options
+* Fix wallet account history
 * Activate live network and begin distribution
 
 Near-term (Weeks):
