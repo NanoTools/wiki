@@ -91,42 +91,15 @@ Response:
   ]  
 }`
 
-## Send  
+## Keepalive  
 Request:  
 `{  
-  "action": "send",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-  "source": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
-  "destination": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
-  "amount": "1000000"  
+  "action": "keepalive",
+  "address": "::ffff:192.168.1.1",
+  "port": "1024"  
 }`  
 Response:  
-`{  
-  "sent": "1"  
-}`
-
-## Send exact  
-Request:  
-`{  
-  "action": "send_exact",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
-  "amount": "100000000000000000000000000"  
-}`  
-Response:  
-`{  
-  "sent": "1"  
-}`
-
-## Wallet valid password 
-Request:  
-`{  
-  "action": "password_valid"  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-}`  
-Response:  
-`{  
-  "valid" : "1"
+`{      
 }`
 
 ## Wallet change password  
@@ -153,6 +126,46 @@ Response:
   "valid" : "1"
 }`
 
+## Wallet valid password 
+Request:  
+`{  
+  "action": "password_valid"  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+}`  
+Response:  
+`{  
+  "valid" : "1"
+}`
+
+## Price  
+Request:  
+`{  
+  "action": "price",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
+  "amount": "10"  
+}`  
+Response:  
+`{  
+  "price": "10"  
+}`
+
+## Process block  
+Request:  
+`{  
+  "action": "process",  
+  "block": "{
+    "type": "open",
+    "account": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
+    "representative": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
+    "source": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
+    "work": "0000000000000000",
+    "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+}"  
+}`  
+Response:  
+`{  
+}`
+
 ## Wallet representative  
 Request:  
 `{  
@@ -175,6 +188,42 @@ Response:
 `{  
 }`
 
+## Search pending 
+Request:  
+`{  
+  "action": "search_pending",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"
+}`  
+Response:  
+`{
+  "started": "1"  
+}`
+
+## Send  
+Request:  
+`{  
+  "action": "send",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "source": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
+  "destination": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
+  "amount": "1000000"  
+}`  
+Response:  
+`{  
+  "sent": "1"  
+}`
+
+## Validate account number checksum  
+Request:  
+`{  
+  "action": "validate_account_number",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
+}`  
+Response:  
+`{  
+  "valid" : "1"
+}`
+
 ## Wallet contains  
 Request:  
 `{  
@@ -185,16 +234,6 @@ Request:
 Response:  
 `{  
   "exists" : "1"
-}`
-
-## Wallet create  
-Request:  
-`{  
-  "action": "wallet_create" 
-}`  
-Response:  
-`{  
-  "wallet" : "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"
 }`
 
 ## Wallet add  
@@ -209,15 +248,25 @@ Response:
   "account" : "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"
 }`
 
-## Wallet key valid  
+## Wallet contains  
 Request:  
 `{  
-  "action": "wallet_key_valid"  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "action": "wallet_contains",
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8" 
 }`  
 Response:  
 `{  
-  "valid" : "1"
+  "exists" : "1"
+}`
+
+## Wallet create  
+Request:  
+`{  
+  "action": "wallet_create" 
+}`  
+Response:  
+`{  
+  "wallet" : "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"
 }`
 
 ## Wallet destroy 
@@ -241,42 +290,13 @@ Response:
   "json" : "{\"0000000000000000000000000000000000000000000000000000000000000000\": \"0000000000000000000000000000000000000000000000000000000000000001\"}"
 }`
 
-## Validate account number checksum  
+## Wallet key valid  
 Request:  
 `{  
-  "action": "validate_account_number",  
-  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
+  "action": "wallet_key_valid"  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
 }`  
 Response:  
 `{  
   "valid" : "1"
-}`
-
-## Process block  
-Request:  
-`{  
-  "action": "process",  
-  "block": "{
-    "type": "open",
-    "account": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
-    "representative": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
-    "source": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
-    "work": "0000000000000000",
-    "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-}"  
-}`  
-Response:  
-`{  
-}`
-
-## Price  
-Request:  
-`{  
-  "action": "price",  
-  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
-  "amount": "10"  
-}`  
-Response:  
-`{  
-  "price": "10"  
 }`
