@@ -1,32 +1,5 @@
 The RPC protocol accepts JSON http requests.  The following are RPC commands along with the responses that are expected.
 
-## Send  
-Request:  
-`{  
-  "action": "send",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-  "source": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
-  "destination": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
-  "amount": "1000000"  
-}`  
-Response:  
-`{  
-  "sent": "1"  
-}`
-
-## Send exact  
-Request:  
-`{  
-  "action": "send_exact",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
-  "amount": "100000000000000000000000000"  
-}`  
-Response:  
-`{  
-  "sent": "1"  
-}`
-
 ## Account balance  
 Request:  
 `{  
@@ -36,39 +9,6 @@ Request:
 Response:  
 `{  
   "balance": "10000"  
-}`
-
-## Account balance exact  
-Request:  
-`{  
-  "action": "account_balance_exact",  
-  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
-}`  
-Response:  
-`{  
-  "balance": "1000000000000000000000000"  
-}`
-
-## Account weight  
-Request:  
-`{  
-  "action": "account_weight",  
-  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
-}`  
-Response:  
-`{  
-  "weight": "10000"  
-}`
-
-## Account weight exact  
-Request:  
-`{  
-  "action": "account_weight_exact",  
-  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
-}`  
-Response:  
-`{  
-  "weight": "1000000000000000000000000"  
 }`
 
 ## Account create  
@@ -108,6 +48,74 @@ Request:
 Response:  
 `{  
   "moved" : "1"
+}`
+
+## Account weight  
+Request:  
+`{  
+  "action": "account_weight",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
+}`  
+Response:  
+`{  
+  "weight": "10000"  
+}`
+
+## Retrieve block  
+Request:  
+`{  
+  "action": "block",  
+  "hash": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}`  
+Response:  
+`{  
+  "contents" : "{
+    "type": "open",
+    "account": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
+    "representative": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
+    "source": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
+    "work": "0000000000000000",
+    "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+}"
+}`
+
+## Frontiers  
+Request:  
+`{  
+  "action": "frontiers"  
+}`  
+Response:  
+`{    
+  "frontiers" : [  
+  "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8", "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+  ]  
+}`
+
+## Send  
+Request:  
+`{  
+  "action": "send",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "source": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
+  "destination": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
+  "amount": "1000000"  
+}`  
+Response:  
+`{  
+  "sent": "1"  
+}`
+
+## Send exact  
+Request:  
+`{  
+  "action": "send_exact",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",
+  "amount": "100000000000000000000000000"  
+}`  
+Response:  
+`{  
+  "sent": "1"  
 }`
 
 ## Wallet valid password 
@@ -242,24 +250,6 @@ Request:
 Response:  
 `{  
   "valid" : "1"
-}`
-
-## Retrieve block  
-Request:  
-`{  
-  "action": "block",  
-  "hash": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
-}`  
-Response:  
-`{  
-  "contents" : "{
-    "type": "open",
-    "account": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
-    "representative": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
-    "source": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
-    "work": "0000000000000000",
-    "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-}"
 }`
 
 ## Process block  
