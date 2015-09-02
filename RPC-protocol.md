@@ -224,18 +224,6 @@ Response:
   "valid" : "1"
 }`
 
-## Wallet contains  
-Request:  
-`{  
-  "action": "wallet_contains",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8"  
-}`  
-Response:  
-`{  
-  "exists" : "1"
-}`
-
 ## Wallet add  
 Request:  
 `{  
