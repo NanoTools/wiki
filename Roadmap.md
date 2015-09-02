@@ -12,6 +12,7 @@ Long-term (Months):
 * Checksum calculating for efficient reconnection and bootstrapping
 * Block pruning for lite clients
 * Language bindings
+* Self-updating client
 
 Completed:
 * Multithreaded correctness for transactions
