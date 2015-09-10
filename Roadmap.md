@@ -4,6 +4,7 @@ Immediate (Days):
 
 Near-term (Weeks):
 * Digitally sign executables OSX/Windows
+* Node virtual appliance for server environments
 
 Long-term (Months):
 * Fixed-rate keepalive
