@@ -6,7 +6,6 @@ Near-term (Weeks):
 * Digitally sign executables OSX/Windows
 
 Long-term (Months):
-* Fix wallet account history
 * Fixed-rate keepalive
 * Checksum calculating for efficient reconnection and bootstrapping
 * Block pruning for lite clients
