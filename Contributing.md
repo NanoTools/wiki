@@ -11,5 +11,5 @@ If you have dedicated processing power and a reliable, persistent connection to 
 If you're a developer and want to build a frontend or improve the backend, please contact us or send pull requests.
 
 # Mining  
-Unlike other cryptocurrencies, raiblocks does not require mining in order to process transactions.  Donate your computing cycles to a project at http://boinc.berkeley.edu/projects.php
+Unlike other cryptocurrencies, raiblocks does not require mining in order to process transactions.  Donate your computing cycles to a project at http://boinc.berkeley.edu/projects.php  In the future there may be a market for offering subscription based work-generation for clients that need to produce high volumes of traffic or clients on energy constrained devices.  
 
