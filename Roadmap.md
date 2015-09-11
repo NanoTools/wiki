@@ -11,6 +11,7 @@ Long-term (Months):
 * Block pruning for lite clients
 * Language bindings
 * Self-updating client
+* Work-generating applications
 
 Completed:
 * Accept and update work on a block if someone does more work on it
