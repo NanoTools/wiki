@@ -1,6 +1,5 @@
 Immediate (Days):
 * Activate live network and begin distribution
-* Accept and update work on a block if someone does more work on it  
 
 Near-term (Weeks):
 * Digitally sign executables OSX/Windows
@@ -14,6 +13,7 @@ Long-term (Months):
 * Self-updating client
 
 Completed:
+* Accept and update work on a block if someone does more work on it
 * Multithreaded correctness for transactions
 * Wallet block viewer
 * Print block RPC
