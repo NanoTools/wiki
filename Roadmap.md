@@ -1,5 +1,4 @@
 Immediate (Days):
-* Replace kdf and work functions with Argon2
 * Activate live network and begin distribution
 
 Near-term (Weeks):
