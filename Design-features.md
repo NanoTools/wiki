@@ -5,7 +5,7 @@ ED25519 is an elliptic curve algorithm developed in an academic setting with a f
 Compared to existing cryptocurrencies, the hash algorithm chosen is much less important since it's not being used in a proof of work context.  In our implementation hashing is used purely as a digest algorithm against block contents.  Blake2 is a highly optimized cryptographic hash function who's predecessor was a SHA3 finalist.  More information can be found here https://blake2.net/
 
 # Work function - Argon2
-Existing cryptocurrency systems are largely known for their proof of work schemes which are used to come to a fair distributed agreement about ledger changes.  Our system was designed to eliminate the need for distributed agreements in almost all circumstances and as such, the work function is used purely for rate limiting and not for agreements.
+The work function is used purely for rate limiting and not for agreements.  Existing cryptocurrency systems are largely known for their proof of work schemes which are used to come to a fair distributed agreement about ledger changes.  Our system was designed to eliminate the need for distributed agreements in almost all circumstances and we use a different system for agreements.
 
 # Block interval - Instant
 With raiblocks, each account has its own block chain and can update this chain independent of anyone else in the network.  This metric is actually non-applicable however we include it since it's a standard metric for other cryptocurrencies.
