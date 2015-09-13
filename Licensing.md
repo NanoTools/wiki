@@ -10,8 +10,8 @@ cppnetlib - Boost Software License http://cpp-netlib.org/LICENSE_1_0.txt
 cryptopp - Boost Software License http://www.cryptopp.com/  
 Google Test - New BSD License https://code.google.com/p/googletest/  
 LightningDB - OpenLDAP License http://symas.com/mdb/doc/  
-XXHash - BSD License https://github.com/Cyan4973/xxHash
-Argon2 - CC0 https://github.com/khovratovich/Argon2
+XXHash - BSD License https://github.com/Cyan4973/xxHash  
+Argon2 - CC0 https://github.com/khovratovich/Argon2  
   
 # Optional third party licenses  
 QT - LGPL http://qt-project.org/doc/qt-5/licensing.html  
