@@ -1,41 +1,19 @@
 # Building on Windows
 
-## MSYS
-* Download MSYS/MinGW installer
-* Inside MinGW Installation Manager install -> Basic Setup
-* "msys-base bin" -> Mark For Installation
-* Install to [msys]
-* Installation -> Apply Changes -> Apply
-* Exit installer
-
-## MinGW-w64
-* Download MinGW-w64 installer
-* Install to MinGW/msys/1.0
+## MSYS2
+* Download MSYS2 64bit
+* Install MSYS2
+* Open MSYS2 shell
+* Update pacman mirrors "pacman -Sy && pacman -S pacman-mirrors"
+* Install Ninja with "pacman -S mingw-w64-x86_64-ninja"
+* Install CMake with "pacman -S mingw-w64-x86_64-cmake"
+* Install Qt5 with "pacman -S mingw-w64-x86_64-qt5"
+* Install Boost with "pacman -S mingw-w64-x86_64-boost"
 
 ## Other Install
-* Ninja source extracted to [ninja.src]
-* CMake 3.0.1 source extracted to [cmake.src]
-* Boost 1.59 source extracted to [boost.src]
 * Googletest 1.7 source extracted to [gtest.src]
 * Cryptopp source extracted to [cryptopp.src]
 * RaiBlocks source source in [rai.src]
-
-## Ninja
-* Download ninja
-* Run configure.py --bootstrap --platform=mingw
-* Copy ninja in to system path
-
-## Build QT5
-* Ensure python and perl are in PATH
-* In a cmd.exe window in [qt.build] execute [qt.src]/configure -shared -opensource -nomake examples -nomake tests -confirm-license -opengl desktop -prefix [qt]
-* mingw32-make
-* mingw32-make install
-
-## Build Boost
-* Inside directory [boost.src]
-* Run ./bootstrap --with-toolset=mingw
-* Edit the file project-config.jam and replace 'mingw' by 'gcc (Checked with version 1.59)
-* Run "./b2 --without-context --without-coroutine --build-dir=[boost.build] --prefix=[boost] link=static install"
 
 ## Build Googletest
 * Inside directory [gtest.build]
