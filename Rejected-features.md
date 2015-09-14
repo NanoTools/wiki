@@ -21,3 +21,6 @@ Many other cryptocurrency protocols include some ability to include sideband dat
 1. People tend to not understand what guarantees come with the message.  Some applications built on top of using these messages are poorly implemented and don't give assurances users think they do.  
 2. Going with the theme of minimizing data footprint we felt putting messages in blocks when people might infrequently use them would bloat the size of the ledger to little benefit.  
 Though someone could use steganography to put a message in to the balances being transferred, we encourage people to put sideband data in a sideband channel while allowing the RaiBlocks layer to be devoted to managing ledger transfers.
+
+# Memory-hard block work
+The idea of create a block-work algorithm with a memory-hard algorithm like Argon2 seems appealing though there's an issue with verification times related to DDOS attacks.  One of the requirements for work verification as a mechanism to throttle is that it's quick to verify.  If a proof of work verification takes a long time it would be easy for adversaries to send random data to nodes to verify, saturating the node trying to verify invalid data.  It would be nice to replace the hash function with something that is less CPU parallel but the verify times can't be compromised.
