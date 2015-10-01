@@ -1,9 +1,8 @@
 Port usage:
 7075 UDP: Primary node activity port
-* Unicast
 * Port configurable in config.json:node/peering_port
 * Always enabled
-* Binds to all adapters
+* Binds to all adapters, unicast
 * Contents: Raw rai protocol datagrams
 * All standard ledger activity goes through this port
 * If blocked the node will not function
