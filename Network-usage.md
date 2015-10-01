@@ -15,6 +15,9 @@ Port usage:
 * Transmits the ledger to new nodes in bulk
 * If blocked other nodes will not be able retrieve the ledger from this node
 
+7075 SCTP: Unimplemented
+* Will combine functionality of UDP and TCP ports
+
 7076 TCP: RPC server
 * Port configurable in config.json:rpc/port
 * Disabled by default, enable with config.json:rpc_enable
