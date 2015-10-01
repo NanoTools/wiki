@@ -20,5 +20,5 @@ Port usage:
 * Disabled by default, enable with config.json:rpc_enable
 * Binds to localhost by default for security reasons
 * Contents: Unencrypted HTTP requests containing JSON object bodies
-* Allows the node to be controlled through HTTP requests
-* If blocked the node will not be able to be controlled by HTTP
+* Allows the node to be queried or controlled through HTTP requests
+* If blocked the node will not be able to be queried or controlled by HTTP
