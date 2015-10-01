@@ -13,7 +13,7 @@ Port usage:
 * Binds to all adapters
 * Contents: Raw rai protocol stream
 * Transmits the ledger to new nodes in bulk
-* If blocked other nodes will not be able to use this node as a bootstrap server
+* If blocked other nodes will not be able retrieve the ledger from this node
 
 7076 TCP: RPC server
 * Port configurable in config.json:rpc/port
