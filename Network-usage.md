@@ -1,5 +1,6 @@
 Port usage:
 7075 UDP: Primary node activity port
+* Unicast
 * Port configurable in config.json:node/peering_port
 * Always enabled
 * Binds to all adapters
@@ -8,6 +9,7 @@ Port usage:
 * If blocked the node will not function
 
 7075 TCP: Node bootstrapping server
+* Unicast
 * Port same as UDP port
 * Always enabled
 * Binds to all adapters
@@ -19,6 +21,7 @@ Port usage:
 * Will combine functionality of UDP and TCP ports
 
 7076 TCP: RPC server
+* Unicast
 * Port configurable in config.json:rpc/port
 * Disabled by default, enable with config.json:rpc_enable
 * Binds to localhost by default for security reasons, configurable in config.json:rpc/address
