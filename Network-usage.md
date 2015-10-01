@@ -18,7 +18,7 @@ Port usage:
 7076 TCP: RPC server
 * Port configurable in config.json:rpc/port
 * Disabled by default, enable with config.json:rpc_enable
-* Binds to localhost by default for security reasons
+* Binds to localhost by default for security reasons, configurable in config.json:rpc/address
 * Contents: Unencrypted HTTP requests containing JSON object bodies
 * Allows the node to be queried or controlled through HTTP requests
 * If blocked the node will not be able to be queried or controlled by HTTP
