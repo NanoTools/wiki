@@ -1,4 +1,3 @@
-Port usage:
 7075 UDP: Primary node activity port
 * Port configurable in config.json:node/peering_port
 * Always enabled
