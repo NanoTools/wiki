@@ -1,6 +1,6 @@
-RaiBlocks primary goal: to be a secure and scalable cryptocurrency platform.
+RaiBlocks is designed to be a secure, scalable, and extendable distributed ledger platform.
 
-We've applied the philosophy of "Do one thing and do it well" and from the ground up we've built a system for scalability and resiliency.
+We've applied the philosophy of "Do one thing and do it well" giving you performance and scalability unmatched by any other platform.
 
 RaiBlocks features instant transaction confirmation and has an incredibly low energy footprint.  If you're looking for technical details please see our [[Design features]] section.
 
