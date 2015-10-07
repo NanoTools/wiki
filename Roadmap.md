@@ -1,9 +1,8 @@
 Immediate (Days):
-* Activate live network and begin distribution
+* Stabilize with community feedback
 
 Near-term (Weeks):
 * Digitally sign executables OSX/Windows
-* Node virtual appliance for server environments
 
 Long-term (Months):
 * Fixed-rate keepalive
@@ -14,6 +13,8 @@ Long-term (Months):
 * Work-generating applications
 
 Completed:
+* Activate live network and begin distribution
+* Node virtual appliance for server environments
 * Accept and update work on a block if someone does more work on it
 * Multithreaded correctness for transactions
 * Wallet block viewer
