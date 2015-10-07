@@ -7,8 +7,8 @@ This command:
 * Maps the network activity port "-p 7075:7075/udp"
 * Maps the bootstrapping TCP port "-p 7075:7075"
 * Maps the RPC control port to the local adapter only "-p 127.0.0.1:7076:7076"
-* Maps the user's home directory to the /root directory inside the container "~:/root"
+* Maps the host's home directory to the guest /root directory "~:/root"
 * Specifies the container to execute "clemahieu/rai_node"
 * Specifies the command to execute in the container "/rai_node --daemon"
 
-This will put the data in a permanent location in your home directory, outside the docker container.
+This will put the data in a permanent location in your hosts's home directory, outside the docker container.
