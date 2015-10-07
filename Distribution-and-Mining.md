@@ -13,6 +13,8 @@ Year 8: 2^122 0.8%
 
 Coins will be put in to the faucet on 64 second intervals in equal proportions. 1 distribution year is an exponent of 2, in seconds, closest to a calendar year which is 2^25 seconds = 33554432 ~ 31536000.  This will make sure distribution doesn't favor any specific region or time zone.
 
+Distribution start time: 1443657600s since unix epoch
+
 # Mining
 
 Coin mining is a natural extension of proof of work cryptocurrencies in order to disseminate coins in a distributed fashion.  Unfortunately the high cost of mining in terms of hardware and energy lowers the value of the currency which is a concern to the majority of users who don't mine.
