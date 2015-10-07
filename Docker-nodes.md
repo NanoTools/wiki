@@ -10,3 +10,5 @@ This command:
 * Maps the user's home directory to the /root directory inside the container "~:/root"
 * Specifies the container to execute "clemahieu/rai_node"
 * Specifies the command to execute in the container "/rai_node --daemon"
+
+This will put the data in a permanent location in your home directory, outside the docker container.
