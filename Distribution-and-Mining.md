@@ -13,7 +13,7 @@ Year 8: 2^122 0.8%
 
 Coins will be put in to the faucet on 64 second intervals in equal proportions. 1 distribution year is an exponent of 2, in seconds, closest to a calendar year which is 2^25 seconds = 33554432 ~ 31536000.  This will make sure distribution doesn't favor any specific region or time zone.
 
-Distribution start time: 1443657600s since unix epoch
+Distribution start time: 1443657600s after unix epoch
 
 # Mining
 
