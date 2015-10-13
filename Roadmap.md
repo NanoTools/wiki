@@ -1,11 +1,12 @@
 Immediate (Days):
 * Stabilize with community feedback
+* Improve build process
 
 Near-term (Weeks):
 * Digitally sign executables OSX/Windows
+* Fixed-rate keepalive
 
 Long-term (Months):
-* Fixed-rate keepalive
 * Checksum calculating for efficient reconnection and bootstrapping
 * Block pruning for lite clients
 * Language bindings
