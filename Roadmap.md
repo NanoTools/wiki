@@ -5,6 +5,7 @@ Immediate (Days):
 Near-term (Weeks):
 * Digitally sign executables OSX/Windows
 * Fixed-rate keepalive
+* Async RPC handling
 
 Long-term (Months):
 * Checksum calculating for efficient reconnection and bootstrapping
