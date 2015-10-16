@@ -23,7 +23,7 @@ A lot of work was put in to eliminating redundant data in the block chain in ord
 * Blocks are fixed size to minimize framing overhead and storing counts.
 
 # Proof of stake agreements
-It's possible for the network to see a block chain fork in the case of someone crafting a malicious ledger client.  Unlike existing cryptocurrency systems, forks are an almost non-existent event and are designed to only affect one account instead of the entire ledger.  We use a simple proof of stake weighted by account balance for peers in the network to come to consensus about which fork to choose.
+It's possible for the network to see a block chain fork in the case of someone crafting a malicious ledger client.  Unlike existing cryptocurrency systems, forks are an almost non-existent event and are designed to only affect the malicious account instead of the entire ledger.  We use a simple proof of stake weighted by account balance for peers in the network to come to consensus about which fork to choose.
 
 # Proof of stake representatives
 Many peers will not want to stay connected to the network in order to participate in proof of stake agreements if the need arises.  We also don't want to require a signature and network message from every account for every conflict.  Each account is able to select another account as its representative which is able to vote with the balance owned by the account and the representative can be changed when desired.  In this way many small accounts can be consolidated to a single large proof of stake vote by a peer that is willing to stay well connected to the network.
