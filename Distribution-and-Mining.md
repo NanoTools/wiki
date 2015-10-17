@@ -11,7 +11,7 @@ Year 6: 2^123 1.6%
 Year 7: 2^122 0.8%  
 Year 8: 2^122 0.8%  
 
-Blocks will be put in to the faucet on a fixed interval in equal proportions. 1 distribution year is an exponent of 2, in seconds, closest to a calendar year which is 2^25 seconds = 33554432 ~ 31536000.  This will make sure distribution doesn't favor any specific region or time zone.
+Blocks will be put in to the faucet on a fixed interval in equal proportions. 1 distribution year is an exponent of 2, in seconds, closest to a calendar year which is 2^25 seconds = 33554432 ~ 31536000.
 
 Distribution start time: 1443657600s after unix epoch  
 Genesis account: **SKjE18BrMwx7xSuDErD3zmTPGeHQkTx9CQDFzDMrP8kkE2FPXw**  
