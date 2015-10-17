@@ -1,5 +1,5 @@
 # Distribution
-The initial distribution of coins is performed through a coin faucet with a fixed distribution schedule.  Coins from the faucet are made available at a fixed rate and the price, if any, is determined by an algorithm to control the distribution.  If coins are being distributed too quickly the price will rise and if they're being distributed too slowly, the price will fall becoming free of charge if 2 days worth of coins accumulate in the faucet.  Once the distribution period has ended the maximum supply will have been reached and the faucet will shut off.  
+The initial distribution of coins is performed through manual mining limited via a captcha.  There's also an overall rate limit set by the distribution schedule.
 
 Distribution schedule:  
 Year 1: 2^127 50%  
@@ -11,9 +11,16 @@ Year 6: 2^123 1.6%
 Year 7: 2^122 0.8%  
 Year 8: 2^122 0.8%  
 
-Coins will be put in to the faucet on 64 second intervals in equal proportions. 1 distribution year is an exponent of 2, in seconds, closest to a calendar year which is 2^25 seconds = 33554432 ~ 31536000.  This will make sure distribution doesn't favor any specific region or time zone.
+Blocks will be put in to the faucet on a fixed interval in equal proportions. 1 distribution year is an exponent of 2, in seconds, closest to a calendar year which is 2^25 seconds = 33554432 ~ 31536000.  This will make sure distribution doesn't favor any specific region or time zone.
 
 Distribution start time: 1443657600s after unix epoch
+Genesis account: SKjE18BrMwx7xSuDErD3zmTPGeHQkTx9CQDFzDMrP8kkE2FPXw
+Blocks move from the genesis account to the landing account once per week.
+Landing account: SqTT2zWbUpwx79o9bj5CL8kpYY94w5Niq5fWYg4EKWw2GtjaSg
+Blocks move from the landing account to the faucet on a fixed interval less than a week.
+Faucet account: SZY2r3dduWuUKPwFbXhCeYetbdSs28zBA157cT6houLE5CunXC
+
+No portion of any of the listed accounts is reserved by anyone.  All genesis coins will be made available to anyone via the same distribution mechanism.
 
 # Mining
 
