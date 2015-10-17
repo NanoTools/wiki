@@ -14,11 +14,11 @@ Year 8: 2^122 0.8%
 Blocks will be put in to the faucet on a fixed interval in equal proportions. 1 distribution year is an exponent of 2, in seconds, closest to a calendar year which is 2^25 seconds = 33554432 ~ 31536000.  This will make sure distribution doesn't favor any specific region or time zone.
 
 Distribution start time: 1443657600s after unix epoch  
-Genesis account: SKjE18BrMwx7xSuDErD3zmTPGeHQkTx9CQDFzDMrP8kkE2FPXw  
+Genesis account: **SKjE18BrMwx7xSuDErD3zmTPGeHQkTx9CQDFzDMrP8kkE2FPXw**  
 Blocks move from the genesis account to the landing account once per week.  
-Landing account: SqTT2zWbUpwx79o9bj5CL8kpYY94w5Niq5fWYg4EKWw2GtjaSg  
+Landing account: **SqTT2zWbUpwx79o9bj5CL8kpYY94w5Niq5fWYg4EKWw2GtjaSg**  
 Blocks move from the landing account to the faucet on a fixed interval less than a week.  
-Faucet account: SZY2r3dduWuUKPwFbXhCeYetbdSs28zBA157cT6houLE5CunXC  
+Faucet account: **SZY2r3dduWuUKPwFbXhCeYetbdSs28zBA157cT6houLE5CunXC**  
 
 No portion of any of the listed accounts is reserved by anyone.  All genesis coins will be made available to anyone via the same distribution mechanism.
 
