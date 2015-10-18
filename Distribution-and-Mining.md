@@ -1,5 +1,5 @@
 # Distribution
-The initial distribution of coins is performed through manual mining limited via a captcha.  There's also an overall rate limit set by the distribution schedule.
+The initial distribution of blocks is performed through manual mining limited via a captcha.  There's also an overall rate limit set by the distribution schedule.
 
 Distribution schedule:  
 Year 1: 2^127 50%  
@@ -20,7 +20,7 @@ Landing account: **SqTT2zWbUpwx79o9bj5CL8kpYY94w5Niq5fWYg4EKWw2GtjaSg**
 Blocks move from the landing account to the faucet on a fixed interval less than a week.  
 Faucet account: **SZY2r3dduWuUKPwFbXhCeYetbdSs28zBA157cT6houLE5CunXC**  
 
-No portion of any of the listed accounts is reserved by anyone.  All genesis coins will be made available to anyone via the same distribution mechanism.
+No portion of any of the listed accounts is reserved by anyone.  All genesis blocks will be made available to anyone via the same distribution mechanism.
 
 # Mining
 
