@@ -17,7 +17,7 @@
 ## Build Boost
 * Inside [boost.src]
 * Run "./bootstrap.sh
-* Run "./b2 --prefix=[boost] --build_dir=[boost.build] link=static install"
+* Run "./b2 --prefix=[boost] --build-dir=[boost.build] link=static install"
 
 ## Build Googletest
 * Inside directory [gtest.build]
