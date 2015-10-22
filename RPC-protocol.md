@@ -82,7 +82,9 @@ Response:
 ## Frontiers  
 Request:  
 `{  
-  "action": "frontiers"  
+  "action": "frontiers",
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
+  "count": "1"    
 }`  
 Response:  
 `{    
