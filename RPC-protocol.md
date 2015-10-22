@@ -1,6 +1,7 @@
 The RPC protocol accepts JSON http POST requests.  The following are RPC commands along with the responses that are expected.
 
 ## Account balance  
+Returns how many rai is owned by <account>  
 Request:  
 `{  
   "action": "account_balance",  
@@ -12,6 +13,7 @@ Response:
 }`
 
 ## Account create  
+Creates a new, random account in <wallet>  
 Request:  
 `{  
   "action": "account_create",  
@@ -23,6 +25,7 @@ Response:
 }`
 
 ## Account list  
+Lists all the accounts inside <wallet>  
 Request:  
 `{  
   "action": "account_list",  
@@ -36,6 +39,7 @@ Response:
 }`
 
 ## Account move  
+Moves <accounts> from <source> to <wallet>  
 Request:  
 `{  
   "action": "account_move",  
@@ -51,6 +55,7 @@ Response:
 }`
 
 ## Account weight  
+Returns the voting weight for <account>  
 Request:  
 `{  
   "action": "account_weight",  
@@ -62,6 +67,7 @@ Response:
 }`
 
 ## Retrieve block  
+Retrieves a json representation of <block>  
 Request:  
 `{  
   "action": "block",  
@@ -79,7 +85,8 @@ Response:
 }"
 }`
 
-## Frontiers  
+## Chain  
+Returns a list of block hashes in the chain starting at <block> up to <count>  
 Request:  
 `{  
   "action": "chain",
@@ -94,6 +101,7 @@ Response:
 }`
 
 ## Frontiers  
+Returns a list of pairs of account and block hash representing the head block starting at <account> up to <count>  
 Request:  
 `{  
   "action": "frontiers",
@@ -108,6 +116,7 @@ Response:
 }`
 
 ## Keepalive  
+Tells the node to send a keepalive packet to <address>:<port>  
 Request:  
 `{  
   "action": "keepalive",
@@ -119,6 +128,7 @@ Response:
 }`
 
 ## Wallet change password  
+Changes the password for <wallet> to <password>  
 Request:  
 `{  
   "action": "password_change",  
@@ -131,6 +141,7 @@ Response:
 }`
 
 ## Wallet password enter  
+Enters the <password> in to <wallet>  
 Request:  
 `{  
   "action": "password_enter",  
@@ -142,7 +153,8 @@ Response:
   "valid" : "1"
 }`
 
-## Wallet valid password 
+## Wallet valid password  
+Checks whether the password entered for <wallet> is valid  
 Request:  
 `{  
   "action": "password_valid"  
@@ -153,19 +165,8 @@ Response:
   "valid" : "1"
 }`
 
-## Price  
-Request:  
-`{  
-  "action": "price",  
-  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
-  "amount": "10"  
-}`  
-Response:  
-`{  
-  "price": "10"  
-}`
-
 ## Process block  
+Publish <block> to the network  
 Request:  
 `{  
   "action": "process",  
@@ -183,6 +184,7 @@ Response:
 }`
 
 ## Wallet representative  
+Returns the default representative for <wallet>  
 Request:  
 `{  
   "action": "representative",  
@@ -194,6 +196,7 @@ Response:
 }`
 
 ## Wallet representative set  
+Sets the default <representative> for <wallet>  
 Request:  
 `{  
   "action": "representative_set",  
@@ -204,7 +207,8 @@ Response:
 `{  
 }`
 
-## Search pending 
+## Search pending  
+Tells the node to look for pending blocks for any account in <wallet>  
 Request:  
 `{  
   "action": "search_pending",  
@@ -216,6 +220,7 @@ Response:
 }`
 
 ## Send  
+Send <amount> from <source> in <wallet> to <destination>  
 Request:  
 `{  
   "action": "send",  
@@ -230,6 +235,7 @@ Response:
 }`
 
 ## Validate account number checksum  
+Check whether <account> is a valid account number  
 Request:  
 `{  
   "action": "validate_account_number",  
@@ -241,6 +247,7 @@ Response:
 }`
 
 ## Wallet add  
+Add private key <key> to <wallet>  
 Request:  
 `{  
   "action": "wallet_add",  
@@ -253,9 +260,11 @@ Response:
 }`
 
 ## Wallet contains  
+Check whether <wallet> contains <account>  
 Request:  
 `{  
   "action": "wallet_contains",
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",
   "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8" 
 }`  
 Response:  
@@ -264,6 +273,7 @@ Response:
 }`
 
 ## Wallet create  
+Creates a new random wallet id  
 Request:  
 `{  
   "action": "wallet_create" 
@@ -273,7 +283,8 @@ Response:
   "wallet" : "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"
 }`
 
-## Wallet destroy 
+## Wallet destroy  
+Destroys <wallet> and all contained accounts  
 Request:  
 `{  
   "action": "wallet_destroy"  
@@ -283,7 +294,8 @@ Response:
 `{  
 }`
 
-## Wallet export 
+## Wallet export  
+Return a json representation of <wallet>
 Request:  
 `{  
   "action": "wallet_export"  
@@ -292,15 +304,4 @@ Request:
 Response:  
 `{  
   "json" : "{\"0000000000000000000000000000000000000000000000000000000000000000\": \"0000000000000000000000000000000000000000000000000000000000000001\"}"
-}`
-
-## Wallet key valid  
-Request:  
-`{  
-  "action": "wallet_key_valid"  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-}`  
-Response:  
-`{  
-  "valid" : "1"
 }`
