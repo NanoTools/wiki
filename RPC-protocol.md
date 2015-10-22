@@ -82,6 +82,20 @@ Response:
 ## Frontiers  
 Request:  
 `{  
+  "action": "chain",
+  "block": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "count": "1"    
+}`  
+Response:  
+`{    
+  "blocks" : [  
+  "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+  ]  
+}`
+
+## Frontiers  
+Request:  
+`{  
   "action": "frontiers",
   "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
   "count": "1"    
