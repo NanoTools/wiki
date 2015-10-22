@@ -39,7 +39,7 @@ Response:
 }`
 
 ## Account move  
-Moves <accounts> from **source** to **wallet**  
+Moves **accounts** from **source** to **wallet**  
 Request:  
 `{  
   "action": "account_move",  
@@ -55,7 +55,7 @@ Response:
 }`
 
 ## Account weight  
-Returns the voting weight for <account>  
+Returns the voting weight for **account**  
 Request:  
 `{  
   "action": "account_weight",  
@@ -220,7 +220,7 @@ Response:
 }`
 
 ## Send  
-Send <amount> from <source> in **wallet** to **destination**  
+Send **amount** from **source** in **wallet** to **destination**  
 Request:  
 `{  
   "action": "send",  
