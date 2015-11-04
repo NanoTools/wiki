@@ -1,0 +1,5 @@
+One of the security risk mitigation techniques RaiBlocks uses when storing account keys in memory is doing something we call a password fan.  The goal is to mitigate risk against attackers that can inspect memory either through an exploit, a memory scraper on the machine, or other.  We do this by storing the key as the combination of many items in different places in memory.  When we need to get the full key we combine these pieces together, use the key, then erase the area where the pieces were combined.
+
+![Password fan](https://raw.githubusercontent.com/clemahieu/raiblocks/master/images/fan.png)
+
+This isn't a silver bullet against memory scraping or exploits, nothing really is, but this is another security layer to thwart some attackers.  If any piece of the fan is missing the key can't be reassembled.  Even if an attacker got a slice of all the memory on the system they still would have to piece it back together which would be very hard.
