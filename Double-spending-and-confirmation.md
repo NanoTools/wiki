@@ -21,7 +21,7 @@ Forks are easier to resolve when more time has passed between publishing branche
 ![Easy confirmation](https://github.com/clemahieu/raiblocks/blob/master/images/confirmation%20-%20easy.gif)
 
 # Complex fork resolution
-In the worst case if multiple branches of a fork are published simultaneously, votes for each branch could be near equal in which case multiple resolution rounds could be needed to choose the winning branch.  The time window of opportunity for propagating multiple forks is very small, less than 1 network propagation period.  Someone crafting a fork would also have to simultaneously distribute different fork branches to different representatives who control the largest portion of vote control within this very limited period of time.
+Forks are the worst when they is very little time between when they're published.  Fork resolution exponentially converges the more time has passed since being published.
 
 ![Complex confirmation](https://github.com/clemahieu/raiblocks/blob/master/images/confirmation%20-%20complex.gif)
 
