@@ -1,7 +1,7 @@
 Ledger:  
 Big circles are nodes and the number inside is their vote stake  
 Small circles are block messages and the associated vote stake  
-The icon next to a node represents its view of the network state with respect to a single block  
+The icon next to a node represents its view of the network state about a block  
 Zero - Unaware  
 Question - Received but not confirmed  
 Check - Confirmed  
