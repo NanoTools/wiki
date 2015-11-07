@@ -16,7 +16,7 @@ In the typical case of a block created by a well behaved client, the block is re
 A fork is when a misbehaved client creates two or more specifically crafted blocks which breaks the one-follows-another pattern of a block chain.  Ledgers can only have one block following another so peers need to figure out which block to agree on.  Forks can never happen accidentally so we don't give a preference as to which block survives, any extra forks are forgotten and anything that derives from them is rolled back. RaiBlocks resolves forks via a weighted voting system where representative nodes vote for the block they observe to have > 50% of the vote total and change their vote if they see their block has < 50% support. 
 
 # Simple fork resolution
-Forks are easier to resolve when more time has passed since the first observed branch.  If one branch of a fork is published, every peer in the network receives a copy, and then a second branch of the fork is published, resolution of the fork is trivial because all peers will reject the second branch and in the first confirmation round the vote for the first branch will be 100%.  Simple fork resolution is entered after 1 network propagation period which is the time it takes for network packets to arrive to all peers; in practice this is probably less than a couple seconds.
+Forks are easier to resolve when more time has passed between publishing branches.  If all nodes in the network have seen a block and a fork is published, the fork is quickly rejected.
 
 ![Easy confirmation](https://github.com/clemahieu/raiblocks/blob/master/images/confirmation%20-%20easy.gif)
 
