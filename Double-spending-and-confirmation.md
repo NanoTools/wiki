@@ -2,10 +2,10 @@ Ledger:
 Big circles are nodes and the number inside is their vote stake  
 Small circles are block messages and the associated vote stake  
 The icon next to a node represents its view of the network state about a block  
-Zero - Unaware  
-Question - Received but not confirmed  
-Check - Confirmed  
-Exclamation - Fork observed  
+* Zero - Unaware  
+* Question - Received but not confirmed  
+* Check - Confirmed  
+* Exclamation - Fork observed  
 
 # Usual confirmation
 In the typical case of a block created by a well behaved client, the block is received by all peers in the network, checked for validity, and republished if it hasn't been seen before.
