@@ -21,7 +21,7 @@ Forks are easier to resolve when more time has passed between publishing branche
 ![Easy confirmation](https://github.com/clemahieu/raiblocks/blob/master/images/confirmation%20-%20easy.gif)
 
 # Complex fork resolution
-Forks are the worst when they is very little time between when they're published.  Fork resolution exponentially converges the more time has passed since being published.  The existence of a fork can be detected within a couple seconds of a block being published and receivers can insert a delay or elect to never receive blocks that have a fork.
+Forks are the worst when they is very little time between when they're published.  Fork resolution exponentially converges over time and fork existence can be detected within a couple seconds.  Upon detection, receivers can insert a delay or elect to never receive blocks that have a fork.
 
 ![Complex confirmation](https://github.com/clemahieu/raiblocks/blob/master/images/confirmation%20-%20complex.gif)
 
