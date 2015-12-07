@@ -175,7 +175,7 @@ Request:
 }`  
 Response:  
 `{  
-  "account" : "{\"U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8\"}"
+  "account" : "{\"U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8\"}"  
 }`  
 
 ## Payment check  
@@ -188,7 +188,7 @@ Request:
 }`  
 Response:  
 `{  
-  "status" : "{\"Ready\"}"
+  "status" : "{\"Ready\"}"  
 }`  
 
 ## Payment end  
@@ -202,7 +202,7 @@ Request:
 }`  
 Response:  
 `{  
-  "account" : "{\"U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8\"}"
+  "account" : "{\"U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8\"}"  
 }`   
 
 ## Payment wait  
@@ -216,7 +216,7 @@ Request:
 }`  
 Response:  
 `{  
-  "status" : "{\"success\"}"
+  "status" : "{\"success\"}"  
 }`  
 
 ## Process block  
