@@ -246,6 +246,17 @@ Response:
   "valid" : "1"
 }`
 
+## Retrieve node versions 
+Request:  
+`{  
+  "action": "version" 
+}`  
+Response:  
+`{  
+  "rpc_version" : "1",
+  "store_version" : "2"
+}`
+
 ## Wallet add  
 Add private key **key** to **wallet**  
 Request:  
@@ -287,8 +298,8 @@ Response:
 Destroys **wallet** and all contained accounts  
 Request:  
 `{  
-  "action": "wallet_destroy"  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "action": "wallet_destroy",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
 }`  
 Response:  
 `{  
@@ -298,8 +309,8 @@ Response:
 Return a json representation of **wallet**
 Request:  
 `{  
-  "action": "wallet_export"  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "action": "wallet_export",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"   
 }`  
 Response:  
 `{  
