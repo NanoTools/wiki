@@ -165,6 +165,60 @@ Response:
   "valid" : "1"
 }`
 
+## Payment begin  
+Begin a new payment session.  Moves an account from inactive_wallet to active_wallet or puts a new account in active_wallet
+Request:  
+`{  
+  "action": "payment_begin",  
+  "inactive_wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "active_wallet": "FFFD1BAEC8EC20814BBB9059B393051AAA8380F9B5A2E6B2489A277D81789EEE"  
+}`  
+Response:  
+`{  
+  "account" : "{\"U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8\"}"
+}`  
+
+## Payment check  
+Checks whether wallets exist and are unlocked.  
+Request:  
+`{  
+  "action": "payment_check",  
+  "inactive_wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "active_wallet": "FFFD1BAEC8EC20814BBB9059B393051AAA8380F9B5A2E6B2489A277D81789EEE"  
+}`  
+Response:  
+`{  
+  "status" : "{\"Ready\"}"
+}`  
+
+## Payment end  
+End a payment session.  Take the associated account out of 'active_wallet' and put it in to 'inactive_wallet'. 
+Request:  
+`{  
+  "action": "payment_end",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
+  "inactive_wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "active_wallet": "FFFD1BAEC8EC20814BBB9059B393051AAA8380F9B5A2E6B2489A277D81789EEE"  
+}`  
+Response:  
+`{  
+  "account" : "{\"U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8\"}"
+}`   
+
+## Payment wait  
+Wait for payment to arrive in 'account' or until 'timeout' milliseconds have elapsed. 
+Request:  
+`{  
+  "action": "payment_wait",  
+  "account": "U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8",  
+  "amount": "1",  
+  "timeout": "1000"  
+}`  
+Response:  
+`{  
+  "status" : "{\"success\"}"
+}`  
+
 ## Process block  
 Publish **block** to the network  
 Request:  
