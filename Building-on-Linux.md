@@ -23,8 +23,9 @@ Install Qt5
 * Inside [gtest.build] run 'cmake -G "Unix Makefiles" [gtest.src]'
 * Run "make"
 
-## Cppnetlib Source Only
-* Set CPPNETLIB_INCLUDE_DIRS=[cppnetlib.src]
+## Build pppnetlib
+* Inside [cppnetlib.build] run 'cmake -G"Ninja" -DCPP-NETLIB_ENABLE_HTTPS=FALSE -DBOOST_ROOT=[boost] -DCMAKE_INSTALL_PREFIX=[cppnetlib] [cppnetlib.src]'
+* Run 'ninja install'
 
 ## Build Cryptopp
 * In [cryptopp.src] run "make"
