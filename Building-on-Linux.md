@@ -23,7 +23,7 @@ Install Qt5
 * Inside [gtest.build] run 'cmake -G "Unix Makefiles" [gtest.src]'
 * Run "make"
 
-## Build pppnetlib
+## Build cppnetlib
 * Inside [cppnetlib.build] run 'cmake -G"Ninja" -DCPP-NETLIB_ENABLE_HTTPS=FALSE -DBOOST_ROOT=[boost] -DCMAKE_INSTALL_PREFIX=[cppnetlib] [cppnetlib.src]'
 * Run 'ninja install'
 
