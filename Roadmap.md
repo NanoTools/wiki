@@ -1,20 +1,16 @@
-Immediate (Days):
-* Stabilize with community feedback
-* Improve build process
-
-Near-term (Weeks):
+Pending:
 * Digitally sign executables OSX/Windows
 * Fixed-rate keepalive
-* Async RPC handling
-
-Long-term (Months):
 * Checksum calculating for efficient reconnection and bootstrapping
 * Block pruning for lite clients
 * Language bindings
 * Self-updating client
 * Work-generating applications
+* Improve build process
 
 Completed:
+* Async RPC handling
+* Stabilize with community feedback
 * Activate live network and begin distribution
 * Node virtual appliance for server environments
 * Accept and update work on a block if someone does more work on it
