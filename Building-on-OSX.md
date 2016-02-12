@@ -38,11 +38,12 @@
 ## Build nghttp2
 * Remove context::sslv3/sslv3_client/sslv3_server cases from boost/asio/ssl/impl/context.ipp
 * Inside directory [nghttp2.src]
-* Run autoreconf -i
-* Run automake
-* Run autoconf
+* autoreconf -i
+* automake
+* autoconf
 * Inside directory [nghttp2.make]
-* Run [nghttp2.src]/configure OPENSSL_LIBS="-L[libressl]/lib/ -lssl -ltls -lcrypto" OPENSSL_CFLAGS="-I[libressl]/include" LIBEVENT_OPENSSL_LIBS="-L[libressl]/lib/ -lssl -ltls -lcrypto -levent -levent_openssl" LIBEVENT_OPENSSL_CFLAGS="-I[libressl]/include" --enable-asio-lib --with-boost=[boost] --prefix=[nghttp2] --disable-app --disable-examples
+* [nghttp2.src]/configure OPENSSL_LIBS="-L[libressl]/lib/ -lssl -ltls -lcrypto" OPENSSL_CFLAGS="-I[libressl]/include" LIBEVENT_OPENSSL_LIBS="-L[libressl]/lib/ -lssl -ltls -lcrypto -levent -levent_openssl" LIBEVENT_OPENSSL_CFLAGS="-I[libressl]/include" --enable-asio-lib --with-boost=[boost] --prefix=[nghttp2] --disable-app --disable-examples
+* make install
 
 ## Cppnetlib source only  
 * Set CPPNETLIB_INCLUDE_DIRS=[cppnetlib.src]  
