@@ -1,12 +1,10 @@
-# Building on OSX
-* Install QT5
-
 ## Required source
-* Boost 1.55 extracted to [boost.src]
+* Boost 1.59 extracted to [boost.src]
 * Googletest 1.7 extracted to [gtest.src]
 * cryptopp extracted to [cryptopp.src]
 * cpp-netlib extracted to [cppnetlib.src]
 * RaiBlocks source in [rai.src]
+* Libressl source in to [libressl.src]
 
 ## Build cmake
 * Inside [cmake.build]
@@ -28,6 +26,13 @@
 * Inside directory [cryptopp.src]
 * Run "make"
 * Run "make install PREFIX=[cryptopp]"
+
+## Build Libressl
+* Inside directory [libressl.src]
+* Run "./autogen.sh"
+* Inside directory [libressl.src]
+* Run "cmake -G"Ninja" -DCMAKE_INSTALL_PREFIX=[libressl]
+* Run "ninja install"
 
 ## Cppnetlib source only  
 * Set CPPNETLIB_INCLUDE_DIRS=[cppnetlib.src]  
