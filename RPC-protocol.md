@@ -166,7 +166,7 @@ Response:
 }`
 
 ## Payment begin  
-Begin a new payment session.  Moves an account from inactive_wallet to active_wallet or puts a new account in active_wallet
+Begin a new payment session.  Searches wallet for an account that's marked as available and has a 0 balance.  If one is found, the account number is returned and is marked as unavailable.  If no account is found, a new account is created, placed in the wallet, and returned.  
 Request:  
 `{  
   "action": "payment_begin",  
@@ -177,8 +177,8 @@ Response:
   "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"  
 }`  
 
-## Payment check  
-Checks whether wallet exist, is unlocked, and marks contained accounts as usable for transactions.  
+## Payment init  
+Marks all accounts in wallet as available for being used as a payment session.  
 Request:  
 `{  
   "action": "payment_init",  
@@ -190,7 +190,7 @@ Response:
 }`  
 
 ## Payment end  
-End a payment session.  Take the associated account out of 'active_wallet' and put it in to 'inactive_wallet'. 
+End a payment session.  Marks the account as available for use in a payment session. 
 Request:  
 `{  
   "action": "payment_end",  
@@ -201,7 +201,7 @@ Response:
 `{}`   
 
 ## Payment wait  
-Wait for payment to arrive in 'account' or until 'timeout' milliseconds have elapsed. 
+Wait for payment of 'amount' to arrive in 'account' or until 'timeout' milliseconds have elapsed.  
 Request:  
 `{  
   "action": "payment_wait",  
