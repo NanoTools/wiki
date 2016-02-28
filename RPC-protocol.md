@@ -174,7 +174,7 @@ Request:
 }`  
 Response:  
 `{  
-  "account" : "{\"U63Kt3B7yp2iQB4GsVWriGv34kk2qwhT7acKvn8yWZGdNVesJ8\"}"  
+  "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"  
 }`  
 
 ## Payment check  
@@ -186,7 +186,7 @@ Request:
 }`  
 Response:  
 `{  
-  "status" : "{\"Ready\"}"  
+  "status" : "Ready"  
 }`  
 
 ## Payment end  
@@ -211,7 +211,7 @@ Request:
 }`  
 Response:  
 `{  
-  "status" : "{\"success\"}"  
+  "status" : "success"  
 }`  
 
 ## Process block  
