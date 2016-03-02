@@ -11,14 +11,14 @@ Year 6: 2^123 1.6%
 Year 7: 2^122 0.8%  
 Year 8: 2^122 0.8%  
 
-Blocks will be put in to the faucet on a fixed interval in equal proportions. 1 distribution year is an exponent of 2, in seconds, closest to a calendar year which is 2^25 seconds = 33554432 ~ 31536000.
+Blocks will be put in to the faucet on a 1 hour interval in equal proportions. 1 distribution year is 2^25 seconds which is approximately one calendar year.
 
 Distribution start time: 1443657600s after unix epoch  
-Genesis account: **SKjE18BrMwx7xSuDErD3zmTPGeHQkTx9CQDFzDMrP8kkE2FPXw**  
+Genesis account: **xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3**  
 Blocks move from the genesis account to the landing account once per week.  
-Landing account: **SqTT2zWbUpwx79o9bj5CL8kpYY94w5Niq5fWYg4EKWw2GtjaSg**  
+Landing account: **xrb_13ezf4od79h1tgj9aiu4djzcmmguendtjfuhwfukhuucboua8cpoihmh8byo**  
 Blocks move from the landing account to the faucet on a fixed interval less than a week.  
-Faucet account: **SZY2r3dduWuUKPwFbXhCeYetbdSs28zBA157cT6houLE5CunXC**  
+Faucet account: **xrb_35jjmmmh81kydepzeuf9oec8hzkay7msr6yxagzxpcht7thwa5bus5tomgz9**  
 
 No portion of any of the listed accounts is reserved by anyone.  All genesis blocks will be made available to anyone via the same distribution mechanism.
 
