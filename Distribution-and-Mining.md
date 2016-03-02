@@ -21,8 +21,9 @@ Landing account:
 Faucet account:  
 **xrb_35jjmmmh81kydepzeuf9oec8hzkay7msr6yxagzxpcht7thwa5bus5tomgz9**  
 
-Blocks move from the genesis account to the landing account once per week.  
-Blocks move from the landing account to the faucet on a fixed interval less than a week.  
+The genesis balance is kept in cold storage in a bank secure box.  
+Blocks move from the genesis account to the landing account once per week in order to minimize the number of live undistributed blocks.  
+Blocks move from the landing account to the faucet on a 1 hour interval.  
 
 No portion of any of the listed accounts is reserved by anyone.  All genesis blocks will be made available to anyone via the same distribution mechanism.
 
