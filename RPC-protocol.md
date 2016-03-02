@@ -85,6 +85,17 @@ Response:
 }"
 }`
 
+## Block count  
+Reports the number of blocks in the ledger  
+Request:  
+`{  
+  "action": "block_count"  
+}`  
+Response:  
+`{
+  "count": "1000"  
+}`
+
 ## Chain  
 Returns a list of block hashes in the chain starting at **block** up to **count**  
 Request:  
@@ -113,6 +124,17 @@ Response:
   "frontiers" : [  
   "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000", "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
   ]  
+}`
+
+## Frontier count  
+Reports the number of accounts in the ledger  
+Request:  
+`{  
+  "action": "frontier_count"  
+}`  
+Response:  
+`{
+  "count": "1000"  
 }`
 
 ## Keepalive  
@@ -280,7 +302,7 @@ Request:
 }`  
 Response:  
 `{  
-  "sent": "1"  
+  "hash": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
 }`
 
 ## Validate account number checksum  
