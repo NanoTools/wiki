@@ -13,7 +13,7 @@ Year 8: 2^122 0.8%
 
 Blocks will be put in to the faucet on a 1 hour interval in equal proportions. 1 distribution year is 2^25 seconds which is approximately one calendar year.
 
-Distribution start time: 1443657600s after unix epoch  
+Distribution start time: Was midnight Oct 1st 2015, 1443657600s after unix epoch  
 Genesis account:  
 **xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3**  
 Landing account:  
