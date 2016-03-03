@@ -1,4 +1,5 @@
 Pending:
+* Create confirm_list message for bandwidth saving
 * Digitally sign executables OSX/Windows
 * Fixed-rate keepalive
 * Checksum calculating for efficient reconnection and bootstrapping
