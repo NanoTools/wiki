@@ -1,5 +1,5 @@
 # Distribution
-The initial distribution of blocks is performed through manual mining limited via a captcha.  There's also an overall rate limit set by the distribution schedule.
+The initial distribution of XRB is performed through manual mining limited via a captcha.  There's also an overall rate limit set by the distribution schedule.
 
 Distribution schedule:  
 Year 1: 2^127 50%  
@@ -26,6 +26,15 @@ Blocks move from the genesis account to the landing account once per week in ord
 Blocks move from the landing account to the faucet on a 1 hour interval.  
 
 No portion of any of the listed accounts is reserved by anyone.  All genesis blocks will be made available to anyone via the same distribution mechanism.
+
+# Divider  
+We use a 128 bit integer to represent account balances, this is too large to present to the user so we defined a set of SI prefixes to make the numbers more accessible and avoid confusion.  The reference wallet uses Mrai as a divider.  
+Grai = 1000000000000000000000000000000000, 10^33  
+Mrai = 1000000000000000000000000000000, 10^30  
+krai = 1000000000000000000000000000, 10^27  
+ rai = 1000000000000000000000000, 10^24  
+mrai = 1000000000000000000000, 10^21  
+urai = 1000000000000000000, 10^18  
 
 # Mining
 
