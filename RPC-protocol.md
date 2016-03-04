@@ -66,6 +66,17 @@ Response:
   "weight": "10000"  
 }`
 
+## Available supply  
+Returns how many rai are in the public supply  
+Request:  
+`{  
+  "action": "available_supply"  
+}`  
+Response:  
+`{  
+  "amount": "10000"  
+}`
+
 ## Retrieve block  
 Retrieves a json representation of **block**  
 Request:  
@@ -135,6 +146,30 @@ Request:
 Response:  
 `{
   "count": "1000"  
+}`
+
+## Mrai from raw    
+Divide a raw amount down by the Mrai ratio.  
+Request:  
+`{  
+  "action": "mrai_from_raw",  
+  "amount": "1000000000000000000000000000000"
+}`  
+Response:  
+`{  
+  "amount": "1"  
+}`
+
+## Mrai to raw    
+Multiply an Mrai amount by the Mrai ratio.  
+Request:  
+`{  
+  "action": "mrai_to_raw",  
+  "amount": "1"
+}`  
+Response:  
+`{  
+  "amount": "1000000000000000000000000000000"  
 }`
 
 ## Keepalive  
