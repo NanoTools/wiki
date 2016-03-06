@@ -1,4 +1,5 @@
 Pending:
+* Track receivable balance for user display
 * Create confirm_list message for bandwidth saving
 * Digitally sign executables OSX/Windows
 * Fixed-rate keepalive
