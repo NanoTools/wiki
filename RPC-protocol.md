@@ -363,13 +363,25 @@ Response:
   "store_version" : "2"
 }`
 
-## Wallet add  
-Add private key **key** to **wallet**  
+## Wallet add adhoc key  
+Add an adhoc private key **key** to **wallet**  
 Request:  
 `{  
-  "action": "wallet_add",  
+  "action": "wallet_add_adhoc",  
   "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
   "key": "34F0A37AAD20F4A260F0A5B3CB3D7FB50673212263E58A380BC10474BB039CE4"  
+}`  
+Response:  
+`{  
+  "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"
+}`
+
+## Wallet add next key  
+Add next deterministic to **wallet**  
+Request:  
+`{  
+  "action": "wallet_add_next",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
 }`  
 Response:  
 `{  
