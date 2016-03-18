@@ -1,6 +1,6 @@
 Any accounts you create in your wallet are tied together by a wallet 'seed'.  This seed can be used to regenerate your wallet in case of data loss and it also can be used to access and send from any of the accounts so it's important to keep this seed safe.
 
-We recommend "backing up" the seed by writing it on a piece of paper, perhaps twice, and storing it in a secure fire/water proof location.  Never put the seed in to a file unencrypted.
+We recommend backing up the seed by writing it on a piece of paper, perhaps twice, and storing it in a secure fire/water proof location.  Never put the seed in to a file unencrypted.
 
 You can copy the seed to your clipboard in the wallet by going to "Advanced" -> "Accounts" -> "Backup/Clipboard wallet seed"
 
