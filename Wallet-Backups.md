@@ -5,9 +5,9 @@ We recommend "backing up" the seed by writing it on a piece of paper, perhaps tw
 You can copy the seed to your clipboard in the wallet by going to "Advanced" -> "Accounts" -> "Backup/Clipboard wallet seed"
 
 If you need to reload this seed in to your wallet in the future, you can do so through "Advanced" -> "Accounts" -> "Import wallet" and typing the seed in to the "seed" box and pushing "Import seed".
-
-
-
+  
+  
+  
 Old adhoc wallets:
 Wallet backups are created in RaiBlocks/backups written on 5 minute intervals.
 
