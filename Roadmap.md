@@ -1,5 +1,5 @@
 Pending:
-* Investigate using Hierarchical Deterministic wallet format
+* IP multicast transactios
 * Track receivable balance for user display
 * Create confirm_list message for bandwidth saving
 * Digitally sign executables OSX/Windows
@@ -12,6 +12,7 @@ Pending:
 * Improve build process
 
 Completed:
+* Deterministic wallet format
 * Async RPC handling
 * Stabilize with community feedback
 * Activate live network and begin distribution
