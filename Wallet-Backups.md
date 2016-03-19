@@ -6,6 +6,13 @@ We recommend backing up the seed by writing it on a piece of paper, perhaps twic
 You can copy the seed to your clipboard in the wallet by going to "Advanced" -> "Accounts" -> "Backup/Clipboard wallet seed"
 
 If you need to reload this seed in to your wallet in the future, you can do so through "Advanced" -> "Accounts" -> "Import wallet" and typing the seed in to the "seed" box and pushing "Import seed".
+
+Docker container backup:  
+If you run a docker container, you can backup the seed via the command line.  First list the wallets attached to this node with the command:  
+sudo docker run -it clemahieu/rai_node -v ~:/root /rai_node --wallet_list  
+
+Then you can list the wallet seed and adhoc private keys with the command:  
+sudo docker run -it clemahieu/rai_node -v ~:/root /rai_node --wallet_decrypt_unsafe --wallet=<wallet> --password=<password>  
  
 # Old adhoc wallets:
 Wallet backups are created in RaiBlocks/backups written on 5 minute intervals.
