@@ -7,7 +7,7 @@ You can copy the seed to your clipboard in the wallet by going to "Advanced" -> 
 
 If you need to reload this seed in to your wallet in the future, you can do so through "Advanced" -> "Accounts" -> "Import wallet" and typing the seed in to the "seed" box and pushing "Import seed".
 
-Docker container backup:  
+# Docker container backup:  
 If you run a docker container, you can backup the seed via the command line.  First list the wallets attached to this node with the command:  
 **sudo docker run -it clemahieu/rai_node -v ~:/root /rai_node --wallet_list**  
 
