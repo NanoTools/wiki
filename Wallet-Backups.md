@@ -12,7 +12,7 @@ If you run a docker container, you can backup the seed via the command line.  Fi
 **sudo docker run -it clemahieu/rai_node -v ~:/root /rai_node --wallet_list**  
 
 Then you can list the wallet seed and adhoc private keys with the command:  
-**sudo docker run -it clemahieu/rai_node -v ~:/root /rai_node --wallet_decrypt_unsafe --wallet=<wallet> --password=<password>**  
+**sudo docker run -it clemahieu/rai_node -v ~:/root /rai_node --wallet_decrypt_unsafe --wallet={wallet} --password={password}**  
  
 # Old adhoc wallets:
 Wallet backups are created in RaiBlocks/backups written on 5 minute intervals.
