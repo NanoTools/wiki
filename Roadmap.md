@@ -1,4 +1,5 @@
 Pending:
+* Bitcoin compatibility API
 * IP multicast transactios
 * Track receivable balance for user display
 * Create confirm_list message for bandwidth saving
