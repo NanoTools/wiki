@@ -1,6 +1,11 @@
 # Building on Linux
 
+Install Cmake
 Install Qt5
+Install Boost
+
+cmake -DACTIVE_NETWORK=rai_live_network -DCMAKE_BUILD_TYPE=Release -G "Unix Makefiles"
+make rai_node
 
 ## Source code
 * Cmake in [cmake.src]
