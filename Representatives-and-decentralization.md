@@ -9,4 +9,8 @@ For groups wishing to set up their own representatives nodes where people can na
 
 We encourage people who run web wallets, exchanges, or other services that use RaiBlocks to run a representative which will contribute to the health of the network.
 
-You can set up a representative by running a docker node on a server you intend to keep running indefinitely.  Create a wallet and an account to use as the representative.  It's recommended the representative not be a transaction account.  Give the account number to people and have them set you as their representative in Settings -> Change representative.
+### Setting up a representative
+* Set up a [[Docker-node]]
+* Create a wallet
+* Create an account
+* Give the account number to people and have them set you as their representative in Settings -> Change representative.
