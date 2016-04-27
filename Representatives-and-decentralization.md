@@ -13,4 +13,4 @@ We encourage people who run web wallets, exchanges, or other services that use R
 * Set up a [[Docker-node]]
 * Create a wallet
 * Create an account
-* Give the account number to people and they can set you as their representative Settings -> Change representative.
+* People can use your account as their representative Settings -> Change representative.
