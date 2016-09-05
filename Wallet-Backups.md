@@ -35,5 +35,5 @@ Copy the backup file in to the RaiBlocks directory in your home directory.
 
 or
 
-
-**sudo docker exec {docker instance id} /rai_node --wallet_list****sudo docker exec {docker instance id} /rai_node --wallet_import --file=/root/RaiBlocks/{backup.json} --wallet={destination wallet} --password={password}**
+**sudo docker exec {docker instance id} /rai_node --wallet_list**
+**sudo docker exec {docker instance id} /rai_node --wallet_import --file=/root/RaiBlocks/{backup.json} --wallet={destination wallet} --password={password}**
