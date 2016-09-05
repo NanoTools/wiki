@@ -31,7 +31,7 @@ From a docker node you can do:
 Pick or create a wallet to import the file in to.  
 **sudo docker run -it -v ~:/root clemahieu/rai_node /rai_node --wallet_list**  
 Copy the backup file in to the RaiBlocks directory in your home directory.  
-**sudo docker run -it -v ~:/root clemahieu/rai_node /rai_node --wallet_import --file=/root/RaiBlocks/{backup.json} --wallet={wallet} --password={password}**
+**sudo docker run -it -v ~:/root clemahieu/rai_node /rai_node --wallet_import --file=/root/RaiBlocks/{backup.json} --wallet={destination wallet} --password={password}**
 
 or
 
