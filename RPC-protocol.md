@@ -74,7 +74,7 @@ Request:
 }`  
 Response:  
 `{  
-  "amount": "10000"  
+  "available": "10000"  
 }`
 
 ## Retrieve block  
