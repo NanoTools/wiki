@@ -1,5 +1,5 @@
 Pending:
-* Bitcoin compatibility API
+* Bitcoin compatibility API (not necessary IMHO, MikeRow)
 * IP multicast transactions
 * Track receivable balance for user display
 * Create confirm_list message for bandwidth saving
@@ -8,7 +8,7 @@ Pending:
 * Checksum calculating for efficient reconnection and bootstrapping
 * Block pruning for lite clients
 * Language bindings
-* Self-updating client
+* Self-updating client (not necessary IMHO just add a Ubuntu rep, MikeRow)
 * Work-generating applications
 * Improve build process
 
