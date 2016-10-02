@@ -136,7 +136,6 @@ Response:
 
 ## Frontiers  
 Returns a list of pairs of account and block hash representing the head block starting at **account** up to **count**  
-
 Request:  
 `{  
   "action": "frontiers",
