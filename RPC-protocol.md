@@ -137,8 +137,6 @@ Response:
 ## Frontiers  
 Returns a list of pairs of account and block hash representing the head block starting at **account** up to **count**  
 
-(to get a full list of all account, use as inputs genesis account and the highest integer you can provide, you'll get the first hash of each account. Using that hash in history RPC you'll get every tx of the account. If you want to know the funds of account, use the hash in the chain RPC, the last hash used in retrieve_block RPC will give you the funds of the account)
-
 Request:  
 `{  
   "action": "frontiers",
