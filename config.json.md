@@ -53,3 +53,9 @@
         "threads": "1048576"
     }
     }
+
+config.json location:
+
+    Windows: C:\Users\AppData\Local\RaiBlocks\
+    OSX: /Users//Library/RaiBlocks/
+    Linux: ~/RaiBlocks/
