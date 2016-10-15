@@ -1,45 +1,37 @@
     {
     "version": "(int)", # Wallet version
-    "wallet": "90933ADEBAAD11D1182601EB5DD2DD39FE93BED066464DF130CA693719CCC4C0",
-    "account": "xrb_3dcfozsmekr1tr9skf1oa5wbgmxt81qepfdnt7zicq5x3hk65fg4fqj58mbr",
+    "wallet": "(string)", # Default wallet to load on boot
+    "account": "(string)", # Default account to load on boot
     "node": {
-        "version": "5",
-        "peering_port": "7075",
-        "packet_delay_microseconds": "5000",
-        "bootstrap_fraction_numerator": "1",
-        "creation_rebroadcast": "2",
-        "rebroadcast_delay": "15",
-        "receive_minimum": "1000000000000000000000000",
+        "version": "(int)", # Node version
+        "peering_port": "7075", # Default node port
+        "packet_delay_microseconds": "5000", #
+        "bootstrap_fraction_numerator": "1", #
+        "creation_rebroadcast": "2", #
+        "rebroadcast_delay": "15", # 
+        "receive_minimum": "1000000000000000000000000", # Minimum import receivable, default 1 Rai
         "logging": {
-            "ledger": "false",
-            "ledger_duplicate": "false",
-            "network": "true",
-            "network_message": "false",
-            "network_publish": "false",
-            "network_packet": "false",
-            "network_keepalive": "false",
-            "node_lifetime_tracing": "false",
-            "insufficient_work": "true",
-            "log_rpc": "true",
-            "bulk_pull": "false",
-            "work_generation_time": "true",
-            "log_to_cerr": "false",
-            "max_size": "16777216"
+            "ledger": "false", #
+            "ledger_duplicate": "false", #
+            "network": "true", #
+            "network_message": "false", #
+            "network_publish": "false", #
+            "network_packet": "false", #
+            "network_keepalive": "false", #
+            "node_lifetime_tracing": "false", #
+            "insufficient_work": "true", #
+            "log_rpc": "true", #
+            "bulk_pull": "false", #
+            "work_generation_time": "true", #
+            "log_to_cerr": "false", #
+            "max_size": "16777216" #
         },
-        "work_peers": "",
-        "preconfigured_peers": [
+        "work_peers": "", #
+        "preconfigured_peers": [ # List of defaults peers to connect on boot
             "rai.raiblocks.net",
-            "138.201.94.249",
-            "51.255.160.144",
-            "91.79.186.211",
-            "95.221.220.51",
-            "81.106.105.244",
-            "68.117.169.83",
-            "188.9.83.12",
-            "75.143.140.215",
-            "185.142.236.2"
+            "raiblockscommunity.net",
         ],
-        "preconfigured_representatives": [
+        "preconfigured_representatives": [ # List of defaults representatives, which you delegate voting weight, of your wallet
             "xrb_3arg3asgtigae3xckabaaewkx3bzsh7nwz7jkmjos79ihyaxwphhm6qgjps4",
             "xrb_1stofnrxuz3cai7ze75o174bpm7scwj9jn3nxsn8ntzg784jf1gzn1jjdkou",
             "xrb_1q3hqecaw15cjt7thbtxu3pbzr1eihtzzpzxguoc37bj1wc5ffoh7w74gi6p",
@@ -49,24 +41,24 @@
             "xrb_1anrzcuwe64rwxzcco8dkhpyxpi8kd7zsjc1oeimpc3ppca4mrjtwnqposrs",
             "xrb_1hza3f7wiiqa7ig3jczyxj5yo86yegcmqk3criaz838j91sxcckpfhbhhra1"
         ],
-        "inactive_supply": "0",
-        "password_fanout": "1024",
-        "io_threads": "4",
-        "work_threads": "4"
+        "inactive_supply": "0", #
+        "password_fanout": "1024", #
+        "io_threads": "4", #
+        "work_threads": "4" #
     },
     "rpc": {
-        "address": "::ffff:127.0.0.1",
-        "port": "7076",
-        "enable_control": "true",
-        "frontier_request_limit": "16384",
-        "chain_request_limit": "16384"
+        "address": "::ffff:127.0.0.1", # Allowed IP for RPC connection
+        "port": "7076", # Default RPC port
+        "enable_control": "true", # Enable particular RPC command like: send, account_create, etc...
+        "frontier_request_limit": "16384", #
+        "chain_request_limit": "16384" #
     },
-    "rpc_enable": "true",
-    "opencl_enable": "false",
+    "rpc_enable": "true", # Enable or disable RPC
+    "opencl_enable": "false", # Enable GPU or ASIC computanional usage
     "opencl": {
-        "platform": "0",
-        "device": "0",
-        "threads": "1048576"
+        "platform": "0", # Platform ID
+        "device": "0", # Device ID
+        "threads": "1048576" #
     }
     }
 
