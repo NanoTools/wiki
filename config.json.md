@@ -1,4 +1,4 @@
-{
+    {
     "version": wallet version
     "wallet": default wallet to start
     "account": default account to start
