@@ -52,4 +52,4 @@
         "device": (int) device id id
         "threads": "1048576"
     }
-}
+    }
