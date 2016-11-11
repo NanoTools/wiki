@@ -402,6 +402,18 @@ Response:
   "store_version" : "2"
 }`
 
+## Retrieve online peers
+Request:  
+`{  
+  "action": "peers" 
+}`  
+Response:  
+`{
+    "peers": {
+        0: { [::ffff:172.17.0.1]:32841 }
+    } 
+}`
+
 ## Wallet add key  
 Add an adhoc private key **key** to **wallet**  
 Request:  
