@@ -203,6 +203,54 @@ Response:
   "amount": "1000000000000000000000000000000"  
 }`
 
+## Krai from raw    
+Divide a raw amount down by the krai ratio.  
+Request:  
+`{  
+  "action": "krai_from_raw",  
+  "amount": "1000000000000000000000000000"
+}`  
+Response:  
+`{  
+  "amount": "1"  
+}`
+
+## Krai to raw    
+Multiply an krai amount by the krai ratio.  
+Request:  
+`{  
+  "action": "krai_to_raw",  
+  "amount": "1"
+}`  
+Response:  
+`{  
+  "amount": "1000000000000000000000000000"  
+}`
+
+## Rai from raw    
+Divide a raw amount down by the rai ratio.  
+Request:  
+`{  
+  "action": "rai_from_raw",  
+  "amount": "1000000000000000000000000"
+}`  
+Response:  
+`{  
+  "amount": "1"  
+}`
+
+## Rai to raw    
+Multiply an rai amount by the rai ratio.  
+Request:  
+`{  
+  "action": "rai_to_raw",  
+  "amount": "1"
+}`  
+Response:  
+`{  
+  "amount": "1000000000000000000000000"  
+}`
+
 ## Keepalive  
 Tells the node to send a keepalive packet to **address**:**port**  
 Request:  
