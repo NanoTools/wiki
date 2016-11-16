@@ -30,6 +30,8 @@
         "preconfigured_peers": [ # List of defaults peers to connect on boot
             "rai.raiblocks.net",
             "raiblockscommunity.net",
+            "64.137.172.219",
+            "138.201.94.249"
         ],
         "preconfigured_representatives": [ # List of defaults representatives, which you delegate voting weight, of your wallet
             "xrb_3arg3asgtigae3xckabaaewkx3bzsh7nwz7jkmjos79ihyaxwphhm6qgjps4",
