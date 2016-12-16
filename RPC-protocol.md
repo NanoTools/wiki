@@ -293,8 +293,8 @@ Response:
 Checks whether the password entered for **wallet** is valid  
 Request:  
 `{  
-  "action": "password_valid"  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "action": "password_valid",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
 }`  
 Response:  
 `{  
