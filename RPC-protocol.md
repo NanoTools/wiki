@@ -511,7 +511,7 @@ Response:
 }`
 
 ## Wallet export  
-Return a json representation of **wallet**
+Return a json representation of **wallet**  
 Request:  
 `{  
   "action": "wallet_export",  
@@ -521,3 +521,26 @@ Response:
 `{  
   "json" : "{\"0000000000000000000000000000000000000000000000000000000000000000\": \"0000000000000000000000000000000000000000000000000000000000000001\"}"
 }`
+
+## Work cancel
+Stop generating **work** for block  
+Request:  
+`{  
+    "action": "work_cancel",  
+    "hash": "718CC2121C3E641059BC1C2CFC45666C99E8AE922F7A807B7D07B62C995D79E2"  
+}`  
+Response:  
+`{  
+}`  
+
+## Work generate
+Generates **work** for block  
+Request:  
+`{  
+    "action": "work_generate",  
+    "hash": "718CC2121C3E641059BC1C2CFC45666C99E8AE922F7A807B7D07B62C995D79E2"  
+}`  
+Response:  
+`{  
+    "work": "2bf29ef00786a6bc"  
+}`  
