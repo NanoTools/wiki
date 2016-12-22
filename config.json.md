@@ -26,7 +26,7 @@
             "log_to_cerr": "false", #
             "max_size": "16777216" #
         },
-        "work_peers": "", #
+        "work_peers": "", # Delegate a node your hash work, you need to get RPC access to that node
         "preconfigured_peers": [ # List of defaults peers to connect on boot
             "rai.raiblocks.net",
             "raiblockscommunity.net",
@@ -56,7 +56,7 @@
         "chain_request_limit": "16384" #
     },
     "rpc_enable": "true", # Enable or disable RPC
-    "opencl_enable": "false", # Enable GPU or ASIC computanional usage
+    "opencl_enable": "false", # Enable GPU hashing
     "opencl": {
         "platform": "0", # Platform ID
         "device": "0", # Device ID
