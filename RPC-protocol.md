@@ -447,7 +447,8 @@ Request:
 Response:  
 `{  
   "rpc_version" : "1",
-  "store_version" : "2"
+  "store_version" : "2",
+  "node_vendor" : "RaiBlocks 7.5.0"
 }`
 
 ## Retrieve online peers
