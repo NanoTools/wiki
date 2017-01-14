@@ -5,6 +5,10 @@ On Ubuntu 14.04 you can do:
 "sudo apt-get install docker.io"  
 "sudo docker pull clemahieu/rai_node"  
 
+On Debian 7.7+ follow this instructions:  
+https://docs.docker.com/engine/installation/linux/debian/  
+"sudo docker pull clemahieu/rai_node"  
+
 ### Running
 "sudo docker run -d -p 7075:7075/udp -p 7075:7075 -p 127.0.0.1:7076:7076 -v ~:/root clemahieu/rai_node /rai_node --daemon"  
 
