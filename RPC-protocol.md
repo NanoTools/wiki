@@ -372,7 +372,7 @@ Response:
 Returns the default representative for **wallet**  
 Request:  
 `{  
-  "action": "representative",  
+  "action": "wallet_representative",  
   "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"
 }`  
 Response:  
@@ -384,7 +384,7 @@ Response:
 Sets the default **representative** for **wallet**  
 Request:  
 `{  
-  "action": "representative_set",  
+  "action": "wallet_representative_set",  
   "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",
   "representative": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"
 }`  
