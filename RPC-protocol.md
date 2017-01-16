@@ -368,18 +368,6 @@ Response:
 `{  
 }`
 
-## Representation  
-_draft_  
-Request:  
-`{  
-  "action": "representation",  
-  "account": "xrb_39a73oy5ungrhxy5z5oao1xso4zo7dmgpjd4u74xcrx3r1w6rtazuouw6qfi"
-}`  
-Response:  
-`{  
-  "representation" : "1"
-}`
-
 ## Account representative  
 Returns the representative for **account**  
 Request:  
