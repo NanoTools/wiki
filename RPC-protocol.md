@@ -54,6 +54,31 @@ Response:
   "moved" : "1"
 }`
 
+## Account representative  
+Returns the representative for **account**  
+Request:  
+`{  
+  "action": "account_representative",  
+  "account": "xrb_39a73oy5ungrhxy5z5oao1xso4zo7dmgpjd4u74xcrx3r1w6rtazuouw6qfi"
+}`  
+Response:  
+`{  
+  "representative" : "xrb_16u1uufyoig8777y6r8iqjtrw8sg8maqrm36zzcm95jmbd9i9aj5i8abr8u5"
+}`
+
+## Account representative set  
+Sets the representative for **account**  
+Request:  
+`{  
+  "action": "account_representative_set",  
+  "account": "xrb_39a73oy5ungrhxy5z5oao1xso4zo7dmgpjd4u74xcrx3r1w6rtazuouw6qfi",
+  "representative" : "xrb_16u1uufyoig8777y6r8iqjtrw8sg8maqrm36zzcm95jmbd9i9aj5i8abr8u5"
+}`  
+Response:  
+`{  
+  "changed" : "1"
+}`
+
 ## Account weight  
 Returns the voting weight for **account**  
 Request:  
@@ -366,18 +391,6 @@ Request:
 }`  
 Response:  
 `{  
-}`
-
-## Account representative  
-Returns the representative for **account**  
-Request:  
-`{  
-  "action": "representative",  
-  "account": "xrb_39a73oy5ungrhxy5z5oao1xso4zo7dmgpjd4u74xcrx3r1w6rtazuouw6qfi"
-}`  
-Response:  
-`{  
-  "representative" : "xrb_16u1uufyoig8777y6r8iqjtrw8sg8maqrm36zzcm95jmbd9i9aj5i8abr8u5"
 }`
 
 ## Wallet representative  
