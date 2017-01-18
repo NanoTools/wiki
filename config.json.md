@@ -11,20 +11,23 @@
         "rebroadcast_delay": "15", # 
         "receive_minimum": "1000000000000000000000000", # Minimum import receivable, default 1 Rai
         "logging": {
-            "ledger": "false", #
-            "ledger_duplicate": "false", #
-            "network": "true", #
-            "network_message": "false", #
-            "network_publish": "false", #
-            "network_packet": "false", #
-            "network_keepalive": "false", #
-            "node_lifetime_tracing": "false", #
-            "insufficient_work": "true", #
-            "log_rpc": "true", #
-            "bulk_pull": "false", #
-            "work_generation_time": "true", #
-            "log_to_cerr": "false", #
-            "max_size": "16777216" #
+            "ledger": "false",
+            "ledger_duplicate": "false",
+            "network": "true",
+            "network_message": "false",
+            "network_publish": "false",
+            "network_packet": "false",
+            "network_keepalive": "false",
+            "node_lifetime_tracing": "false",
+            "insufficient_work": "true",
+            "log_rpc": "true",
+            "bulk_pull": "false",
+            "work_generation_time": "true",
+            "log_to_cerr": "false",
+            "max_size": "16777216",
+            "version": "2",
+            "work_peers": "",
+            "vote": "false" # Track voting activities
         },
         "work_peers": "", # Delegate a node your hash work, you need to get RPC access to that node
         "preconfigured_peers": [ # List of defaults peers to connect on boot
