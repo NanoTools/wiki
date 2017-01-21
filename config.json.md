@@ -11,16 +11,16 @@
         "rebroadcast_delay": "15", # 
         "receive_minimum": "1000000000000000000000000", # Minimum import receivable, default 1 Rai
         "logging": {
-            "ledger": "false",
+            "ledger": "false", # Track incoming blocks
             "ledger_duplicate": "false",
-            "network": "true",
+            "network": "true", # Enable network log
             "network_message": "false",
-            "network_publish": "false",
-            "network_packet": "false",
+            "network_publish": "false", # Track blocks you publish to
+            "network_packet": "false", # Track packets origin
             "network_keepalive": "false",
             "node_lifetime_tracing": "false",
             "insufficient_work": "true",
-            "log_rpc": "true",
+            "log_rpc": "true", # Track RPC your node execute
             "bulk_pull": "false",
             "work_generation_time": "true",
             "log_to_cerr": "false",
