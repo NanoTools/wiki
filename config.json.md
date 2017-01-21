@@ -13,7 +13,7 @@
         "logging": {
             "ledger": "false", # Track incoming blocks
             "ledger_duplicate": "false",
-            "network": "true", # Enable network log
+            "network": "true", # Track general network info like forks
             "network_message": "false",
             "network_publish": "false", # Track blocks you publish to
             "network_packet": "false", # Track packets origin
