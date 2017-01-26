@@ -28,7 +28,7 @@ Changes seed for `<wallet>` to `<key>`
 
 ### --wallet_decrypt_unsafe --wallet=`<wallet>` --password=`<password>`
 Decrypts `<wallet>` using `<password>`  
-**!!THIS WILL PRINT YOUR PRIVATE KEY TO STDOUT!!**  
+**!!THIS WILL PRINT YOUR PRIVATE KEY AND SEED TO STDOUT!!**  
 If you didn't set password yet, use --wallet_decrypt_unsafe --wallet=`<wallet>`
 
 ### --wallet_destroy --wallet=`<wallet>`
