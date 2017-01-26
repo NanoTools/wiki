@@ -22,13 +22,13 @@
 * make install
 * (Windows) Use nmake instead of make. 
 
-## Build RaiBlocks
-# CMake variables
+## CMake variables
 * BOOST_ROOT [boost]
 * CMAKE_BUILD_TYPE Release
 * ACTIVE_NETWORK rai_live_network
 * Qt5_DIR [qt]lib/cmake/Qt5
 
+## Build RaiBlocks
 * Generate with cmake then build with your compiler
 
 ## Building a package
