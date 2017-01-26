@@ -7,7 +7,7 @@
 * (macOS) XCode >= 7.3
 * (Windows) Visual Studio 2015
 * (Windows) NSIS package builder
-* (*nix) Clang 3.5 or GCC 5
+* (*nix) Clang >= 3.5 or GCC >= 5
 * CMake
 
 ## Build Boost
