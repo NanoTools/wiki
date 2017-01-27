@@ -69,6 +69,6 @@
 
 config.json location:
 
-    Windows: C:\Users\AppData\Local\RaiBlocks\
-    OSX: /Users//Library/RaiBlocks/
-    Linux: ~/RaiBlocks/
+    Windows: C:\Users\<user\AppData\Local\RaiBlocks\
+    OSX: /Users/<user>/Library/RaiBlocks/
+    Linux: /home/<user>/RaiBlocks/
