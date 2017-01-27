@@ -13,7 +13,7 @@ Response:
 }`
 
 ## Account create  
-Creates a new, random account in **wallet**  
+Creates a new account, insert next deterministic key in **wallet**  
 Request:  
 `{  
   "action": "account_create",  
