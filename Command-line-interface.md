@@ -8,8 +8,44 @@ Get account number for the `<key>`
 ### --account_key --account=`<account>`
 Get the public key for `<account>`
 
+### --daemon
+Start node daemon
+
+### --debug_block_count
+Display the number of block
+
+### --debug_bootstrap_generate
+Generate bootstrap sequence of blocks
+
+### --debug_dump_representatives
+List representatives and weights
+
+### --debug_frontier_count
+Display the number of accounts
+
+### --debug_mass_activity
+Generates fake debug activity
+
+### --debug_profile_generate
+Profile work generation
+
+### --debug_profile_verify
+Profile work verification
+
+### --debug_profile_kdf
+Profile kdf function
+
+### --debug_verify_profile
+Profile signature verification
+
+### --debug_xorshift_profile
+Profile xorshift algorithms
+
 ### --diagnostics
 Run internal diagnostics
+
+### --help
+Print out options
 
 ### --key_create
 Generates a adhoc random keypair and prints it to stdout
