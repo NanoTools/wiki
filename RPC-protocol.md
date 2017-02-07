@@ -9,7 +9,8 @@ Request:
 }`  
 Response:  
 `{  
-  "balance": "10000"  
+  "balance": "10000",  
+  "pending": "10000"  
 }`
 
 ## Account create  
