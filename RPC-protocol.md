@@ -1,7 +1,7 @@
 The RPC protocol accepts JSON http POST requests.  The following are RPC commands along with the responses that are expected.
 
 ## Account balance  
-Returns how many rai is owned by **account**  
+Returns how many rai is owned and how many have not yet been received by **account**  
 Request:  
 `{  
   "action": "account_balance",  
@@ -486,6 +486,18 @@ Response:
     "peers": {
         0: "[::ffff:172.17.0.1]:32841"
     } 
+}`
+
+## Pending  
+Returns a list of block hashes which have not yet been received by this account.  
+`{  
+  "action": "pending",
+  "account": "xrb_1111111111111111111111111111111111111111111111111117353trpda",  
+  "count": "1"    
+}`  
+Response:  
+`{    
+  "blocks" : [ "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F" ]  
 }`
 
 ## Wallet add key  
