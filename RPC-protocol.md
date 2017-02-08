@@ -135,14 +135,15 @@ Response:
 }`
 
 ## Block count  
-Reports the number of blocks in the ledger  
+Reports the number of blocks in the ledger and unchecked synchronizing blocks   
 Request:  
 `{  
   "action": "block_count"  
 }`  
 Response:  
 `{
-  "count": "1000"  
+  "count": "1000",  
+  "unchecked": "10"  
 }`
 
 ## Chain  
