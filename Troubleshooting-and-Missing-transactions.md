@@ -11,5 +11,5 @@
 [Visual C++ Redistributable for Visual Studio 2017 (64-bit)](https://download.microsoft.com/download/7/2/5/72572684-052f-4aa9-9170-9d40813a87be/vc_redist.x64.exe)
 * For Windows 32-bit
 [Visual C++ Redistributable for Visual Studio 2017 (32-bit) ](Visual C++ Redistributable for Visual Studio 2017 (32-bit) )
-* Or other for [other Windows versions](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)
+* Or find the right one for [your Windows version](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)
 
