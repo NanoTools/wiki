@@ -10,6 +10,6 @@
 * For Windows 64-bit
 [Visual C++ Redistributable for Visual Studio 2017 (64-bit)](https://download.microsoft.com/download/7/2/5/72572684-052f-4aa9-9170-9d40813a87be/vc_redist.x64.exe)
 * For Windows 32-bit
-[Visual C++ Redistributable for Visual Studio 2017 (32-bit) ](https://download.microsoft.com/download/e/6/6/e66c5871-7afe-4640-a454-786eabe8aae8/vc_redist.x86.exe) )
+[Visual C++ Redistributable for Visual Studio 2017 (32-bit) ](https://download.microsoft.com/download/e/6/6/e66c5871-7afe-4640-a454-786eabe8aae8/vc_redist.x86.exe)
 * Or find the right one for [your Windows version](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)
 
