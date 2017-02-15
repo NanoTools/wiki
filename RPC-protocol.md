@@ -416,6 +416,7 @@ Request:
 }`  
 Response:  
 `{  
+  "set": "1"
 }`
 
 ## Search pending  
