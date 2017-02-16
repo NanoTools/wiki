@@ -1,29 +1,13 @@
 # Distribution
-The initial distribution of XRB is performed through manual mining limited via a captcha.  There's also an overall rate limit set by the distribution schedule.
+The initial distribution of XRB is performed through manual mining limited via a captcha.  There's also an overall rate limit set by the distribution schedule.  Currently the distribution rate is 400,000 Mrai per day distributed at 00:00 GMT.  Over 50% of distribution will be completed by the end of 2017.
 
-Distribution schedule:  
-Year 1: 2^127 50%  
-Year 2: 2^126 25%  
-Year 3: 2^125 13%  
-Year 4: 2^124 6.3%  
-Year 5: 2^123 3.1%  
-Year 6: 2^122 1.6%  
-Year 7: 2^121 0.8%  
-Year 8: 2^121 0.8%  
-
-Blocks will be put in to the faucet on a 1 hour interval in equal proportions. 1 distribution year is 2^25 seconds which is approximately one calendar year.
-
-Distribution start time: Was midnight Oct 1st 2015, 1443657600s after unix epoch  
 Genesis account:  
 **xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3**  
-Landing account:  
-**xrb_13ezf4od79h1tgj9aiu4djzcmmguendtjfuhwfukhuucboua8cpoihmh8byo**  
 Faucet account:  
-**xrb_35jjmmmh81kydepzeuf9oec8hzkay7msr6yxagzxpcht7thwa5bus5tomgz9**  
+**xrb_13ezf4od79h1tgj9aiu4djzcmmguendtjfuhwfukhuucboua8cpoihmh8byo**  
 
 The genesis balance is kept in cold storage in a bank secure box.  
-Blocks move from the genesis account to the landing account once per week in order to minimize the number of live undistributed blocks.  
-Blocks move from the landing account to the faucet on a 1 hour interval.  
+Blocks move from the genesis account to the landing account once per week in order to minimize the number of live undistributed blocks.   
 
 No portion of any of the listed accounts is reserved by anyone.  All genesis blocks will be made available to anyone via the same distribution mechanism.
 
