@@ -68,11 +68,12 @@ Response:
 }`
 
 ## Account representative set  
-Sets the representative for **account**  
+Sets the representative for **account** in **wallet**  
 Request:  
 `{  
   "action": "account_representative_set",  
-  "account": "xrb_39a73oy5ungrhxy5z5oao1xso4zo7dmgpjd4u74xcrx3r1w6rtazuouw6qfi",
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "account": "xrb_39a73oy5ungrhxy5z5oao1xso4zo7dmgpjd4u74xcrx3r1w6rtazuouw6qfi",  
   "representative" : "xrb_16u1uufyoig8777y6r8iqjtrw8sg8maqrm36zzcm95jmbd9i9aj5i8abr8u5"
 }`  
 Response:  
