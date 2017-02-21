@@ -1,7 +1,7 @@
 **To enable RPC for node edit config.json after first launch**   
 ./rai_node --daemon  
-sed -i 's/"rpc_enable": "false"/"rpc_enable": "true"/g' RaiBlocks/config.json   
-sed -i 's/"enable_control": "false"/"enable_control": "true"/g' RaiBlocks/config.json   
+sed -i 's/"rpc_enable": "false"/"rpc_enable": "true"/g' ~/RaiBlocks/config.json   
+sed -i 's/"enable_control": "false"/"enable_control": "true"/g' ~/RaiBlocks/config.json   
 
 **Launch rai_node in the background**   
 ./rai_node --daemon >./rai_node.log 2>&1 &   
