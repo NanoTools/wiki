@@ -30,6 +30,8 @@
 
 ## Build RaiBlocks
 * Generate with cmake then build with your compiler
+* (*nix) to build node without GUI execute: make rai_node
+* (*nix) to build wallet with GUI execute: make rai_wallet
 
 ## Building a package
 * (macOS) cpack -G "DragNDrop"
