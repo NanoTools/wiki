@@ -21,7 +21,7 @@ sudo apt-get install git cmake g++ curl
 wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz/download   
 tar xzvf boost_1_63_0.tar.gz   
 cd boost_1_63_0   
-./bootstrap.sh
+./bootstrap.sh   
 ./b2 --prefix=../[boost] link=static install
 ### Building rai_node
 git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
