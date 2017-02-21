@@ -7,10 +7,10 @@ sed -i 's/"enable_control": "false"/"enable_control": "true"/g' ~/RaiBlocks/conf
 ./rai_node --daemon >./rai_node.log 2>&1 &   
 
 **Check if RPC is enabled with curl**   
-curl -d '{ "action": "block_count" }' [::1]:7076   
+curl -g -d '{ "action": "block_count" }' [::1]:7076   
 
 **To stop node, use**   
-curl -d '{ "action": "stop" }' [::1]:7076   
+curl -g -d '{ "action": "stop" }' [::1]:7076   
 
 To manage node, use [RPC commands](https://github.com/clemahieu/raiblocks/wiki/RPC-protocol) or [CLI](https://github.com/clemahieu/raiblocks/wiki/Command-line-interface)   
 
