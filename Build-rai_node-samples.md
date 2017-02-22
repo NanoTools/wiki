@@ -44,7 +44,8 @@ wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.
 tar xzvf boost_1_63_0.tar.gz   
 cd boost_1_63_0   
 ./bootstrap.sh   
-./b2 --prefix=../[boost] link=static install
+./b2 --prefix=../[boost] link=static install   
+cd ..
 ### Building rai_node
 git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
 cd rai_build   
