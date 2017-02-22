@@ -12,21 +12,21 @@ curl -g -d '{ "action": "block_count" }' [::1]:7076
 **To stop node, use**   
 curl -g -d '{ "action": "stop" }' [::1]:7076   
 
-**Launch rai_node as a service**   
+**Launch rai_node as a service with system.d**   
 sudo touch /etc/systemd/system/rai_node.service   
 sudo chmod 664 /etc/systemd/system/rai_node.service   
 sudo nano /etc/systemd/system/rai_node.service   
->_Paste your specific settings (example)_   
+>_Paste your specific user, group, path settings (example)_   
     
-    [Unit]   
-    Description=RaiBlocks node service   
+    [Unit]
+    Description=RaiBlocks node service
     After=network.target
     
     [Service]
-    ExecStart=[path_to_rai_node]/rai_node --daemon   
-    Restart=on-abort   
-    User=[username]   
-    Group=[group]   
+    ExecStart=/path_to_rai_node/rai_node --daemon
+    Restart=on-abort
+    User=username
+    Group=groupname
 >_Start rai_node service_    
 
 sudo service rai_node start
