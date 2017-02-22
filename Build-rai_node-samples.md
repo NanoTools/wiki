@@ -26,7 +26,7 @@ sudo nano /etc/systemd/system/rai_node.service
     ExecStart=[path_to_rai_node]/rai_node --daemon   
     Restart=on-abort   
     User=[username]   
-    Group=[group]   `
+    Group=[group]   
 >_Start rai_node service_    
 
 sudo service rai_node start
