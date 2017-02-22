@@ -3,7 +3,7 @@
 sed -i 's/"rpc_enable": "false"/"rpc_enable": "true"/g' ~/RaiBlocks/config.json   
 sed -i 's/"enable_control": "false"/"enable_control": "true"/g' ~/RaiBlocks/config.json   
 
-**Launch rai_node in the background**   
+**Launch rai_node in the background (test mode)**   
 ./rai_node --daemon >./rai_node.log 2>&1 &   
 
 **Check if RPC is enabled with curl**   
@@ -12,7 +12,29 @@ curl -g -d '{ "action": "block_count" }' [::1]:7076
 **To stop node, use**   
 curl -g -d '{ "action": "stop" }' [::1]:7076   
 
-To manage node, use [RPC commands](https://github.com/clemahieu/raiblocks/wiki/RPC-protocol) or [CLI](https://github.com/clemahieu/raiblocks/wiki/Command-line-interface)   
+**Launch rai_node as a service**   
+sudo touch /etc/systemd/system/rai_node.service   
+sudo chmod 664 /etc/systemd/system/rai_node.service   
+sudo nano /etc/systemd/system/rai_node.service   
+>_Paste your specific settings (example)_   
+    
+    [Unit]   
+    Description=RaiBlocks node service   
+    After=network.target
+    
+    [Service]
+    ExecStart=[path_to_rai_node]/rai_node --daemon   
+    Restart=on-abort   
+    User=[username]   
+    Group=[group]   `
+>_Start rai_node service_    
+
+sudo service rai_node start
+    
+    
+**To manage node, use [RPC commands](https://github.com/clemahieu/raiblocks/wiki/RPC-protocol) or [CLI](https://github.com/clemahieu/raiblocks/wiki/Command-line-interface)**   
+
+***
 
 # Ubuntu 16.04 LTS Server
 sudo apt-get update && sudo apt-get upgrade   
