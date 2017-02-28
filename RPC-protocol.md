@@ -147,6 +147,19 @@ Response:
   "unchecked": "10"  
 }`
 
+## Bootstrap  
+Initialize bootstrap to specific **IP address** and **port**   
+Request:  
+`{  
+  "action": "bootstrap",  
+  "address": "::ffff:138.201.94.249",  
+  "port": "7075"  
+}`  
+Response:  
+`{
+  "success": ""  
+}`
+
 ## Chain  
 Returns a list of block hashes in the chain starting at **block** up to **count**  
 Request:  
