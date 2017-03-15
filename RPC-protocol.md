@@ -180,7 +180,7 @@ Returns a list of pairs of account and block hash representing the head block st
 Request:  
 `{  
   "action": "frontiers",
-  "account": "xrb_1111111111111111111111111111111111111111111111111117353trpda",  
+  "account": "xrb_1111111111111111111111111111111111111111111111111111hifc8npp",  
   "count": "1"    
 }`  
 Response:  
