@@ -49,7 +49,7 @@
         "inactive_supply": "0", #
         "password_fanout": "1024", #
         "io_threads": "4", #
-        "work_threads": "4" #
+        "work_threads": "4" # PoW work threads. By deafault all available CPU threads, set lower value for 24/7 serices
     },
     "rpc": {
         "address": "::ffff:127.0.0.1", # Allowed IP for RPC connection
