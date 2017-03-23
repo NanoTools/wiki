@@ -303,44 +303,6 @@ Response:
 `{      
 }`
 
-## Wallet change password  
-Changes the password for **wallet** to **password**  
-Request:  
-`{  
-  "action": "password_change",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-  "password": "test"  
-}`  
-Response:  
-`{  
-  "changed" : "1"
-}`
-
-## Wallet password enter  
-Enters the **password** in to **wallet**  
-Request:  
-`{  
-  "action": "password_enter",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-  "password": "test"  
-}`  
-Response:  
-`{  
-  "valid" : "1"
-}`
-
-## Wallet valid password  
-Checks whether the password entered for **wallet** is valid  
-Request:  
-`{  
-  "action": "password_valid",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
-}`  
-Response:  
-`{  
-  "valid" : "1"
-}`
-
 ## Payment begin  
 Begin a new payment session.  Searches wallet for an account that's marked as available and has a 0 balance.  If one is found, the account number is returned and is marked as unavailable.  If no account is found, a new account is created, placed in the wallet, and returned.  
 Request:  
@@ -574,6 +536,44 @@ Request:
 Response:  
 `{  
   "json" : "{\"0000000000000000000000000000000000000000000000000000000000000000\": \"0000000000000000000000000000000000000000000000000000000000000001\"}"
+}`
+
+## Wallet change password  
+Changes the password for **wallet** to **password**  
+Request:  
+`{  
+  "action": "password_change",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "password": "test"  
+}`  
+Response:  
+`{  
+  "changed" : "1"
+}`
+
+## Wallet password enter  
+Enters the **password** in to **wallet**  
+Request:  
+`{  
+  "action": "password_enter",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "password": "test"  
+}`  
+Response:  
+`{  
+  "valid" : "1"
+}`
+
+## Wallet valid password  
+Checks whether the password entered for **wallet** is valid  
+Request:  
+`{  
+  "action": "password_valid",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}`  
+Response:  
+`{  
+  "valid" : "1"
 }`
 
 ## Work cancel
