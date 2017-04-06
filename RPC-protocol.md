@@ -25,6 +25,18 @@ Response:
   "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"  
 }`
 
+## Account get
+Get account number for the **public key**  
+Request:  
+`{  
+  "action": "account_get",  
+  "key": "3068BB1CA04525BB0E416C485FE6A67FD52540227D267CC8B6E8DA958A7FA039"  
+}`  
+Response:  
+`{  
+  "account" : "xrb_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3sxwjym5rx"  
+}`
+
 ## Account list  
 Lists all the accounts inside **wallet**  
 Request:  
@@ -53,6 +65,18 @@ Request:
 Response:  
 `{  
   "moved" : "1"
+}`
+
+## Account public key
+Get the public key for **account**  
+Request:  
+`{  
+  "action": "account_key",  
+  "account" : "xrb_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3sxwjym5rx"  
+}`  
+Response:  
+`{  
+  "key": "3068BB1CA04525BB0E416C485FE6A67FD52540227D267CC8B6E8DA958A7FA039"  
 }`
 
 ## Account representative  
@@ -303,16 +327,31 @@ Response:
 `{      
 }`
 
-## Payment begin  
-Begin a new payment session.  Searches wallet for an account that's marked as available and has a 0 balance.  If one is found, the account number is returned and is marked as unavailable.  If no account is found, a new account is created, placed in the wallet, and returned.  
+## Key create  
+Generates a **adhoc random keypair**  
 Request:  
 `{  
-  "action": "payment_begin",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+  "action": "key_create"  
 }`  
 Response:  
 `{  
-  "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"  
+  "private": "781186FB9EF17DB6E3D1056550D9FAE5D5BBADA6A6BC370E4CBB938B1DC71DA3",  
+  "public": "3068BB1CA04525BB0E416C485FE6A67FD52540227D267CC8B6E8DA958A7FA039",  
+  "account": "xrb_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3sxwjym5rx"  
+}`  
+
+## Key expand  
+Derive public key and account number from **private key**  
+Request:  
+`{  
+  "action": "key_expand",  
+  "key": "781186FB9EF17DB6E3D1056550D9FAE5D5BBADA6A6BC370E4CBB938B1DC71DA3"  
+}`  
+Response:  
+`{  
+  "private": "781186FB9EF17DB6E3D1056550D9FAE5D5BBADA6A6BC370E4CBB938B1DC71DA3",  
+  "public": "3068BB1CA04525BB0E416C485FE6A67FD52540227D267CC8B6E8DA958A7FA039",  
+  "account": "xrb_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3sxwjym5rx"  
 }`  
 
 ## Payment init  
