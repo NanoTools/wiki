@@ -354,6 +354,18 @@ Response:
   "account": "xrb_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3sxwjym5rx"  
 }`  
 
+## Payment begin
+Begin a new payment session. Searches wallet for an account that's marked as available and has a 0 balance. If one is found, the account number is returned and is marked as unavailable. If no account is found, a new account is created, placed in the wallet, and returned.  
+Request:  
+`{  
+"action": "payment_begin",  
+"wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}`  
+Response:  
+`{  
+"account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"  
+}`  
+
 ## Payment init  
 Marks all accounts in wallet as available for being used as a payment session.  
 Request:  
