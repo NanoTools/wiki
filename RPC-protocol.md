@@ -13,6 +13,19 @@ Response:
   "pending": "10000"  
 }`
 
+## Account block count
+Get number of blocks for a specifi account
+Request:
+Request:  
+`{  
+  "action": "account_block_count",  
+  "account": ""  
+}`  
+Response:  
+`{  
+  "block_account" : ""  
+}`
+
 ## Account create  
 Creates a new account, insert next deterministic key in **wallet**  
 Request:  
