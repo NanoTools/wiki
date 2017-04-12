@@ -14,16 +14,15 @@ Response:
 }`
 
 ## Account block count
-Get number of blocks for a specifi account
-Request:
+Get number of blocks for a specific **account**  
 Request:  
 `{  
   "action": "account_block_count",  
-  "account": ""  
+  "account": "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3"  
 }`  
 Response:  
 `{  
-  "block_count" : ""  
+  "block_count" : "19"  
 }`
 
 ## Account create  
