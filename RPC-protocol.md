@@ -23,7 +23,7 @@ Request:
 }`  
 Response:  
 `{  
-  "block_account" : ""  
+  "block_count" : ""  
 }`
 
 ## Account create  
