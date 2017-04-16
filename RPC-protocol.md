@@ -91,6 +91,20 @@ Response:
   "key": "3068BB1CA04525BB0E416C485FE6A67FD52540227D267CC8B6E8DA958A7FA039"  
 }`
 
+
+## Account remove
+Remove **account** from **wallet**  
+Request:  
+`{  
+  "action": "account_remove",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "account": "xrb_39a73oy5ungrhxy5z5oao1xso4zo7dmgpjd4u74xcrx3r1w6rtazuouw6qfi"
+}`  
+Response:  
+`{  
+  "removed": "1"
+}`
+
 ## Account representative  
 Returns the representative for **account**  
 Request:  
@@ -599,6 +613,20 @@ Request:
 Response:  
 `{  
   "json" : "{\"0000000000000000000000000000000000000000000000000000000000000000\": \"0000000000000000000000000000000000000000000000000000000000000001\"}"
+}`
+
+## Wallet frontiers  
+Returns a list of pairs of account and block hash representing the head block starting fro accounts from **wallet**  
+Request:  
+`{  
+  "action": "wallet_frontiers",
+  "account": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"    
+}`  
+Response:  
+`{    
+  "frontiers" : [  
+  "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+  ]  
 }`
 
 ## Wallet change password  
