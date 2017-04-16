@@ -568,6 +568,19 @@ Response:
   "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"
 }`
 
+## Wallet change seed  
+Changes seed for **wallet** to **seed**  
+Request:  
+`{  
+  "action": "wallet_change_seed",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "seed": "74F2B37AAD20F4A260F0A5B3CB3D7FB51673212263E58A380BC10474BB039CEE"  
+}`  
+Response:  
+`{  
+  "success" : ""
+}`
+
 ## Wallet contains  
 Check whether **wallet** contains **account**  
 Request:  
@@ -620,7 +633,7 @@ Returns a list of pairs of account and block hash representing the head block st
 Request:  
 `{  
   "action": "wallet_frontiers",
-  "account": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"    
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"    
 }`  
 Response:  
 `{    
