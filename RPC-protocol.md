@@ -447,6 +447,21 @@ Response:
 `{  
 }`
 
+## Representatives  
+Returns a list of pairs of representative and its voting weight  
+Request:  
+`{  
+  "action": "representatives"    
+}`  
+Response:  
+`{    
+  "representatives" : [  
+  "xrb_1111111111111111111111111111111111111111111111111117353trpda": "3822372327060170000000000000000000000",  
+  "xrb_1111111111111111111111111111111111111111111111111awsq94gtecn": "30999999999999999999999999000000",  
+  "xrb_114nk4rwjctu6n6tr6g6ps61g1w3hdpjxfas4xj1tq6i8jyomc5d858xr1xi": "0"  
+  ]  
+}`
+
 ## Wallet representative  
 Returns the default representative for **wallet**  
 Request:  
