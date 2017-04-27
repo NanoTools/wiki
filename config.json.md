@@ -9,7 +9,7 @@
         "bootstrap_fraction_numerator": "1", #
         "creation_rebroadcast": "2", #
         "rebroadcast_delay": "15", # 
-        "enable_voting": "false" # Enable or disable voting for blocks. If disabled, saves some resources
+        "enable_voting": "false", # Enable or disable voting for blocks. If disabled, saves some resources
         "receive_minimum": "1000000000000000000000000", # Minimum import receivable, default 1 Rai
         "logging": {
             "ledger": "false", # Track incoming blocks
