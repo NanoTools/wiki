@@ -22,6 +22,8 @@ krai = 1000000000000000000000000000, 10^27
 mrai = 1000000000000000000000, 10^21  
 urai = 1000000000000000000, 10^18  
 
+  Mrai is also tagged as XRB
+
 # Mining
 
 Coin mining is a natural extension of proof of work cryptocurrencies in order to disseminate coins in a distributed fashion.  Unfortunately the high cost of mining in terms of hardware and energy lowers the value of the currency which is a concern to the majority of users who don't mine.
