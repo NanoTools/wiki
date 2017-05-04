@@ -4,7 +4,7 @@ The initial distribution of XRB is performed through manual mining limited via a
 Genesis account:  
 **xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3**  
 Landing account:  
-**xrb_13ezf4od79h1tgj9aiu4djzcmmguendtjfuhwfukhuucboua8cpoihmh8byo**
+**xrb_13ezf4od79h1tgj9aiu4djzcmmguendtjfuhwfukhuucboua8cpoihmh8byo**  
 Faucet account: (no more used since 2017-01-19 12:02:21 am)  
 **xrb_13ezf4od79h1tgj9aiu4djzcmmguendtjfuhwfukhuucboua8cpoihmh8byo**  
 
