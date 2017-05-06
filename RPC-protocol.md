@@ -211,7 +211,7 @@ Response:
 }`
 
 ## Chain  
-Returns a list of block hashes in the chain starting at **block** up to **count**  
+Returns a list of block hashes in the account chain starting at **block** up to **count**  
 Request:  
 `{  
   "action": "chain",
