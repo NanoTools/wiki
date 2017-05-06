@@ -1,7 +1,7 @@
     {
     "version": "(int)", # Wallet version
-    "wallet": "(string)", # Default wallet to load on boot
-    "account": "(string)", # Default account to load on boot
+    "wallet": "(string)", # Default wallet to load on boot (only for GUI wallet)
+    "account": "(string)", # Default account to load on boot (only for GUI wallet)
     "node": {
         "version": "(int)", # Node version
         "peering_port": "7075", # Default node port
