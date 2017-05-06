@@ -26,6 +26,7 @@ Response:
 }`
 
 ## Account create  
+_enable_control required_  
 Creates a new account, insert next deterministic key in **wallet**  
 Request:  
 `{  
@@ -64,6 +65,7 @@ Response:
 }`
 
 ## Account move  
+_enable_control required_  
 Moves **accounts** from **source** to **wallet**  
 Request:  
 `{  
@@ -93,6 +95,7 @@ Response:
 
 
 ## Account remove
+_enable_control required_  
 Remove **account** from **wallet**  
 Request:  
 `{  
@@ -118,6 +121,7 @@ Response:
 }`
 
 ## Account representative set  
+_enable_control required_  
 Sets the representative for **account** in **wallet**  
 Request:  
 `{  
@@ -342,6 +346,7 @@ Response:
 }`
 
 ## Keepalive  
+_enable_control required_  
 Tells the node to send a keepalive packet to **address**:**port**  
 Request:  
 `{  
@@ -475,6 +480,7 @@ Response:
 }`
 
 ## Wallet representative set  
+_enable_control required_  
 Sets the default **representative** for **wallet**  
 Request:  
 `{  
@@ -488,6 +494,7 @@ Response:
 }`
 
 ## Search pending  
+_enable_control required_  
 Tells the node to look for pending blocks for any account in **wallet**  
 Request:  
 `{  
@@ -500,6 +507,7 @@ Response:
 }`
 
 ## Send  
+_enable_control required_  
 Send **amount** from **source** in **wallet** to **destination**  
 Request:  
 `{  
@@ -515,6 +523,7 @@ Response:
 }`
 
 ## Stop node   
+_enable_control required_  
 Request:  
 `{  
   "action": "stop"  
@@ -571,6 +580,7 @@ Response:
 }`
 
 ## Wallet add key  
+_enable_control required_  
 Add an adhoc private key **key** to **wallet**  
 Request:  
 `{  
@@ -584,6 +594,7 @@ Response:
 }`
 
 ## Wallet change seed  
+_enable_control required_  
 Changes seed for **wallet** to **seed**  
 Request:  
 `{  
@@ -610,6 +621,7 @@ Response:
 }`
 
 ## Wallet create  
+_enable_control required_  
 Creates a new random wallet id  
 Request:  
 `{  
@@ -621,6 +633,7 @@ Response:
 }`
 
 ## Wallet destroy  
+_enable_control required_  
 Destroys **wallet** and all contained accounts  
 Request:  
 `{  
@@ -658,6 +671,7 @@ Response:
 }`
 
 ## Wallet change password  
+_enable_control required_  
 Changes the password for **wallet** to **password**  
 Request:  
 `{  
@@ -696,6 +710,7 @@ Response:
 }`
 
 ## Work cancel
+_enable_control required_  
 Stop generating **work** for block  
 Request:  
 `{  
@@ -707,6 +722,7 @@ Response:
 }`  
 
 ## Work generate
+_enable_control required_  
 Generates **work** for block  
 Request:  
 `{  
