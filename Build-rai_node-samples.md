@@ -50,7 +50,7 @@ cd ..
 ### Building rai_node
 git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
 cd rai_build   
-cmake -DACTIVE_NETWORK=rai_live_network -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=../[boost] -G "Unix Makefiles"   
+cmake -DBOOST_ROOT=../[boost] -G "Unix Makefiles"   
 make rai_node   
 cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics   
 
@@ -61,6 +61,6 @@ apt-get install git cmake g++ libboost-all-dev curl
 ### Building rai_node
 git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
 cd rai_build   
-cmake -DACTIVE_NETWORK=rai_live_network -DCMAKE_BUILD_TYPE=Release -G "Unix Makefiles"   
+cmake -G "Unix Makefiles"   
 make rai_node   
 cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics   
