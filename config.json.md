@@ -26,9 +26,10 @@
             "work_generation_time": "true",
             "log_to_cerr": "false",
             "max_size": "16777216",
-            "version": "2",
+            "version": "7",
             "work_peers": "",
-            "vote": "false" # Track voting activities
+            "vote": "false", # Track voting activities
+            "bootstrap_connections": "16" # Multi-connection bootstrap
         },
         "work_peers": "", # Delegate a node your hash work, you need to get RPC access to that node
         "preconfigured_peers": [ # List of defaults peers to connect on boot
