@@ -27,6 +27,7 @@
 * CMAKE_BUILD_TYPE Release
 * ACTIVE_NETWORK rai_live_network
 * Qt5_DIR [qt]lib/cmake/Qt5
+* RAIBLOCKS_GUI 1 (to build GUI wallet)
 
 ## Build RaiBlocks
 * Generate with cmake then build with your compiler
