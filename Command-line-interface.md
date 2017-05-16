@@ -9,7 +9,7 @@ Get account number for the `<key>`
 Get the public key for `<account>`
 
 ### --daemon
-Start node daemon
+Start node daemon. Use --daemon for default or --daemon=`<path>` to specify alternative data directory
 
 ### --debug_block_count
 Display the number of block
