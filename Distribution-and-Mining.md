@@ -22,7 +22,7 @@ krai = 1000000000000000000000000000, 10^27
 mrai = 1000000000000000000000, 10^21  
 urai = 1000000000000000000, 10^18  
 
-  Mrai is also tagged as XRB
+  1 rai is also called 1 XRB
 
 # Mining
 
