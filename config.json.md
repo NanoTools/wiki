@@ -29,7 +29,10 @@
             "version": "7",
             "work_peers": "",
             "vote": "false", # Track voting activities
-            "bootstrap_connections": "16" # Multi-connection bootstrap
+            "bootstrap_connections": "16", # Multi-connection bootstrap
+            "callback_address": "",
+            "callback_port": "0",
+            "callback_target": ""
         },
         "work_peers": "", # Delegate a node your hash work, you need to get RPC access to that node
         "preconfigured_peers": [ # List of defaults peers to connect on boot
