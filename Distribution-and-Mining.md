@@ -15,14 +15,14 @@ No portion of any of the listed accounts is reserved by anyone.  All genesis blo
 
 # Divider  
 We use a 128 bit integer to represent account balances, this is too large to present to the user so we defined a set of SI prefixes to make the numbers more accessible and avoid confusion.  The reference wallet uses Mrai as a divider.  
-Grai = 1000000000000000000000000000000000, 10^33  
-Mrai = 1000000000000000000000000000000, 10^30  
-krai = 1000000000000000000000000000, 10^27  
- rai = 1000000000000000000000000, 10^24  
-mrai = 1000000000000000000000, 10^21  
-urai = 1000000000000000000, 10^18  
+Gxrb = 1000000000000000000000000000000000, 10^33  
+Mxrb = 1000000000000000000000000000000, 10^30  
+kxrb = 1000000000000000000000000000, 10^27  
+ xrb = 1000000000000000000000000, 10^24  
+mxrb = 1000000000000000000000, 10^21  
+uxrb = 1000000000000000000, 10^18  
 
-  1 rai is also called 1 XRB
+  1 XRB is also called 1 rai
 
 # Mining
 
