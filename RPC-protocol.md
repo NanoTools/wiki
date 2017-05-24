@@ -734,6 +734,19 @@ Response:
     "work": "2bf29ef00786a6bc"  
 }`  
 
+## Work validate 
+Check whether **work** is valid for block  
+Request:  
+`{  
+    "action": "work_validate",  
+    "work": "2bf29ef00786a6bc",  
+    "hash": "718CC2121C3E641059BC1C2CFC45666C99E8AE922F7A807B7D07B62C995D79E2"  
+}`  
+Response:  
+`{  
+    "valid": "1"  
+}`  
+
 ## RPC callback
 Send JSON POST requests with every new block to callback server _http://callback_address:callback_port<callback_target>_ defined in [config.json](https://github.com/clemahieu/raiblocks/wiki/config.json).  
 Sample:  
