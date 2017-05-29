@@ -214,6 +214,17 @@ Response:
   "success": ""  
 }`
 
+## Bootstrap  
+Initialize multi-connection bootstrap to random peers   
+Request:  
+`{  
+  "action": "bootstrap_any"  
+}`  
+Response:  
+`{
+  "success": ""  
+}`
+
 ## Chain  
 Returns a list of block hashes in the account chain starting at **block** up to **count**  
 Request:  
