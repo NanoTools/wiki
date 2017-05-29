@@ -214,7 +214,7 @@ Response:
   "success": ""  
 }`
 
-## Bootstrap  
+## Multi-connection bootstrap  
 Initialize multi-connection bootstrap to random peers   
 Request:  
 `{  
@@ -566,6 +566,22 @@ Request:
 Response:  
 `{  
   "valid" : "1"
+}`
+
+
+## Successors  
+Returns a list of block hashes in the account chain ending at **block** up to **count**  
+Request:  
+`{  
+  "action": "successors",
+  "block": "991CF190094C00F0B68E2E5F75F6BEE95A2E0BD93CEAA4A6734DB9F19B728948",  
+  "count": "1"    
+}`  
+Response:  
+`{    
+  "blocks" : [  
+  "A170D51B94E00371ACE76E35AC81DC9405D5D04D4CEBC399AEACE07AE05DD293"  
+  ]  
 }`
 
 ## Retrieve node versions 
