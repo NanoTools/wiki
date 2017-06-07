@@ -25,12 +25,19 @@ sudo nano /etc/systemd/system/rai_node.service
     
     [Service]
     ExecStart=/path_to_rai_node/rai_node --daemon
-    Restart=on-abort
+    Restart=on-failure
     User=username
     Group=groupname
+
+    [Install]
+    WantedBy=multi-user.target
 >_Start rai_node service_    
 
 sudo service rai_node start
+
+>_Enable at startup_    
+
+sudo systemctl enable rai_node
     
     
 **To manage node, use [RPC commands](https://github.com/clemahieu/raiblocks/wiki/RPC-protocol) or [CLI](https://github.com/clemahieu/raiblocks/wiki/Command-line-interface)**   
