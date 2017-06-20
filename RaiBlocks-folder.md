@@ -8,6 +8,6 @@ RaiBlocks folder contains:
 This is the location:
 
 
-    Windows: C:\Users\<user\AppData\Local\RaiBlocks\
+    Windows: C:\Users\<user>\AppData\Local\RaiBlocks\
     OSX: /Users/<user>/Library/RaiBlocks/
     Linux: /home/<user>/RaiBlocks/
