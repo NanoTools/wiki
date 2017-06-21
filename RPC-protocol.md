@@ -573,6 +573,22 @@ Response:
 `{  
 }`
 
+
+## Receive  
+_enable_control required_  
+Receive pending **block** for **account** in **wallet**  
+Request:  
+`{  
+  "action": "receive",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
+  "block": "53EAA25CE28FA0E6D55EA9704B32604A736966255948594D55CBB05267CECD48"  
+}`  
+Response:  
+`{  
+  "block": "EE5286AB32F580AB65FD84A69E107C69FBEB571DEC4D99297E19E3FA5529547B"  
+}`
+
 ## Representatives  
 Returns a list of pairs of representative and its voting weight  
 Request:  
