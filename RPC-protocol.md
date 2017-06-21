@@ -148,7 +148,7 @@ Response:
 }`
 
 ## Accounts balances  
-Returns how many rai is owned and how many have not yet been received by **accounts**  
+Returns how many rai is owned and how many have not yet been received by **accounts list**  
 Request:  
 `{  
   "action": "accounts_balances",  
@@ -168,7 +168,38 @@ Response:
       "pending": "0"  
     }  
   }  
-}`
+}`  
+
+## Accounts frontiers  
+Returns a list of pairs of account and block hash representing the head block for **accounts list**  
+Request:  
+`{  
+  "action": "accounts_frontiers",  
+  "accounts": ["xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3", "xrb_3i1aq1cchnmbn9x5rsbap8b15akfh7wj7pwskuzi7ahz8oq6cobd99d4r3b7"]  
+}`  
+Response:  
+`{  
+  "frontiers" : "{  
+    "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3": "791AF413173EEE674A6FCF633B5DFC0F3C33F397F0DA08E987D9E0741D40D81A",  
+    "xrb_3i1aq1cchnmbn9x5rsbap8b15akfh7wj7pwskuzi7ahz8oq6cobd99d4r3b7": "6A32397F4E95AF025DE29D9BF1ACE864D5404362258E06489FABDBA9DCCC046F"  
+  }  
+}`  
+
+## Accounts pending  
+Returns a list of block hashes which have not yet been received by these **accounts**  
+Request:  
+`{  
+  "action": "accounts_pending",  
+  "accounts": ["xrb_1111111111111111111111111111111111111111111111111117353trpda", "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3"],  
+  "count": "1"
+}`  
+Response:  
+`{  
+  "pending" : "{  
+    "xrb_1111111111111111111111111111111111111111111111111117353trpda": ["142A538F36833D1CC78B94E11C766F75818F8B940771335C6C1B8AB880C5BB1D"],  
+    "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3": ["4C1FEEF0BEA7F50BE35489A1233FE002B212DEA554B55B1B470D78BD8F210C74"]  
+  }  
+}`  
 
 ## Available supply  
 Returns how many rai are in the public supply  
