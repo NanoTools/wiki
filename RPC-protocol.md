@@ -50,6 +50,24 @@ Response:
   "account" : "xrb_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3sxwjym5rx"  
 }`
 
+## Account history  
+Reports send/receive information for a **account**  
+Request:  
+`{  
+  "action": "account_history",  
+  "hash": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
+  "count": "10"
+}`  
+Response:  
+`{
+    "history": [{
+            "hash": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",
+            "type": "receive",
+            "account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+            "amount": "100000000000000000000000000000000"
+    }]
+}`
+
 ## Account list  
 Lists all the accounts inside **wallet**  
 Request:  
@@ -229,6 +247,28 @@ Response:
     "work": "0000000000000000",
     "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
 }"
+}`
+
+
+## Retrieve multiple blocks  
+Retrieves a json representations of **blocks**  
+Request:  
+`{  
+  "action": "blocks",  
+  "hashes": ["000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"]  
+}`  
+Response:  
+`{  
+  "blocks" : "{  
+    "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F": "{  
+      "type": "open",  
+      "account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
+      "representative": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
+      "source": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",  
+      "work": "0000000000000000",  
+      "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"  
+    }"
+  }"
 }`
 
 ## Block account  
