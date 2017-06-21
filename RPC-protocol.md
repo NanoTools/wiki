@@ -744,6 +744,36 @@ Response:
   "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"
 }`
 
+## Wallet total balance  
+Returns the sum of all accounts balances in **wallet**  
+Request:  
+`{  
+  "action": "wallet_balance_total",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}`  
+Response:  
+`{  
+  "balance": "10000",  
+  "pending": "10000"  
+}`
+
+## Wallet accounts balances  
+Returns how many rai is owned and how many have not yet been received by all accounts in **wallet**  
+Request:  
+`{  
+  "action": "wallet_balances",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}`  
+Response:  
+`{  
+  "balances" : [  
+  "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000": "{  
+    "balance": "10000",  
+    "pending": "10000"  
+  }"
+  ]   
+}`
+
 ## Wallet change seed  
 _enable_control required_  
 Changes seed for **wallet** to **seed**  
