@@ -147,6 +147,29 @@ Response:
   "weight": "10000"  
 }`
 
+## Accounts balances  
+Returns how many rai is owned and how many have not yet been received by **accounts**  
+Request:  
+`{  
+  "action": "accounts_balances",  
+  "accounts": ["xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000", "xrb_3i1aq1cchnmbn9x5rsbap8b15akfh7wj7pwskuzi7ahz8oq6cobd99d4r3b7"]  
+}`  
+Response:  
+`{  
+  "balances" : "{  
+    "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000":  
+    {  
+      "balance": "10000",  
+      "pending": "10000"  
+    },  
+    "xrb_3i1aq1cchnmbn9x5rsbap8b15akfh7wj7pwskuzi7ahz8oq6cobd99d4r3b7":  
+    {  
+      "balance": "10000000",  
+      "pending": "0"  
+    }  
+  }  
+}`
+
 ## Available supply  
 Returns how many rai are in the public supply  
 Request:  
@@ -239,6 +262,22 @@ Response:
   "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
   ]  
 }`
+
+
+## Deterministic key  
+Derive deterministic keypair from **seed** based on **index**  
+Request:  
+`{  
+  "action": "deterministic_key",
+  "seed": "0000000000000000000000000000000000000000000000000000000000000000",  
+  "index": "0"    
+}`  
+Response:  
+`{  
+  "private": "9F0E444C69F77A49BD0BE89DB92C38FE713E0963165CCA12FAF5712D7657120F",  
+  "public": "C008B814A7D269A1FA3C6528B19201A24D797912DB9996FF02A1FF356E45552B",  
+  "account": "xrb_3i1aq1cchnmbn9x5rsbap8b15akfh7wj7pwskuzi7ahz8oq6cobd99d4r3b7"  
+}`  
 
 ## Frontiers  
 Returns a list of pairs of account and block hash representing the head block starting at **account** up to **count**  
