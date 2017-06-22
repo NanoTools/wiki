@@ -174,7 +174,7 @@ Request:
 }`  
 Response:  
 `{  
-  "balances" : "{  
+  "balances" : {  
     "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000":  
     {  
       "balance": "10000",  
@@ -197,7 +197,7 @@ Request:
 }`  
 Response:  
 `{  
-  "frontiers" : "{  
+  "frontiers" : {  
     "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3": "791AF413173EEE674A6FCF633B5DFC0F3C33F397F0DA08E987D9E0741D40D81A",  
     "xrb_3i1aq1cchnmbn9x5rsbap8b15akfh7wj7pwskuzi7ahz8oq6cobd99d4r3b7": "6A32397F4E95AF025DE29D9BF1ACE864D5404362258E06489FABDBA9DCCC046F"  
   }  
@@ -213,7 +213,7 @@ Request:
 }`  
 Response:  
 `{  
-  "pending" : "{  
+  "pending" : {  
     "xrb_1111111111111111111111111111111111111111111111111117353trpda": ["142A538F36833D1CC78B94E11C766F75818F8B940771335C6C1B8AB880C5BB1D"],  
     "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3": ["4C1FEEF0BEA7F50BE35489A1233FE002B212DEA554B55B1B470D78BD8F210C74"]  
   }  
@@ -259,7 +259,7 @@ Request:
 }`  
 Response:  
 `{  
-  "blocks" : "{  
+  "blocks" : {  
     "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F": "{  
       "type": "open",  
       "account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
@@ -268,7 +268,7 @@ Response:
       "work": "0000000000000000",  
       "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"  
     }"
-  }"
+  }
 }`
 
 ## Block account  
@@ -360,9 +360,9 @@ Request:
 }`  
 Response:  
 `{    
-  "frontiers" : [  
+  "frontiers" : {  
   "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
-  ]  
+  }  
 }`
 
 ## Frontier count  
@@ -597,11 +597,11 @@ Request:
 }`  
 Response:  
 `{    
-  "representatives" : [  
-  "xrb_1111111111111111111111111111111111111111111111111117353trpda": "3822372327060170000000000000000000000",  
-  "xrb_1111111111111111111111111111111111111111111111111awsq94gtecn": "30999999999999999999999999000000",  
-  "xrb_114nk4rwjctu6n6tr6g6ps61g1w3hdpjxfas4xj1tq6i8jyomc5d858xr1xi": "0"  
-  ]  
+  "representatives" : {  
+    "xrb_1111111111111111111111111111111111111111111111111117353trpda": "3822372327060170000000000000000000000",  
+    "xrb_1111111111111111111111111111111111111111111111111awsq94gtecn": "30999999999999999999999999000000",  
+    "xrb_114nk4rwjctu6n6tr6g6ps61g1w3hdpjxfas4xj1tq6i8jyomc5d858xr1xi": "0"  
+  }  
 }`
 
 ## Wallet representative  
@@ -782,12 +782,12 @@ Request:
 }`  
 Response:  
 `{  
-  "balances" : [  
-  "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000": "{  
-    "balance": "10000",  
-    "pending": "10000"  
-  }"
-  ]   
+  "balances" : {  
+    "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000": {  
+      "balance": "10000",  
+      "pending": "10000"  
+    }
+  }   
 }`
 
 ## Wallet change seed  
@@ -862,9 +862,9 @@ Request:
 }`  
 Response:  
 `{    
-  "frontiers" : [  
+  "frontiers" : {  
   "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
-  ]  
+  }  
 }`
 
 ## Wallet change password  
