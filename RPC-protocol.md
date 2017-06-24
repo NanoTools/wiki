@@ -55,7 +55,7 @@ Reports send/receive information for a **account**
 Request:  
 `{  
   "action": "account_history",  
-  "hash": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
+  "account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
   "count": "10"
 }`  
 Response:  
