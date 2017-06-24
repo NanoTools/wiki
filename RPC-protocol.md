@@ -1,7 +1,7 @@
 The RPC protocol accepts JSON http POST requests.  The following are RPC commands along with the responses that are expected.
 
 ## Account balance  
-Returns how many rai is owned and how many have not yet been received by **account**  
+Returns how many RAW is owned and how many have not yet been received by **account**  
 Request:  
 `{  
   "action": "account_balance",  
@@ -166,7 +166,7 @@ Response:
 }`
 
 ## Accounts balances  
-Returns how many rai is owned and how many have not yet been received by **accounts list**  
+Returns how many RAW is owned and how many have not yet been received by **accounts list**  
 Request:  
 `{  
   "action": "accounts_balances",  
