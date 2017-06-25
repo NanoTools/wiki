@@ -22,7 +22,11 @@ kxrb = 1000000000000000000000000000, 10^27
 mxrb = 1000000000000000000000, 10^21  
 uxrb = 1000000000000000000, 10^18  
 
-  1 XRB is also called 1 rai
+1 XRB is also called 1 Mrai
+
+1 rai is 10^24 raw
+
+1 raw is the littler divider possible
 
 # Mining
 
