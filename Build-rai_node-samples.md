@@ -78,34 +78,34 @@ Sign up at digitalocean.com
 Create Droplet
 
 Add swap space - https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04
-`
-sudo fallocate -l 2G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
+
+sudo fallocate -l 2G /swapfile  
+sudo chmod 600 /swapfile  
+sudo mkswap /swapfile  
 sudo swapon /swapfile
 
-sudo apt-get update
-sudo apt-get install g++
-sudo apt-get install make
+sudo apt-get update  
+sudo apt-get install g++  
+sudo apt-get install make  
 sudo apt install cmake
 
-wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz/download
-tar xzvf boost_1_63_0.tar.gz
-cd boost_1_63_0
-./bootstrap.sh
-./b2 --prefix=../[boost] link=static install
+wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz/download  
+tar xzvf boost_1_63_0.tar.gz  
+cd boost_1_63_0  
+./bootstrap.sh  
+./b2 --prefix=../[boost] link=static install  
 cd ..
 
-git clone https://github.com/clemahieu/raiblocks.git
+git clone https://github.com/clemahieu/raiblocks.git  
 cd raiblocks/
 
-git submodule init
+git submodule init  
 git submodule update
 
-cmake -DACTIVE_NETWORK=rai_live_network -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=../[boost] -G "Unix Makefiles"
+cmake -DACTIVE_NETWORK=rai_live_network -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=../[boost] -G "Unix Makefiles" 
+ 
 make rai_node
 
 ./rai_node —-daemon &
 
 check block count ./rai_node --debug_block_count
-`
