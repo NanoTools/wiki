@@ -78,7 +78,7 @@ Sign up at digitalocean.com
 Create Droplet
 
 Add swap space - https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04
-
+`
 sudo fallocate -l 2G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
@@ -108,3 +108,4 @@ make rai_node
 ./rai_node —-daemon &
 
 check block count ./rai_node --debug_block_count
+`
