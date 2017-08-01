@@ -677,6 +677,19 @@ Response:
   "started": "1"  
 }`
 
+
+## Search pending for all wallets  
+_enable_control required, version 7.9.1+_  
+Tells the node to look for pending blocks for any account in all available wallets  
+Request:  
+`{  
+  "action": "search_pending_all"
+}`  
+Response:  
+`{
+  "success": ""  
+}`
+
 ## Send  
 _enable_control required_  
 Send **amount** from **source** in **wallet** to **destination**  
@@ -783,6 +796,7 @@ Response:
 }`  
 
 ## Pending exists  
+_version 7.9.1+_   
 Check whether block is pending by **hash**  
 Request:  
 `{  
