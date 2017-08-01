@@ -782,6 +782,18 @@ Response:
     }  
 }`  
 
+## Pending exists  
+Check whether block is pending by **hash**  
+Request:  
+`{  
+  "action": "pending_exists",
+  "hash": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F" 
+}`  
+Response:  
+`{  
+  "exists" : "1"
+}`
+
 ## Wallet add key  
 _enable_control required_  
 Add an adhoc private key **key** to **wallet**  
