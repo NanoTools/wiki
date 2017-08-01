@@ -903,6 +903,42 @@ Response:
   }  
 }`
 
+## Wallet pending  
+_enable_control required, version 7.9.1+_   
+Returns a list of block hashes which have not yet been received by accounts in this **wallet**  
+Request:  
+`{  
+  "action": "wallet_pending",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"    
+  "count": "1"
+}`  
+Response:  
+`{  
+  "blocks" : {  
+    "xrb_1111111111111111111111111111111111111111111111111117353trpda": ["142A538F36833D1CC78B94E11C766F75818F8B940771335C6C1B8AB880C5BB1D"],  
+    "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3": ["4C1FEEF0BEA7F50BE35489A1233FE002B212DEA554B55B1B470D78BD8F210C74"]  
+  }  
+}`  
+### Optional "threshold"  
+Returns a list of pending block hashes with amount more or equal to **threshold**   
+Request:  
+`{  
+  "action": "wallet_pending",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"    
+  "count": "1",  
+  "threshold": "1000000000000000000000000"   
+}`  
+Response:  
+`{  
+  "blocks" : {
+    "xrb_1111111111111111111111111111111111111111111111111117353trpda": {    
+        "142A538F36833D1CC78B94E11C766F75818F8B940771335C6C1B8AB880C5BB1D": "6000000000000000000000000000000"    
+    },    
+    "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3": {    
+        "4C1FEEF0BEA7F50BE35489A1233FE002B212DEA554B55B1B470D78BD8F210C74": "106370018000000000000000000000000"    
+    }  
+}`  
+
 ## Wallet change password  
 _enable_control required_  
 Changes the password for **wallet** to **password**  
