@@ -609,6 +609,31 @@ Response:
   "block": "EE5286AB32F580AB65FD84A69E107C69FBEB571DEC4D99297E19E3FA5529547B"  
 }`
 
+## Receive minimum  
+_enable_control required, version 7.9.1+_   
+Returns receive minimum for node  
+Request:  
+`{  
+  "action": "receive_minimum"  
+}`  
+Response:  
+`{  
+  "amount": "1000000000000000000000000"  
+}`
+
+## Receive minimum set  
+_enable_control required, version 7.9.1+_   
+Set **amount** as new receive minimum for node until restart  
+Request:  
+`{  
+  "action": "receive_minimum_set",  
+  "amount": "1000000000000000000000000000000"
+}`  
+Response:  
+`{  
+  "success": ""  
+}`
+
 ## Representatives  
 Returns a list of pairs of representative and its voting weight  
 Request:  
