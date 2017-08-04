@@ -286,7 +286,6 @@ Response:
 }"
 }`
 
-
 ## Retrieve multiple blocks  
 Retrieves a json representations of **blocks**  
 Request:  
@@ -305,6 +304,31 @@ Response:
       "work": "0000000000000000",  
       "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"  
     }"
+  }
+}`
+
+## Retrieve multiple blocks with additional info   
+Retrieves a json representations of **blocks** with transaction **amount** & block **account** 
+Request:  
+`{  
+  "action": "blocks_info",  
+  "hashes": ["000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"]  
+}`  
+Response:  
+`{  
+  "blocks" : {   
+    "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F": {   
+       "block_account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",   
+       "amount": "1000000000000000000000000000000",   
+       "contents": "{  
+          "type": "open",  
+          "account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
+          "representative": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
+          "source": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",  
+          "work": "0000000000000000",  
+          "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"  
+         }"
+     }
   }
 }`
 
