@@ -354,6 +354,34 @@ Response:
   ]  
 }`
 
+## Delegators  
+_version 7.9.1+_   
+Returns a list of pairs of delegator names given **account** a representative and its balance  
+Request:  
+`{  
+  "action": "delegators",    
+  "acount": "xrb_1111111111111111111111111111111111111111111111111117353trpda"   
+}`  
+Response:  
+`{    
+   "delegators": {   
+        "xrb_13bqhi1cdqq8yb9szneoc38qk899d58i5rcrgdk5mkdm86hekpoez3zxw5sd": "500000000000000000000000000000000000",   
+        "xrb_17k6ug685154an8gri9whhe5kb5z1mf5w6y39gokc1657sh95fegm8ht1zpn": "961647970820730000000000000000000000"   
+   }
+}`   
+
+## Delegators count  
+_version 7.9.1+_   
+Get number of delegators for a specific representative **account**  
+Request:  
+`{  
+  "action": "delegators_count",    
+  "acount": "xrb_1111111111111111111111111111111111111111111111111117353trpda"   
+}`  
+Response:  
+`{    
+   "count": "2"   
+}`   
 
 ## Deterministic key  
 Derive deterministic keypair from **seed** based on **index**  
