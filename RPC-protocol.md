@@ -1028,6 +1028,22 @@ Response:
   ]       
 }`   
 
+
+## Wallet work get
+_enable_control required, version 7.9.1+_     
+Returns a list of pairs of account and work from **wallet**   
+Request:  
+`{  
+    "action": "wallet_work_get",  
+    "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}`  
+Response:  
+`{  
+   "works": {
+       "xrb_1111111111111111111111111111111111111111111111111111hifc8npp": "432e5cf728c90f4f"   
+   }
+}`  
+
 ## Wallet change password  
 _enable_control required_  
 Changes the password for **wallet** to **password**  
@@ -1090,6 +1106,35 @@ Request:
 Response:  
 `{  
     "work": "2bf29ef00786a6bc"  
+}`  
+
+## Work get
+_enable_control required, version 7.9.1+_     
+Retrieves work for **account** in **wallet**  
+Request:  
+`{  
+    "action": "work_get",  
+    "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",   
+    "account": "xrb_1111111111111111111111111111111111111111111111111111hifc8npp"  
+}`  
+Response:  
+`{  
+    "work": "432e5cf728c90f4f"  
+}`  
+
+## Work set
+_enable_control required, version 7.9.1+_     
+Set **work** for **account** in **wallet**  
+Request:  
+`{  
+    "action": "work_set",  
+    "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",   
+    "account": "xrb_1111111111111111111111111111111111111111111111111111hifc8npp",  
+    "work": "0000000000000000"  
+}`  
+Response:  
+`{  
+    "success": ""  
 }`  
 
 ## Work validate 
