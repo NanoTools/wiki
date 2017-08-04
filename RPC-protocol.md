@@ -961,7 +961,7 @@ Response:
 }`
 
 ## Wallet frontiers  
-Returns a list of pairs of account and block hash representing the head block starting fro accounts from **wallet**  
+Returns a list of pairs of account and block hash representing the head block starting for accounts from **wallet**  
 Request:  
 `{  
   "action": "wallet_frontiers",
@@ -1009,6 +1009,24 @@ Response:
         "4C1FEEF0BEA7F50BE35489A1233FE002B212DEA554B55B1B470D78BD8F210C74": "106370018000000000000000000000000"    
     }  
 }`  
+
+## Wallet republish  
+_enable_control required, version 7.9.1+_   
+Rebroadcast blocks for accounts from **wallet** starting at frontier down to **count** to the network     
+Request:  
+`{  
+  "action": "wallet_republish",    
+  "hash": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",
+  "count": "2"   
+}`  
+Response:  
+`{    
+  "blocks": [   
+      "991CF190094C00F0B68E2E5F75F6BEE95A2E0BD93CEAA4A6734DB9F19B728948",   
+      "A170D51B94E00371ACE76E35AC81DC9405D5D04D4CEBC399AEACE07AE05DD293",   
+      "90D0C16AC92DD35814E84BFBCC739A039615D0A42A76EF44ADAEF1D99E9F8A35"   
+  ]       
+}`   
 
 ## Wallet change password  
 _enable_control required_  
