@@ -25,6 +25,23 @@ Response:
   "block_count" : "19"  
 }`
 
+## Account information
+Returns frontier, open block, change representative block, balance, last modified timestamp from local database & block count for **account**  
+Request:  
+`{  
+  "action": "account_info",  
+  "account": "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3"  
+}`  
+Response:  
+`{  
+    "frontier": "FF84533A571D953A596EA401FD41743AC85D04F406E76FDE4408EAED50B473C5",   
+    "open_block": "991CF190094C00F0B68E2E5F75F6BEE95A2E0BD93CEAA4A6734DB9F19B728948",   
+    "representative_block": "991CF190094C00F0B68E2E5F75F6BEE95A2E0BD93CEAA4A6734DB9F19B728948",   
+    "balance": "235580100176034320859259343606608761791",   
+    "modified_timestamp": "1501793775",   
+    "block_count": "33"   
+}`  
+
 ## Account create  
 _enable_control required_  
 Creates a new account, insert next deterministic key in **wallet**  
