@@ -2,7 +2,6 @@
 ./rai_node --daemon  
 sed -i 's/"rpc_enable": "false"/"rpc_enable": "true"/g' ~/RaiBlocks/config.json   
 sed -i 's/"enable_control": "false"/"enable_control": "true"/g' ~/RaiBlocks/config.json  
-sed -i 's/"packet_delay_microseconds": "5000"/"packet_delay_microseconds": "500"/g' ~/RaiBlocks/config.json  
 
 **Launch rai_node in the background (test mode)**   
 ./rai_node --daemon >./rai_node.log 2>&1 &   
