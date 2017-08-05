@@ -944,6 +944,61 @@ Response:
   "exists" : "1"
 }`
 
+## Uncheked blocks  
+_version 7.9.1+_   
+Returns a list of pairs of unchecked synchronizing block hash and its json representation up to **count**          
+Request:  
+`{  
+  "action": "unchecked",
+  "count": "1" 
+}`  
+Response:  
+`{  
+    "blocks": {  
+       "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F": "{
+          "type": "open",
+          "account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+          "representative": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+          "source": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
+          "work": "0000000000000000",
+          "signature": 
+ "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+       }"
+    }
+}`
+
+## Clear unchecked blocks   
+_enable_control required, version 7.9.1+_     
+Clear unchecked synchronizing blocks   
+Request:  
+`{  
+    "action": "unchecked_clear"   
+}`  
+Response:  
+`{  
+    "success": ""  
+}`  
+
+## Retrieve unchecked block  
+_version 7.9.1+_  
+Retrieves a json representation of unchecked synchronizing block by **hash**     
+Request:  
+`{  
+  "action": "unchecked_get",  
+  "hash": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}`  
+Response:  
+`{  
+  "contents" : "{
+    "type": "open",
+    "account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+    "representative": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+    "source": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
+    "work": "0000000000000000",
+    "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+}"
+}`
+
 ## Wallet add key  
 _enable_control required_  
 Add an adhoc private key **key** to **wallet**  
