@@ -999,6 +999,34 @@ Response:
 }"
 }`
 
+## Uncheked blocks with database keys   
+_version 7.9.1+_   
+Retrieves unchecked database keys, blocks hashes & a json representations of unchecked pending blocks starting from **key** up to **count**   
+Request:  
+`{  
+  "action": "unchecked_keys",
+  "key": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",   
+  "count": "1" 
+}`  
+Response:  
+`{  
+    "unchecked": [
+       { 
+          "key": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",   
+          "hash": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",   
+          "contents": "{
+             "type": "open",
+             "account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+             "representative": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+             "source": "FA5B51D063BADDF345EFD7EF0D3C5FB115C85B1EF4CDE89D8B7DF3EAF60A04A4",
+             "work": "0000000000000000",
+             "signature": 
+ "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          }"   
+       }   
+    ]   
+}`   
+
 ## Wallet add key  
 _enable_control required_  
 Add an adhoc private key **key** to **wallet**  
