@@ -869,16 +869,24 @@ Response:
   "node_vendor" : "RaiBlocks 7.5.0"
 }`
 
-## Retrieve online peers
+## Retrieve online peers  
+Returns a list of pairs of peer IPv6:port and its network version    
 Request:  
 `{  
   "action": "peers" 
 }`  
+_draft, version 7.9.1+_   
 Response:  
 `{
-    "peers": {
-        0: "[::ffff:172.17.0.1]:32841"
-    } 
+    "peers": {  
+        "[::ffff:172.17.0.1]:32841": "3"  
+    }  
+}`
+Response before 7.9.1+:  
+`{
+    "peers": [  
+        "[::ffff:172.17.0.1]:32841"  
+    ]  
 }`
 
 ## Pending  
@@ -1212,7 +1220,7 @@ Add specific **IP address** and **port** as work peer for node until restart
 Request:  
 `{  
     "action": "work_peer_add",  
-    "address": "::ffff:192.168.1.2",  
+    "address": "::ffff:172.17.0.1:7076",  
     "port": "7076" 
 }`  
 Response:  
@@ -1229,7 +1237,7 @@ Request:
 Response:  
 `{  
     "work_peers": [   
-        "::ffff:192.168.1.2:7076"   
+        "::ffff:172.17.0.1:7076"   
     ]   
 }`  
 
