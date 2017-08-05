@@ -356,6 +356,20 @@ Response:
   "unchecked": "10"  
 }`
 
+## Block count by type  
+Reports the number of blocks in the ledger by type (send, receive, open, change)   
+Request:  
+`{  
+  "action": "block_count_type"  
+}`  
+Response:  
+`{
+    "send": "1000",   
+    "receive": "900",   
+    "open": "100",   
+    "change": "50"  
+}`  
+
 ## Bootstrap  
 Initialize bootstrap to specific **IP address** and **port**   
 Request:  
