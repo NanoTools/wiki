@@ -884,7 +884,7 @@ Response:
 }`
 
 ## Retrieve online peers  
-Returns a list of pairs of peer IPv6:port and its network version    
+Returns a list of pairs of peer IPv6:port and its node network version    
 Request:  
 `{  
   "action": "peers" 
@@ -895,13 +895,13 @@ Response:
     "peers": {  
         "[::ffff:172.17.0.1]:32841": "3"  
     }  
-}`
+}`   
 Response before 7.9.1+:  
 `{
     "peers": [  
         "[::ffff:172.17.0.1]:32841"  
     ]  
-}`
+}`   
 
 ## Pending  
 Returns a list of block hashes which have not yet been received by this account.  
