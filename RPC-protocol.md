@@ -1206,6 +1206,45 @@ Response:
     "success": ""  
 }`  
 
+## Add work peer  
+_enable_control required, version 7.9.1+_     
+Add specific **IP address** and **port** as work peer for node until restart   
+Request:  
+`{  
+    "action": "work_peer_add",  
+    "address": "::ffff:192.168.1.2",  
+    "port": "7076" 
+}`  
+Response:  
+`{  
+    "success": ""  
+}`  
+
+## Retrieve work peers   
+_enable_control required, version 7.9.1+_     
+Request:  
+`{  
+    "action": "work_peers"   
+}`  
+Response:  
+`{  
+    "work_peers": [   
+        "::ffff:192.168.1.2:7076"   
+    ]   
+}`  
+
+## Clear work peers  
+_enable_control required, version 7.9.1+_     
+Clear work peers node list until restart   
+Request:  
+`{  
+    "action": "work_peers_clear"   
+}`  
+Response:  
+`{  
+    "success": ""  
+}`  
+
 ## Work validate 
 Check whether **work** is valid for block  
 Request:  
