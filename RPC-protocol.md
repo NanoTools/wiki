@@ -431,7 +431,7 @@ Get number of delegators for a specific representative **account**
 Request:  
 `{  
   "action": "delegators_count",    
-  "acount": "xrb_1111111111111111111111111111111111111111111111111117353trpda"   
+  "account": "xrb_1111111111111111111111111111111111111111111111111117353trpda"   
 }`  
 Response:  
 `{    
