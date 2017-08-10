@@ -415,7 +415,7 @@ Returns a list of pairs of delegator names given **account** a representative an
 Request:  
 `{  
   "action": "delegators",    
-  "acount": "xrb_1111111111111111111111111111111111111111111111111117353trpda"   
+  "account": "xrb_1111111111111111111111111111111111111111111111111117353trpda"   
 }`  
 Response:  
 `{    
