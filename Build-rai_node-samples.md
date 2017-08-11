@@ -3,10 +3,10 @@
 sed -i 's/"rpc_enable": "false"/"rpc_enable": "true"/g' ~/RaiBlocks/config.json   
 sed -i 's/"enable_control": "false"/"enable_control": "true"/g' ~/RaiBlocks/config.json  
 
-**Launch rai_node in the background (test mode)**   
-./rai_node --daemon >./rai_node.log 2>&1 &   
+**Launch rai_node in test mode**   
+./rai_node --daemon
 
-**Check if RPC is enabled with curl**   
+**Check if RPC is enabled with curl (use different terminal or session)**   
 curl -g -d '{ "action": "block_count" }' [::1]:7076   
 
 **To stop node, use**   
