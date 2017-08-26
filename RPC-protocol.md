@@ -780,6 +780,7 @@ Request:
 `{  
   "action": "republish",    
   "hash": "90D0C16AC92DD35814E84BFBCC739A039615D0A42A76EF44ADAEF1D99E9F8A35",    
+  "count": "1",    
   "sources": "2"   
 }`  
 Response:  
@@ -788,6 +789,25 @@ Response:
       "991CF190094C00F0B68E2E5F75F6BEE95A2E0BD93CEAA4A6734DB9F19B728948",   
       "A170D51B94E00371ACE76E35AC81DC9405D5D04D4CEBC399AEACE07AE05DD293",   
       "90D0C16AC92DD35814E84BFBCC739A039615D0A42A76EF44ADAEF1D99E9F8A35"   
+  ]       
+}`   
+
+### Optional "destinations"  
+_version 7.9.1+_   
+Additionally rebroadcast destination chain blocks from receive up to **destinations** depth   
+Request:  
+`{  
+  "action": "republish",    
+  "hash": "A170D51B94E00371ACE76E35AC81DC9405D5D04D4CEBC399AEACE07AE05DD293",    
+  "count": "1",    
+  "destinations": "2"   
+}`  
+Response:  
+`{    
+  "blocks": [   
+      "A170D51B94E00371ACE76E35AC81DC9405D5D04D4CEBC399AEACE07AE05DD293",   
+      "90D0C16AC92DD35814E84BFBCC739A039615D0A42A76EF44ADAEF1D99E9F8A35",   
+      "18563C814A54535B7C12BF76A0E23291BA3769536634AB90AD0305776A533E8E"   
   ]       
 }`   
 
@@ -889,7 +909,7 @@ Request:
 `{  
   "action": "peers" 
 }`  
-_draft, version 7.9.1+_   
+_version 7.9.1+_   
 Response:  
 `{
     "peers": {  
