@@ -236,7 +236,7 @@ Response:
   }  
 }`  
 ### Optional "threshold"  
-_version 7.9.1+_   
+_version 8.0+_   
 Returns a list of pending block hashes with amount more or equal to **threshold**   
 Request:  
 `{  
@@ -410,7 +410,7 @@ Response:
 }`
 
 ## Delegators  
-_version 7.9.1+_   
+_version 8.0+_   
 Returns a list of pairs of delegator names given **account** a representative and its balance  
 Request:  
 `{  
@@ -426,7 +426,7 @@ Response:
 }`   
 
 ## Delegators count  
-_version 7.9.1+_   
+_version 8.0+_   
 Get number of delegators for a specific representative **account**  
 Request:  
 `{  
@@ -693,7 +693,7 @@ Response:
 }`
 
 ## Receive minimum  
-_enable_control required, version 7.9.1+_   
+_enable_control required, version 8.0+_   
 Returns receive minimum for node  
 Request:  
 `{  
@@ -705,7 +705,7 @@ Response:
 }`
 
 ## Receive minimum set  
-_enable_control required, version 7.9.1+_   
+_enable_control required, version 8.0+_   
 Set **amount** as new receive minimum for node until restart  
 Request:  
 `{  
@@ -774,7 +774,7 @@ Response:
   ]       
 }`   
 ### Optional "sources"  
-_version 7.9.1+_   
+_version 8.0+_   
 Additionally rebroadcast source chain blocks for receive/open up to **sources** depth   
 Request:  
 `{  
@@ -793,7 +793,7 @@ Response:
 }`   
 
 ### Optional "destinations"  
-_version 7.9.1+_   
+_version 8.0+_   
 Additionally rebroadcast destination chain blocks from receive up to **destinations** depth   
 Request:  
 `{  
@@ -827,7 +827,7 @@ Response:
 
 
 ## Search pending for all wallets  
-_enable_control required, version 7.9.1+_  
+_enable_control required, version 8.0+_  
 Tells the node to look for pending blocks for any account in all available wallets  
 Request:  
 `{  
@@ -909,14 +909,14 @@ Request:
 `{  
   "action": "peers" 
 }`  
-_version 7.9.1+_   
+_version 8.0+_   
 Response:  
 `{
     "peers": {  
         "[::ffff:172.17.0.1]:32841": "3"  
     }  
 }`   
-Response before 7.9.1+:  
+Response before 8.0+:  
 `{
     "peers": [  
         "[::ffff:172.17.0.1]:32841"  
@@ -935,7 +935,7 @@ Response:
   "blocks" : [ "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F" ]  
 }`   
 ### Optional "threshold"  
-_version 7.9.1+_   
+_version 8.0+_   
 Returns a list of pending block hashes with amount more or equal to **threshold**  
 Request:  
 `{  
@@ -952,7 +952,7 @@ Response:
 }`  
 
 ## Pending exists  
-_version 7.9.1+_   
+_version 8.0+_   
 Check whether block is pending by **hash**  
 Request:  
 `{  
@@ -965,7 +965,7 @@ Response:
 }`
 
 ## Uncheked blocks  
-_version 7.9.1+_   
+_version 8.0+_   
 Returns a list of pairs of unchecked synchronizing block hash and its json representation up to **count**          
 Request:  
 `{  
@@ -988,7 +988,7 @@ Response:
 }`
 
 ## Clear unchecked blocks   
-_enable_control required, version 7.9.1+_     
+_enable_control required, version 8.0+_     
 Clear unchecked synchronizing blocks   
 Request:  
 `{  
@@ -1000,7 +1000,7 @@ Response:
 }`  
 
 ## Retrieve unchecked block  
-_version 7.9.1+_  
+_version 8.0+_  
 Retrieves a json representation of unchecked synchronizing block by **hash**     
 Request:  
 `{  
@@ -1020,7 +1020,7 @@ Response:
 }`
 
 ## Uncheked blocks with database keys   
-_version 7.9.1+_   
+_version 8.0+_   
 Retrieves unchecked database keys, blocks hashes & a json representations of unchecked pending blocks starting from **key** up to **count**   
 Request:  
 `{  
@@ -1169,7 +1169,7 @@ Response:
 }`
 
 ## Wallet pending  
-_enable_control required, version 7.9.1+_   
+_enable_control required, version 8.0+_   
 Returns a list of block hashes which have not yet been received by accounts in this **wallet**  
 Request:  
 `{  
@@ -1205,7 +1205,7 @@ Response:
 }`  
 
 ## Wallet republish  
-_enable_control required, version 7.9.1+_   
+_enable_control required, version 8.0+_   
 Rebroadcast blocks for accounts from **wallet** starting at frontier down to **count** to the network     
 Request:  
 `{  
@@ -1224,7 +1224,7 @@ Response:
 
 
 ## Wallet work get
-_enable_control required, version 7.9.1+_     
+_enable_control required, version 8.0+_     
 Returns a list of pairs of account and work from **wallet**   
 Request:  
 `{  
@@ -1303,7 +1303,7 @@ Response:
 }`  
 
 ## Work get
-_enable_control required, version 7.9.1+_     
+_enable_control required, version 8.0+_     
 Retrieves work for **account** in **wallet**  
 Request:  
 `{  
@@ -1317,7 +1317,7 @@ Response:
 }`  
 
 ## Work set
-_enable_control required, version 7.9.1+_     
+_enable_control required, version 8.0+_     
 Set **work** for **account** in **wallet**  
 Request:  
 `{  
@@ -1332,7 +1332,7 @@ Response:
 }`  
 
 ## Add work peer  
-_enable_control required, version 7.9.1+_     
+_enable_control required, version 8.0+_     
 Add specific **IP address** and **port** as work peer for node until restart   
 Request:  
 `{  
@@ -1346,7 +1346,7 @@ Response:
 }`  
 
 ## Retrieve work peers   
-_enable_control required, version 7.9.1+_     
+_enable_control required, version 8.0+_     
 Request:  
 `{  
     "action": "work_peers"   
@@ -1359,7 +1359,7 @@ Response:
 }`  
 
 ## Clear work peers  
-_enable_control required, version 7.9.1+_     
+_enable_control required, version 8.0+_     
 Clear work peers node list until restart   
 Request:  
 `{  
