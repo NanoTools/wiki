@@ -29,10 +29,7 @@
             "version": "7",
             "work_peers": "",
             "vote": "false", # Track voting activities
-            "bootstrap_connections": "16", # Multi-connection bootstrap
-            "callback_address": "::ffff:127.0.0.1", # Callback IP address, in sample IPv4 localhost
-            "callback_port": "17076", # Callback port
-            "callback_target": "/" # Callback target, in sample root of callback listening server
+            "bootstrap_connections": "16" # Multi-connection bootstrap
         },
         "work_peers": "", # Delegate a node your hash work, you need to get RPC access to that node
         "preconfigured_peers": [ # List of defaults peers to connect on boot
@@ -69,7 +66,10 @@
         "platform": "0", # Platform ID
         "device": "0", # Device ID
         "threads": "1048576" #
-    }
+    },
+    "callback_address": "::ffff:127.0.0.1", # Callback IP address, in sample IPv4 localhost
+    "callback_port": "17076", # Callback port
+    "callback_target": "/" # Callback target, in sample root of callback listening server
     }
 
 config.json location:
