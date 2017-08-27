@@ -51,7 +51,10 @@
         "inactive_supply": "0", #
         "password_fanout": "1024", #
         "io_threads": "4", #
-        "work_threads": "4" # PoW work threads. By deafault all available CPU threads, set lower value for 24/7 serices
+        "work_threads": "4", # PoW work threads. By deafault all available CPU threads, set lower value for 24/7 services
+        "callback_address": "::ffff:127.0.0.1", # Callback IP address, in sample IPv4 localhost
+        "callback_port": "17076", # Callback port
+        "callback_target": "/" # Callback target, in sample root of callback listening server
     },
     "rpc": {
         "address": "::ffff:127.0.0.1", # Allowed IP for RPC connection
@@ -66,10 +69,7 @@
         "platform": "0", # Platform ID
         "device": "0", # Device ID
         "threads": "1048576" #
-    },
-    "callback_address": "::ffff:127.0.0.1", # Callback IP address, in sample IPv4 localhost
-    "callback_port": "17076", # Callback port
-    "callback_target": "/" # Callback target, in sample root of callback listening server
+    }
     }
 
 config.json location:
