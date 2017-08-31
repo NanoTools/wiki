@@ -6,7 +6,7 @@ Genesis account:
 Landing account:  
 **xrb_13ezf4od79h1tgj9aiu4djzcmmguendtjfuhwfukhuucboua8cpoihmh8byo**  
 Faucet account: (no more used since 2017-01-19 12:02:21 am)  
-**xrb_13ezf4od79h1tgj9aiu4djzcmmguendtjfuhwfukhuucboua8cpoihmh8byo**  
+**xrb_35jjmmmh81kydepzeuf9oec8hzkay7msr6yxagzxpcht7thwa5bus5tomgz9**  
 
 The genesis balance is kept in cold storage in a bank secure box.  
 Blocks move from the genesis account to the landing account once per week in order to minimize the number of live undistributed blocks.   
