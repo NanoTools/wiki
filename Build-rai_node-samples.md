@@ -101,10 +101,11 @@ cd raiblocks/
 git submodule init  
 git submodule update
 
-cmake -DACTIVE_NETWORK=rai_live_network -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=../[boost] -G "Unix Makefiles" 
+cmake -DBOOST_ROOT=../[boost] -G "Unix Makefiles" 
  
 make rai_node
 
-./rai_node —-daemon &
+./rai_node --daemon
 
-check block count ./rai_node --debug_block_count
+check block count  
+./rai_node --debug_block_count
