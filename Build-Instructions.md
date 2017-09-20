@@ -27,9 +27,8 @@
 * _CMAKE_BUILD_TYPE Release_ (default)
 * _ACTIVE_NETWORK rai_live_network_ (default)
 * Qt5_DIR [qt]lib/cmake/Qt5 (to build GUI wallet)
-* RAIBLOCKS_GUI 1 (to build GUI wallet)
-* _draft_ ENABLE_AVX2 1, _optional_ PERMUTE_WITH_GATHER 1, _optional_ PERMUTE_WITH_SHUFFLES 1 (for CPU with AXV2 support, choose fastest method for your CPU with https://github.com/sneves/blake2-avx2/)
-* _on some platforms ON value can be required instead of 1_
+* RAIBLOCKS_GUI ON (to build GUI wallet)
+* _draft_ ENABLE_AVX2 ON, _optional_ PERMUTE_WITH_GATHER ON, _optional_ PERMUTE_WITH_SHUFFLES ON (for CPU with AXV2 support, choose fastest method for your CPU with https://github.com/sneves/blake2-avx2/)
 
 ## Build RaiBlocks
 * Generate with cmake then build with your compiler
