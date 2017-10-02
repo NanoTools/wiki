@@ -26,7 +26,7 @@ uxrb = 1000000000000000000, 10^18
 
 1 rai is 10^24 raw
 
-1 raw is the littler divider possible
+1 raw is the smallest possible division
 
 # Mining
 
