@@ -57,6 +57,9 @@ Generates a adhoc random keypair and prints it to stdout
 ### --key_expand --key=`<key>`
 Derive public key and account number from `<key>`
 
+### --vote_dump
+Dump most recent votes from representatives
+
 ### --wallet_add_adhoc --wallet=`<wallet>` --key=`<key>`
 Insert `<key>` in to `<wallet>`
 
