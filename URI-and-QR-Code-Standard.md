@@ -3,12 +3,15 @@
     xrb:xrb_<encoded address>[?amount=<raw amount>][?label=<label>][?message=<message>]
 
 Just the address
+
     xrb:xrb_3wm37qz19zhei7nzscjcopbrbnnachs4p1gnwo5oroi3qonw6inwgoeuufdp
 
 Address and an amount
+
     xrb:xrb_3wm37qz19zhei7nzscjcopbrbnnachs4p1gnwo5oroi3qonw6inwgoeuufdp?amount=1000
 
 Address and a label
+
     xrb:xrb_3wm37qz19zhei7nzscjcopbrbnnachs4p1gnwo5oroi3qonw6inwgoeuufdp?label=Developers%20Fund%20Address
 
 Send to an address with amount, label and message
