@@ -20,8 +20,8 @@ Send to an address with amount, label and message
 
 # Private Key Import
 
-    xrbkey:<hex encoded private key>[?label=<label>][?message=<message>]
+    xrbkey:<encoded private key>[?label=<label>][?message=<message>]
 
 # Seed Import
 
-    xrbseed:<hex encoded seed>[?label=<label>][?message=<message>][?lastindex=<index>]
+    xrbseed:<encoded seed>[?label=<label>][?message=<message>][?lastindex=<index>]
