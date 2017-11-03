@@ -14,7 +14,7 @@ Blocks move from the genesis account to the landing account once per week in ord
 No portion of any of the listed accounts is reserved by anyone.  All genesis blocks will be made available to anyone via the same distribution mechanism.
 
 # Divider  
-We use a 128 bit integer to represent account balances, this is too large to present to the user so we defined a set of SI prefixes to make the numbers more accessible and avoid confusion.  The reference wallet uses Mrai as a divider.  
+We use a 128 bit integer to represent account balances, this is too large to present to the user so we defined a set of SI prefixes to make the numbers more accessible and avoid confusion.  The reference wallet uses Mxrb as a divider.  
 Gxrb = 1000000000000000000000000000000000, 10^33  
 Mxrb = 1000000000000000000000000000000, 10^30  
 kxrb = 1000000000000000000000000000, 10^27  
@@ -22,9 +22,9 @@ kxrb = 1000000000000000000000000000, 10^27
 mxrb = 1000000000000000000000, 10^21  
 uxrb = 1000000000000000000, 10^18  
 
-1 XRB is also called 1 Mrai
+1 Mxrb used to be also called 1 Mrai
 
-1 rai is 10^24 raw
+1 xrb is 10^24 raw
 
 1 raw is the smallest possible division
 
