@@ -1,5 +1,5 @@
 # Distribution
-The initial distribution of XRB is performed through manual mining limited via a captcha.  There's also an overall rate limit set by the distribution schedule.  Currently the distribution rate is 17,000 Mrai per hour.  Over 50% of distribution will be completed by the end of 2017.
+The initial distribution of XRB was performed through manual mining limited via a captcha.  There's also an overall rate limit set by the distribution schedule. The distribution rate was 17,000 Mxrb per hour. Distribution stopped after 39% as distributed and the rest of the supply was burnt.
 
 Genesis account:  
 **xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3**  
