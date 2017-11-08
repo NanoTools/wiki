@@ -43,7 +43,10 @@ Profile kdf function
 Profile signature verification
 
 ### --debug_xorshift_profile
-Profile xorshift algorithms
+[Disabled] Profile xorshift algorithms
+
+### --debug_opencl --platform=`<platform>` --device=`<device>` --threads=`<threads>`
+_[Draft]_ Profile OpenCL work generation for `<device>` on `<platform>` using `<threads>` count. To retrieve available platforms & devices run --diagnostics
 
 ### --diagnostics
 Run internal diagnostics
