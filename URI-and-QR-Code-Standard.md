@@ -1,6 +1,6 @@
 # Send to an address
 
-    xrb:xrb_<encoded address>[?amount=<raw amount>][&][?label=<label>][&][?message=<message>]
+    xrb:xrb_<encoded address>[?][amount=<raw amount>][&][label=<label>][&][message=<message>]
 
 Just the address
 
@@ -20,8 +20,8 @@ Send to an address with amount, label and message
 
 # Private Key Import
 
-    xrbkey:<encoded private key>[?label=<label>][&][?message=<message>]
+    xrbkey:<encoded private key>[?][label=<label>][&][message=<message>]
 
 # Seed Import
 
-    xrbseed:<encoded seed>[?label=<label>][&][?message=<message>][&][?lastindex=<index>]
+    xrbseed:<encoded seed>[?][label=<label>][&][message=<message>][&][lastindex=<index>]
