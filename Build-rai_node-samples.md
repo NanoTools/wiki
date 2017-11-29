@@ -6,7 +6,7 @@
 
 # Ubuntu 16.04 LTS Server
 sudo apt-get update && sudo apt-get upgrade   
-sudo apt-get install git cmake g++ curl   
+sudo apt-get install git cmake g++ curl wget   
 ### Building static Boost
 wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz/download   
 tar xzvf boost_1_63_0.tar.gz   
@@ -24,13 +24,31 @@ cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics
 
 # Debian 9 Stretch
 apt-get update && apt-get upgrade   
-apt-get install git cmake g++ libboost-all-dev curl   
+apt-get install git cmake g++ libboost-all-dev curl wget   
 ### Building rai_node
 git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
 cd rai_build   
 cmake -G "Unix Makefiles"   
 make rai_node   
 cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics   
+
+# CentOS 7
+sudo yum check-update   
+sudo yum install git cmake gcc gcc-c++ libstdc++-static curl wget   
+### Building static Boost
+wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz/download   
+tar xzvf boost_1_63_0.tar.gz   
+cd boost_1_63_0   
+./bootstrap.sh   
+./b2 --prefix=../[boost] link=static install   
+cd ..
+### Building rai_node
+git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
+cd rai_build   
+cmake -DBOOST_ROOT=../[boost] -G "Unix Makefiles"   
+make rai_node   
+cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics   
+
 
 # Ubuntu 16.04 on Digital Ocean Droplet ($5/Month 512Mb Ram, 1 Core, 20Gb SSD)
 Sign up at digitalocean.com
