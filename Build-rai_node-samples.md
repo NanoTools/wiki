@@ -4,7 +4,7 @@
 
 ***
 
-# Ubuntu 16.04 LTS Server
+# Ubuntu 16.04 LTS Server, Debian 8 Jessie
 sudo apt-get update && sudo apt-get upgrade   
 sudo apt-get install git cmake g++ curl wget   
 ### Building static Boost
