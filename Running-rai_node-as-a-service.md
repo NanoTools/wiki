@@ -52,4 +52,4 @@ Increase max open files limit. Edit /etc/security/limits.conf & add
     root            soft    nofile          65535    
     root            hard    nofile          65535    
 ```
-Then restart session & rai_node service
+Then restart session & rai_node service. Check changes with `ulimit -n`
