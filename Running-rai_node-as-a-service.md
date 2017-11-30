@@ -39,4 +39,17 @@ sudo service rai_node start
 sudo systemctl enable rai_node
     
     
-**To manage node, use [RPC commands](https://github.com/clemahieu/raiblocks/wiki/RPC-protocol) or [CLI](https://github.com/clemahieu/raiblocks/wiki/Command-line-interface)**   
+**To manage node, use [RPC commands](https://github.com/clemahieu/raiblocks/wiki/RPC-protocol) or [CLI](https://github.com/clemahieu/raiblocks/wiki/Command-line-interface)**  
+
+***
+
+# Known issues  
+## Error initiating bootstrap ... Too many open files
+Increase max open files limit. Edit /etc/security/limits.conf & add    
+```
+    *               soft    nofile          65535    
+    *               hard    nofile          65535    
+    root            soft    nofile          65535    
+    root            hard    nofile          65535    
+```
+Then restart session & rai_node service
