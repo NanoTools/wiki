@@ -78,22 +78,6 @@ Response:
   "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"  
 }`
 
-## Accounts create  
-_enable_control required ,version 8.1+_  
-Creates new accounts, insert next deterministic keys in **wallet** up to **count**  
-Request:  
-`{  
-  "action": "accounts_create",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
-  "count": "2"
-}`  
-Response:  
-`{  
-  "accounts": [    
-     "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",   
-     "xrb_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3s00000000"
-  ]   
-}`
 
 ## Account get
 Get account number for the **public key**  
@@ -244,6 +228,23 @@ Response:
     }  
   }  
 }`  
+
+## Accounts create  
+_enable_control required, version 8.1+_  
+Creates new accounts, insert next deterministic keys in **wallet** up to **count**  
+Request:  
+`{  
+  "action": "accounts_create",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "count": "2"
+}`  
+Response:  
+`{  
+  "accounts": [    
+     "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",   
+     "xrb_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3s00000000"
+  ]   
+}`
 
 ## Accounts frontiers  
 Returns a list of pairs of account and block hash representing the head block for **accounts list**  
@@ -700,6 +701,70 @@ Response:
 }`  
 ### Optional "sorting"  
 Additional sorting accounts in descending order   
+
+## Offline signing  (create block)
+_enable_control required, version 8.1+_  
+Creates a json representations of new block based on input data & signed with **private key** or **account** in *wallet**  
+Request sample for **open block**:  
+`{  
+  "action": "block_create",  
+  "type": "open",  
+  "key": "0000000000000000000000000000000000000000000000000000000000000001",   
+  "account": "xrb_3kdbxitaj7f6mrir6miiwtw4muhcc58e6tn5st6rfaxsdnb7gr4roudwn951",   
+  "representative": "xrb_1hza3f7wiiqa7ig3jczyxj5yo86yegcmqk3criaz838j91sxcckpfhbhhra1",   
+  "source": "19D3D919475DEED4696B5D13018151D1AF88B2BD3BCFF048B45031C1F36D1858"   
+}`  
+Response:  
+`{  
+  "hash": "F47B23107E5F34B2CE06F562B5C435DF72A533251CB414C51B2B62A8F63A00E4",
+  "block": "{\n    \"type\": \"open\",\n    \"source\": \"19D3D919475DEED4696B5D13018151D1AF88B2BD3BCFF048B45031C1F36D1858\",\n    \"representative\": \"xrb_1hza3f7wiiqa7ig3jczyxj5yo86yegcmqk3criaz838j91sxcckpfhbhhra1\",\n    \"account\": \"xrb_3kdbxitaj7f6mrir6miiwtw4muhcc58e6tn5st6rfaxsdnb7gr4roudwn951\",\n    \"work\": \"4ec76c9bda2325ed\",\n    \"signature\": \"5974324F8CC42DA56F62FC212A17886BDCB18DE363D04DA84EEDC99CB4A33919D14A2CF9DE9D534FAA6D0B91D01F0622205D898293525E692586C84F2DCF9208\"\n}\n"   
+}`  
+Request sample for **receive block**:  
+`{  
+  "action": "block_create",  
+  "type": "receive",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",   
+  "account": "xrb_3kdbxitaj7f6mrir6miiwtw4muhcc58e6tn5st6rfaxsdnb7gr4roudwn951",   
+  "source": "19D3D919475DEED4696B5D13018151D1AF88B2BD3BCFF048B45031C1F36D1858",   
+  "previous": "F47B23107E5F34B2CE06F562B5C435DF72A533251CB414C51B2B62A8F63A00E4"
+}`  
+Response:  
+`{  
+  "hash": "314BA8D9057678C1F53371C2DB3026C1FAC01EC8E7802FD9A2E8130FC523429E",
+  "block": "{\n    \"type\": \"receive\",\n    \"previous\": \"F47B23107E5F34B2CE06F562B5C435DF72A533251CB414C51B2B62A8F63A00E4\",\n    \"source\": \"19D3D919475DEED4696B5D13018151D1AF88B2BD3BCFF048B45031C1F36D1858\",\n    \"work\": \"6acb5dd43a38d76a\",\n    \"signature\": \"A13FD22527771667D5DFF33D69787D734836A3561D8A490C1F4917A05D77EA09860461D5FBFC99246A4EAB5627F119AD477598E22EE021C4711FACF4F3C80D0E\"\n}\n"   
+}`  
+Request sample for **send block**:  
+`{  
+  "action": "block_create",  
+  "type": "send",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",   
+  "account": "xrb_3kdbxitaj7f6mrir6miiwtw4muhcc58e6tn5st6rfaxsdnb7gr4roudwn951",   
+  "destination": "xrb_18gmu6engqhgtjnppqam181o5nfhj4sdtgyhy36dan3jr9spt84rzwmktafc",   
+  "balance": "20000000000000000000000000000000",   
+  "amount": "10000000000000000000000000000000",   
+  "previous": "314BA8D9057678C1F53371C2DB3026C1FAC01EC8E7802FD9A2E8130FC523429E"  
+}`  
+Response:  
+`{  
+  "hash": "F958305C0FF0551421D4ABEDCCF302079D020A0A3833E33F185E2B0415D4567A",   
+  "block": "{\n    \"type\": \"send\",\n    \"previous\": \"314BA8D9057678C1F53371C2DB3026C1FAC01EC8E7802FD9A2E8130FC523429E\",\n    \"destination\": \"xrb_18gmu6engqhgtjnppqam181o5nfhj4sdtgyhy36dan3jr9spt84rzwmktafc\",\n    \"balance\": \"0000007E37BE2022C0914B2680000000\",\n    \"work\": \"478563b2d9facfd4\",\n    \"signature\": \"F19CA177EFA8692C8CBF7478CE3213F56E4A85DF760DA7A9E69141849831F8FD79BA9ED89CEC807B690FB4AA42D5008F9DBA7115E63C935401F1F0EFA547BC00\"\n}\n"   
+}`  
+Request sample for **change block**:  
+`{  
+  "action": "block_create",  
+  "type": "change",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",   
+  "account": "xrb_3kdbxitaj7f6mrir6miiwtw4muhcc58e6tn5st6rfaxsdnb7gr4roudwn951",   
+  "representative": "xrb_18gmu6engqhgtjnppqam181o5nfhj4sdtgyhy36dan3jr9spt84rzwmktafc",     
+  "previous": "F958305C0FF0551421D4ABEDCCF302079D020A0A3833E33F185E2B0415D4567A"  
+}`  
+Response:  
+`{  
+  "hash": "654FA425CEBFC9E7726089E4EDE7A105462D93DBC915FFB70B50909920A7D286",  
+  "block": "{\n    \"type\": \"change\",\n    \"previous\": \"F958305C0FF0551421D4ABEDCCF302079D020A0A3833E33F185E2B0415D4567A\",\n    \"representative\": \"xrb_18gmu6engqhgtjnppqam181o5nfhj4sdtgyhy36dan3jr9spt84rzwmktafc\",\n    \"work\": \"55e5b7a83edc3f4f\",\n    \"signature\": \"98B4D56881D9A88B170A6B2976AE21900C26A27F0E2C338D93FDED56183B73D19AA5BEB48E43FCBB8FF8293FDD368CEF50600FECEFD490A0855ED702ED209E04\"\n}\n"  
+}`  
+### Optional "work"  
+Adds **work** for block from external source  
 
 ## Payment begin
 Begin a new payment session. Searches wallet for an account that's marked as available and has a 0 balance. If one is found, the account number is returned and is marked as unavailable. If no account is found, a new account is created, placed in the wallet, and returned.  
