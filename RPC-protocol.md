@@ -193,6 +193,9 @@ Response:
 `{  
   "block": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"
 }`
+### Optional "work"  
+_version 8.1+_  
+Uses **work** value for block from external source  
 
 ## Account weight  
 Returns the voting weight for **account**  
@@ -764,7 +767,7 @@ Response:
   "block": "{\n    \"type\": \"change\",\n    \"previous\": \"F958305C0FF0551421D4ABEDCCF302079D020A0A3833E33F185E2B0415D4567A\",\n    \"representative\": \"xrb_18gmu6engqhgtjnppqam181o5nfhj4sdtgyhy36dan3jr9spt84rzwmktafc\",\n    \"work\": \"55e5b7a83edc3f4f\",\n    \"signature\": \"98B4D56881D9A88B170A6B2976AE21900C26A27F0E2C338D93FDED56183B73D19AA5BEB48E43FCBB8FF8293FDD368CEF50600FECEFD490A0855ED702ED209E04\"\n}\n"  
 }`  
 ### Optional "work"  
-Retrieves **work** for block from external source  
+Uses **work** value for block from external source  
 
 ## Payment begin
 Begin a new payment session. Searches wallet for an account that's marked as available and has a 0 balance. If one is found, the account number is returned and is marked as unavailable. If no account is found, a new account is created, placed in the wallet, and returned.  
@@ -849,6 +852,9 @@ Response:
 `{  
   "block": "EE5286AB32F580AB65FD84A69E107C69FBEB571DEC4D99297E19E3FA5529547B"  
 }`
+### Optional "work"  
+_version 8.1+_  
+Uses **work** value for block from external source  
 
 ## Receive minimum  
 _enable_control required, version 8.0+_   
@@ -1017,6 +1023,18 @@ Response:
 `{  
   "block": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
 }`
+### Optional "work"  
+_version 8.1+_  
+Uses **work** value for block from external source  
+Request:  
+`{  
+  "action": "send",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "source": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
+  "destination": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+  "amount": "1000000",   
+  "work": "2bf29ef00786a6bc"   
+}`  
 
 ## Stop node   
 _enable_control required_  
