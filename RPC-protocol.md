@@ -41,6 +41,29 @@ Response:
     "modified_timestamp": "1501793775",   
     "block_count": "33"   
 }`  
+### Optional "representative", "weight", "pending"  
+_version 8.1+_   
+Additionally returns representative, voting weight, pending balance for account   
+Request:  
+`{  
+  "action": "account_info",  
+  "account": "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3",    
+  "representative": "true",  
+  "weight": "true",  
+  "pending": "true"  
+}`  
+Response:  
+`{  
+    "frontier": "FF84533A571D953A596EA401FD41743AC85D04F406E76FDE4408EAED50B473C5",   
+    "open_block": "991CF190094C00F0B68E2E5F75F6BEE95A2E0BD93CEAA4A6734DB9F19B728948",   
+    "representative_block": "991CF190094C00F0B68E2E5F75F6BEE95A2E0BD93CEAA4A6734DB9F19B728948",   
+    "balance": "235580100176034320859259343606608761791",   
+    "modified_timestamp": "1501793775",   
+    "block_count": "33",   
+    "representative": "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3",   
+    "weight": "1105577030935649664609129644855132177",   
+    "pending": "2309370929000000000000000000000000"   
+}`  
 
 ## Account create  
 _enable_control required_  
@@ -609,6 +632,58 @@ Response:
   "account": "xrb_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3sxwjym5rx"  
 }`  
 
+## Ledger
+_enable_control required, version 8.1+_   
+Returns frontier, open block, change representative block, balance, last modified timestamp from local database & block count starting at **account** up to **count**   
+Request:  
+`{  
+  "action": "ledger",  
+  "account": "xrb_1111111111111111111111111111111111111111111111111111hifc8npp",   
+  "count": "1"    
+}`  
+Response:  
+`{  
+  "accounts": {   
+    "xrb_11119gbh8hb4hj1duf7fdtfyf5s75okzxdgupgpgm1bj78ex3kgy7frt3s9n": {   
+      "frontier": "E71AF3E9DD86BBD8B4620EFA63E065B34D358CFC091ACB4E103B965F95783321",   
+      "open_block": "643B77F1ECEFBDBE1CC909872964C1DBBE23A6149BD3CEF2B50B76044659B60F",   
+      "representative_block": "643B77F1ECEFBDBE1CC909872964C1DBBE23A6149BD3CEF2B50B76044659B60F",   
+      "balance": "0",   
+      "modified_timestamp": "1511476234",   
+      "block_count": "2"   
+    }   
+  }   
+}`  
+### Optional "representative", "weight", "pending"  
+Additionally returns representative, voting weight, pending balance for each account   
+Request:  
+`{  
+  "action": "ledger",  
+  "account": "xrb_1111111111111111111111111111111111111111111111111111hifc8npp",   
+  "count": "1",   
+  "representative": "true",  
+  "weight": "true",  
+  "pending": "true"  
+}`  
+Response:  
+`{  
+  "accounts": {   
+    "xrb_11119gbh8hb4hj1duf7fdtfyf5s75okzxdgupgpgm1bj78ex3kgy7frt3s9n": {   
+      "frontier": "E71AF3E9DD86BBD8B4620EFA63E065B34D358CFC091ACB4E103B965F95783321",  
+      "open_block": "643B77F1ECEFBDBE1CC909872964C1DBBE23A6149BD3CEF2B50B76044659B60F",   
+      "representative_block": "643B77F1ECEFBDBE1CC909872964C1DBBE23A6149BD3CEF2B50B76044659B60F",   
+      "balance": "0",   
+      "modified_timestamp": "1511476234",   
+      "block_count": "2",   
+      "representative": "xrb_1anrzcuwe64rwxzcco8dkhpyxpi8kd7zsjc1oeimpc3ppca4mrjtwnqposrs",   
+      "weight": "0",   
+      "pending": "0"   
+    }   
+  }   
+}`  
+### Optional "sorting"  
+Additional sorting accounts in descending order   
+
 ## Payment begin
 Begin a new payment session. Searches wallet for an account that's marked as available and has a 0 balance. If one is found, the account number is returned and is marked as unavailable. If no account is found, a new account is created, placed in the wallet, and returned.  
 Request:  
@@ -731,6 +806,12 @@ Response:
     "xrb_114nk4rwjctu6n6tr6g6ps61g1w3hdpjxfas4xj1tq6i8jyomc5d858xr1xi": "0"  
   }  
 }`
+### Optional "count"  
+_version 8.1+_   
+Returns a list of pairs of representative and its voting weight up to **count**    
+### Optional "sorting"  
+_version 8.1+_   
+Additional sorting represetntatives in descending order     
 
 ## Wallet representative  
 Returns the default representative for **wallet**  
