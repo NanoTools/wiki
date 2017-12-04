@@ -1421,7 +1421,7 @@ Response:
   "changed" : "1"
 }`
 
-## Wallet password enter  
+## Wallet password enter (unlock wallet)  
 Enters the **password** in to **wallet**  
 Request:  
 `{  
@@ -1444,6 +1444,18 @@ Request:
 Response:  
 `{  
   "valid" : "1"
+}`
+
+## Wallet locked check   
+Checks whether **wallet** is locked  
+Request:  
+`{  
+  "action": "wallet_locked",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}`  
+Response:  
+`{  
+  "locked" : "0"
 }`
 
 ## Work cancel
