@@ -77,7 +77,15 @@ Response:
 `{  
   "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"  
 }`
-
+### Optional disabling work generation  
+_version 8.1+_  
+Disables work generation after creating account  
+Request:  
+`{  
+  "action": "account_create",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "work": "false"  
+}`  
 
 ## Account get
 Get account number for the **public key**  
@@ -248,6 +256,15 @@ Response:
      "xrb_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3s00000000"
   ]   
 }`
+### Optional disabling work generation  
+Disables work generation after creating account  
+Request:  
+`{  
+  "action": "accounts_create",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "count": "2",  
+  "work": "false"  
+}`  
 
 ## Accounts frontiers  
 Returns a list of pairs of account and block hash representing the head block for **accounts list**  
@@ -1244,6 +1261,16 @@ Response:
 `{  
   "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"
 }`
+### Optional disabling work generation  
+_version 8.1+_  
+Disables work generation after adding account  
+Request:  
+`{  
+  "action": "wallet_add",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "key": "34F0A37AAD20F4A260F0A5B3CB3D7FB50673212263E58A380BC10474BB039CE4",  
+  "work": "false"  
+}`  
 
 ## Wallet total balance  
 Returns the sum of all accounts balances in **wallet**  
