@@ -316,6 +316,32 @@ Response:
         "4C1FEEF0BEA7F50BE35489A1233FE002B212DEA554B55B1B470D78BD8F210C74": "106370018000000000000000000000000"    
     }  
 }`  
+### Optional "source"  
+_version 8.1+_   
+Returns a list of pending block hashes with amount and source accounts   
+Request:  
+`{  
+  "action": "accounts_pending",  
+  "accounts": ["xrb_1111111111111111111111111111111111111111111111111117353trpda", "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3"],  
+  "count": "1",  
+  "source": "true"   
+}`  
+Response:  
+`{  
+  "blocks" : {
+    "xrb_1111111111111111111111111111111111111111111111111117353trpda": {    
+        "142A538F36833D1CC78B94E11C766F75818F8B940771335C6C1B8AB880C5BB1D": {   
+             "amount": "6000000000000000000000000000000",       
+             "source": "xrb_3dcfozsmekr1tr9skf1oa5wbgmxt81qepfdnt7zicq5x3hk65fg4fqj58mbr"
+        }
+    },    
+    "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3": {    
+        "4C1FEEF0BEA7F50BE35489A1233FE002B212DEA554B55B1B470D78BD8F210C74": {   
+             "amount": "106370018000000000000000000000000",       
+             "source": "xrb_13ezf4od79h1tgj9aiu4djzcmmguendtjfuhwfukhuucboua8cpoihmh8byo"
+        }   
+    }  
+}`  
 
 ## Available supply  
 Returns how many rai are in the public supply  
@@ -1171,6 +1197,25 @@ Response:
         "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F": "6000000000000000000000000000000"    
     }  
 }`  
+### Optional "source"  
+_version 8.1+_   
+Returns a list of pending block hashes with amount and source accounts   
+Request:  
+`{  
+  "action": "pending",  
+  "account": "xrb_1111111111111111111111111111111111111111111111111117353trpda",  
+  "count": "1",  
+  "source": "true"   
+}`  
+Response:  
+`{  
+  "blocks" : {    
+        "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F": {   
+             "amount": "6000000000000000000000000000000",       
+             "source": "xrb_3dcfozsmekr1tr9skf1oa5wbgmxt81qepfdnt7zicq5x3hk65fg4fqj58mbr"  
+        }   
+    }  
+}`  
 
 ## Pending exists  
 _version 8.0+_   
@@ -1423,7 +1468,7 @@ Returns a list of pending block hashes with amount more or equal to **threshold*
 Request:  
 `{  
   "action": "wallet_pending",  
-  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"    
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",    
   "count": "1",  
   "threshold": "1000000000000000000000000"   
 }`  
@@ -1435,6 +1480,32 @@ Response:
     },    
     "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3": {    
         "4C1FEEF0BEA7F50BE35489A1233FE002B212DEA554B55B1B470D78BD8F210C74": "106370018000000000000000000000000"    
+    }  
+}`  
+### Optional "source"  
+_version 8.1+_   
+Returns a list of pending block hashes with amount and source accounts   
+Request:  
+`{  
+  "action": "wallet_pending",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",    
+  "count": "1",  
+  "source": "true"   
+}`  
+Response:  
+`{  
+  "blocks" : {
+    "xrb_1111111111111111111111111111111111111111111111111117353trpda": {    
+        "142A538F36833D1CC78B94E11C766F75818F8B940771335C6C1B8AB880C5BB1D": {   
+             "amount": "6000000000000000000000000000000",       
+             "source": "xrb_3dcfozsmekr1tr9skf1oa5wbgmxt81qepfdnt7zicq5x3hk65fg4fqj58mbr"
+        }
+    },    
+    "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3": {    
+        "4C1FEEF0BEA7F50BE35489A1233FE002B212DEA554B55B1B470D78BD8F210C74": {   
+             "amount": "106370018000000000000000000000000",       
+             "source": "xrb_13ezf4od79h1tgj9aiu4djzcmmguendtjfuhwfukhuucboua8cpoihmh8byo"
+        }   
     }  
 }`  
 
