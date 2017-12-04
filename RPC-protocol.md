@@ -1025,7 +1025,9 @@ Request:
   "action": "stop"  
 }`  
 Response:  
-(none)
+`{  
+  "success": ""  
+}`  
 
 ## Validate account number checksum  
 Check whether **account** is a valid account number  
