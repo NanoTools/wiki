@@ -1171,6 +1171,9 @@ Response:
     }
   }   
 }`
+### Optional "threshold"  
+_version 8.1+_   
+Returns wallet accounts balances more or equal to **threshold**   
 
 ## Wallet change seed  
 _enable_control required_  
