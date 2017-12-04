@@ -392,6 +392,26 @@ Response:
      }
   }
 }`
+### Optional "pending", "source"  
+_version 8.1+_   
+Additionally checks if block is pending, returns source account for receive & open blocks (0 for send & change blocks)
+Request:  
+`{  
+  "action": "blocks_info",  
+  "hashes": ["000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"]  
+}`  
+Response:  
+`{  
+  "blocks" : {   
+    "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F": {   
+       "block_account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",   
+       "amount": "1000000000000000000000000000000",   
+       "contents": "{ ...skipped... }",
+       "pending": "0",   
+       "source_account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"
+     }
+  }
+}`
 
 ## Block account  
 Returns the account containing block  
