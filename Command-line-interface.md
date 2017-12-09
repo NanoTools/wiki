@@ -42,6 +42,9 @@ Profile kdf function
 ### --debug_verify_profile
 Profile signature verification
 
+### --debug_profile_sign
+Profile signature generation
+
 ### --debug_xorshift_profile
 [Disabled] Profile xorshift algorithms
 
