@@ -22,7 +22,7 @@ make rai_node
 cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics   
 
 
-# Debian 9 Stretch
+# Debian 9 Stretch, Ubuntu 17.04+
 apt-get update && apt-get upgrade   
 apt-get install git cmake g++ libboost-all-dev curl wget   
 ### Building rai_node
