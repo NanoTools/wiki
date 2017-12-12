@@ -287,7 +287,7 @@ Request:
 `{  
   "action": "accounts_pending",  
   "accounts": ["xrb_1111111111111111111111111111111111111111111111111117353trpda", "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3"],  
-  "count": "1"
+  "count": 1
 }`  
 Response:  
 `{  
