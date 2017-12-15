@@ -32,6 +32,7 @@
 * CRYPTOPP_CUSTOM ON (more conservative building of Crypto++ for wider range of systems)
 
 ## Build RaiBlocks
+* `git submodule update --init --recursive`
 * Generate with cmake then build with your compiler
 * (*nix) to build node without GUI execute: make rai_node
 * (*nix) to build wallet with GUI execute: make rai_wallet
