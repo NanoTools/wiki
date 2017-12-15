@@ -29,6 +29,7 @@
 * Qt5_DIR [qt]lib/cmake/Qt5 (to build GUI wallet)
 * RAIBLOCKS_GUI ON (to build GUI wallet)
 * ENABLE_AVX2 ON, _optional_ PERMUTE_WITH_GATHER ON, _optional_ PERMUTE_WITH_SHUFFLES ON (for CPU with AXV2 support, choose fastest method for your CPU with https://github.com/sneves/blake2-avx2/)
+* CRYPTOPP_CUSTOM ON (more conservative building of Crypto++ for wider range of systems)
 
 ## Build RaiBlocks
 * Generate with cmake then build with your compiler
