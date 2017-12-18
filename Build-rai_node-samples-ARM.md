@@ -6,7 +6,7 @@
 
 # ArchlinuxARM 64bit
 pacman -Syu  
-pacman -S base-devel git cmake curl wget
+pacman -S base-devel git gcc cmake curl wget
 ### Building static Boost
 wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz/download   
 tar xzvf boost_1_63_0.tar.gz   
