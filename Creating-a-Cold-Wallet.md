@@ -16,7 +16,7 @@ This guide explains how to create a cold or air-gapped wallet. If you wish to st
 # User data locations
 
 * Windows: C:\Users<user>\AppData\Local\RaiBlocks
-* OSX: /Users/<user>/Library/RaiBlocks
+* OSX: /Users/username/Library/RaiBlocks
 * Linux: ~/RaiBlocks
 
 # Steps
