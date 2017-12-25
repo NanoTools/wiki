@@ -16,7 +16,7 @@ This guide explains how to create a cold or air-gapped wallet. If you wish to st
 # User data locations
 
 * Windows: C:\Users<user>\AppData\Local\RaiBlocks
-* OSX: /Users//Library/RaiBlocks
+* OSX: /Users/<user>/Library/RaiBlocks
 * Linux: ~/RaiBlocks
 
 # Steps
@@ -32,4 +32,4 @@ This guide explains how to create a cold or air-gapped wallet. If you wish to st
 
 # Additional Notes
 
-I recommend also keeping a copy of the rai wallet software with your seed. At the very least, note the version that you used.  And *do not lose your seed!*  *Do not give it out to anyone, no matter how cute!*
+Keep a copy of the rai wallet software with your seed. At the very least, note the version that you used.  And *do not lose your seed!*  *Do not give it out to anyone, no matter how cute!*
