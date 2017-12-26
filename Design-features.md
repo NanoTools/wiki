@@ -2,7 +2,7 @@
 ED25519 is an elliptic curve algorithm developed in an academic setting with a focus on security from side channel attack, performance, and fixing a lot of the little annoyances in most elliptic curve systems.  More information can be found here http://ed25519.cr.yp.to/
 
 # Hashing algorithm - Blake2
-Compared to existing cryptocurrencies, the hash algorithm chosen is much less important since it's not being used in a proof of work context.  In our implementation hashing is used purely as a digest algorithm against block contents.  Blake2 is a highly optimized cryptographic hash function who's predecessor was a SHA3 finalist.  More information can be found here https://blake2.net/
+Compared to existing cryptocurrencies, the hash algorithm chosen is much less important since it's not being used in a proof of work context.  In our implementation hashing is used purely as a digest algorithm against block contents.  Blake2 is a highly optimized cryptographic hash function whose predecessor was a SHA3 finalist.  More information can be found here https://blake2.net/
 
 # Key derivation function - Argon2
 The KDF is used for securing the account keys in the reference wallet.
