@@ -1,5 +1,5 @@
 The RPC protocol accepts JSON http POST requests.  The following are RPC commands along with the responses that are expected.
-
+ 
 ## Account balance  
 Returns how many RAW is owned and how many have not yet been received by **account**  
 Request:
