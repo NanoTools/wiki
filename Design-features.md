@@ -8,7 +8,7 @@ Compared to existing cryptocurrencies, the hash algorithm chosen is much less im
 The KDF is used for securing the account keys in the reference wallet.
 
 # Block interval - Instant
-With raiblocks, each account has its own block chain and can update this chain independent of anyone else in the network.  This metric is actually non-applicable however we include it since it's a standard metric for other cryptocurrencies.
+With RaiBlocks, each account has its own block chain and can update this chain independent of anyone else in the network.  This metric is actually non-applicable however we include it since it's a standard metric for other cryptocurrencies.
 
 # UDP message protocol
 Our system is designed to operate indefinitely using the minimum amount of computing resources as possible.  All messages in the system were designed to be stateless and fit within a single UDP packet.  This also makes it easier for lite peers with intermittent connectivity to participate in the network without reestablishing short-term TCP connections.  TCP is used only for new peers when they want to bootstrap the block chains in a bulk fashion.
