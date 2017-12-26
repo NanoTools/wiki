@@ -31,8 +31,8 @@ Many peers will not want to stay connected to the network in order to participat
 # Divisibility
 There are three important aspects of divisibility of the supply.
 * The supply needs to be able to be divided up amongst a large number of users with users possibly wanting several accounts.
-* Each account needs to be able to represent an adequate dynamic range of value
-* The supply should be able to deal with deflation over time as accounts are abandoned
+* Each account needs to be able to represent an adequate dynamic range of value.
+* The supply should be able to deal with deflation over time as accounts are abandoned.
 
 The supply starts with 2^128 - 1 which satisfies the three supply requirements.
 
