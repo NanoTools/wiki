@@ -1561,7 +1561,7 @@ Response:
 }
 ```
 
-## Uncheked blocks  
+## Unchecked blocks  
 _version 8.0+_   
 Returns a list of pairs of unchecked synchronizing block hash and its json representation up to **count**          
 Request:  
@@ -1628,7 +1628,7 @@ Response:
 }
 ```
 
-## Uncheked blocks with database keys   
+## Unchecked blocks with database keys   
 _version 8.0+_   
 Retrieves unchecked database keys, blocks hashes & a json representations of unchecked pending blocks starting from **key** up to **count**   
 Request:  
