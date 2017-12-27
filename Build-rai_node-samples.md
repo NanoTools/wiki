@@ -19,7 +19,7 @@ git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build
 cd rai_build   
 cmake -DBOOST_ROOT=../[boost] -G "Unix Makefiles"   
 make rai_node   
-cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics   
+cp rai_node ../rai_node && cp librai_lib.so .. && cd .. && ./rai_node --diagnostics
 
 
 # Debian 9 Stretch, Ubuntu 17.04+
