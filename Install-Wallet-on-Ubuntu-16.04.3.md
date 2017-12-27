@@ -1,4 +1,4 @@
-CLEAN UBUNTU 16.04.3 X64
+### CLEAN UBUNTU 16.04.3 X64
 
 I had to piece this together from other wallet install instructions. The QT5 cam from ZCoin github. The use of Environment variable BOOST_ROOT I picked up from a BITShares doc online. I am running ./b2 as sudo since there was an include folder that I otherwise did not have access to create.
 
