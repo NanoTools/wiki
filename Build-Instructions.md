@@ -14,7 +14,7 @@
 * Inside [boost.src]
 * Run "./bootstrap.sh
 * Run "./b2 --prefix=[boost] --build-dir=[boost.build] link=static install"
-* (Windows) An additional b2 option "address-model 64" for x64 builds
+* (Windows) An additional b2 option "address-model=64" for x64 builds
 
 ## Building Qt
 * In [qt.build] execute [qt.src]/configure -shared -opensource -nomake examples -nomake tests -confirm-license  -prefix [qt]
