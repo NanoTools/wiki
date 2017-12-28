@@ -31,6 +31,10 @@ I found the -q parameter useful while installing b2 as it forces the install to 
 
 ### Install RAI_WALLET
 
+    cd ~
+    git clone https://github.com/clemahieu/raiblocks
+    cd railblocks
+    git submodule update --init --recursive
     cmake -G "Unix Makefiles" -DRAIBLOCKS_GUI=ON -DBOOST_ROOT="$BOOST_ROOT"
     make rai_wallet
     cp rai_wallet .. && cd .. && ./rai_wallet
