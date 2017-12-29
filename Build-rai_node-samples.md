@@ -30,7 +30,7 @@ git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build
 cd rai_build   
 cmake -G "Unix Makefiles"   
 make rai_node   
-cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics   
+cp rai_node ../rai_node && cp librai_lib.so .. && cd .. && ./rai_node --diagnostics 
 
 # CentOS 7
 sudo yum check-update   
@@ -47,8 +47,7 @@ git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build
 cd rai_build   
 cmake -DBOOST_ROOT=../[boost] -G "Unix Makefiles"   
 make rai_node   
-cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics   
-
+cp rai_node ../rai_node && cp librai_lib.so .. && cd .. && ./rai_node --diagnostics
 
 # Ubuntu 16.04 on Digital Ocean Droplet ($5/Month 512Mb Ram, 1 Core, 20Gb SSD)
 Sign up at digitalocean.com
