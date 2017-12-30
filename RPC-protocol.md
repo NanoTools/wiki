@@ -33,7 +33,7 @@ The RPC protocol accepts JSON http POST requests.  The following are RPC command
 * Bootstrap
     * [Bootstrap](#bootstrap)
     * [Multi-connection bootstrap](#multi-connection-bootstrap)
-* Convertion
+* Conversion
     * [Krai from raw](#krai-from-raw)
     * [Krai to raw](#krai-to-raw)
     * [Mrai from raw](#mrai-from-raw)
