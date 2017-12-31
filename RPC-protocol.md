@@ -999,7 +999,7 @@ Response:
 ```
 
 ## Key create  
-Generates a **adhoc random keypair**  
+Generates an **adhoc random keypair**  
 Request:  
 ```
 {  
