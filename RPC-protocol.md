@@ -51,7 +51,7 @@ The RPC protocol accepts JSON http POST requests.  The following are RPC command
     * [Key create](#key-create)
     * [Key expand](#key-expand)
 * Ledger
-    * [History](#History)
+    * [History](#history)
     * [Ledger](#ledger)
     * [Successors](#successors)
 * Network
