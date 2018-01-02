@@ -1,16 +1,19 @@
 The fastest way to set up a RaiBlocks node is via a docker container from DockerHub.  You'll need a semi-recent version of docker, Client Version ~ 1.5.0.
 
-### Installation
-On Ubuntu 14.04 you can do:  
-"sudo apt-get install docker.io"  
-"sudo docker pull clemahieu/rai_node"  
+### Installation instructions
 
-On Debian 7.7+ follow this instructions:  
-https://docs.docker.com/engine/installation/linux/debian/  
-"sudo docker pull clemahieu/rai_node"  
+https://docs.docker.com/engine/installation
 
+### Pulling docker image 
+
+```bash
+sudo docker pull clemahieu/rai_node
+```  
 ### Running
-"sudo docker run -d -p 7075:7075/udp -p 7075:7075 -p 127.0.0.1:7076:7076 -v ~:/root clemahieu/rai_node /rai_node --daemon"  
+
+```bash
+sudo docker run -d -p 7075:7075/udp -p 7075:7075 -p 127.0.0.1:7076:7076 -v ~:/root clemahieu/rai_node /rai_node --daemon
+```  
 
 This command:
 * Starts the docker container as a daemon "-d"
