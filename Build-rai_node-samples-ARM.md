@@ -25,8 +25,10 @@ cd ..
 
 ### Building rai_node
 
+```bash
 git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
 cd rai_build   
 cmake -DBOOST_ROOT=../[boost] -G "Unix Makefiles"   
 make rai_node   
 cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics   
+```
