@@ -1,5 +1,5 @@
 ## Required source
-* [Boost 1.63](http://www.boost.org/users/history/version_1_63_0.html) extracted to [boost.src]
+* [Boost 1.66](http://www.boost.org/users/history/version_1_66_0.html) extracted to [boost.src]
 * (wallet) [Qt 5.x open source edition](https://www1.qt.io/download-open-source/) extracted to [qt.src]
 * RaiBlocks source in [rai.src]
 
