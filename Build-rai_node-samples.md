@@ -94,13 +94,11 @@ sudo mkswap /swapfile
 sudo swapon /swapfile
 
 sudo apt-get update  
-sudo apt-get install g++  
-sudo apt-get install make  
-sudo apt install cmake
+sudo apt-get install g++ make cmake
 
-wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz/download  
-tar xzvf boost_1_63_0.tar.gz  
-cd boost_1_63_0  
+wget -O boost_1_66_0.tar.gz https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.gz  
+tar xzvf boost_1_66_0.tar.gz  
+cd boost_1_66_0  
 ./bootstrap.sh  
 ./b2 --prefix=../[boost] link=static install  
 cd ..
