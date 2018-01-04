@@ -1,3 +1,5 @@
+* See [this github gist for a tutorial on getting rai_node running on an Ubuntu EC2 instance](https://gist.github.com/numtel/96dd51106f0e7e25c50dcf4a4f119499).
+
 **To enable RPC for node edit [config.json](https://github.com/clemahieu/raiblocks/wiki/config.json) after first launch**   
 ./rai_node --daemon  
 sed -i 's/"rpc_enable": "false"/"rpc_enable": "true"/g' ~/RaiBlocks/config.json   
