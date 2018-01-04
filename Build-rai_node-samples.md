@@ -4,7 +4,7 @@
 
 ***
 
-# Ubuntu 16.04 LTS Server, Debian 8 Jessie
+# Ubuntu 16.04 LTS Server, Ubuntu 16.10+, Debian 8 Jessie, Debian 9 Stretch
 
 ### Dependency Build Instructions 
 
@@ -14,9 +14,9 @@ sudo apt-get install git cmake g++ curl wget
 ```   
 ### Building static Boost
 ```bash
-wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz/download   
-tar xzvf boost_1_63_0.tar.gz   
-cd boost_1_63_0   
+wget -O boost_1_66_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.66.0/boost_1_66_0.tar.gz/download   
+tar xzvf boost_1_66_0.tar.gz   
+cd boost_1_66_0   
 ./bootstrap.sh   
 ./b2 --prefix=../[boost] link=static install   
 cd ..
@@ -31,25 +31,6 @@ make rai_node
 cp rai_node ../rai_node && cp librai_lib.so .. && cd .. && ./rai_node --diagnostics
 ```
 
-# Debian 9 Stretch, Ubuntu 17.04+
-
-### Dependency Build Instructions 
-
-```bash
-apt-get update && apt-get upgrade   
-apt-get install git cmake g++ libboost-all-dev curl wget   
-```
-
-### Building rai_node
-
-```bash
-git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
-cd rai_build   
-cmake -G "Unix Makefiles"   
-make rai_node   
-cp rai_node ../rai_node && cp librai_lib.so .. && cd .. && ./rai_node --diagnostics 
-```
-
 # CentOS 7
 
 ### Dependency Build Instructions 
@@ -62,9 +43,9 @@ sudo yum install git cmake gcc gcc-c++ libstdc++-static curl wget
 ### Building static Boost
 
 ```bash
-wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz/download   
-tar xzvf boost_1_63_0.tar.gz   
-cd boost_1_63_0   
+wget -O boost_1_66_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.66.0/boost_1_66_0.tar.gz/download   
+tar xzvf boost_1_66_0.tar.gz   
+cd boost_1_66_0   
 ./bootstrap.sh   
 ./b2 --prefix=../[boost] link=static install   
 cd ..
