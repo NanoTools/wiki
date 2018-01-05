@@ -1,3 +1,6 @@
+**Wallet crashes at start**
+* Check if your system supports IPv6
+
 **Missing transactions**
 * Check if wallet status is locked. If true, unlock wallet with password
 * Check if block count matches [raiblockscommunity.net](https://raiblockscommunity.net).  Advanced -> Block count
