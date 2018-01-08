@@ -26,7 +26,7 @@ cd ..
 ```bash
 git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
 cd rai_build   
-cmake -DBOOST_ROOT=../[boost] -G "Unix Makefiles"   
+cmake -DBOOST_ROOT=../[boost]/ -G "Unix Makefiles"   
 make rai_node   
 cp rai_node ../rai_node && cp librai_lib.so .. && cd .. && ./rai_node --diagnostics
 ```
@@ -56,7 +56,7 @@ cd ..
 ```bash
 git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
 cd rai_build   
-cmake -DBOOST_ROOT=../[boost] -G "Unix Makefiles"   
+cmake -DBOOST_ROOT=../[boost]/ -G "Unix Makefiles"   
 make rai_node   
 cp rai_node ../rai_node && cp librai_lib.so .. && cd .. && ./rai_node --diagnostics
 ```
@@ -90,7 +90,7 @@ cd raiblocks/
 git submodule init  
 git submodule update
 
-cmake -DBOOST_ROOT=../[boost] -G "Unix Makefiles" 
+cmake -DBOOST_ROOT=../[boost]/ -G "Unix Makefiles" 
  
 make rai_node
 
