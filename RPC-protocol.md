@@ -2279,7 +2279,7 @@ https://localhost:8080/
 {  
     "account": "xrb_1m5cfk468k9cwfdp8zsiktc3dghxh6qabef7mno5odos9h91nn5wzs58g7st",  
     "hash": "B5678177F615A890C28F6716FBD81E1068ADAC27C85E00EDCCC21832CFF1C413",  
-    "block": "{  
+    "block": {  
         "type": "send",  
         "previous": "F91264792342F6B99CC9B3C946726537EFA5F7C925CCCAB49C32B5B423CCB07B",  
         "destination": "xrb_39ymww61tksoddjh1e43mprw5r8uu1318it9z3agm7e6f96kg4ndqg9tuds4",  
