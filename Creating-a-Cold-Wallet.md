@@ -1,3 +1,5 @@
+* [Alternatively, use paper wallet generator](https://numtel.github.io/rai-paper-wallet/)
+
 ### Disclaimer
 
 This guide is offered as-is, with no guarantees of any kind. Please do be careful.
