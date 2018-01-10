@@ -1495,6 +1495,8 @@ Response:
   "block": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
 }
 ```
+Proof of Work is precomputed for **one** transaction in the background.  If it has been a while since your last transaction it will send instantly, the next one will need to wait for Proof of Work to be generated.
+
 ### Optional "work"  
 _version 8.1+_  
 Uses **work** value for block from external source  
