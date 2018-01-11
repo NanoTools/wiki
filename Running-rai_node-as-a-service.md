@@ -18,7 +18,7 @@
 
     curl -g -d '{ "action": "stop" }' '[::1]:7076'
 
-**Launch rai_node as a service with system.d**   
+**Launch rai_node as a service with systemd**   
 
     sudo touch /etc/systemd/system/rai_node.service   
     sudo chmod 664 /etc/systemd/system/rai_node.service   
