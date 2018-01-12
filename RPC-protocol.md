@@ -1,4 +1,4 @@
-The RPC protocol accepts JSON http POST requests.  The following are RPC commands along with the responses that are expected.
+The RPC protocol accepts JSON HTTP POST requests. The following are RPC commands along with the responses that are expected.
 
 ## Overview
 * Accounts
