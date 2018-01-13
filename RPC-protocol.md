@@ -1514,7 +1514,7 @@ Request:
 
 ## Stop node   
 _enable_control required_  
-Method to safely shutdown node
+Method to safely shutdown node  
 Request:  
 ```
 {  
@@ -1565,8 +1565,8 @@ Response:
 ```
 
 ## Retrieve node versions 
-Returns version information for RPC, Store & Node (Major & Minor version)
-_RPC Version always retruns "1" as of 13/01/2018_
+Returns version information for RPC, Store & Node (Major & Minor version)  
+_RPC Version always retruns "1" as of 13/01/2018_  
 Request:  
 ```
 {  
