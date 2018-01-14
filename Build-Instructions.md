@@ -27,7 +27,7 @@
 * `make install`
 * (Windows) Use `nmake` instead of `make`. 
 
-## CMake variables (`cmake -D[var]`).
+## CMake variables (`cmake -DVARNAME=VARVALUE`).
 * BOOST_ROOT [boost]
 * _CMAKE_BUILD_TYPE Release_ (default)
 * _ACTIVE_NETWORK rai_live_network_ (default)
