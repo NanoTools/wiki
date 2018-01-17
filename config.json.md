@@ -26,7 +26,7 @@
             "work_generation_time": "true",
             "log_to_cerr": "false",
             "max_size": "16777216",
-            "version": "7",
+            "version": "2",
             "work_peers": "",
             "vote": "false", // Track voting activities
             "bootstrap_connections": "16" // Multi-connection bootstrap
