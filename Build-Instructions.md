@@ -35,6 +35,7 @@
 * RAIBLOCKS_GUI ON (to build GUI wallet)
 * ENABLE_AVX2 ON, _optional_ PERMUTE_WITH_GATHER ON, _optional_ PERMUTE_WITH_SHUFFLES ON (for CPU with AXV2 support, choose fastest method for your CPU with https://github.com/sneves/blake2-avx2/)
 * CRYPTOPP_CUSTOM ON (more conservative building of Crypto++ for wider range of systems)
+* BOOST_CUSTOM ON (use bundled FindBoost.cmake for boost 1.66 on Windows)
 
 ## Build RaiBlocks
 * `git submodule update --init --recursive`
