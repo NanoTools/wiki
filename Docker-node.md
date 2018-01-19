@@ -32,6 +32,8 @@ If you get the error `Error starting userland proxy: port is not a proto:IP:port
 
 If you get the error `create ~: volume name is too short, names should be at least two alphanumeric characters.` replace the `~` with the full pathname such as `Users/someuser`.
 
+### RPC Access
+
 RPC access is disabled by default, edit your RaiBlocks/config.json file to enable RPC control and optionally enable control commands e.g. send, add key, create wallets, etc.  By default the RPC binds only to the localhost adaptor otherwise the RPC would be open to anyone.  When running inside a docker container the RPC needs to bind to all adapters so the port can be tunneled outside the container.  You'll need to change "::1" to "::ffff:0.0.0.0" for `rpc_address` in the config file.  RPCs within docker are secured by binding the mapped port to the localhost adapter via the "-p [::1]:7076:7076" option.  **It's very important the [::1] is not omitted on the RPC port mapping** otherwise the RPC could be opened to anyone who can reach the node via a network.
 
 ### Setting up a wallet and adding accounts
