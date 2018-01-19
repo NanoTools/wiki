@@ -13,7 +13,9 @@ sudo docker pull clemahieu/rai_node
 
 ```bash
 sudo docker run -d -p 7075:7075/udp -p 7075:7075 -p [::1]:7076:7076 -v ~:/root clemahieu/rai_node /rai_node --daemon
-```  
+```
+
+If you get the error `Error starting userland proxy: port is not a proto:IP:port: 'tcp:[:'.` or want to expose IPv4 port, use `-p [::1]:7076:7076`.
 
 This command:
 * Starts the docker container as a daemon "-d"
