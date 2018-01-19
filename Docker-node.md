@@ -28,9 +28,9 @@ This will put the data in a permanent location in your hosts's home directory, o
 
 ### Troubleshooting
 
-If you get the error `Error starting userland proxy: port is not a proto:IP:port: 'tcp:[:'.` or want to expose IPv4 port, use `-p 7076:7076`.
+If you get `Error starting userland proxy: port is not a proto:IP:port: 'tcp:[:'.` or want to expose IPv4 port, use `-p 7076:7076`.
 
-If you get the error `create ~: volume name is too short, names should be at least two alphanumeric characters.` replace the `~` with the full pathname such as `Users/someuser`.
+If you get `create ~: volume name is too short, names should be at least two alphanumeric characters.` replace the `~` with the full pathname such as j`/Users/someuser`.
 
 ### RPC Access
 
