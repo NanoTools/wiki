@@ -29,7 +29,7 @@
             "version": "2",
             "work_peers": "",
             "vote": "false", // Track voting activities
-            "bootstrap_connections": "16" // Multi-connection bootstrap
+            "flush": "true"  // Setting this to false gives better performance, but may lose entries on crashes.
         },
         "work_peers": "", // Delegate a node your hash work, you need to get RPC access to that node
         "preconfigured_peers": [ // List of defaults peers to connect on boot
@@ -54,7 +54,8 @@
         "work_threads": "4", // PoW work threads. By deafault all available CPU threads, set lower value for 24/7 services
         "callback_address": "::ffff:127.0.0.1", // Callback IP address, in sample IPv4 localhost
         "callback_port": "17076", // Callback port
-        "callback_target": "/" // Callback target, in sample root of callback listening server
+        "callback_target": "/", // Callback target, in sample root of callback listening server
+        "bootstrap_connections": "16" // Multi-connection bootstrap
     },
     "rpc": {
         "address": "::ffff:127.0.0.1", // Allowed IP for RPC connection
