@@ -55,7 +55,7 @@
         "callback_address": "::ffff:127.0.0.1", // Callback IP address, in sample IPv4 localhost
         "callback_port": "17076", // Callback port
         "callback_target": "/", // Callback target, in sample root of callback listening server
-        "bootstrap_connections": "16" // Multi-connection bootstrap
+        "bootstrap_connections": "16" // Multi-connection bootstrap. Must be a power of 2.
     },
     "rpc": {
         "address": "::ffff:127.0.0.1", // Allowed IP for RPC connection
