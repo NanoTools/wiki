@@ -26,6 +26,7 @@
             "work_generation_time": "true",
             "log_to_cerr": "false",
             "max_size": "16777216",
+            "rotation_size": "4194304", // Size of Log File before rotation in bytes, Default is 4MB 
             "version": "2",
             "work_peers": "",
             "vote": "false", // Track voting activities
