@@ -3,7 +3,7 @@ All accounts you create in your wallet are tied together by a wallet 'seed'.  Th
 
 We recommend backing up the seed by writing it on a piece of paper, perhaps twice, and storing it in a secure fire/water proof location.  Never put the seed into a file unencrypted.
 
-You can copy the seed to your clipboard in the wallet by going to "Advanced" -> "Accounts" -> "Backup/Clipboard wallet seed"
+You can copy the seed to your clipboard in the wallet by going to "Accounts" -> "Backup/Clipboard wallet seed"
 
 If you need to reload this seed into your wallet in the future, you can do so through "Advanced" -> "Accounts" -> "Import wallet" and typing the seed into the "seed" box.  Confirm that you want to clear existing keys and then push "Import seed".
 
