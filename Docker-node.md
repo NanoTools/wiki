@@ -1,4 +1,4 @@
-The fastest way to set up a RaiBlocks node is via a docker container from DockerHub.  You'll need a semi-recent version of docker, Client Version ~ 1.5.0.
+The fastest way to set up a Nano node is via a docker container from DockerHub.  You'll need a semi-recent version of docker, Client Version ~ 1.5.0.
 
 ### Installation instructions
 
