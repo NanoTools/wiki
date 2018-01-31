@@ -48,3 +48,21 @@ The response will look like:
 This is the account number that was just created.  
 
 Back up the wallet seed following the backup instructions https://github.com/clemahieu/raiblocks/wiki/Wallet-Backups
+
+### Usability
+
+You can find reference material for using docker here: https://docs.docker.com/engine/reference/commandline/
+
+Once set up, using bashrc to create an alias can save you time.
+
+For example (when 97bf54657cdb is your docker instance):
+
+`sudo docker exec 97bf54657cdb /rai_node --diagnostics`
+
+Can be shortened to:
+
+`rai --diagnostics`
+
+By editing ~/.bashrc to add the alias:
+
+`alias rai='sudo docker exec 97bf54657cdb /rai_node'`
