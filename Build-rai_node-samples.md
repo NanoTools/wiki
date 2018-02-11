@@ -61,7 +61,7 @@ make rai_node
 cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics
 ```
 
-# Ubuntu 16.04 on Digital Ocean Droplet ($5/Month 512Mb Ram, 1 Core, 20Gb SSD)
+# Ubuntu 16.04 on Digital Ocean Droplet ($5/Month 1GB Ram, 1 Core, 25Gb SSD)
 Sign up at digitalocean.com
 
 Create Droplet
