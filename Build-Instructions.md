@@ -15,6 +15,7 @@ _-- please note: using docker has been recommended as a faster method of install
 ### Option 1
 * Inside `raiblocks` directory
 * Run `sh ci/bootstrap_boost.sh`
+* This will build Boost at `/usr/local/boost/`
 * That's it!
 ### Option 2
 * Inside [boost.src]
@@ -29,7 +30,7 @@ _-- please note: using docker has been recommended as a faster method of install
 * (Windows) Use `nmake` instead of `make`. 
 
 ## CMake variables (`cmake -DVARNAME=VARVALUE`).
-* BOOST_ROOT [boost]
+* BOOST_ROOT [boost] (`/usr/local/boost/` if bootstrapped)
 * _CMAKE_BUILD_TYPE Release_ (default)
 * _ACTIVE_NETWORK rai_live_network_ (default)
 * Qt5_DIR [qt]lib/cmake/Qt5 (to build GUI wallet)
