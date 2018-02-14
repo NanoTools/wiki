@@ -1,4 +1,4 @@
-_-- please note: using docker has been recommended as a faster method of installation: https://github.com/clemahieu/raiblocks/wiki/Docker-node --_
+_-- please note: using docker has been recommended as a faster method of installation: https://github.com/nanocurrency/raiblocks/wiki/Docker-node --_
 ## Required source
 * [Boost 1.66](http://www.boost.org/users/history/version_1_66_0.html) extracted to [boost.src] (OR `sh raiblocks/ci/bootstrap_boost.sh`)
 * (wallet) [Qt 5.x open source edition](https://www1.qt.io/download-open-source/) extracted to [qt.src]
