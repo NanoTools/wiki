@@ -66,7 +66,11 @@ The RPC protocol accepts JSON HTTP POST requests. The following are RPC commands
     * [Payment end](#payment-end)
     * [Payment init](#payment-init)
     * [Payment wait](#payment-wait)
-* Peers
+* Peers 
+Conversations
+Important and unread
+ 
+
     * [Add work peer](#add-work-peer)
     * [Clear work peers](#clear-work-peers)
     * [Retrieve online peers](#retrieve-online-peers)
@@ -1497,7 +1501,7 @@ Response:
 ```
 Proof of Work is precomputed for **one** transaction in the background.  If it has been a while since your last transaction it will send instantly, the next one will need to wait for Proof of Work to be generated.
 
-If the request times out, then the send may or may not have gone through. Most exchange "double withdraw" bugs are caused because a request was incorrectly retried. If you want to retry a failed send, you **must** specify the `id` parameter as follows:
+If the request times out, then the send may or may not have gone through. Most exchange "double withdraw" bugs are caused because a request was incorrectly retried. If you want to the ability to retry a failed send, all send calls must specify the id parameter as follows
 
 ### Highly recommended "id"
 _version 10.0+_  
