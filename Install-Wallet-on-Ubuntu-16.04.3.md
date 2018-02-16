@@ -36,10 +36,10 @@ I found the -q parameter useful while installing b2 as it forces the install to 
     cd raiblocks
     git submodule update --init --recursive
     cmake -G "Unix Makefiles" -DRAIBLOCKS_GUI=ON -DBOOST_ROOT="$BOOST_ROOT"
-    make nano_wallet
-    cp nano_wallet .. && cp librai_lib.so  .. && cd .. && ./nano_wallet
+    make rai_wallet
+    cp rai_wallet .. && cp librai_lib.so  .. && cd .. && ./rai_wallet
 
-Next time you can run your wallet by running `./nano_wallet` in your home folder. Or simply double click the file in your file browser. 
+Next time you can run your wallet by running `./rai_wallet` in your home folder. Or simply double click the file in your file browser. 
 
 Thanks,
 Cryptohuh
