@@ -1497,6 +1497,39 @@ Response:
 ```
 Proof of Work is precomputed for **one** transaction in the background.  If it has been a while since your last transaction it will send instantly, the next one will need to wait for Proof of Work to be generated.
 
+If the request times out, then the send may or may not have gone through. Most exchange "double withdraw" bugs are caused because a request was incorrectly retried. If you want to retry a failed send, you **must** specify the `id` parameter as follows:
+
+### Highly recommended "id"
+_version 10.0+_  
+
+You can (and should) specify a unique id for each spend to provide [idempotency](https://en.wikipedia.org/wiki/Idempotence#Computer_science_meaning). That means that if you call `send` two times with the same id, the second request won't send any additional Nano, and will return the first block instead. The id can be any string. **This may be a required parameter in the future.**
+
+If you accidentally reuse an id, the send will not go through (it will be seen as a duplicate request), so make sure your ids are unique! They must be unique per node, and are not segregated per wallet.
+
+Using the same id for requests with different parameters (wallet, source, destination, and amount) is undefined behavior and may result in an error in the future.
+
+Request:  
+```
+{  
+  "action": "send",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "source": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",  
+  "destination": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+  "amount": "1000000",
+  "id": "7081e2b8fec9146e"
+}
+```  
+Response:  
+```
+{  
+  "block": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}
+```
+
+Sending the request again will yield the same block, and will not affect the ledger.
+
+In the future, the response may also indicate if the block is new. However, that has not yet been implemented.
+
 ### Optional "work"  
 _version 8.1+_  
 Uses **work** value for block from external source  
