@@ -29,17 +29,47 @@ I found the -q parameter useful while installing b2 as it forces the install to 
 
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
-### Install RAI_WALLET
+### Build NANO_WALLET
 
     cd ~
     git clone https://github.com/clemahieu/raiblocks
     cd raiblocks
     git submodule update --init --recursive
     cmake -G "Unix Makefiles" -DRAIBLOCKS_GUI=ON -DBOOST_ROOT="$BOOST_ROOT"
-    make rai_wallet
-    cp rai_wallet .. && cp librai_lib.so  .. && cd .. && ./rai_wallet
+    make nano_wallet
 
-Next time you can run your wallet by running `./rai_wallet` in your home folder. Or simply double click the file in your file browser. 
+### Copy/install the nano_wallet binary to /usr/local/bin so it's on your $PATH and try and run it
 
-Thanks,
-Cryptohuh
+    sudo cp nano_wallet /usr/local/bin/
+    nano_wallet
+
+If the above works, then you should be able to open a terminal and run 'nano_wallet' anytime you want to run the wallet from here on.
+
+### Troubleshooting
+
+**This application failed to start because it could not find or load the Qt platform plugin "xcb".**
+
+If you get this error, make sure you have QT5 installed. If it's installed, locate the file 'libqxcb.so' on your system and then tell nano_wallet where this file can be found (set it to the 'plugins' directory).
+
+    locate libqxcb.so
+    # returns /usr/lib/qt/plugins/platforms/libqxcb.so or something similar
+    export QT_PLUGIN_PATH=/usr/lib/qt/plugins
+    nano_wallet
+
+If you don't want to run this each time you can setup an alias to do this for you:
+
+    echo 'alias nano_wallet="QT_PLUGIN_PATH=/usr/lib/qt/plugins nano_wallet"' >> ~/.bashrc
+    source ~/.bashrc
+
+**Error starting nano exception while running wallet: No such node (Wallet)**
+
+If you get this error, it might be related to pre-existing configuration file issues on your system. You can try the following to generate a fresh configuration (your existing/older configuration will be under ~/RaiBlocks.old). **Please be careful with the following if you already run a wallet, as these details will be forgotten by the nano_wallet due to starting with a fresh configuration:**
+
+    mv ~/RaiBlocks{,.old}
+    nano_wallet
+
+### Uninstall the wallet
+
+    sudo rm /usr/local/bin/nano_wallet
+
+( note: your configuration should still exist in ~/RaiBlocks/ )
