@@ -17,7 +17,7 @@ sudo apt-get install git cmake g++ curl wget
 wget -O boost_1_66_0.tar.gz https://sourceforge.net/projects/boost/files/boost/1.66.0/boost_1_66_0.tar.gz/download   
 tar xzvf boost_1_66_0.tar.gz   
 cd boost_1_66_0   
-./bootstrap.sh   
+./bootstrap.sh --with-libraries=filesystem,iostreams,log,program_options,thread   
 ./b2 --prefix=../[boost] link=static install   
 cd ..
 ```
@@ -46,7 +46,7 @@ sudo yum install git cmake gcc gcc-c++ libstdc++-static curl wget
 wget -O boost_1_66_0.tar.gz https://sourceforge.net/projects/boost/files/boost/1.66.0/boost_1_66_0.tar.gz/download   
 tar xzvf boost_1_66_0.tar.gz   
 cd boost_1_66_0   
-./bootstrap.sh   
+./bootstrap.sh --with-libraries=filesystem,iostreams,log,program_options,thread   
 ./b2 --prefix=../[boost] link=static install   
 cd ..
 ```
