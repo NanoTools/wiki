@@ -72,9 +72,8 @@ sudo service rai_node start
 sudo systemctl enable rai_node
 ````
 
-
 ### Link to rai_node
-`````
+````
 ln -s ~/rai-10.0.1-Linux/bin/rai_node /usr/local/sbin/rai_node
 ````
 
