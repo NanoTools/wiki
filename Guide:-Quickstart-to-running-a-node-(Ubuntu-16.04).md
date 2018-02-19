@@ -25,19 +25,19 @@ Change: "rpc_enable": "true"
 Save and quit
 
 
+### Find the path of the rai_node binary, as well as the user it will be run by
+````
+cd ~/rai-10.0.1-Linux/bin/
+pwd -P # Example: /home/stanley/rai-10.0.1-Linux/bin # write down this path
+
+ls -l #Example: -rwxr-xr-x 1 **stanley stanley** 8.9M Feb 16 02:25 rai_node #write down the user and group to the left of rai_node, this should be the same as your username
+````
+
 ### Create service file
 ````
 sudo touch /etc/systemd/system/rai_node.service   
 sudo chmod 664 /etc/systemd/system/rai_node.service   
 sudo vim /etc/systemd/system/rai_node.service  
-````
-
-### Fine the path of the rai_node binary, as well as the user it will be run by
-````
-cd ~/rai-10.0.1-Linux/bin/
-pwd -P # Example: /home/stanley/rai-10.0.1-Linux/bin <= write down this path
-
-ls -l #Example: -rwxr-xr-x 1 **stanley stanley** 8.9M Feb 16 02:25 rai_node <= write down the user and group to the left of rai_node, this should be the same as your username
 ````
 
 ### Service file
