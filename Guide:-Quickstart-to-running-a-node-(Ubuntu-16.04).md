@@ -28,7 +28,7 @@ Save and quit
 ### Find the path of the rai_node binary, as well as the user it will be run by
 ````
 cd ~/rai-10.0.1-Linux/bin/
-pwd -P # Example: /home/stanley/rai-10.0.1-Linux/bin # write down this path
+pwd -P #Example: /home/stanley/rai-10.0.1-Linux/bin # write down this path
 
 ls -l #Example: -rwxr-xr-x 1 stanley stanley 8.9M Feb 16 02:25 rai_node #write down the user and group (in this example, both the user and group is stanley) to the left of rai_node, this should be the same as your username
 ````
