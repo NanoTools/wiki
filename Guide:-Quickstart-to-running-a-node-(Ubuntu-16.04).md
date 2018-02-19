@@ -29,7 +29,7 @@ Save and quit
 ````
 sudo touch /etc/systemd/system/rai_node.service   
 sudo chmod 664 /etc/systemd/system/rai_node.service   
-sudo nano /etc/systemd/system/rai_node.service  
+sudo vim /etc/systemd/system/rai_node.service  
 ````
 
 ### Fine the path of the rai_node binary, as well as the user it will be run by
