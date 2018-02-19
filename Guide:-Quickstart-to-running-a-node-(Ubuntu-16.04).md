@@ -64,7 +64,7 @@ WantedBy=multi-user.target
 
 ### Start the service
 ````
-sudo service rai_node start`
+sudo service rai_node start
 ````
 
 ### Enable the node to run on boot
