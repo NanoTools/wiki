@@ -14,9 +14,8 @@ tar xvf rai-10.0.1-Linux-x86_64.tar.bz2
 ### Initiate rai_node to generate ~/RaiBlocks 
 ````
  ./rai-10.0.1-Linux/bin/rai_node --daemon
-
- _Press ctrl+c to kill process_
 ````
+_Press ctrl+c to kill process_
 
 ### Update config.json
 ````
