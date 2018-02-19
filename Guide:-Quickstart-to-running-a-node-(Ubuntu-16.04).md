@@ -28,10 +28,16 @@ Save and quit
 ### Find the path of the rai_node binary, as well as the user it will be run by
 ````
 cd ~/rai-10.0.1-Linux/bin/
-pwd -P #Example: /home/stanley/rai-10.0.1-Linux/bin # write down this path
-
-ls -l #Example: -rwxr-xr-x 1 stanley stanley 8.9M Feb 16 02:25 rai_node #write down the user and group (in this example, both the user and group is stanley) to the left of rai_node, this should be the same as your username
+pwd -P
 ````
+This should output something similar to: /home/stanley/rai-10.0.1-Linux/bin
+Write down this path for our service file in a future step
+
+````
+ls -l
+````
+This should output something similar to: -rwxr-xr-x 1 stanley stanley 8.9M Feb 16 02:25 rai_node
+Write down the user and group (in this example, both the user and group is stanley) to the left of rai_node, this should be the same as your username
 
 ### Create service file
 ````
@@ -57,14 +63,20 @@ WantedBy=multi-user.target
 ````
 
 ### Start the service
-`sudo service rai_node start`
+````
+sudo service rai_node start`
+````
 
 ### Enable the node to run on boot
-`sudo systemctl enable rai_node`
+````
+sudo systemctl enable rai_node
+````
 
 
 ### Link to rai_node
-` ln -s ~/rai-10.0.1-Linux/bin/rai_node /usr/local/sbin/rai_node`
+`````
+ln -s ~/rai-10.0.1-Linux/bin/rai_node /usr/local/sbin/rai_node
+````
 
 ### Voila!
 You should now have a brand new node up and running, and the blocks syncing.
