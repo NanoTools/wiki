@@ -70,5 +70,7 @@ WantedBy=multi-user.target
 You should now have a brand new node up and running, and the blocks syncing.
 
 ### Check Status
-`rai_node --debug_block_count`
-This will show you how far along the node is to syncing the blocks. You can compare this to the current block count at [https://www.nanode.co/blocks] to see how far along the syncing process your are
+````
+rai_node --debug_block_count
+````
+This will show you how far along the node is to syncing the blocks. You can compare this to the current block count at [https://www.nanode.co/blocks](https://www.nanode.co/blocks) to see how far along the syncing process your are
