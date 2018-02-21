@@ -2314,9 +2314,10 @@ Response:
 ```  
 
 ## RPC callback
-Send JSON POST requests with every new block to callback server _http://callback_address:callback_port<callback_target>_ defined in [config.json](https://github.com/clemahieu/raiblocks/wiki/config.json).  
+Send JSON POST requests with every new block to callback server _http://callback_address:callback_port/<callback_target>_ defined in [config.json](https://github.com/clemahieu/raiblocks/wiki/config.json).  
 Sample:  
-https://localhost:8080/  
+https://localhost:8080/callback  
+
 ```
 {  
     "account": "xrb_1m5cfk468k9cwfdp8zsiktc3dghxh6qabef7mno5odos9h91nn5wzs58g7st",  
@@ -2332,3 +2333,5 @@ https://localhost:8080/
     "amount": "1099000000000000000000000000000000"  
 }
 ```  
+
+Note: You should fetch the block using the hash provided in the callback rather than trust this data is valid, and check that data instead, since a malicious 3rd party can also make a fake callback request to your endpoint.
