@@ -99,3 +99,15 @@ make rai_node
 # check block count  
 ./rai_node --debug_block_count
 ```
+
+# OSX
+
+```
+git clone https://github.com/nanocurrency/raiblocks.git
+cd raiblocks
+sh ci/bootstrap_boost.sh
+git submodule update --init --recursive
+cmake -DBOOST_ROOT=../[boost]/ -G "Unix Makefiles"
+make
+./rai_node/rai_node --daemon
+```
