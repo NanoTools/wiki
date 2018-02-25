@@ -1168,8 +1168,8 @@ Parameters for **send block**:
 * account (optional): The account the block is being created for, only used in conjunction with "wallet" param
 * key (optional): Instead of using "wallet"/"account" parameters, you can directly pass in a private key.
 * destination: The account that the sent funds should be accessible to
-* balance: The **current balance** of the account that the send is originating from
-* amount: The amount being sent (must be less than or equal to balance)
+* balance: The **current balance** of the account that the send is originating from, formatted in 'raw' units using a decimal integer.
+* amount: The amount being sent (must be less than or equal to balance), formatted in 'raw' units using a decimal integer.
 * previous: The block hash of the previous block on this account's block chain.
 
 Response sample for **send block**:  
@@ -1178,6 +1178,7 @@ Response sample for **send block**:
   "hash": "F958305C0FF0551421D4ABEDCCF302079D020A0A3833E33F185E2B0415D4567A",   
   "block": "{\n    \"type\": \"send\",\n    \"previous\": \"314BA8D9057678C1F53371C2DB3026C1FAC01EC8E7802FD9A2E8130FC523429E\",\n    \"destination\": \"xrb_18gmu6engqhgtjnppqam181o5nfhj4sdtgyhy36dan3jr9spt84rzwmktafc\",\n    \"balance\": \"0000007E37BE2022C0914B2680000000\",\n    \"work\": \"478563b2d9facfd4\",\n    \"signature\": \"F19CA177EFA8692C8CBF7478CE3213F56E4A85DF760DA7A9E69141849831F8FD79BA9ED89CEC807B690FB4AA42D5008F9DBA7115E63C935401F1F0EFA547BC00\"\n}\n"   
 }
+In the response, the balance field contains the funds that will be left in the sending wallet afterwards, formatted in a 32 digit (128bit) zerofilled HEX number.
 ```  
 Request sample for **change block**:  
 ```
