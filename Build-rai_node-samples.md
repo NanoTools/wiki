@@ -1,6 +1,6 @@
-**[Running node as a service](https://github.com/clemahieu/raiblocks/wiki/Running-rai_node-as-a-service)**
+**[Running node as a service](https://github.com/nanocurrency/raiblocks/wiki/Running-rai_node-as-a-service)**
     
-**To manage node, use [RPC commands](https://github.com/clemahieu/raiblocks/wiki/RPC-protocol) or [CLI](https://github.com/clemahieu/raiblocks/wiki/Command-line-interface)**   
+**To manage node, use [RPC commands](https://github.com/nanocurrency/raiblocks/wiki/RPC-protocol) or [CLI](https://github.com/nanocurrency/raiblocks/wiki/Command-line-interface)**   
 
 ***
 
@@ -24,7 +24,7 @@ cd ..
 ### Building rai_node
 
 ```bash
-git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
+git clone --recursive https://github.com/nanocurrency/raiblocks.git rai_build   
 cd rai_build   
 cmake -DBOOST_ROOT=../[boost]/ -G "Unix Makefiles"   
 make rai_node   
@@ -54,7 +54,7 @@ cd ..
 ### Building rai_node
 
 ```bash
-git clone --recursive https://github.com/clemahieu/raiblocks.git rai_build   
+git clone --recursive https://github.com/nanocurrency/raiblocks.git rai_build   
 cd rai_build   
 cmake -DBOOST_ROOT=../[boost]/ -G "Unix Makefiles"   
 make rai_node   
@@ -84,7 +84,7 @@ cd boost_1_66_0
 ./b2 --prefix=../[boost] link=static install  
 cd ..
 
-git clone https://github.com/clemahieu/raiblocks.git  
+git clone https://github.com/nanocurrency/raiblocks.git  
 cd raiblocks/
 
 git submodule init  
