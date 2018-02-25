@@ -1179,7 +1179,7 @@ Response sample for **send block**:
   "block": "{\n    \"type\": \"send\",\n    \"previous\": \"314BA8D9057678C1F53371C2DB3026C1FAC01EC8E7802FD9A2E8130FC523429E\",\n    \"destination\": \"xrb_18gmu6engqhgtjnppqam181o5nfhj4sdtgyhy36dan3jr9spt84rzwmktafc\",\n    \"balance\": \"0000007E37BE2022C0914B2680000000\",\n    \"work\": \"478563b2d9facfd4\",\n    \"signature\": \"F19CA177EFA8692C8CBF7478CE3213F56E4A85DF760DA7A9E69141849831F8FD79BA9ED89CEC807B690FB4AA42D5008F9DBA7115E63C935401F1F0EFA547BC00\"\n}\n"   
 }
 ```  
-In the response, the balance field contains the funds that will be left in the sending account afterwards, formatted in a 32 digit (128bit) zerofilled HEX number.
+In the response, the balance field contains the funds that will be left in the sending account afterwards (original balance minus amount sent), formatted in a 32 digit (128bit) zerofilled HEX number.  
 
 Request sample for **change block**:  
 ```
