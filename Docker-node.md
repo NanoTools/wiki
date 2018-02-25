@@ -43,7 +43,7 @@ The response will look like:
 `{ "account" : "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000" }`  
 This is the account number that was just created.  
 
-Back up the wallet seed following the backup instructions https://github.com/clemahieu/raiblocks/wiki/Wallet-Backups
+Back up the wallet seed following the backup instructions https://github.com/nanocurrency/raiblocks/wiki/Wallet-Backups
 
 ### Usability
 
