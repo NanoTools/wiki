@@ -1111,7 +1111,14 @@ Request sample for **open block**:
   "source": "19D3D919475DEED4696B5D13018151D1AF88B2BD3BCFF048B45031C1F36D1858"   
 }
 ```  
-Response:  
+Parameters for **open block**:
+* wallet (optional): The wallet ID that the account account the block is being created for is in.
+* account (optional): The account the block is being created for, only used in conjunction with "wallet" param
+* key (optional): Instead of using "wallet"/"account" parameters, you can directly pass in a private key.
+* source: The block hash of the source of funds for this receive block (the send block that this receive block will pocket)
+* representative: The account that the newly created account will use as its representative.
+
+Response sample for **open block**:  
 ```
 {  
   "hash": "F47B23107E5F34B2CE06F562B5C435DF72A533251CB414C51B2B62A8F63A00E4",
@@ -1129,7 +1136,14 @@ Request sample for **receive block**:
   "previous": "F47B23107E5F34B2CE06F562B5C435DF72A533251CB414C51B2B62A8F63A00E4"
 }
 ```  
-Response:  
+Parameters for **receive block**:
+* wallet (optional): The wallet ID that the account account the block is being created for is in.
+* account (optional): The account the block is being created for, only used in conjunction with "wallet" param
+* key (optional): Instead of using "wallet"/"account" parameters, you can directly pass in a private key.
+* source: The block hash of the source of funds for this receive block (the send block that this receive block will pocket)
+* previous: The block hash of the previous block on this account's block chain.
+
+Response sample for **receive block**:  
 ```
 {  
   "hash": "314BA8D9057678C1F53371C2DB3026C1FAC01EC8E7802FD9A2E8130FC523429E",
@@ -1149,7 +1163,16 @@ Request sample for **send block**:
   "previous": "314BA8D9057678C1F53371C2DB3026C1FAC01EC8E7802FD9A2E8130FC523429E"  
 }
 ```  
-Response:  
+Parameters for **send block**:
+* wallet (optional): The wallet ID that the account account the block is being created for is in.
+* account (optional): The account the block is being created for, only used in conjunction with "wallet" param
+* key (optional): Instead of using "wallet"/"account" parameters, you can directly pass in a private key.
+* destination: The account that the sent funds should be accessible to
+* balance: The **current balance** of the account that the send is originating from
+* amount: The amount being sent (must be less than or equal to balance)
+* previous: The block hash of the previous block on this account's block chain.
+
+Response sample for **send block**:  
 ```
 {  
   "hash": "F958305C0FF0551421D4ABEDCCF302079D020A0A3833E33F185E2B0415D4567A",   
@@ -1167,7 +1190,14 @@ Request sample for **change block**:
   "previous": "F958305C0FF0551421D4ABEDCCF302079D020A0A3833E33F185E2B0415D4567A"  
 }
 ```  
-Response:  
+Parameters for **change block**:
+* wallet (optional): The wallet ID that the account account the block is being created for is in.
+* account (optional): The account the block is being created for, only used in conjunction with "wallet" param
+* key (optional): Instead of using "wallet"/"account" parameters, you can directly pass in a private key.
+* representative: The account that the newly created account will use as its representative.
+* previous: The block hash of the previous block on this account's block chain.
+
+Response sample for **change block**:  
 ```
 {  
   "hash": "654FA425CEBFC9E7726089E4EDE7A105462D93DBC915FFB70B50909920A7D286",  
