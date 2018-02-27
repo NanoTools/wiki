@@ -11,8 +11,7 @@ Get the public key for `<account>`
 ### --daemon
 Start node daemon
 
-### --data_path=`<path>`
-_with --daemon_   
+### --data_path=`<path>` 
 Use the supplied `<path>` as the data directory
 
 ### --debug_block_count
@@ -62,6 +61,12 @@ Generates a adhoc random keypair and prints it to stdout
 
 ### --key_expand --key=`<key>`
 Derive public key and account number from `<key>`
+
+### --vacuum
+Compact database. If data_path is missing, the database in data directory is compacted
+
+### --snapshot
+Compact database and create snapshot, functions similar to vacuum but does not replace the existing database
 
 ### --vote_dump
 Dump most recent votes from representatives
