@@ -1113,8 +1113,8 @@ Request sample for **open block**:
 ```  
 Parameters for **open block**:
 * wallet (optional): The wallet ID that the account account the block is being created for is in.
-* account (optional): The account the block is being created for, only used in conjunction with "wallet" param
-* key (optional): Instead of using "wallet"/"account" parameters, you can directly pass in a private key.
+* key (optional): Instead of using "wallet" parameter, you can directly pass in a private key.
+* account: The account the block is being created for (xrb_youraccount)
 * source: The block hash of the source of funds for this receive block (the send block that this receive block will pocket)
 * representative: The account that the newly created account will use as its representative.
 
@@ -1138,8 +1138,8 @@ Request sample for **receive block**:
 ```  
 Parameters for **receive block**:
 * wallet (optional): The wallet ID that the account account the block is being created for is in.
-* account (optional): The account the block is being created for, only used in conjunction with "wallet" param
-* key (optional): Instead of using "wallet"/"account" parameters, you can directly pass in a private key.
+* key (optional): Instead of using "wallet" parameter, you can directly pass in a private key.
+* account: The account the block is being created for (xrb_youraccount)
 * source: The block hash of the source of funds for this receive block (the send block that this receive block will pocket)
 * previous: The block hash of the previous block on this account's block chain.
 
@@ -1165,8 +1165,8 @@ Request sample for **send block**:
 ```  
 Parameters for **send block**:
 * wallet (optional): The wallet ID that the account account the block is being created for is in.
-* account (optional): The account the block is being created for, only used in conjunction with "wallet" param
-* key (optional): Instead of using "wallet"/"account" parameters, you can directly pass in a private key.
+* key (optional): Instead of using "wallet" parameter, you can directly pass in a private key.
+* account: The account the block is being created for (xrb_youraccount)
 * destination: The account that the sent funds should be accessible to
 * balance: The **current balance** of the account that the send is originating from, formatted in 'raw' units using a decimal integer.
 * amount: The amount being sent (must be less than or equal to balance), formatted in 'raw' units using a decimal integer.
@@ -1194,8 +1194,8 @@ Request sample for **change block**:
 ```  
 Parameters for **change block**:
 * wallet (optional): The wallet ID that the account account the block is being created for is in.
-* account (optional): The account the block is being created for, only used in conjunction with "wallet" param
-* key (optional): Instead of using "wallet"/"account" parameters, you can directly pass in a private key.
+* key (optional): Instead of using "wallet" parameter, you can directly pass in a private key.
+* account: The account the block is being created for (xrb_youraccount)
 * representative: The account that the newly created account will use as its representative.
 * previous: The block hash of the previous block on this account's block chain.
 
