@@ -19,7 +19,7 @@ _Press ctrl+c to kill process_
 
 ### Update config.json
 ````
-vim RaiBlocks/config.json
+vim ~/RaiBlocks/config.json
 ````
 Change: "rpc_enable": "true"
 Save and quit
