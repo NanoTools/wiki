@@ -1,53 +1,37 @@
-### CLEAN UBUNTU 16.04.3 X64
+### Install dependencies
 
-I had to piece this together from other wallet install instructions. The QT5 cam from ZCoin github. The use of Environment variable BOOST_ROOT I picked up from a BITShares doc online. I am running ./b2 as sudo since there was an include folder that I otherwise did not have access to create.
+    sudo apt-get update && sudo apt-get upgrade
+    sudo apt-get install git cmake g++ curl wget
+  
+### Build Boost 1.66.0
 
-I found the -q parameter useful while installing b2 as it forces the install to stop at the first error letting you see which dependencies you are missing.
-
-    export BOOST_ROOT=$HOME/opt/boost_1_66_0
-
-    sudo apt-get update
-    sudo apt install git
-    sudo apt install cmake
-    sudo apt-get install autotools-dev build-essential g++ python-dev libicu-dev libbz2-dev
-
-### INSTALL BOOST 1.66.0
-
-    wget -O boost_1_66_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.66.0/boost_1_66_0.tar.gz/download
-
+    wget -O boost_1_66_0.tar.gz https://netix.dl.sourceforge.net/project/boost/boost/1.66.0/boost_1_66_0.tar.gz
     tar xzvf boost_1_66_0.tar.gz
     cd boost_1_66_0
+    ./bootstrap.sh --with-libraries=filesystem,iostreams,log,program_options,thread
+    ./b2 --prefix=../[boost] link=static install   
+    cd ..
 
-    ./bootstrap.sh "--prefix=$BOOST_ROOT"
-
-
-    export BOOST_BUILD=$HOME/opt/boost_1_66_0.BUILD
-
-    sudo ./b2 --prefix=$BOOST_ROOT --build-dir=$BOOST_BUILD link=static install
-
-### install QT5
+### Install QT5
 
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
-### Build NANO_WALLET
+### Build nano_wallet
 
-    cd ~
-    git clone https://github.com/clemahieu/raiblocks
-    cd raiblocks
+    git clone --recursive https://github.com/nanocurrency/raiblocks.git rai_build   
+    cd rai_build
     git submodule update --init --recursive
-    cmake -G "Unix Makefiles" -DRAIBLOCKS_GUI=ON -DBOOST_ROOT="$BOOST_ROOT"
+    cmake -G "Unix Makefiles" -DRAIBLOCKS_GUI=ON -DBOOST_ROOT=../[boost]/
     make nano_wallet
+    cp nano_wallet ../nano_wallet && cd .. 
 
-### Copy/install the nano_wallet binary to /usr/local/bin so it's on your $PATH and try and run it
+### Run nano_wallet
 
-    sudo cp nano_wallet /usr/local/bin/
-    nano_wallet
-
-If the above works, then you should be able to open a terminal and run 'nano_wallet' anytime you want to run the wallet from here on.
+    ./nano_wallet
 
 ### Troubleshooting
 
-**This application failed to start because it could not find or load the Qt platform plugin "xcb".**
+* **This application failed to start because it could not find or load the Qt platform plugin "xcb".**
 
 If you get this error, make sure you have QT5 installed. If it's installed, locate the file 'libqxcb.so' on your system and then tell nano_wallet where this file can be found (set it to the 'plugins' directory).
 
@@ -61,15 +45,15 @@ If you don't want to run this each time you can setup an alias to do this for yo
     echo 'alias nano_wallet="QT_PLUGIN_PATH=/usr/lib/qt/plugins nano_wallet"' >> ~/.bashrc
     source ~/.bashrc
 
-**Error starting nano exception while running wallet: No such node (Wallet)**
+* **Error starting nano exception while running wallet: No such node (Wallet)**
 
 If you get this error, it might be related to pre-existing configuration file issues on your system. You can try the following to generate a fresh configuration (your existing/older configuration will be under ~/RaiBlocks.old). **Please be careful with the following if you already run a wallet, as these details will be forgotten by the nano_wallet due to starting with a fresh configuration:**
 
     mv ~/RaiBlocks{,.old}
     nano_wallet
 
-### Uninstall the wallet
+* **Wallet crashes with an `Aborted (core dumped)` error**
 
-    sudo rm /usr/local/bin/nano_wallet
+This may be related to a display issue. Try setting the environment variable `GDK_BACKEND=x11` before running nano_wallet.
 
-( note: your configuration should still exist in ~/RaiBlocks/ )
+    GDK_BACKEND=x11 ./nano_wallet
