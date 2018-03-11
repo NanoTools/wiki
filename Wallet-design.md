@@ -1,13 +1,16 @@
 The wallet is a database of the 256-bit key -> 256-bit value pairs. The primary wallet is stored inside of the node's database and backup copies are written to a directory "backup".  
   
 ## Special Pairs:  
-0 -> Version number 
-1 -> Wallet salt 
-2 -> Encrypted wallet key    
-3 -> Check key  
-4 -> Wallet representative
-5 -> Wallet seed for deterministic key generation
-6 -> Current key index for deterministic keys
+
+| Index | Description |
+| --- | --- |
+| 0 | Version number |
+| 1 | Wallet salt |
+| 2 | Encrypted wallet key |    
+| 3 | Check key |
+| 4 | Wallet representative |
+| 5 | Wallet seed for deterministic key generation |
+| 6 | Current key index for deterministic keys |
   
 ## Wallet accounts  
 pub(i) -> encrypt_aes_ctr (wallet_key, prv(i), salt)
