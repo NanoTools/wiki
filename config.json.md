@@ -22,7 +22,7 @@
             "node_lifetime_tracing": "false",
             "insufficient_work": "true",
             "log_rpc": "true", // Track RPC your node execute
-            "bulk_pull": "false",
+            "bulk_pull": "false", // Bootstrap related logging
             "work_generation_time": "true",
             "log_to_cerr": "false",
             "max_size": "16777216",
