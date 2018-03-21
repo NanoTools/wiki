@@ -78,7 +78,7 @@
 
 ###  Windows
 ```bash
-C:\Users\<user\AppData\Local\RaiBlocks\
+C:\Users\<user>\AppData\Local\RaiBlocks\
 ```  
 ###  OSX
 ```bash
