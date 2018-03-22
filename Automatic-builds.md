@@ -1,8 +1,8 @@
-Windows:
-https://ci.appveyor.com/project/argakiig/raiblocks/history
+Windows:  
+https://ci.appveyor.com/project/argakiig/raiblocks/history  
 
-Linux:
-https://travis-ci.org/nanocurrency/raiblocks/builds
+Linux:  
+https://gitlab.com/nanocurrency/raiblocks/pipelines  
 
-Docker:
-nanocurrency/nano:master
+Docker:  
+nanocurrency/nano:master  
