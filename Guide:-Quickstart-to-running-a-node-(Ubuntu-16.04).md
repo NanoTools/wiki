@@ -62,6 +62,8 @@ Group=stanley #The group from the last step
 WantedBy=multi-user.target
 ````
 
+Be sure to remove the comments (the parts starting at #) as they may cause problems.
+
 ### Start the service
 ````
 sudo service rai_node start
