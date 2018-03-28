@@ -180,7 +180,7 @@ Response:
 ```
 
 ### Optional "representative", "weight", "pending"  
-_version 8.1+_   
+_version 9.0+_   
 Additionally returns representative, voting weight, pending balance for account   
 Request:  
 ```
@@ -227,7 +227,7 @@ Response:
 ```
 
 ### Optional disabling work generation  
-_version 8.1+_  
+_version 9.0+_  
 Disables work generation after creating account  
 Request:  
 ```
@@ -387,7 +387,7 @@ Response:
 }
 ```
 ### Optional "work"  
-_version 8.1+_  
+_version 9.0+_  
 Uses **work** value for block from external source  
 
 ## Account weight  
@@ -434,7 +434,7 @@ Response:
 ```  
 
 ## Accounts create  
-_enable_control required, version 8.1+_  
+_enable_control required, version 9.0+_  
 Creates new accounts, insert next deterministic keys in **wallet** up to **count**  
 Request:  
 ```
@@ -528,7 +528,7 @@ Response:
 }
 ```  
 ### Optional "source"  
-_version 8.1+_   
+_version 9.0+_   
 Returns a list of pending block hashes with amount and source accounts   
 Request:  
 ```
@@ -650,7 +650,7 @@ Response:
 }
 ```
 ### Optional "pending", "source"  
-_version 8.1+_   
+_version 9.0+_   
 Additionally checks if block is pending, returns source account for receive & open blocks (0 for send & change blocks)
 Request:  
 ```
@@ -992,7 +992,7 @@ Request:
 ```
 {  
   "action": "keepalive",
-  "address": "::ffff:192.168.1.1",
+  "address": "::ffff:192.169.0.1",
   "port": "1024"  
 }
 ```  
@@ -1038,7 +1038,7 @@ Response:
 ```  
 
 ## Ledger
-_enable_control required, version 8.1+_   
+_enable_control required, version 9.0+_   
 Returns frontier, open block, change representative block, balance, last modified timestamp from local database & block count starting at **account** up to **count**   
 Request:  
 ```
@@ -1098,7 +1098,7 @@ Response:
 Additional sorting accounts in descending order   
 
 ## Offline signing  (create block)
-_enable_control required, version 8.1+_  
+_enable_control required, version 9.0+_  
 Creates a json representations of new block based on input data & signed with **private key** or **account** in *wallet**  
 Request sample for **open block**:  
 ```
@@ -1317,7 +1317,7 @@ Response:
 }
 ```
 ### Optional "work"  
-_version 8.1+_  
+_version 9.0+_  
 Uses **work** value for block from external source  
 
 ## Receive minimum  
@@ -1372,10 +1372,10 @@ Response:
 }
 ```
 ### Optional "count"  
-_version 8.1+_   
+_version 9.0+_   
 Returns a list of pairs of representative and its voting weight up to **count**    
 ### Optional "sorting"  
-_version 8.1+_   
+_version 9.0+_   
 Additional sorting represetntatives in descending order     
 
 ## Wallet representative  
@@ -1567,7 +1567,7 @@ Sending the request again will yield the same block, and will not affect the led
 In the future, the response may also indicate if the block is new. However, that has not yet been implemented.
 
 ### Optional "work"  
-_version 8.1+_  
+_version 9.0+_  
 Uses **work** value for block from external source  
 Request:  
 ```
@@ -1713,7 +1713,7 @@ Response:
 }
 ```  
 ### Optional "source"  
-_version 8.1+_   
+_version 9.0+_   
 Returns a list of pending block hashes with amount and source accounts   
 Request:  
 ```
@@ -1870,7 +1870,7 @@ Response:
 }
 ```
 ### Optional disabling work generation  
-_version 8.1+_  
+_version 9.0+_  
 Disables work generation after adding account  
 Request:  
 ```
@@ -1920,7 +1920,7 @@ Response:
 }
 ```
 ### Optional "threshold"  
-_version 8.1+_   
+_version 9.0+_   
 Returns wallet accounts balances more or equal to **threshold**   
 
 ## Wallet change seed  
@@ -2068,7 +2068,7 @@ Response:
 }
 ```  
 ### Optional "source"  
-_version 8.1+_   
+_version 9.0+_   
 Returns a list of pending block hashes with amount and source accounts   
 Request:  
 ```
