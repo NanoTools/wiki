@@ -62,11 +62,14 @@ Generates a adhoc random keypair and prints it to stdout
 ### --key_expand --key=`<key>`
 Derive public key and account number from `<key>`
 
+### --snapshot
+Compact database and create snapshot, functions similar to vacuum but does not replace the existing database
+
 ### --vacuum
 Compact database. If data_path is missing, the database in data directory is compacted
 
-### --snapshot
-Compact database and create snapshot, functions similar to vacuum but does not replace the existing database
+### --version    
+Prints out version
 
 ### --vote_dump
 Dump most recent votes from representatives
