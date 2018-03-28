@@ -113,6 +113,7 @@ Important and unread
     * [Wallet export](#wallet-export)
     * [Wallet frontiers](#wallet-frontiers)
     * [Wallet ledger](#wallet-ledger)
+    * [Wallet lock](#wallet-lock)
     * [Wallet locked check](#wallet-locked-check)
     * [Wallet password enter (unlock wallet)](#wallet-password-enter-unlock-wallet)
     * [Wallet pending](#wallet-pending)
@@ -2273,6 +2274,23 @@ Response:
 ```
 {  
   "valid" : "1"
+}
+```
+
+## Wallet lock   
+_enable_control required, version 9.0+_  
+Locks **wallet**  
+Request:  
+```
+{  
+  "action": "wallet_lock",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"  
+}
+```  
+Response:  
+```
+{  
+  "locked" : "1"
 }
 ```
 
