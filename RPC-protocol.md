@@ -2028,6 +2028,64 @@ Response:
 }
 ```
 
+## Wallet ledger
+_enable_control required, version 11.0+_   
+Returns frontier, open block, change representative block, balance, last modified timestamp from local database & block count for accounts from **wallet**   
+Request:  
+```
+{  
+  "action": "wallet_ledger",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"   
+}
+```  
+Response:  
+```
+{  
+  "accounts": {   
+    "xrb_11119gbh8hb4hj1duf7fdtfyf5s75okzxdgupgpgm1bj78ex3kgy7frt3s9n": {   
+      "frontier": "E71AF3E9DD86BBD8B4620EFA63E065B34D358CFC091ACB4E103B965F95783321",   
+      "open_block": "643B77F1ECEFBDBE1CC909872964C1DBBE23A6149BD3CEF2B50B76044659B60F",   
+      "representative_block": "643B77F1ECEFBDBE1CC909872964C1DBBE23A6149BD3CEF2B50B76044659B60F",   
+      "balance": "0",   
+      "modified_timestamp": "1511476234",   
+      "block_count": "2"   
+    }   
+  }   
+}
+```  
+### Optional "representative", "weight", "pending"  
+Additionally returns representative, voting weight, pending balance for each account   
+Request:  
+```
+{  
+  "action": "wallet_ledger",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",   
+  "representative": "true",  
+  "weight": "true",  
+  "pending": "true"  
+}
+```  
+Response:  
+```
+{  
+  "accounts": {   
+    "xrb_11119gbh8hb4hj1duf7fdtfyf5s75okzxdgupgpgm1bj78ex3kgy7frt3s9n": {   
+      "frontier": "E71AF3E9DD86BBD8B4620EFA63E065B34D358CFC091ACB4E103B965F95783321",  
+      "open_block": "643B77F1ECEFBDBE1CC909872964C1DBBE23A6149BD3CEF2B50B76044659B60F",   
+      "representative_block": "643B77F1ECEFBDBE1CC909872964C1DBBE23A6149BD3CEF2B50B76044659B60F",   
+      "balance": "0",   
+      "modified_timestamp": "1511476234",   
+      "block_count": "2",   
+      "representative": "xrb_1anrzcuwe64rwxzcco8dkhpyxpi8kd7zsjc1oeimpc3ppca4mrjtwnqposrs",   
+      "weight": "0",   
+      "pending": "0"   
+    }   
+  }   
+}
+```  
+### Optional "modified_since"  
+Return only accounts modified in local database after specific timestamp   
+
 ## Wallet pending  
 _enable_control required, version 8.0+_   
 Returns a list of block hashes which have not yet been received by accounts in this **wallet**  
