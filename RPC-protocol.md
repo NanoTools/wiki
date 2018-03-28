@@ -1094,6 +1094,10 @@ Response:
   }   
 }
 ```  
+### Optional "modified_since"  
+_version 11.0+_   
+Return only accounts modified in local database after specific timestamp   
+
 ### Optional "sorting"  
 Additional sorting accounts in descending order   
 
