@@ -104,6 +104,7 @@ Important and unread
 * Wallet
     * [Wallet accounts balances](#wallet-accounts-balances)
     * [Wallet add key](#wallet-add-key)
+    * [Wallet add watch-only accounts](#wallet-add-watch-only-accounts)
     * [Wallet change password](#wallet-change-password)
     * [Wallet change seed](#wallet-change-seed)
     * [Wallet contains](#wallet-contains)
@@ -111,6 +112,7 @@ Important and unread
     * [Wallet destroy](#wallet-destroy)
     * [Wallet export](#wallet-export)
     * [Wallet frontiers](#wallet-frontiers)
+    * [Wallet ledger](#wallet-ledger)
     * [Wallet locked check](#wallet-locked-check)
     * [Wallet password enter (unlock wallet)](#wallet-password-enter-unlock-wallet)
     * [Wallet pending](#wallet-pending)
