@@ -1886,6 +1886,27 @@ Request:
 }
 ```  
 
+## Wallet add watch-only accounts  
+_enable_control required, version 11.0+_  
+Add watch-only **accounts** to **wallet**  
+Request:  
+```
+{  
+  "action": "wallet_add_watch",  
+  "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
+  "accounts": [
+    "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+    "xrb_111111111111111111111111111111111111111111111111111000000000"
+  ]  
+}
+```  
+Response:  
+```
+{  
+  "success" : ""
+}
+```
+
 ## Wallet total balance  
 Returns the sum of all accounts balances in **wallet**  
 Request:  
