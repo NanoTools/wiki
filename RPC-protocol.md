@@ -2449,7 +2449,7 @@ Response:
 ```  
 
 ## RPC callback
-Send JSON POST requests with every new block to callback server _http://callback_address:callback_port/<callback_target>_ defined in [config.json](https://github.com/clemahieu/raiblocks/wiki/config.json).  
+Send JSON POST requests with every new block to callback server _http://callback_address:callback_port<callback_target>_ defined in [config.json](https://github.com/clemahieu/raiblocks/wiki/config.json). Callback target should include a leading slash.  
 Sample:  
 https://localhost:8080/callback  
 
