@@ -762,7 +762,7 @@ Response:
 ```
 
 ## Chain  
-Returns a list of block hashes in the account chain starting at **block** up to **count**  
+Returns a consecutive list of block hashes in the account chain starting at **block** up to **count**. Will list all blocks back to the open block of this chain when count is set to "-1". The requested block hash is included in the answer.  
 Request:  
 ```
 {  
@@ -871,7 +871,7 @@ Response:
 ```
 
 ## History  
-Reports send/receive information for a chain of blocks  
+Reports send/receive information for a chain of blocks. Change blocks are skipped, open blocks will appear as receive. Response will include the requested block. Will list all blocks back to the open block of this chain when "count" is set to "-1". 
 Request:  
 ```
 {  
