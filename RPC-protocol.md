@@ -92,6 +92,7 @@ Important and unread
     * [Receive minimum set](#receive-minimum-set)
 * Representatives
     * [Representatives](#representatives)
+    * [Representatives online](#representatives-online)
     * [Wallet representative](#wallet-representative)
     * [Wallet representative set](#wallet-representative-set)
 * Sending
@@ -1384,6 +1385,26 @@ Returns a list of pairs of representative and its voting weight up to **count**
 ### Optional "sorting"  
 _version 9.0+_   
 Additional sorting represetntatives in descending order     
+
+
+## Representatives online  
+Returns a list of pairs of online representative accounts that have voted recently and its voting sequence  
+Request:  
+```
+{  
+  "action": "representatives_online"    
+}
+```  
+Response:  
+```
+{    
+  "representatives" : {  
+    "xrb_1111111111111111111111111111111111111111111111111117353trpda": "40",  
+    "xrb_1111111111111111111111111111111111111111111111111awsq94gtecn": "12",  
+    "xrb_114nk4rwjctu6n6tr6g6ps61g1w3hdpjxfas4xj1tq6i8jyomc5d858xr1xi": "4"  
+  }  
+}
+```
 
 ## Wallet representative  
 Returns the default representative for **wallet**  
