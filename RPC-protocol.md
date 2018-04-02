@@ -1953,7 +1953,7 @@ Returns wallet accounts balances more or equal to **threshold**
 
 ## Wallet change seed  
 _enable_control required_  
-Changes seed for **wallet** to **seed**  
+Changes seed for **wallet** to **seed**.  ***Notes:*** Clear all deterministic accounts in wallet! To restore account from new seed use RPC [Accounts create](#accounts-create)  
 Request:  
 ```
 {  
