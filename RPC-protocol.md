@@ -1388,6 +1388,7 @@ Additional sorting represetntatives in descending order
 
 
 ## Representatives online  
+_version 11.2+_   
 Returns a list of pairs of online representative accounts that have voted recently and its voting sequence  
 Request:  
 ```
