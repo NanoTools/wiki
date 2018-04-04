@@ -457,17 +457,19 @@ Response:
   ]   
 }
 ```
-### Optional disabling work generation  
-Disables work generation after creating account  
+### Optional enabling work generation  
+_version 11.2+_  
+Enables work generation after creating accounts  
 Request:  
 ```
 {  
   "action": "accounts_create",  
   "wallet": "000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F",  
   "count": "2",  
-  "work": "false"  
+  "work": "true"  
 }
 ```  
+***Note:*** Before version 11.2 work generation was enabled by default, if you want to disable work generation for previous versions, use "work": "false"    
 
 ## Accounts frontiers  
 Returns a list of pairs of account and block hash representing the head block for **accounts list**  
