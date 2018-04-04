@@ -1391,7 +1391,7 @@ Additional sorting represetntatives in descending order
 
 ## Representatives online  
 _version 11.2+_   
-Returns a list of pairs of online representative accounts that have voted recently and its voting sequence  
+Returns a list of pairs of online representative accounts that have voted recently and empty strings  
 Request:  
 ```
 {  
@@ -1402,9 +1402,9 @@ Response:
 ```
 {    
   "representatives" : {  
-    "xrb_1111111111111111111111111111111111111111111111111117353trpda": "40",  
-    "xrb_1111111111111111111111111111111111111111111111111awsq94gtecn": "12",  
-    "xrb_114nk4rwjctu6n6tr6g6ps61g1w3hdpjxfas4xj1tq6i8jyomc5d858xr1xi": "4"  
+    "xrb_1111111111111111111111111111111111111111111111111117353trpda": "",  
+    "xrb_1111111111111111111111111111111111111111111111111awsq94gtecn": "",  
+    "xrb_114nk4rwjctu6n6tr6g6ps61g1w3hdpjxfas4xj1tq6i8jyomc5d858xr1xi": ""  
   }  
 }
 ```
