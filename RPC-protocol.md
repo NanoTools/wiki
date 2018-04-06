@@ -162,7 +162,8 @@ Response:
 ```
 
 ## Account information
-Returns frontier, open block, change representative block, balance, last modified timestamp from local database & block count for **account**  
+Returns frontier, open block, change representative block, balance, last modified timestamp from local database & block count for **account**. Only works for accounts that have an entry on the ledger, will return "Account not found" otherwise.  
+
 Request:  
 ```
 {  
