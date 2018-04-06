@@ -260,7 +260,9 @@ Response:
 ```
 
 ## Account history  
-Reports send/receive information for a **account**  
+
+Reports send/receive information for an account. Change blocks are skipped, open blocks will appear as receive (unless raw is set to true - see optional parameters below). Response will start with the latest block for the account (the frontier), and will list all blocks back to the open block of this account when "count" is set to "-1".
+
 Request:  
 ```
 {  
@@ -281,6 +283,11 @@ Response:
     }]
 }
 ```
+
+Optional parameters:
+
+- `raw`: if set to `true` instead of the default `false`, instead of outputting a simplified send or receive explanation of blocks (intended for wallets), output all parameters of the block itself as seen in block_create or other APIs returning blocks. It still includes the "account" and "amount" properties you'd see without this option.  State/universal blocks in the raw history will also have a `subtype` field indicating their equivalent "old" block. Unfortunately, the "account" parameter for open blocks is the account of the source block, not the account of the open block, to preserve similarity with the non-raw history.
+- `head`: instead of using the latest block for a specified account, use this block as the head of the account instead. Useful for pagination.
 
 ## Account list  
 Lists all the accounts inside **wallet**  
@@ -874,7 +881,9 @@ Response:
 ```
 
 ## History  
-Reports send/receive information for a chain of blocks. Change blocks are skipped, open blocks will appear as receive. Response will include the requested block. Will list all blocks back to the open block of this chain when "count" is set to "-1". 
+
+**Deprecated**: please use `account_history` instead. It provides a `head` option which is identical to the history `hash` option.
+
 Request:  
 ```
 {  
