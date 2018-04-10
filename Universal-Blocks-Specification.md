@@ -1,5 +1,4 @@
 # NEP-01: Universal Blocks
-![NANO](https://nano.org/assets/img/logo.svg)
 
 The implementation of state blocks (known as "universal blocks") is a protocol improvement that encodes all account data in every transaction. This allows the following:
 
@@ -26,6 +25,7 @@ To create an account, you need to issue an *open* transaction. An open transacti
 
 ### Send
 To send from an address, the address must already have an existing open block. The *previous* field contains the hash of the previous block in the account-chain. The *destination* field contains the account for funds to be sent to. A send block is immutable once confirmed. Once broadcasted to the network, funds are immediately deducted from the balance of the sender's account and wait as *pending* until the receiving party signs a block to accept these funds. Pending funds should not be considered awaiting confirmation, as they are as good as spent from the sender's account and the sender cannot revoke the transaction.
+
 ```json
 {
    previous: 1967EA355...F2F3E5BF801,
@@ -36,8 +36,11 @@ To send from an address, the address must already have an existing open block. T
    signature: 83B0...006433265C7B204
 }
 ```
+
 ### Receive
+
 To complete a transaction, the recipient of sent funds must create a receive block on their own account-chain. The source field references the hash of the associated send transaction. Once this block is created and broadcasted, the account's balance is updated and the funds have officially moved into their account.
+
 ```json
 {
    previous: DC04354B1...AE8FA2661B2,
@@ -49,7 +52,9 @@ To complete a transaction, the recipient of sent funds must create a receive blo
 ```
 
 ### Change
+
 Account holders having the ability to choose a representative to vote on their behalf is a powerful decentralization tool that has no strong analog in Proof of Work or Proof of Stake protocols. In conventional PoS systems, the account owner's node must be running to participate in voting. Continuously running a node is impractical for many users; giving a representative the power to vote on an account's behalf relaxes this requirement. Account holders have the ability to reassign consensus to any account at any time. A *change* transaction changes the representative of an account by subtracting the vote weight from the old representative and adding the weight to the new representative. No funds are moved in this transaction, and the representative does not have spending power of the account's funds.
+
 ```json
 {
    previous: DC04354B1...AE8FA2661B2,
@@ -61,18 +66,21 @@ Account holders having the ability to choose a representative to vote on their b
 ```
 
 ## New State Blocks
+
 The *state* block combines all 4 old transaction types into a single block. Because of this, the "type" of the block is simply "state".
+
 | Key |Representation| Value Description |
 | --- | -------------| ----------------- |
 | previous       | 32-Byte HEX | Previous head block on account; 0 if *open* block. |
 | Link           | 32-Byte HEX | Multipurpose Field; See Link Table below|
 | representative | String | Representative xrb_ address. |
 | account        | String | This account's xrb_ address. |
-| balance        | Decimal String in Raw| Resulting balance |
-| work           | 8-Byte Hex| Proof of Work Nonce. |
-| signature      | 64-Byte HEX| ED25519+Blake2b 512-bit signature|
+| balance        | Decimal String in Raw | Resulting balance |
+| work           | 8-Byte Hex | Proof of Work Nonce. |
+| signature      | 64-Byte HEX | ED25519+Blake2b 512-bit signature|
 
 Depending on transaction intent, the "link" field is multipurpose for "block_create" rpc calls:
+
 | Type | Value Description | Example Value |
 | --- | ----------------- | ---------------|
 | Open | (HEX) Pairing Send Block's Hash | F076D8F6254F089A8E66D0C934FA63D927F4458FC1D96815066D83B3658ABA26 |
