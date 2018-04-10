@@ -202,10 +202,12 @@ The digital signing algorithm (which internally applies another Blake2b hashing)
 
 ## Deployment
 State Blocks began deployment in v11 of the rai_node software. The update procedure was conducted via two canary blocks:
+
 | Hash | Function |
 | ---- | ---------|
 | 89F1C0AC4C5AD23964AB880571E3EA67FDC41BD11AB20E67F0A29CF94CD4E24A | Begin State-Block Parsing |
 | B6DC4D64801BEC7D81DAA086A5733D251E8CBA0E9226FD6173D97C0569EC2998" | Begin State-Block Generation |
+
 Once State-Blocks are used on an account-chain, legacy blocks can no longer be added to that account chain. State-blocks can still interact (e.g. receive funds) with legacy blocks.
 ## Benefits
 
