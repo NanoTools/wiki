@@ -198,6 +198,7 @@ If you choose to implement your own signing; the order of data (in bytes) to has
 4) representative (32-Bytes)
 5) balance (16-Bytes)
 6) link (32-Bytes)
+
 The digital signing algorithm (which internally applies another Blake2b hashing) is applied on the resulting digest. Make sure that your private key uses the correct partnering public key while signing; signing with an incorrect public key may leak information about your private key.
 
 ## Deployment
