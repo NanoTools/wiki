@@ -121,7 +121,18 @@ Address sends 1 raw to account  ``xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4g
 Here we will create an open block for ``xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php``, setting ``xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j`` as the representative, and receiving the above mentioned block.
 Command:
 ```json
-curl -d '{"action":"block_create","type":"state","previous":"0","account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php","representative":"xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j","balance":"1","link":"1EF0AD02257987B48030CC8D38511D3B2511672F33AF115AD09E18A86A8355A8", "wallet":"557832FF41BAF4860ED4D7023E9ACE74F1427C3F8232B6AFFB491D98DD0EA1A2"}' 127.0.0.1:7076
+curl -d '{
+    "action":"block_create",
+    "type":"state",
+    "previous":"0",
+    "account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php",
+    "representative":"xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j",
+    "balance":"1",
+    "link":"1EF0AD02257987B48030CC8D38511D3B2511672F33AF115AD09E18A86A8355A8",
+    "wallet":"557832FF41BAF4860ED4D7023E9ACE74F1427C3F8232B6AFFB491D98DD0EA1A2"
+}' 
+
+127.0.0.1:7076
 ```
 Note that the balance field is in decimal ``raw``, and there are $$10^{30}$$ raw in 1 Nano.
 Response:
@@ -136,7 +147,16 @@ The only curious field in the response is "link_as_account". This is if the "lin
 ##### Example 2) Receive
 5 Nano is sent to ``xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php`` and that the send block hash was ``B2EC73C1F503F47E051AD72ECB512C63BA8E1A0ACC2CEE4EA9A22FE1CBDB693F``. The corresponding receive block on the account-chain would be:
 ```json
-curl -d '{"action":"block_create","type":"state","previous":"FC5A7FB777110A858052468D448B2DF22B648943C097C0608D1E2341007438B0","account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php","representative":"xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j","balance":"5000000000000000000000000000001","link":"B2EC73C1F503F47E051AD72ECB512C63BA8E1A0ACC2CEE4EA9A22FE1CBDB693F", "wallet":"557832FF41BAF4860ED4D7023E9ACE74F1427C3F8232B6AFFB491D98DD0EA1A2"}' 127.0.0.1:7076
+curl -d '{
+    "action":"block_create",
+    "type":"state",
+    "previous":"FC5A7FB777110A858052468D448B2DF22B648943C097C0608D1E2341007438B0",
+    "account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php",
+    "representative":"xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j",
+    "balance":"5000000000000000000000000000001",
+    "link":"B2EC73C1F503F47E051AD72ECB512C63BA8E1A0ACC2CEE4EA9A22FE1CBDB693F",
+    "wallet":"557832FF41BAF4860ED4D7023E9ACE74F1427C3F8232B6AFFB491D98DD0EA1A2"
+}' 127.0.0.1:7076
 ```
 Here the balance is ``5000000000000000000000000000001`` because we originally had `1` raw in our account and now we are adding ``5000000000000000000000000000000`` to it.
 Response:
@@ -151,7 +171,15 @@ Response:
 Now our account ``xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php`` wants to send 2 Nano to ``xrb_1q3hqecaw15cjt7thbtxu3pbzr1eihtzzpzxguoc37bj1wc5ffoh7w74gi6p``.
 Command:
 ```json
-curl -d '{"action":"block_create","type":"state","previous":"597395E83BD04DF8EF30AF04234EAAFE0606A883CF4AEAD2DB8196AAF5C4444F","account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php","representative":"xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j","balance":"3000000000000000000000000000001","link":"xrb_1q3hqecaw15cjt7thbtxu3pbzr1eihtzzpzxguoc37bj1wc5ffoh7w74gi6p", "wallet":"557832FF41BAF4860ED4D7023E9ACE74F1427C3F8232B6AFFB491D98DD0EA1A2"}' 127.0.0.1:7076
+curl -d '{
+    "action":"block_create",
+    "type":"state","previous":"597395E83BD04DF8EF30AF04234EAAFE0606A883CF4AEAD2DB8196AAF5C4444F",
+    "account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php",
+    "representative":"xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j",
+    "balance":"3000000000000000000000000000001",
+    "link":"xrb_1q3hqecaw15cjt7thbtxu3pbzr1eihtzzpzxguoc37bj1wc5ffoh7w74gi6p",
+    "wallet":"557832FF41BAF4860ED4D7023E9ACE74F1427C3F8232B6AFFB491D98DD0EA1A2"
+}' 127.0.0.1:7076
 ```
 Response:
 ```json
@@ -165,7 +193,16 @@ Because the account balance changed from ``5000000000000000000000000000001`` raw
 ##### Example 4) Change Representative
 To change our representative to ``xrb_1anrzcuwe64rwxzcco8dkhpyxpi8kd7zsjc1oeimpc3ppca4mrjtwnqposrs``.
 ```json
-curl -d '{"action":"block_create","type":"state","previous":"128106287002E595F479ACD615C818117FCB3860EC112670557A2467386249D4","account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php","representative":"xrb_1anrzcuwe64rwxzcco8dkhpyxpi8kd7zsjc1oeimpc3ppca4mrjtwnqposrs","balance":"3000000000000000000000000000001","link":"0000000000000000000000000000000000000000000000000000000000000000", "wallet":"557832FF41BAF4860ED4D7023E9ACE74F1427C3F8232B6AFFB491D98DD0EA1A2"}' 127.0.0.1:7076
+curl -d '{
+    "action":"block_create",
+    "type":"state",
+    "previous":"128106287002E595F479ACD615C818117FCB3860EC112670557A2467386249D4",
+    "account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php",
+    "representative":"xrb_1anrzcuwe64rwxzcco8dkhpyxpi8kd7zsjc1oeimpc3ppca4mrjtwnqposrs",
+    "balance":"3000000000000000000000000000001",
+    "link":"0000000000000000000000000000000000000000000000000000000000000000",
+    "wallet":"557832FF41BAF4860ED4D7023E9ACE74F1427C3F8232B6AFFB491D98DD0EA1A2"
+}' 127.0.0.1:7076
 ```
 Response:
 ```json
@@ -180,7 +217,16 @@ Note that the "link" field is all 0's. As another sanity check, we notice the al
 You can change your representative while performing a send or receive. Let us send 3 more Nano to ``xrb_1q3hqecaw15cjt7thbtxu3pbzr1eihtzzpzxguoc37bj1wc5ffoh7w74gi6p``. Let us also revert back and make ``xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j`` our representative again.
 Command:
 ```json
-curl -d '{"action":"block_create","type":"state","previous":"2A322FD5ACAF50C057A8CF5200A000CF1193494C79C786B579E0B4A7D10E5A1E","account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php","representative":"xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j","balance":"1","link":"xrb_1q3hqecaw15cjt7thbtxu3pbzr1eihtzzpzxguoc37bj1wc5ffoh7w74gi6p", "wallet":"557832FF41BAF4860ED4D7023E9ACE74F1427C3F8232B6AFFB491D98DD0EA1A2"}' 127.0.0.1:7076
+curl -d '{
+    "action":"block_create",
+    "type":"state",
+    "previous":"2A322FD5ACAF50C057A8CF5200A000CF1193494C79C786B579E0B4A7D10E5A1E",
+    "account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php",
+    "representative":"xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j",
+    "balance":"1",
+    "link":"xrb_1q3hqecaw15cjt7thbtxu3pbzr1eihtzzpzxguoc37bj1wc5ffoh7w74gi6p",
+    "wallet":"557832FF41BAF4860ED4D7023E9ACE74F1427C3F8232B6AFFB491D98DD0EA1A2"
+}' 127.0.0.1:7076
 ```
 Response:
 ```json
