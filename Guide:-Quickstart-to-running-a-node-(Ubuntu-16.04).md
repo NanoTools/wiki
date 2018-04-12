@@ -4,6 +4,14 @@ apt-get update
 apt-get install libboost-all-dev
 ````
 
+### (Optional) Build and Install boost v1.66 instead (Ubuntu repo has v1.58)
+````
+wget https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.bz2
+tar --bzip2 -xf boost_1_66_0.tar.bz2
+cd boost_1_66_0
+./bootstrap.sh
+sudo ./b2 install
+````
 ### Download and extract nano node
 ````
 cd ~
