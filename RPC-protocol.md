@@ -1192,6 +1192,8 @@ Parameters for **send block**:
 * amount: The amount being sent (must be less than or equal to balance), formatted in 'raw' units using a decimal integer.
 * previous: The block hash of the previous block on this account's block chain.
 
+**Warning:** It is **critical** that `balance` is the balance of the account at the `previous` block. If this is not the case, then the amount sent will be different than the `amount` parameter. This is because send blocks contain the balance after the send, so rai_node uses `balance - amount`. If balance is 1 Nano less than it should be, then 1 Nano more will be sent than should be.
+
 Response sample for **send block**:  
 ```
 {  
