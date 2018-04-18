@@ -665,16 +665,18 @@ Response:
   }
 }
 ```
-### Optional "pending", "source"  
-_version 9.0+_   
-Additionally checks if block is pending, returns source account for receive & open blocks (0 for send & change blocks)
+### Optional "pending", "source","balance"
+_pending, source: version 9.0+_
+_balance: version 9.0+_
+Additionally checks if block is pending, returns source account for receive & open blocks (0 for send & change blocks), and returns the balance of the account at the time of the block.
 Request:  
 ```
 {  
   "action": "blocks_info",  
   "hashes": ["000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F"],
   "pending": "true",
-  "source": "true"    
+  "source": "true",
+  "balance": "true"
 }
 ```  
 Response:  
@@ -685,8 +687,9 @@ Response:
        "block_account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",   
        "amount": "1000000000000000000000000000000",   
        "contents": "{ ...skipped... }",
-       "pending": "0",   
-       "source_account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000"
+       "pending": "0",
+       "source_account": "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpi00000000",
+       "balance": "1000000000000000000000000000000"
      }
   }
 }
