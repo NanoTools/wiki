@@ -612,6 +612,8 @@ Response:
 }
 ```
 
+Note: The `Balance` is a uint128. However, it will be a hex-encoded (like `0000000C9F2C9CD04674EDEA40000000` for [1 Mxrb](https://github.com/nanocurrency/raiblocks/wiki/Distribution,-Mining-and-Units)) when the block is a *Send Block*. If the block is a *State-Block*, the same `Balance` will be a numeric-string (like `1000000000000000000000000000000`).
+
 ## Retrieve multiple blocks  
 Retrieves a json representations of **blocks**  
 Request:  
