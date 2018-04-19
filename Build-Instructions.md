@@ -53,3 +53,4 @@ _-- please note: using docker has been recommended as a faster method of install
 ## Testing RaiBlocks
 * In order to run the tests, the corresponding CMake variable must be set: `-D RAIBLOCKS_TEST=ON`.
 * With this variable set, make will also build test files, and will produce `core_test` and `slow_test` binaries, which can be executed like `./core_test`.
+* To run a node on the test network, set CMake variable: -DACTIVE_NETWORK=rai_test_network
