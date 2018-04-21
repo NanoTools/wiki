@@ -43,7 +43,7 @@ _-- please note: using docker has been recommended as a faster method of install
 * `git submodule update --init --recursive`
 * Generate with cmake then build with your compiler
 * (*nix) to build node without GUI execute: `make rai_node`
-* (*nix) to build wallet with GUI execute: `make rai_wallet`
+* (*nix) to build wallet with GUI execute: `make nano_wallet`
 
 ## Building a package
 * (macOS) `cpack -G "DragNDrop"`
