@@ -88,3 +88,12 @@ C:\Users\<user>\AppData\Local\RaiBlocks\
 ```bash
 /home/<user>/RaiBlocks/
 ```
+
+## Configuration Options
+### work_peers
+Used when offloading work generation to another node or service. Format must be ipv6, preceded by ::ffff: if ipv4, hostnames are not allowed at this time. Calls are made to the ip:port designated using the standard RPC format [work_generate](https://github.com/nanocurrency/raiblocks/wiki/RPC-protocol#work-generate) 
+```javascript
+"work_peers": [
+    "::ffff:127.0.0.1:7076"
+],
+```
