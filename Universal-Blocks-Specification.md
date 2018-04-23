@@ -173,7 +173,8 @@ Command:
 ```json
 curl -d '{
     "action":"block_create",
-    "type":"state","previous":"597395E83BD04DF8EF30AF04234EAAFE0606A883CF4AEAD2DB8196AAF5C4444F",
+    "type":"state",
+    "previous":"597395E83BD04DF8EF30AF04234EAAFE0606A883CF4AEAD2DB8196AAF5C4444F",
     "account":"xrb_3igf8hd4sjshoibbbkeitmgkp1o6ug4xads43j6e4gqkj5xk5o83j8ja9php",
     "representative":"xrb_3p1asma84n8k84joneka776q4egm5wwru3suho9wjsfyuem8j95b3c78nw8j",
     "balance":"3000000000000000000000000000001",
