@@ -15,9 +15,9 @@ pacman -S base-devel git gcc cmake curl wget
 ### Building static Boost
 
 ```bash
-wget -O boost_1_63_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz/download   
-tar xzvf boost_1_63_0.tar.gz   
-cd boost_1_63_0   
+wget -O boost_1_66_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.66.0/boost_1_66_0.tar.gz/download   
+tar xzvf boost_1_66_0.tar.gz   
+cd boost_1_66_0   
 ./bootstrap.sh   
 ./b2 --prefix=../[boost] link=static install   
 cd ..
