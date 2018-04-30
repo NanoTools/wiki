@@ -36,6 +36,60 @@ All configuration nodes and values are optional, with the default values shown i
 }
 ```
 
+## Available type, detail and direction values
+
+```
+type:
+	traffic
+	error
+	message
+	block
+	ledger
+	rollback
+	bootstrap
+	vote
+	peering
+
+details:
+        all
+	// error specific
+	bad_sender
+	insufficient_work
+
+	// ledger, block, bootstrap
+	send
+	receive
+	open
+	change
+	state_block
+
+	// Message specific
+	keepalive
+	publish
+	republish_vote
+	confirm_req
+	confirm_ack
+
+	// Bootstrap specific
+	initiate
+	bulk_pull
+	bulk_push
+	bulk_pull_blocks
+	frontier_req
+
+	// Vote specific
+	vote_valid
+	vote_replay
+	vote_invalid
+
+        // Peering
+        handshake
+
+dir (direction) :
+	in
+	out
+```
+
 ## RPC
 
 ### Counters query:
@@ -89,55 +143,7 @@ All configuration nodes and values are optional, with the default values shown i
             "dir": "in",
             "value": "172"
         },
-        {
-            "time": "01:46:36",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "out",
-            "value": "1084"
-        },
-        {
-            "time": "01:46:36",
-            "type": "message",
-            "detail": "publish",
-            "dir": "in",
-            "value": "406"
-        },
-        {
-            "time": "01:46:33",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "in",
-            "value": "165"
-        },
-        {
-            "time": "01:46:33",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "out",
-            "value": "296"
-        },
-        {
-            "time": "01:46:36",
-            "type": "message",
-            "detail": "confirm_ack",
-            "dir": "in",
-            "value": "11751"
-        },
-        {
-            "time": "01:46:36",
-            "type": "bootstrap",
-            "detail": "all",
-            "dir": "out",
-            "value": "7965"
-        },
-        {
-            "time": "01:46:36",
-            "type": "bootstrap",
-            "detail": "initiate",
-            "dir": "out",
-            "value": "7965"
-        }
+        ...
     ]
 }
 ```
@@ -201,76 +207,6 @@ All configuration nodes and values are optional, with the default values shown i
         },
         {
             "time": "01:47:04",
-            "type": "traffic",
-            "detail": "all",
-            "dir": "out",
-            "value": "2136"
-        },
-        {
-            "time": "01:47:05",
-            "type": "traffic",
-            "detail": "all",
-            "dir": "out",
-            "value": "1368"
-        },
-        {
-            "time": "01:47:06",
-            "type": "traffic",
-            "detail": "all",
-            "dir": "out",
-            "value": "3504"
-        },
-        {
-            "time": "01:47:08",
-            "type": "traffic",
-            "detail": "all",
-            "dir": "out",
-            "value": "1368"
-        },
-        {
-            "time": "01:47:04",
-            "type": "message",
-            "detail": "all",
-            "dir": "in",
-            "value": "235"
-        },
-        {
-            "time": "01:47:05",
-            "type": "message",
-            "detail": "all",
-            "dir": "in",
-            "value": "176"
-        },
-        {
-            "time": "01:47:06",
-            "type": "message",
-            "detail": "all",
-            "dir": "in",
-            "value": "182"
-        },
-        {
-            "time": "01:47:07",
-            "type": "message",
-            "detail": "all",
-            "dir": "in",
-            "value": "78"
-        },
-        {
-            "time": "01:47:08",
-            "type": "message",
-            "detail": "all",
-            "dir": "in",
-            "value": "92"
-        },
-        {
-            "time": "01:47:03",
-            "type": "message",
-            "detail": "all",
-            "dir": "out",
-            "value": "31"
-        },
-        {
-            "time": "01:47:04",
             "type": "message",
             "detail": "all",
             "dir": "out",
@@ -283,304 +219,10 @@ All configuration nodes and values are optional, with the default values shown i
             "dir": "out",
             "value": "10"
         },
-        {
-            "time": "01:47:06",
-            "type": "message",
-            "detail": "all",
-            "dir": "out",
-            "value": "29"
-        },
-        {
-            "time": "01:47:08",
-            "type": "message",
-            "detail": "all",
-            "dir": "out",
-            "value": "9"
-        },
-        {
-            "time": "01:47:03",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "in",
-            "value": "10"
-        },
-        {
-            "time": "01:47:04",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "in",
-            "value": "8"
-        },
-        {
-            "time": "01:47:05",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "in",
-            "value": "7"
-        },
-        {
-            "time": "01:47:06",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "in",
-            "value": "12"
-        },
-        {
-            "time": "01:47:08",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "in",
-            "value": "2"
-        },
-        {
-            "time": "01:47:03",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "out",
-            "value": "28"
-        },
-        {
-            "time": "01:47:04",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "out",
-            "value": "16"
-        },
-        {
-            "time": "01:47:05",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "out",
-            "value": "10"
-        },
-        {
-            "time": "01:47:06",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "out",
-            "value": "28"
-        },
-        {
-            "time": "01:47:08",
-            "type": "message",
-            "detail": "keepalive",
-            "dir": "out",
-            "value": "9"
-        },
-        {
-            "time": "01:47:02",
-            "type": "message",
-            "detail": "publish",
-            "dir": "in",
-            "value": "11"
-        },
-        {
-            "time": "01:47:04",
-            "type": "message",
-            "detail": "publish",
-            "dir": "in",
-            "value": "15"
-        },
-        {
-            "time": "01:47:05",
-            "type": "message",
-            "detail": "publish",
-            "dir": "in",
-            "value": "7"
-        },
-        {
-            "time": "01:47:06",
-            "type": "message",
-            "detail": "publish",
-            "dir": "in",
-            "value": "3"
-        },
-        {
-            "time": "01:47:08",
-            "type": "message",
-            "detail": "publish",
-            "dir": "in",
-            "value": "11"
-        },
-        {
-            "time": "01:46:56",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "in",
-            "value": "44"
-        },
-        {
-            "time": "01:47:00",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "in",
-            "value": "5"
-        },
-        {
-            "time": "01:47:01",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "in",
-            "value": "3"
-        },
-        {
-            "time": "01:47:03",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "in",
-            "value": "3"
-        },
-        {
-            "time": "01:47:05",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "in",
-            "value": "1"
-        },
-        {
-            "time": "01:46:55",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "out",
-            "value": "4"
-        },
-        {
-            "time": "01:47:00",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "out",
-            "value": "12"
-        },
-        {
-            "time": "01:47:01",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "out",
-            "value": "3"
-        },
-        {
-            "time": "01:47:03",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "out",
-            "value": "3"
-        },
-        {
-            "time": "01:47:05",
-            "type": "message",
-            "detail": "confirm_req",
-            "dir": "out",
-            "value": "1"
-        },
-        {
-            "time": "01:47:04",
-            "type": "message",
-            "detail": "confirm_ack",
-            "dir": "in",
-            "value": "202"
-        },
-        {
-            "time": "01:47:05",
-            "type": "message",
-            "detail": "confirm_ack",
-            "dir": "in",
-            "value": "164"
-        },
-        {
-            "time": "01:47:06",
-            "type": "message",
-            "detail": "confirm_ack",
-            "dir": "in",
-            "value": "163"
-        },
-        {
-            "time": "01:47:07",
-            "type": "message",
-            "detail": "confirm_ack",
-            "dir": "in",
-            "value": "65"
-        },
-        {
-            "time": "01:47:08",
-            "type": "message",
-            "detail": "confirm_ack",
-            "dir": "in",
-            "value": "86"
-        },
-        {
-            "time": "01:47:04",
-            "type": "bootstrap",
-            "detail": "all",
-            "dir": "out",
-            "value": "78"
-        },
-        {
-            "time": "01:47:05",
-            "type": "bootstrap",
-            "detail": "all",
-            "dir": "out",
-            "value": "72"
-        },
-        {
-            "time": "01:47:06",
-            "type": "bootstrap",
-            "detail": "all",
-            "dir": "out",
-            "value": "72"
-        },
-        {
-            "time": "01:47:07",
-            "type": "bootstrap",
-            "detail": "all",
-            "dir": "out",
-            "value": "14"
-        },
-        {
-            "time": "01:47:08",
-            "type": "bootstrap",
-            "detail": "all",
-            "dir": "out",
-            "value": "138"
-        },
-        {
-            "time": "01:47:04",
-            "type": "bootstrap",
-            "detail": "initiate",
-            "dir": "out",
-            "value": "78"
-        },
-        {
-            "time": "01:47:05",
-            "type": "bootstrap",
-            "detail": "initiate",
-            "dir": "out",
-            "value": "72"
-        },
-        {
-            "time": "01:47:06",
-            "type": "bootstrap",
-            "detail": "initiate",
-            "dir": "out",
-            "value": "72"
-        },
-        {
-            "time": "01:47:07",
-            "type": "bootstrap",
-            "detail": "initiate",
-            "dir": "out",
-            "value": "14"
-        },
-        {
-            "time": "01:47:08",
-            "type": "bootstrap",
-            "detail": "initiate",
-            "dir": "out",
-            "value": "138"
-        }
+        ...
     ]
 }
 ```
-
 
 ## Log file example
 
