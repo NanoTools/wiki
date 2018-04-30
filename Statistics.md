@@ -16,6 +16,7 @@ All configuration nodes and values are optional, with the default values shown i
     "statistics": {
 
         // Sampling configuration (optional)
+        // Only activate if you need sampling information, as there's some overhead associated with this feature.
         "sampling": {
             "enabled": "true",                // If sampling is enabled. Default false.
             "capacity": "5",                  // How many samples to keep. Must be set if sampling is enabled.
