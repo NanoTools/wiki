@@ -98,7 +98,7 @@ Important and unread
 * Sending
     * [Send](#send)
 * Statistics
-    * [Statistics query](#stats)
+    * [Statistics query](#statistics)
 * Unchecked blocks
     * [Clear unchecked blocks](#clear-unchecked-blocks)
     * [Retrieve unchecked block](#retrieve-unchecked-block)
