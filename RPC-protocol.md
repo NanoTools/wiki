@@ -97,6 +97,8 @@ Important and unread
     * [Wallet representative set](#wallet-representative-set)
 * Sending
     * [Send](#send)
+* Statistics
+    * [Statistics query](#stats)
 * Unchecked blocks
     * [Clear unchecked blocks](#clear-unchecked-blocks)
     * [Retrieve unchecked block](#retrieve-unchecked-block)
@@ -1630,6 +1632,75 @@ Request:
   "work": "2bf29ef00786a6bc"   
 }
 ```  
+
+## Statistics
+
+For configuration and other details, please see [Statistics]
+
+Request counters:
+```
+{
+    "action": "stats",
+    "type": "counters"
+}
+```
+
+Counters response:
+``
+{
+    "type": "counters",
+    "created": "2018.03.29 01:46:36",
+    "entries": [
+        {
+            "time": "01:46:36",
+            "type": "traffic",
+            "detail": "all",
+            "dir": "in",
+            "value": "3122792"
+        },
+        {
+            "time": "01:46:36",
+            "type": "traffic",
+            "detail": "all",
+            "dir": "out",
+            "value": "203184"
+        } 
+        ...
+    ]
+}
+```
+
+Request samples:
+```
+{
+    "action": "stats",
+    "type": "samples"
+}
+```
+
+Samples response:
+```
+{
+    "type": "samples",
+    "created": "2018.03.29 01:47:08",
+    "entries": [
+        {
+            "time": "01:47:04",
+            "type": "traffic",
+            "detail": "all",
+            "dir": "in",
+            "value": "59480"
+        },
+        {
+            "time": "01:47:05",
+            "type": "traffic",
+            "detail": "all",
+            "dir": "in",
+            "value": "44496"
+        }
+        ...
+     ]
+}
 
 ## Stop node   
 _enable_control required_  
