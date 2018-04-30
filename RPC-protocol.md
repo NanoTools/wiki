@@ -1646,7 +1646,7 @@ Request counters:
 ```
 
 Counters response:
-``
+```
 {
     "type": "counters",
     "created": "2018.03.29 01:46:36",
@@ -1701,6 +1701,7 @@ Samples response:
         ...
      ]
 }
+```
 
 ## Stop node   
 _enable_control required_  
