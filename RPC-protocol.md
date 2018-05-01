@@ -1634,7 +1634,7 @@ Request:
 ```  
 
 ## Statistics
-
+_version 12.2+_  
 For configuration and other details, please see [Statistics](https://github.com/nanocurrency/raiblocks/wiki/Statistics)
 
 Request counters:
