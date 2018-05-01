@@ -802,7 +802,7 @@ Response:
 }
 ```
 
-## Delegators  
+## Confirmation history  
 _version 12.0+_   
 Returns hash & tally weight for recent elections winners   
 Request:  
