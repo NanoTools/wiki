@@ -12,7 +12,7 @@ Address and an amount (as RAW)
 
     xrb:xrb_3wm37qz19zhei7nzscjcopbrbnnachs4p1gnwo5oroi3qonw6inwgoeuufdp?amount=1000
 
-Address and amount in fiat/local currency: 5.25€
+Address and an amount in fiat/local currency: 5.25€
 
     xrb:xrb_3wm37qz19zhei7nzscjcopbrbnnachs4p1gnwo5oroi3qonw6inwgoeuufdp?amount=5.25&currency=EUR
     
