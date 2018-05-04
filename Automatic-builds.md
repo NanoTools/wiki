@@ -5,4 +5,4 @@ Linux:
 https://gitlab.com/nanocurrency/raiblocks/pipelines  
 
 Docker:  
-nanocurrency/nano:master  
+nanocurrency/nano:latest  
