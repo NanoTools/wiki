@@ -32,7 +32,7 @@ cp rai_node ../rai_node && cd .. && ./rai_node --diagnostics
 ```
 
 # CentOS 7
-
+_requires GCC comiler version 4.9+ or other compiler with C++14 language support (default Centos 7 compilers are outdated)_
 ### Dependency Build Instructions 
 
 ```bash
