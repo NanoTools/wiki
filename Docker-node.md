@@ -62,6 +62,12 @@ sudo docker exec <CONTAINERID> /usr/bin/rai_node --wallet_decrypt_unsafe --walle
 
 More information about the wallet backup is available here: [Wallet Backups](https://github.com/nanocurrency/raiblocks/wiki/Wallet-Backups)
 
+Restart your container afterwards:
+
+```bash
+sudo docker restart <CONTAINERID>
+```
+
 ### RPC interface
 
 You can use the RPC interface on the local host via `curl`.
