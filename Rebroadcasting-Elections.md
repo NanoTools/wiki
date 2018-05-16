@@ -21,7 +21,8 @@ When the network needs to make a global decision (ex: fork resolution), your wal
 
 ## Elections
 The election process happens internal to each node. 
-The first block received for an election is added to the nodes ledger immediately. 
+Any unique incoming block is validated and added to the nodes ledger immediately.
+If the network detects a need for a global decision (ex: fork resolution), an election is triggered.
 During the election, votes are tallied from > 0.1% peers until quorum is reached. 
 If the node determines quorum on a new block at any point during the election, it rolls back the block currently in the ledger and adds the new one. 
 The total online weight used for quorum is determined dynamically based on the online weight of the > 0.1% representatives. 
