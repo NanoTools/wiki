@@ -9,6 +9,7 @@
 * Peers = nodes connected over the public internet to share Nano network data
 * Voting = each node votes on every block by appending their signature and a sequence number to the block
 * Quorum = when 50% of the online voting weight votes in one direction
+* Announcement = a time-based iterative loop to review active transactions and determine if elections are needed
 
 ## Defining Rebroadcasting
 Rebroadcasting occurs when one node shares vote based information it has received from a peer to the rest of its peers. 
@@ -18,13 +19,13 @@ You can find detailed stats on rebroadcasting accounts here: https://nanonode.ni
 
 ## Elections
 Any new incoming block is set as an active transaction (or root). 
-An announcement is opened and checks to see if the root already exists on the ledger and has had election confirmation. 
-If so, the block is removed from the active transaction list and the announcement is closed. 
-If this is not the case however, an election is triggered and the annoucement stays open.
+The announcement loop checks to see if the root already exists on the ledger and has had election confirmation. 
+If so, the block is removed from the active transaction list. 
+If this is not the case however, an election is triggered. 
 During the election, votes are tallied from > 0.1% peers until quorum is acheived. 
 If the node determines quorum on a new block at any point during the election, it rolls back the block currently in the ledger and adds the new one. 
-The annoucement is closed once quorum is acheived regardless of whether quorum is on the existing block or a new. 
-If the announcement stays open while quorum is waiting to be acheived for longer than a predefined threshold (currently 16 seconds), then it moves to unconfirmed (Unchecked). 
+The active transaction is closed once quorum is acheived regardless of whether quorum is on the existing block or a new. 
+If the active transaction stays open while quorum is waiting to be acheived for longer than a predefined threshold (currently 16 seconds), then it moves to unconfirmed (Unchecked). 
 These unconfirmed blocks may be confirmed eventually when quorum is met, or will remain Unchecked until cleared if they are invalid blocks from a fork.  
 The total online weight used for quorum is determined dynamically based on the online weight of the > 0.1% representatives. 
 If the total online weight is determined to be less than 60,000,000 NANO, then 60,000,000 is used by default. 
