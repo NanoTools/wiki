@@ -13,7 +13,7 @@
 Rebroadcasting occurs when one node shares vote based information it has received from a peer to the rest of its peers. 
 The decision to rebroadcast a vote is made if the representative account that authored the vote has over 0.1% voting weight. 
 The weight of the node’s account rebroadcasting a peer account’s vote does not play a factor. 
-You can find detailed stats on rebroadcasting accounts here: https://nanonode.ninja/active
+You can find detailed stats on rebroadcasting accounts here: https://nanonode.ninja/active.
 
 ## Defining Voting
 Each node votes on every block by appending their signature and a sequence number to the block. 
