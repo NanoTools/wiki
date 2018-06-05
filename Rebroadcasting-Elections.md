@@ -9,7 +9,8 @@
 * Peers = nodes connected over the public internet to share Nano network data
 * Voting = each node votes on every block by appending their signature and a sequence number to the block
 * Quorum = when 50% of the online voting weight votes in one direction
-* Announcement = a time-based iterative loop to review active transactions and determine if elections are needed
+* Active transaction = a newly downloaded block to the node
+* Root = the account if the block is an open block otherwise the previous hash the block lists
 
 ## Defining Rebroadcasting
 Rebroadcasting occurs when one node shares vote based information it has received from a peer to the rest of its peers. 
@@ -17,15 +18,19 @@ The decision to rebroadcast a vote is made if the representative account that au
 The weight of the node’s account rebroadcasting a peer account’s vote does not play a factor. 
 You can find detailed stats on rebroadcasting accounts here: https://nanonode.ninja/active.
 
-## Elections
-Any new incoming block is set as an active transaction (or root). 
-The announcement loop checks to see if the root already exists on the ledger and has had election confirmation. 
-If so, the block is removed from the active transaction list. 
-If this is not the case however, an election is triggered. 
-During the election, votes are tallied from > 0.1% peers until quorum is acheived. 
-If the node determines quorum on a new block at any point during the election, it rolls back the block currently in the ledger and adds the new one. 
+## Announcement Rounds
+Currently an announcment round lasts 16 seconds, although there is a proposal to reduce this to 4 seconds.
+Any newly downloaded block to the node is committed to ledger and set as an active transaction.
+During an announcment round, a loop occurs iterating througha all roots within registered active transactions.
+If the root already exists on the ledger and has had election confirmation, then the block is removed from the active transaction list and stays committed to the ledger. 
+If the root is new or exits on the ledger but does not have election confirmation, then the broadcast-winner logic is run.
+
+## Broadcast-Winner and Elections
+Broadcast-winner includes the election process as well as republishing blocks if necessary. 
+An election is conducted where votes are tallied from > 0.1% peers until quorum is acheived. 
+If the node determines quorum on a new block at any point during the election, it rolls back the block currently in the ledger and its dependents then adds the new one. 
 The active transaction is closed once quorum is acheived regardless of whether quorum is on the existing block or a new. 
-If the active transaction stays open while quorum is waiting to be acheived for longer than a predefined threshold (currently 16 seconds), then it moves to unconfirmed (Unchecked). 
+If the active transaction stays open while quorum is waiting to be acheived for longer than the announcement round threshold (currently 16 seconds), then it moves to unconfirmed (Unchecked). 
 These unconfirmed blocks may be confirmed eventually when quorum is met, or will remain Unchecked until cleared if they are invalid blocks from a fork.  
 The total online weight used for quorum is determined dynamically based on the online weight of the > 0.1% representatives. 
 If the total online weight is determined to be less than 60,000,000 NANO, then 60,000,000 is used by default. 
