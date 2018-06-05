@@ -7,7 +7,7 @@
 * Voting weight (stake) = the amount of Nano delegated to the representative
 * Rebroadcasting account = a representative account with > 0.1% voting weight
 * Peers = nodes connected over the public internet to share Nano network data
-* Voting = each node votes on every block by appending their signature and a sequence number to the block
+* Voting = each node votes on every block by appending their rep signature and a sequence number to the block
 * Quorum = when 50% of the online voting weight votes in one direction
 * Active transaction = a newly downloaded block to the node
 * Root = the account if the block is an open block otherwise the previous hash the block lists
@@ -27,16 +27,22 @@ If the root is new or exists on the ledger but does not have election confirmati
 
 ## Broadcast-Winner and Elections
 Broadcast-winner includes the election process as well as republishing blocks if necessary. 
-An election is conducted where votes are tallied from > 0.1% peers until quorum is acheived. 
+An election is conducted where votes are tallied based weight at time of election from > 0.1% peers until quorum is acheived. 
 If the node determines quorum on a new block at any point during the election, it rolls back the block currently in the ledger and its dependents then adds the new one. 
 The active transaction is closed once quorum is acheived regardless of whether quorum is on the existing block or a new. 
 If the active transaction stays open while quorum is waiting to be acheived for longer than the announcement round threshold (currently 16 seconds), then it moves to unconfirmed (Unchecked). 
 These unconfirmed blocks may be confirmed eventually when quorum is met, or will remain Unchecked until cleared if they are invalid blocks from a fork.  
-The total online weight used for quorum is determined dynamically based on the online weight of the > 0.1% representatives. 
+The total online weight used for quorum is determined every five minutes based on the online weight of the > 0.1% representatives. 
 If the total online weight is determined to be less than 60,000,000 NANO, then 60,000,000 is used by default. 
 Both the minimum voting weight and quorum percentage are configurable by node. 
 The defaults are 60,000,000 NANO and 50% respectively.
  
+## Accounts with > 0.1% online voting weight (Rebroadcasting Accounts)
+Peers that receive votes from these accounts rebroadcast the votes to their peers. 
+When a global decision is required, the election process begins. 
+The votes from > 0.1% peers are tallied until quorum is reached. 
+For a more detailed description of elections, please see the Broadcast-Winner and Elections section above.
+
 ## Accounts with < 0.1% online voting weight
 The voting process inside the node is the same regardless of voting weight. 
 Votes from these nodes are also broadcast to directly connected peers. 
@@ -45,12 +51,6 @@ This helps to reduce network congestion and increase the efficiency of the elect
 The main purpose of voting from < 0.1% accounts is to allow directly connected peers to determine the node’s health/uptime. 
 A good example of this use case can be found on https://nanonode.ninja.
 Trusted nodes with < 0.1% voting weight also help the network by being used as peers for bootstrapping.
- 
-## Accounts with > 0.1% online voting weight (Rebroadcasting Accounts)
-Peers that receive votes from these accounts rebroadcast the votes to their peers. 
-When a global decision is required, the election process begins. 
-The votes from > 0.1% peers are tallied until quorum is reached. 
-For a more detailed description of elections, please see the Broadcast-Winner and Elections section above.
 
 ## Should you run a node, especially with < 0.1% voting weight?
 This is not an easy yes or no question. 
