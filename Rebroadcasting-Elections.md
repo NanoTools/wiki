@@ -21,9 +21,9 @@ You can find detailed stats on rebroadcasting accounts here: https://nanonode.ni
 ## Announcement Rounds
 Currently an announcment round lasts 16 seconds, although there is a proposal to reduce this to 4 seconds.
 Any newly downloaded block to the node is committed to ledger and set as an active transaction.
-During an announcment round, a loop occurs iterating througha all roots within registered active transactions.
+During an announcement round, a loop occurs iterating through all roots within registered active transactions.
 If the root already exists on the ledger and has had election confirmation, then the block is removed from the active transaction list and stays committed to the ledger. 
-If the root is new or exits on the ledger but does not have election confirmation, then the broadcast-winner logic is run.
+If the root is new or exists on the ledger but does not have election confirmation, then the broadcast-winner logic is run.
 
 ## Broadcast-Winner and Elections
 Broadcast-winner includes the election process as well as republishing blocks if necessary. 
