@@ -16,7 +16,7 @@
 Rebroadcasting occurs when one node shares vote based information it has received from a peer to the rest of its peers. 
 The decision to rebroadcast a vote is made if the representative account that authored the vote has over 0.1% voting weight. 
 The weight of the node’s account rebroadcasting a peer account’s vote does not play a factor. 
-You can find detailed stats on rebroadcasting accounts here: https://nanonode.ninja/active.
+You can find detailed stats on rebroadcasting accounts here: https://nanonode.ninja/active and here: https://nano.meltingice.net/network.
 
 ## Announcement Rounds
 Currently an announcment round lasts 16 seconds, although there is a proposal to reduce this to 4 seconds.
