@@ -31,7 +31,8 @@ An election is conducted where votes are tallied based weight at time of electio
 If the node determines quorum on a new block at any point during the election, it rolls back the block currently in the ledger and its dependents then adds the new one. 
 The active transaction is closed once quorum is acheived regardless of whether quorum is on the existing block or a new. 
 If the active transaction stays open while quorum is waiting to be acheived for longer than the announcement round threshold (currently 16 seconds), then it moves to unconfirmed (Unchecked). 
-These unconfirmed blocks may be confirmed eventually when quorum is met, or will remain Unchecked until cleared if they are invalid blocks from a fork.  
+These unconfirmed blocks may be confirmed eventually when quorum is met, or will remain Unchecked until cleared if they are invalid blocks from a fork.
+
 The total online weight used for quorum is determined every five minutes based on the online weight of the > 0.1% representatives. 
 If the total online weight is determined to be less than 60,000,000 NANO, then 60,000,000 is used by default. 
 Both the minimum voting weight and quorum percentage are configurable by node. 
