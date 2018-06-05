@@ -78,3 +78,4 @@ Nano’s vision to become truly decentralized cannot be realized without the com
 * https://nano.meltingice.net/network
 * https://github.com/nanocurrency/raiblocks/wiki/Representatives-and-decentralization
 * https://youtu.be/PgHUA8TGaXY
+* Community members on Discord including (but not limited to) @DESRT, @cryptocode, @renesq, @bbalaska 
