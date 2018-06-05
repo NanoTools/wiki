@@ -44,12 +44,13 @@ That being said, peers, regardless of voting weight, do not rebroadcast these vo
 This helps to reduce network congestion and increase the efficiency of the election process. 
 The main purpose of voting from < 0.1% accounts is to allow directly connected peers to determine the node’s health/uptime. 
 A good example of this use case can be found on https://nanonode.ninja.
+Trusted nodes with < 0.1% voting weight also help the network by being used as peers for bootstrapping.
  
 ## Accounts with > 0.1% online voting weight (Rebroadcasting Accounts)
 Peers that receive votes from these accounts rebroadcast the votes to their peers. 
 When a global decision is required, the election process begins. 
 The votes from > 0.1% peers are tallied until quorum is reached. 
-For a more detailed description of elections, please see the Elections section above.
+For a more detailed description of elections, please see the Broadcast-Winner and Elections section above.
 
 ## Should you run a node, especially with < 0.1% voting weight?
 This is not an easy yes or no question. 
