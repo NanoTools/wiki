@@ -32,8 +32,8 @@ If the root is new or exists on the ledger but does not have election confirmati
 ## Broadcast-Winner and Elections
 Broadcast-winner includes the election process as well as republishing blocks if necessary. 
 An election is conducted where votes are tallied based weight at time of election from > 0.1% peers until quorum is acheived. 
-If the node determines quorum on a new block at any point during the election, it rolls back the block currently in the ledger and its dependents then adds the new one. 
-The active transaction is closed once quorum is acheived regardless of whether quorum is on the existing block or a new. 
+If the node determines quorum on the root of a new block at any point during the election, it rolls back the block currently in the ledger and its dependents then adds the new one. 
+The active transaction is closed once quorum is acheived regardless of whether quorum is for the existing block or a new block. 
 If the active transaction stays open while quorum is waiting to be acheived for longer than the announcement round threshold (currently 16 seconds), then it moves to unconfirmed (Unchecked). 
 These unconfirmed blocks may be confirmed eventually when quorum is met, or will remain Unchecked until cleared if they are invalid blocks from a fork.
 The total online weight used for quorum is determined every five minutes based on the online weight of the > 0.1% representatives. 
