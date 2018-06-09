@@ -29,7 +29,7 @@ If the root is new or exists on the ledger but does not have election confirmati
 
 #### Interpreting this in a different way - all new blocks committed to the ledger (and therefore pocketed to wallets) will be subject to election confirmation eventually, but not until it is recognized as a root who does not yet have election confirmation.
 
-## Broadcast-Winner and Elections
+## Broadcast-Winner & Elections
 Broadcast-winner includes the election process as well as republishing blocks if necessary. 
 An election is conducted where votes are tallied based weight at time of election from > 0.1% peers until quorum is achieved. 
 If the node determines quorum on the root of a new block at any point during the election, it rolls back the block currently in the ledger and its dependents then adds the new one. 
