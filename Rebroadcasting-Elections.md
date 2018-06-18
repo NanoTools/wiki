@@ -27,12 +27,12 @@ During an announcement round, a loop occurs iterating through all roots within r
 If the root already exists on the ledger and has had election confirmation, then the block is removed from the active transaction list and stays committed to the ledger. 
 If the root is new or exists on the ledger but does not have election confirmation, then the broadcast-winner logic is run.
 
-#### Interpreting this in a different way - all new blocks committed to the ledger (and therefore pocketed to wallets) will be subject to election confirmation eventually, but not until it is recognized as a root who does not yet have election confirmation.
+#### Interpreting this in a different way - all new blocks committed to the ledger (and therefore pocketed to wallets) will be subject to election confirmation based on the status of their roots.
 
 ## Broadcast-Winner & Elections
 Broadcast-winner includes the election process as well as republishing blocks if necessary. 
 An election is conducted where votes are tallied based weight at time of election from > 0.1% peers until quorum is achieved. 
-If the node determines quorum on the root of a new block at any point during the election, it rolls back the block currently in the ledger and its dependents then adds the new one. 
+If the node determines quorum on a new block for the root at any point during the election, it rolls back the block currently in the ledger and its dependents then adds the new one. 
 The active transaction is closed once quorum is achieved regardless of whether quorum is for the existing block or a new block. 
 If the active transaction stays open while quorum is waiting to be achieved for longer than the announcement round threshold (currently 16 seconds), then it moves to unconfirmed (Unchecked). 
 These unconfirmed blocks may be confirmed eventually when quorum is met or will remain Unchecked until cleared if they are invalid blocks from a fork.
