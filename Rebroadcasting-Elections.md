@@ -17,7 +17,6 @@ There are several checks undergone when a new block is received by a node prior 
 A block is outright rejected and not moved to Unchecked if it has a bad signature or bad POW.
 A block will be moved to Unchecked if any of the following occur: a gap in the chain (either previous or source), a negative spend attempt, a block already received, an invalid balance, a fork, or an attempt to open the burn account.
 If the block does not have these issues then it is committed to the ledger as an active transaction.
-From a wallet standpoint, the transaction will move from pending to pocketed.
 Now as an active transaction, it will be subject to announcement rounds.
 The only types of blocks in Unchecked that will also be subject to announcement rounds are forks.
 
