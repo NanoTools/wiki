@@ -26,7 +26,7 @@ During an announcement round, a loop occurs iterating through all roots within r
 If the root already exists on the ledger and has had election confirmation, then the block is removed from the active transaction list and stays committed to the ledger. 
 If the root is new or exists on the ledger but does not have election confirmation, then the broadcast-winner logic is run.
 
-#### Interpreting this in a different way - all new blocks committed to the ledger (and therefore pocketed to wallets) will be subject to election confirmation based on the status of their roots.
+#### Interpreting this in a different way - all new blocks committed to the ledger will be subject to election confirmation based on the status of their roots.
 
 ## Broadcast-Winner & Elections
 Broadcast-winner includes the election process as well as republishing blocks if necessary. 
