@@ -11,6 +11,7 @@
 * Quorum = when 50% of the online voting weight votes in one direction
 * Active transaction = a newly downloaded block to the node
 * Root = the account if the block is an open block otherwise the previous hash the block lists
+* Inbound send = a send type state block who's recipient is an account owned by a wallet on your node
 
 ## New blocks & Unchecked
 There are several checks undergone when a new block is received by a node prior to it being committed to the ledger.
@@ -30,16 +31,17 @@ The process will build a graph of possibile fork resolution outcomes on top of t
 The pre-built graph will be used to determine fork resolution if necessary.
 Given this is not implemented yet, the rest of the document explains the existing process where only inbound sends require quorum.
 
-#### Summarizing today's process - only inbound sends to your node and forks will be subject to announcement rounds and therefore election confirmation via quorum.
+#### Summarizing today's process - only inbound sends to your node and forks will be subject to election confirmation via quorum.
 
 ## Announcement Rounds
 Currently an announcement round lasts 16 seconds, although there is a proposal to reduce this to 4 seconds.
 During an announcement round, a loop occurs iterating through all roots within registered active transactions. 
-If the root already exists on the ledger and has had election confirmation, then the block is removed from the active transaction list and stays committed to the ledger. 
-If the root is new or exists on the ledger but does not have election confirmation, then the broadcast-winner logic is run.
+If the successive block of the root already exists on the ledger and has had election confirmation, then the block is removed from the active transaction list and stays committed to the ledger. 
+If the succesive block of the root is new or exists on the ledger but does not have election confirmation, then the broadcast-winner logic is run.
 
 ## Broadcast-Winner & Elections
 Broadcast-winner includes the election process as well as republishing blocks if necessary. 
+Elections are run as part of announcement rounds for inbound sends, and also run immediately upon detection of a fork so long as the root exists on the ledger.
 An election is conducted where votes are tallied based weight at time of election from > 0.1% peers until quorum is achieved. 
 If the node determines quorum on a new block for the root at any point during the election, it rolls back the block currently in the ledger and its dependents then adds the new one. 
 The active transaction is closed once quorum is achieved regardless of whether quorum is for the existing block or a new block. 
