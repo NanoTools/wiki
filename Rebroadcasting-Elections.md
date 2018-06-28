@@ -15,12 +15,13 @@
 ## New blocks & Unchecked
 There are several checks undergone when a new block is received by a node prior to it being committed to the ledger.
 A block is outright rejected and not moved to Unchecked if it has a bad signature or bad POW.
-A block will be moved to Unchecked if any of the following occur: a gap in the chain (either previous or source), a negative spend attempt, a block already received, an invalid balance, a fork, or an attempt to open the burn account.
+A block will be moved to Unchecked if any of the following occur: a gap in the chain (either previous or source), a negative spend attempt, a block already received, an invalid balance, or an attempt to open the burn account.
+In addition, blocks will populate Unchecked when they are queueing in bulk to be committed to the ledger. 
+This is especially apparent upon initial bootstrap of a node.
 If the block is anything other than an inbound send, then it is committed to the ledger without requiring quorum.
 Quorum will only be required for the types of blocks other than inbound sends if a fork is detected at some point in the future. 
 If the block is an inbound send, then it is committed to the ledger as an active transaction.
 Now as an active transaction, it will be subject to announcement rounds.
-The only types of blocks in Unchecked that will also be subject to announcement rounds are forks.
 
 ## New blocks in the future
 The core team will soon start working on "Active Graphs."
@@ -33,7 +34,7 @@ Given this is not implemented yet, the rest of the document explains the existin
 
 ## Announcement Rounds
 Currently an announcement round lasts 16 seconds, although there is a proposal to reduce this to 4 seconds.
-During an announcement round, a loop occurs iterating through all roots within registered active transactions.
+During an announcement round, a loop occurs iterating through all roots within registered active transactions. 
 If the root already exists on the ledger and has had election confirmation, then the block is removed from the active transaction list and stays committed to the ledger. 
 If the root is new or exists on the ledger but does not have election confirmation, then the broadcast-winner logic is run.
 
