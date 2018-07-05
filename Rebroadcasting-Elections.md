@@ -42,7 +42,7 @@ If the succesive block of the root is new or exists on the ledger but does not h
 ## Broadcast-Winner & Elections
 Broadcast-winner includes the election process as well as republishing blocks if necessary. 
 Elections are run as part of announcement rounds for inbound sends, and also run immediately upon detection of a fork so long as the root exists on the ledger.
-An election is conducted where votes are tallied based weight at time of election from > 0.1% peers until quorum is achieved. 
+An election is conducted where votes are tallied based weight at time of election from > 0.1% reps until quorum is achieved. 
 If the node determines quorum on a new block for the root at any point during the election, it rolls back the block currently in the ledger and its dependents then adds the new one. 
 The active transaction is closed once quorum is achieved regardless of whether quorum is for the existing block or a new block. 
 If the active transaction stays open while quorum is waiting to be achieved for longer than the announcement round threshold (currently 16 seconds), then it moves to unconfirmed (Unchecked). 
