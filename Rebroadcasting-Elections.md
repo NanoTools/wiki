@@ -15,8 +15,8 @@
 
 ## New blocks & Unchecked
 There are several checks undergone when a new block is received by a node prior to it being committed to the ledger.
-A block is outright rejected and not moved to Unchecked if it has a bad signature or bad POW.
-A block will be moved to Unchecked if any of the following occur: a gap in the chain (either previous or source), a negative spend attempt, a block already received, an invalid balance, or an attempt to open the burn account.
+A block is outright rejected and not moved to Unchecked if there is a bad signature, bad POW, negative spend attempt, a block already received, or an attempt to open the burn account.
+A block will be moved to Unchecked if there is a gap in the chain (either previous or source).
 In addition, blocks will populate Unchecked when they are queueing in bulk to be committed to the ledger. 
 This is especially apparent upon initial bootstrap of a node.
 If the block is anything other than an inbound send, then it is committed to the ledger without requiring quorum.
