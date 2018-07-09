@@ -8,9 +8,9 @@
 * Rebroadcasting account = a representative account with > 0.1% voting weight
 * Peers = nodes connected over the public internet to share Nano network data
 * Voting = each node votes on every block by appending their rep signature and a sequence number to the block
-* Quorum = when 50% of the online voting weight votes in one direction
-* Active transaction = a newly downloaded block to the node
 * Root = the account if the block is an open block otherwise the previous hash the block lists
+* Quorum = when the delta between the two successive blocks of a root is > 50% of the online voting weight
+* Active transaction = a newly downloaded block to the node
 * Inbound send = a send type state block who's recipient is an account owned by a wallet on your node
 
 ## New blocks & Unchecked
