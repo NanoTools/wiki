@@ -7,7 +7,7 @@
 * Voting weight (stake) = the amount of Nano delegated to the representative
 * Rebroadcasting account = a representative account with > 0.1% voting weight
 * Peers = nodes connected over the public internet to share Nano network data
-* Voting = each node votes on every block by appending their rep signature and a sequence number to the block
+* Voting = each node votes on every block by appending their rep signature and a sequence number to the hash
 * Root = the account if the block is an open block otherwise the previous hash the block lists
 * Quorum = when the delta between the two successive blocks of a root is > 50% of the online voting weight
 * Active transaction = a newly downloaded block to the node
