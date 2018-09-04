@@ -56,7 +56,7 @@ The defaults are 60,000,000 NANO and 50% respectively.
 Rebroadcasting occurs when one node shares vote based information it has received from a peer to the rest of its peers. 
 The decision to rebroadcast a vote is made if the representative account that authored the vote has over 0.1% voting weight and if the node has not seen the vote before. 
 The weight of the node’s account rebroadcasting a peer account’s vote does not play a factor. 
-You can find detailed stats on rebroadcasting accounts here: https://nanonode.ninja/active and here: https://nano.meltingice.net/network.
+You can find detailed stats on rebroadcasting accounts here: https://mynano.ninja/active and here: https://nano.meltingice.net/network.
  
 ## Accounts with > 0.1% online voting weight (Rebroadcasting Accounts)
 Peers that receive votes from these accounts rebroadcast the votes to their peers. 
@@ -70,7 +70,7 @@ Votes from these nodes are also broadcast to directly connected peers.
 That being said, peers, regardless of voting weight, do not rebroadcast these votes or use them during elections. 
 This helps to reduce network congestion and increase the efficiency of the election process. 
 The main purpose of voting from < 0.1% accounts is to allow directly connected peers to determine the node’s health/uptime. 
-A good example of this use case can be found on https://nanonode.ninja.
+A good example of this use case can be found on https://mynano.ninja.
 Trusted nodes with < 0.1% voting weight also help the network by being used as peers for bootstrapping.
 
 ## Should you run a node, especially with < 0.1% voting weight?
