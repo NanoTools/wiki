@@ -1,6 +1,11 @@
 # Nano Beta Network
 
+The Nano beta network allows developers and interested people to test new features and helps to improve the stability of the network without influencing the main network.
+
 ## Create a new Node 
+
+The beta node uses port 54000 TCP/UDP for communication and 55000 for RPC (at default).
+All configuration files etc. will be created at `~\RaiBlocksBeta`.
 
 ### Docker
 
