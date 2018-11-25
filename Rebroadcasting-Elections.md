@@ -56,7 +56,7 @@ The defaults are 60,000,000 NANO and 50% respectively.
 Rebroadcasting occurs when one node shares vote based information it has received from a peer to the rest of its peers. 
 The decision to rebroadcast a vote is made if the representative account that authored the vote has over 0.1% voting weight and if the node has not seen the vote before. 
 The weight of the node’s account rebroadcasting a peer account’s vote does not play a factor. 
-You can find detailed stats on rebroadcasting accounts here: https://mynano.ninja/active and here: https://nano.meltingice.net/network.
+You can find detailed stats on rebroadcasting accounts here: https://mynano.ninja/active and here: https://nanocrawler.cc/network.
  
 ## Accounts with > 0.1% online voting weight (Rebroadcasting Accounts)
 Peers that receive votes from these accounts rebroadcast the votes to their peers. 
